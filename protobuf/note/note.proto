@@ -1,0 +1,86 @@
+syntax = "proto3";
+
+option go_package = "github.com/meidomx/service-protocol/protocol/protobuf/go/note";
+option java_multiple_files = true;
+option java_package = "info.moetang.serviceprotocol.protobuf.note";
+option java_outer_classname = "NoteProto";
+import "shared/result.proto";
+
+package note;
+
+service NoteService {
+    rpc CreateNote (CreateNoteReq) returns (CreateNoteRes) {}
+    rpc UpdateNoteById (UpdateNoteByIdReq) returns (UpdateNoteByIdRes) {}
+    rpc DeleteNoteById (DeleteNoteByIdReq) returns (DeleteNoteByIdRes) {}
+    
+    rpc QueryNoteByNoteId (QueryNoteByNoteIdReq) returns (QueryNoteByNoteIdRes) {}
+    rpc QueryPagedNotes(QueryPagedNotesReq) returns (QueryPagedNotesRes) {}
+}
+
+message Note {
+    string note_id = 1;
+    string user_id = 2;
+
+    string title = 11;
+    string content = 12;
+
+    int64 time_created = 21;
+    int64 time_updated = 22;
+}
+
+message CreateNoteReq {
+    string user_id = 1;
+
+    string title = 2;
+    string content = 3;
+}
+
+message CreateNoteRes {
+    shared.Result result = 1;
+
+    Note note = 2;
+}
+
+message QueryNoteByNoteIdReq {
+    string note_id = 1;
+}
+
+message QueryNoteByNoteIdRes {
+    shared.Result result = 1;
+
+    Note note = 2;
+}
+
+message QueryPagedNotesReq {
+    int64 page = 1;
+    int64 page_size = 2;
+}
+
+message QueryPagedNotesRes {
+    shared.Result result = 1;
+
+    repeated Note notes = 2;
+}
+
+message UpdateNoteByIdReq {
+    string note_id = 1;
+
+    string title = 11;
+    string content = 12;
+}
+
+message UpdateNoteByIdRes {
+    shared.Result result = 1;
+
+    Note note = 2;
+}
+
+
+message DeleteNoteByIdReq {
+    string note_id = 1;
+}
+
+message DeleteNoteByIdRes {
+    shared.Result result = 1;
+}
+

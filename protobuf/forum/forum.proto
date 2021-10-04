@@ -1,0 +1,261 @@
+syntax = "proto3";
+
+option go_package = "github.com/meidomx/service-protocol/protocol/protobuf/go/forum";
+option java_multiple_files = true;
+option java_package = "info.moetang.serviceprotocol.protobuf.forum";
+option java_outer_classname = "ForumProto";
+import "shared/result.proto";
+
+package forum;
+
+service ForumService {
+    rpc CreateForum (CreateForumReq) returns (CreateForumRes) {}
+    rpc UpdateForumById (UpdateForumByIdReq) returns (UpdateForumByIdRes) {}
+    rpc DeleteForumById (DeleteForumByIdReq) returns (DeleteForumByIdRes) {}
+
+    rpc ListAllForums (ListAllForumsReq) returns (ListAllForumsRes) {}
+    rpc QueryForumById (QueryForumByIdReq) returns (QueryForumByIdRes) {}
+
+    rpc CreateThread (CreateThreadReq) returns (CreateThreadRes) {}
+    rpc UpdateThreadById (UpdateThreadByIdReq) returns (UpdateThreadByIdRes) {}
+    rpc DeleteThreadById (DeleteThreadByIdReq) returns (DeleteThreadByIdRes) {}
+
+    rpc QueryThreadById (QueryThreadByIdReq) returns (QueryThreadByIdRes) {}
+    rpc QueryPagedThreadTitlesByForumId (QueryPagedThreadsByForumIdReq) returns (QueryPagedThreadsByForumIdRes) {}
+
+    rpc CreateReply (CreateReplyReq) returns (CreateReplyRes) {}
+    rpc UpdateReplyById (UpdateReplyReq) returns (UpdateReplyRes) {}
+    rpc DeleteReplyById (DeleteReplyByIdReq) returns (DeleteReplyByIdRes) {}
+
+    rpc QueryReplyById (QueryReplyByIdReq) returns (QueryReplyByIdRes) {}
+    rpc QueryPagedRepliesByThreadId (QueryPagedRepliesByThreadIdReq) returns (QueryPagedRepliesByThreadIdRes) {}
+}
+
+message Forum {
+    string forum_id = 1;
+    string user_id = 2;
+
+    string forum_name = 11;
+    string forum_description = 12;
+
+    int64 time_created = 21;
+    int64 time_updated = 22;
+}
+
+message Thread {
+    string thread_id = 1;
+    string forum_id = 2;
+    string user_id = 3;
+
+    string thread_title = 11;
+    string thread_content = 12;
+
+    int64 time_created = 21;
+    int64 time_updated = 22;
+}
+
+message ThreadLite {
+    string thread_id = 1;
+    string forum_id = 2;
+    string user_id = 3;
+
+    string thread_title = 11;
+    string thread_content = 12;
+
+    int64 time_created = 21;
+    int64 time_updated = 22;
+}
+
+message Reply {
+    string reply_id = 1;
+    string thread_id = 2;
+    string user_id = 3;
+
+    string reply_title = 11;
+    string reply_content = 12;
+    
+    int64 time_created = 21;
+    int64 time_updated = 22;
+}
+
+message CreateForumReq {
+    string user_id = 1;
+    string forum_name = 2;
+    string forum_description = 3;
+}
+
+message CreateForumRes {
+    shared.Result result = 1;
+
+    Forum forum = 2;
+}
+
+
+message ListAllForumsReq {
+}
+
+message ListAllForumsRes {
+    shared.Result result = 1;
+
+    repeated Forum forums = 2;
+}
+
+
+message QueryForumByIdReq {
+    string forum_id = 1;
+}
+
+message QueryForumByIdRes {
+    shared.Result result = 1;
+
+    Forum forum = 2;
+}
+
+
+message UpdateForumByIdReq {
+    string forum_id = 1;
+    string forum_name = 2;
+    string forum_description = 3;
+}
+
+message UpdateForumByIdRes {
+    shared.Result result = 1;
+
+    Forum forum = 2;
+}
+
+
+message DeleteForumByIdReq {
+    string forum_id = 1;
+}
+
+message DeleteForumByIdRes {
+    shared.Result result = 1;
+}
+
+
+message CreateThreadReq {
+    string forum_id = 1;
+    string user_id = 2;
+
+    string title = 11;
+    string content = 12;
+}
+
+message CreateThreadRes {
+    shared.Result result = 1;
+
+    Thread thread = 2;
+}
+
+
+message QueryThreadByIdReq {
+    string thread_id = 1;
+}
+
+message QueryThreadByIdRes {
+    shared.Result result = 1;
+
+    Thread thread = 2;
+}
+
+
+message UpdateThreadByIdReq {
+    string thread_id = 1;
+
+    string title = 2;
+    string content = 3;
+}
+
+message UpdateThreadByIdRes {
+    shared.Result result = 1;
+
+    Thread thread = 2;
+}
+
+
+message QueryPagedThreadsByForumIdReq {
+    string forum_id = 1;
+
+    int64 page = 2;
+    int64 page_size = 3;
+}
+
+message QueryPagedThreadsByForumIdRes {
+    shared.Result result = 1;
+
+    repeated ThreadLite threads = 2;
+}
+
+
+message DeleteThreadByIdReq {
+    string thread_id = 1;
+}
+
+message DeleteThreadByIdRes {
+    shared.Result result = 1;
+}
+
+
+message CreateReplyReq {
+    string thread_id = 1;
+    string user_id = 2;
+
+    string title = 3;
+    string content = 4;
+}
+
+message CreateReplyRes {
+    shared.Result result = 1;
+
+    Reply reply = 2;
+}
+
+
+message QueryReplyByIdReq {
+    string reply_id = 1;
+}
+
+message QueryReplyByIdRes {
+    shared.Result result = 1;
+
+    Reply reply = 2;
+}
+
+
+message UpdateReplyReq {
+    string reply_id = 1;
+
+    string title = 2;
+    string content = 3;
+}
+
+message UpdateReplyRes {
+    shared.Result result = 1;
+
+    Reply reply = 2;
+}
+
+
+message DeleteReplyByIdReq {
+    string reply_id = 1;
+}
+
+message DeleteReplyByIdRes {
+    shared.Result result = 1;
+}
+
+
+message QueryPagedRepliesByThreadIdReq {
+    string thread_id = 1;
+
+    int64 page = 2;
+    int64 page_size = 3;
+}
+
+message QueryPagedRepliesByThreadIdRes {
+    shared.Result result = 1;
+    
+    repeated Reply replies = 2;
+}
+

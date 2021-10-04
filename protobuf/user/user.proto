@@ -1,0 +1,44 @@
+syntax = "proto3";
+
+option go_package = "github.com/meidomx/service-protocol/protocol/protobuf/go/user";
+option java_multiple_files = true;
+option java_package = "info.moetang.serviceprotocol.protobuf.user";
+option java_outer_classname = "UserProto";
+import "shared/result.proto";
+
+package user;
+
+service UserService {
+  rpc RegisterUser (RegisterUserReq) returns (RegisterUserRes) {}
+  
+  rpc VerifyUserPassword (VerifyUserPasswordReq) returns (VerifyUserPasswordRes) {}
+  rpc ChangeUserPassword (ChangeUserPasswordReq) returns (ChangeUserPasswordRes){}
+}
+
+message RegisterUserReq {
+  string username = 1;
+  string password = 2;
+}
+
+message RegisterUserRes {
+  shared.Result result = 1;
+}
+
+message VerifyUserPasswordReq {
+  string username = 1;
+  string password = 2;
+}
+
+message VerifyUserPasswordRes {
+  shared.Result result = 1;
+}
+
+message ChangeUserPasswordReq {
+  string username = 1;
+  string password = 2;
+}
+
+message ChangeUserPasswordRes {
+  shared.Result result = 1;
+}
+

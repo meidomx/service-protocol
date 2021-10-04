@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+option go_package = "github.com/meidomx/service-protocol/protocol/protobuf/go/shared";
+option java_multiple_files = true;
+option java_package = "info.moetang.serviceprotocol.protobuf.shared";
+option java_outer_classname = "SharedProto";
+
+package shared;
+
+message Result {
+    bool success = 30000;
+    string code = 30001;
+    string result = 30002;
+    string message = 30003;
+}
