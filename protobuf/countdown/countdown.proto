@@ -1,0 +1,87 @@
+syntax = "proto3";
+
+option go_package = "github.com/meidomx/service-protocol/protocol/protobuf/go/countdown";
+option java_multiple_files = true;
+option java_package = "info.moetang.serviceprotocol.protobuf.countdown";
+option java_outer_classname = "CountdownProto";
+import "shared/result.proto";
+
+package countdown;
+
+service CountdownService {
+    rpc CreateCountdown (CreateCountdownReq) returns (CreateCountdownRes) {}
+    rpc NextCountdownIntervalById (NextCountdownIntervalByIdReq) returns (NextCountdownIntervalByIdRes) {}
+    
+    rpc QueryCountdownById (QueryCountdownByIdReq) returns (QueryCountdownByIdRes) {}
+    rpc QueryPagedExpringCountdownsByType (QueryPagedExpringCountdownsByTypeReq) returns (QueryPagedExpringCountdownsByTypeRes) {}
+}
+
+message Countdown {
+    string countdown_id = 1;
+    string user_id = 2;
+    string countdown_type = 3;
+
+    string title = 11;
+    string content = 12;
+
+    int64 time_expired = 21;
+    int64 time_last_handle = 22;
+    int64 time_created = 23;
+    int64 time_updated = 24;
+}
+
+
+message CreateCountdownReq {
+    string user_id = 1;
+    string countdown_type = 2;
+
+    string title = 11;
+    string content = 12;
+
+    int64 time_expired = 21;
+}
+
+message CreateCountdownRes {
+    shared.Result result = 1;
+
+    Countdown countdown = 2;
+}
+
+
+message QueryCountdownByIdReq {
+    string countdown_id = 1;
+}
+
+message QueryCountdownByIdRes {
+    shared.Result result = 1;
+
+    Countdown countdown = 2;
+}
+
+
+message NextCountdownIntervalByIdReq {
+    string countdown_id = 1;
+
+    int64 time_expired = 2;
+}
+
+message NextCountdownIntervalByIdRes {
+    shared.Result result = 1;
+
+    Countdown countdown = 2;
+}
+
+
+message QueryPagedExpringCountdownsByTypeReq {
+    string countdown_type = 1;
+
+    int64 page = 2;
+    int64 page_size = 3;
+}
+
+message QueryPagedExpringCountdownsByTypeRes {
+    shared.Result result = 1;
+
+    repeated Countdown countdowns = 2;
+}
+
