@@ -7,7 +7,7 @@
 
 using grpc = global::Grpc.Core;
 
-namespace User {
+namespace ServiceGrpcProto {
   public static partial class UserService
   {
     static readonly string __ServiceName = "user.UserService";
@@ -46,20 +46,20 @@ namespace User {
     }
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::User.RegisterUserReq> __Marshaller_user_RegisterUserReq = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::User.RegisterUserReq.Parser));
+    static readonly grpc::Marshaller<global::ServiceGrpcProto.RegisterUserReq> __Marshaller_user_RegisterUserReq = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::ServiceGrpcProto.RegisterUserReq.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::User.RegisterUserRes> __Marshaller_user_RegisterUserRes = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::User.RegisterUserRes.Parser));
+    static readonly grpc::Marshaller<global::ServiceGrpcProto.RegisterUserRes> __Marshaller_user_RegisterUserRes = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::ServiceGrpcProto.RegisterUserRes.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::User.VerifyUserPasswordReq> __Marshaller_user_VerifyUserPasswordReq = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::User.VerifyUserPasswordReq.Parser));
+    static readonly grpc::Marshaller<global::ServiceGrpcProto.VerifyUserPasswordReq> __Marshaller_user_VerifyUserPasswordReq = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::ServiceGrpcProto.VerifyUserPasswordReq.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::User.VerifyUserPasswordRes> __Marshaller_user_VerifyUserPasswordRes = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::User.VerifyUserPasswordRes.Parser));
+    static readonly grpc::Marshaller<global::ServiceGrpcProto.VerifyUserPasswordRes> __Marshaller_user_VerifyUserPasswordRes = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::ServiceGrpcProto.VerifyUserPasswordRes.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::User.ChangeUserPasswordReq> __Marshaller_user_ChangeUserPasswordReq = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::User.ChangeUserPasswordReq.Parser));
+    static readonly grpc::Marshaller<global::ServiceGrpcProto.ChangeUserPasswordReq> __Marshaller_user_ChangeUserPasswordReq = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::ServiceGrpcProto.ChangeUserPasswordReq.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::User.ChangeUserPasswordRes> __Marshaller_user_ChangeUserPasswordRes = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::User.ChangeUserPasswordRes.Parser));
+    static readonly grpc::Marshaller<global::ServiceGrpcProto.ChangeUserPasswordRes> __Marshaller_user_ChangeUserPasswordRes = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::ServiceGrpcProto.ChangeUserPasswordRes.Parser));
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Method<global::User.RegisterUserReq, global::User.RegisterUserRes> __Method_RegisterUser = new grpc::Method<global::User.RegisterUserReq, global::User.RegisterUserRes>(
+    static readonly grpc::Method<global::ServiceGrpcProto.RegisterUserReq, global::ServiceGrpcProto.RegisterUserRes> __Method_RegisterUser = new grpc::Method<global::ServiceGrpcProto.RegisterUserReq, global::ServiceGrpcProto.RegisterUserRes>(
         grpc::MethodType.Unary,
         __ServiceName,
         "RegisterUser",
@@ -67,7 +67,7 @@ namespace User {
         __Marshaller_user_RegisterUserRes);
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Method<global::User.VerifyUserPasswordReq, global::User.VerifyUserPasswordRes> __Method_VerifyUserPassword = new grpc::Method<global::User.VerifyUserPasswordReq, global::User.VerifyUserPasswordRes>(
+    static readonly grpc::Method<global::ServiceGrpcProto.VerifyUserPasswordReq, global::ServiceGrpcProto.VerifyUserPasswordRes> __Method_VerifyUserPassword = new grpc::Method<global::ServiceGrpcProto.VerifyUserPasswordReq, global::ServiceGrpcProto.VerifyUserPasswordRes>(
         grpc::MethodType.Unary,
         __ServiceName,
         "VerifyUserPassword",
@@ -75,7 +75,7 @@ namespace User {
         __Marshaller_user_VerifyUserPasswordRes);
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Method<global::User.ChangeUserPasswordReq, global::User.ChangeUserPasswordRes> __Method_ChangeUserPassword = new grpc::Method<global::User.ChangeUserPasswordReq, global::User.ChangeUserPasswordRes>(
+    static readonly grpc::Method<global::ServiceGrpcProto.ChangeUserPasswordReq, global::ServiceGrpcProto.ChangeUserPasswordRes> __Method_ChangeUserPassword = new grpc::Method<global::ServiceGrpcProto.ChangeUserPasswordReq, global::ServiceGrpcProto.ChangeUserPasswordRes>(
         grpc::MethodType.Unary,
         __ServiceName,
         "ChangeUserPassword",
@@ -85,7 +85,7 @@ namespace User {
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
     {
-      get { return global::User.UserReflection.Descriptor.Services[0]; }
+      get { return global::ServiceGrpcProto.UserReflection.Descriptor.Services[0]; }
     }
 
     /// <summary>Base class for server-side implementations of UserService</summary>
@@ -93,19 +93,19 @@ namespace User {
     public abstract partial class UserServiceBase
     {
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::System.Threading.Tasks.Task<global::User.RegisterUserRes> RegisterUser(global::User.RegisterUserReq request, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::ServiceGrpcProto.RegisterUserRes> RegisterUser(global::ServiceGrpcProto.RegisterUserReq request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
 
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::System.Threading.Tasks.Task<global::User.VerifyUserPasswordRes> VerifyUserPassword(global::User.VerifyUserPasswordReq request, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::ServiceGrpcProto.VerifyUserPasswordRes> VerifyUserPassword(global::ServiceGrpcProto.VerifyUserPasswordReq request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
 
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::System.Threading.Tasks.Task<global::User.ChangeUserPasswordRes> ChangeUserPassword(global::User.ChangeUserPasswordReq request, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::ServiceGrpcProto.ChangeUserPasswordRes> ChangeUserPassword(global::ServiceGrpcProto.ChangeUserPasswordReq request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -140,62 +140,62 @@ namespace User {
       }
 
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::User.RegisterUserRes RegisterUser(global::User.RegisterUserReq request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual global::ServiceGrpcProto.RegisterUserRes RegisterUser(global::ServiceGrpcProto.RegisterUserReq request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return RegisterUser(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::User.RegisterUserRes RegisterUser(global::User.RegisterUserReq request, grpc::CallOptions options)
+      public virtual global::ServiceGrpcProto.RegisterUserRes RegisterUser(global::ServiceGrpcProto.RegisterUserReq request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_RegisterUser, null, options, request);
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::User.RegisterUserRes> RegisterUserAsync(global::User.RegisterUserReq request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::ServiceGrpcProto.RegisterUserRes> RegisterUserAsync(global::ServiceGrpcProto.RegisterUserReq request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return RegisterUserAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::User.RegisterUserRes> RegisterUserAsync(global::User.RegisterUserReq request, grpc::CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::ServiceGrpcProto.RegisterUserRes> RegisterUserAsync(global::ServiceGrpcProto.RegisterUserReq request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_RegisterUser, null, options, request);
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::User.VerifyUserPasswordRes VerifyUserPassword(global::User.VerifyUserPasswordReq request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual global::ServiceGrpcProto.VerifyUserPasswordRes VerifyUserPassword(global::ServiceGrpcProto.VerifyUserPasswordReq request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return VerifyUserPassword(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::User.VerifyUserPasswordRes VerifyUserPassword(global::User.VerifyUserPasswordReq request, grpc::CallOptions options)
+      public virtual global::ServiceGrpcProto.VerifyUserPasswordRes VerifyUserPassword(global::ServiceGrpcProto.VerifyUserPasswordReq request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_VerifyUserPassword, null, options, request);
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::User.VerifyUserPasswordRes> VerifyUserPasswordAsync(global::User.VerifyUserPasswordReq request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::ServiceGrpcProto.VerifyUserPasswordRes> VerifyUserPasswordAsync(global::ServiceGrpcProto.VerifyUserPasswordReq request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return VerifyUserPasswordAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::User.VerifyUserPasswordRes> VerifyUserPasswordAsync(global::User.VerifyUserPasswordReq request, grpc::CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::ServiceGrpcProto.VerifyUserPasswordRes> VerifyUserPasswordAsync(global::ServiceGrpcProto.VerifyUserPasswordReq request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_VerifyUserPassword, null, options, request);
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::User.ChangeUserPasswordRes ChangeUserPassword(global::User.ChangeUserPasswordReq request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual global::ServiceGrpcProto.ChangeUserPasswordRes ChangeUserPassword(global::ServiceGrpcProto.ChangeUserPasswordReq request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return ChangeUserPassword(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::User.ChangeUserPasswordRes ChangeUserPassword(global::User.ChangeUserPasswordReq request, grpc::CallOptions options)
+      public virtual global::ServiceGrpcProto.ChangeUserPasswordRes ChangeUserPassword(global::ServiceGrpcProto.ChangeUserPasswordReq request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_ChangeUserPassword, null, options, request);
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::User.ChangeUserPasswordRes> ChangeUserPasswordAsync(global::User.ChangeUserPasswordReq request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::ServiceGrpcProto.ChangeUserPasswordRes> ChangeUserPasswordAsync(global::ServiceGrpcProto.ChangeUserPasswordReq request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return ChangeUserPasswordAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::User.ChangeUserPasswordRes> ChangeUserPasswordAsync(global::User.ChangeUserPasswordReq request, grpc::CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::ServiceGrpcProto.ChangeUserPasswordRes> ChangeUserPasswordAsync(global::ServiceGrpcProto.ChangeUserPasswordReq request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_ChangeUserPassword, null, options, request);
       }
@@ -225,9 +225,9 @@ namespace User {
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     public static void BindService(grpc::ServiceBinderBase serviceBinder, UserServiceBase serviceImpl)
     {
-      serviceBinder.AddMethod(__Method_RegisterUser, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::User.RegisterUserReq, global::User.RegisterUserRes>(serviceImpl.RegisterUser));
-      serviceBinder.AddMethod(__Method_VerifyUserPassword, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::User.VerifyUserPasswordReq, global::User.VerifyUserPasswordRes>(serviceImpl.VerifyUserPassword));
-      serviceBinder.AddMethod(__Method_ChangeUserPassword, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::User.ChangeUserPasswordReq, global::User.ChangeUserPasswordRes>(serviceImpl.ChangeUserPassword));
+      serviceBinder.AddMethod(__Method_RegisterUser, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::ServiceGrpcProto.RegisterUserReq, global::ServiceGrpcProto.RegisterUserRes>(serviceImpl.RegisterUser));
+      serviceBinder.AddMethod(__Method_VerifyUserPassword, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::ServiceGrpcProto.VerifyUserPasswordReq, global::ServiceGrpcProto.VerifyUserPasswordRes>(serviceImpl.VerifyUserPassword));
+      serviceBinder.AddMethod(__Method_ChangeUserPassword, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::ServiceGrpcProto.ChangeUserPasswordReq, global::ServiceGrpcProto.ChangeUserPasswordRes>(serviceImpl.ChangeUserPassword));
     }
 
   }

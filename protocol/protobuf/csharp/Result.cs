@@ -9,7 +9,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Shared {
+namespace ServiceGrpcProto {
 
   /// <summary>Holder for reflection information generated from shared/result.proto</summary>
   public static partial class ResultReflection {
@@ -26,14 +26,14 @@ namespace Shared {
           string.Concat(
             "ChNzaGFyZWQvcmVzdWx0LnByb3RvEgZzaGFyZWQiUAoGUmVzdWx0EhEKB3N1",
             "Y2Nlc3MYsOoBIAEoCBIOCgRjb2RlGLHqASABKAkSEAoGcmVzdWx0GLLqASAB",
-            "KAkSEQoHbWVzc2FnZRiz6gEgASgJQn4KLGluZm8ubW9ldGFuZy5zZXJ2aWNl",
-            "cHJvdG9jb2wucHJvdG9idWYuc2hhcmVkQgtTaGFyZWRQcm90b1ABWj9naXRo",
-            "dWIuY29tL21laWRvbXgvc2VydmljZS1wcm90b2NvbC9wcm90b2NvbC9wcm90",
-            "b2J1Zi9nby9zaGFyZWRiBnByb3RvMw=="));
+            "KAkSEQoHbWVzc2FnZRiz6gEgASgJQpEBCixpbmZvLm1vZXRhbmcuc2Vydmlj",
+            "ZXByb3RvY29sLnByb3RvYnVmLnNoYXJlZEILU2hhcmVkUHJvdG9QAVo/Z2l0",
+            "aHViLmNvbS9tZWlkb214L3NlcnZpY2UtcHJvdG9jb2wvcHJvdG9jb2wvcHJv",
+            "dG9idWYvZ28vc2hhcmVkqgIQU2VydmljZUdycGNQcm90b2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Shared.Result), global::Shared.Result.Parser, new[]{ "Success", "Code", "Result_", "Message" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::ServiceGrpcProto.Result), global::ServiceGrpcProto.Result.Parser, new[]{ "Success", "Code", "Result_", "Message" }, null, null, null, null)
           }));
     }
     #endregion
@@ -54,7 +54,7 @@ namespace Shared {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Shared.ResultReflection.Descriptor.MessageTypes[0]; }
+      get { return global::ServiceGrpcProto.ResultReflection.Descriptor.MessageTypes[0]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]

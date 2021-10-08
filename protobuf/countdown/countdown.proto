@@ -4,6 +4,7 @@ option go_package = "github.com/meidomx/service-protocol/protocol/protobuf/go/co
 option java_multiple_files = true;
 option java_package = "info.moetang.serviceprotocol.protobuf.countdown";
 option java_outer_classname = "CountdownProto";
+option csharp_namespace = "ServiceGrpcProto";
 import "shared/result.proto";
 
 package countdown;

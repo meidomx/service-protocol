@@ -107,10 +107,10 @@ public final class NoteProto {
       "note.QueryNoteByNoteIdReq\032\032.note.QueryNo" +
       "teByNoteIdRes\"\000\022G\n\017QueryPagedNotes\022\030.not" +
       "e.QueryPagedNotesReq\032\030.note.QueryPagedNo" +
-      "tesRes\"\000Bx\n*info.moetang.serviceprotocol" +
-      ".protobuf.noteB\tNoteProtoP\001Z=github.com/" +
-      "meidomx/service-protocol/protocol/protob" +
-      "uf/go/noteb\006proto3"
+      "tesRes\"\000B\213\001\n*info.moetang.serviceprotoco" +
+      "l.protobuf.noteB\tNoteProtoP\001Z=github.com" +
+      "/meidomx/service-protocol/protocol/proto" +
+      "buf/go/note\252\002\020ServiceGrpcProtob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

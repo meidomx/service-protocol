@@ -9,7 +9,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Uniqueidentifier {
+namespace ServiceGrpcProto {
 
   /// <summary>Holder for reflection information generated from uniqueidentifier/stringbased.proto</summary>
   public static partial class StringbasedReflection {
@@ -30,16 +30,16 @@ namespace Uniqueidentifier {
             "CRIZChF1bmlxdWVfaWRlbnRpZmllchgLIAEoCTJ6CiJTdHJpbmdCYXNlZFVu",
             "aXF1ZUlkZW50aWZpZXJTZXJ2aWNlElQKCEdlbmVyYXRlEiMudW5pcXVlaWRl",
             "bnRpZmllci5HZW5lcmF0ZVN0cmluZ1JlcRojLnVuaXF1ZWlkZW50aWZpZXIu",
-            "R2VuZXJhdGVTdHJpbmdSZXNCpwEKNmluZm8ubW9ldGFuZy5zZXJ2aWNlcHJv",
+            "R2VuZXJhdGVTdHJpbmdSZXNCugEKNmluZm8ubW9ldGFuZy5zZXJ2aWNlcHJv",
             "dG9jb2wucHJvdG9idWYudW5pcXVlaWRlbnRpZmllckIgU3RyaW5nQmFzZWRV",
             "bmlxdWVJZGVudGlmaWVyUHJvdG9QAVpJZ2l0aHViLmNvbS9tZWlkb214L3Nl",
             "cnZpY2UtcHJvdG9jb2wvcHJvdG9jb2wvcHJvdG9idWYvZ28vdW5pcXVlaWRl",
-            "bnRpZmllcmIGcHJvdG8z"));
+            "bnRpZmllcqoCEFNlcnZpY2VHcnBjUHJvdG9iBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Uniqueidentifier.GenerateStringReq), global::Uniqueidentifier.GenerateStringReq.Parser, null, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Uniqueidentifier.GenerateStringRes), global::Uniqueidentifier.GenerateStringRes.Parser, new[]{ "Success", "ErrorMessage", "UniqueIdentifier" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::ServiceGrpcProto.GenerateStringReq), global::ServiceGrpcProto.GenerateStringReq.Parser, null, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::ServiceGrpcProto.GenerateStringRes), global::ServiceGrpcProto.GenerateStringRes.Parser, new[]{ "Success", "ErrorMessage", "UniqueIdentifier" }, null, null, null, null)
           }));
     }
     #endregion
@@ -60,7 +60,7 @@ namespace Uniqueidentifier {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Uniqueidentifier.StringbasedReflection.Descriptor.MessageTypes[0]; }
+      get { return global::ServiceGrpcProto.StringbasedReflection.Descriptor.MessageTypes[0]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -212,7 +212,7 @@ namespace Uniqueidentifier {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Uniqueidentifier.StringbasedReflection.Descriptor.MessageTypes[1]; }
+      get { return global::ServiceGrpcProto.StringbasedReflection.Descriptor.MessageTypes[1]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]

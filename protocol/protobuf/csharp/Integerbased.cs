@@ -9,7 +9,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Uniqueidentifier {
+namespace ServiceGrpcProto {
 
   /// <summary>Holder for reflection information generated from uniqueidentifier/integerbased.proto</summary>
   public static partial class IntegerbasedReflection {
@@ -30,16 +30,16 @@ namespace Uniqueidentifier {
             "IAEoCRIZChF1bmlxdWVfaWRlbnRpZmllchgLIAEoAzJ9CiNJbnRlZ2VyQmFz",
             "ZWRVbmlxdWVJZGVudGlmaWVyU2VydmljZRJWCghHZW5lcmF0ZRIkLnVuaXF1",
             "ZWlkZW50aWZpZXIuR2VuZXJhdGVJbnRlZ2VyUmVxGiQudW5pcXVlaWRlbnRp",
-            "Zmllci5HZW5lcmF0ZUludGVnZXJSZXNCqAEKNmluZm8ubW9ldGFuZy5zZXJ2",
+            "Zmllci5HZW5lcmF0ZUludGVnZXJSZXNCuwEKNmluZm8ubW9ldGFuZy5zZXJ2",
             "aWNlcHJvdG9jb2wucHJvdG9idWYudW5pcXVlaWRlbnRpZmllckIhSW50ZWdl",
             "ckJhc2VkVW5pcXVlSWRlbnRpZmllclByb3RvUAFaSWdpdGh1Yi5jb20vbWVp",
             "ZG9teC9zZXJ2aWNlLXByb3RvY29sL3Byb3RvY29sL3Byb3RvYnVmL2dvL3Vu",
-            "aXF1ZWlkZW50aWZpZXJiBnByb3RvMw=="));
+            "aXF1ZWlkZW50aWZpZXKqAhBTZXJ2aWNlR3JwY1Byb3RvYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Uniqueidentifier.GenerateIntegerReq), global::Uniqueidentifier.GenerateIntegerReq.Parser, null, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Uniqueidentifier.GenerateIntegerRes), global::Uniqueidentifier.GenerateIntegerRes.Parser, new[]{ "Success", "ErrorMessage", "UniqueIdentifier" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::ServiceGrpcProto.GenerateIntegerReq), global::ServiceGrpcProto.GenerateIntegerReq.Parser, null, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::ServiceGrpcProto.GenerateIntegerRes), global::ServiceGrpcProto.GenerateIntegerRes.Parser, new[]{ "Success", "ErrorMessage", "UniqueIdentifier" }, null, null, null, null)
           }));
     }
     #endregion
@@ -60,7 +60,7 @@ namespace Uniqueidentifier {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Uniqueidentifier.IntegerbasedReflection.Descriptor.MessageTypes[0]; }
+      get { return global::ServiceGrpcProto.IntegerbasedReflection.Descriptor.MessageTypes[0]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -212,7 +212,7 @@ namespace Uniqueidentifier {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Uniqueidentifier.IntegerbasedReflection.Descriptor.MessageTypes[1]; }
+      get { return global::ServiceGrpcProto.IntegerbasedReflection.Descriptor.MessageTypes[1]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]

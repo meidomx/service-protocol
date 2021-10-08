@@ -9,7 +9,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace User {
+namespace ServiceGrpcProto {
 
   /// <summary>Holder for reflection information generated from user/user.proto</summary>
   public static partial class UserReflection {
@@ -38,18 +38,19 @@ namespace User {
             "LlZlcmlmeVVzZXJQYXNzd29yZFJlcRobLnVzZXIuVmVyaWZ5VXNlclBhc3N3",
             "b3JkUmVzIgASUAoSQ2hhbmdlVXNlclBhc3N3b3JkEhsudXNlci5DaGFuZ2VV",
             "c2VyUGFzc3dvcmRSZXEaGy51c2VyLkNoYW5nZVVzZXJQYXNzd29yZFJlcyIA",
-            "QngKKmluZm8ubW9ldGFuZy5zZXJ2aWNlcHJvdG9jb2wucHJvdG9idWYudXNl",
-            "ckIJVXNlclByb3RvUAFaPWdpdGh1Yi5jb20vbWVpZG9teC9zZXJ2aWNlLXBy",
-            "b3RvY29sL3Byb3RvY29sL3Byb3RvYnVmL2dvL3VzZXJiBnByb3RvMw=="));
+            "QosBCippbmZvLm1vZXRhbmcuc2VydmljZXByb3RvY29sLnByb3RvYnVmLnVz",
+            "ZXJCCVVzZXJQcm90b1ABWj1naXRodWIuY29tL21laWRvbXgvc2VydmljZS1w",
+            "cm90b2NvbC9wcm90b2NvbC9wcm90b2J1Zi9nby91c2VyqgIQU2VydmljZUdy",
+            "cGNQcm90b2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Shared.ResultReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::ServiceGrpcProto.ResultReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::User.RegisterUserReq), global::User.RegisterUserReq.Parser, new[]{ "Username", "Password" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::User.RegisterUserRes), global::User.RegisterUserRes.Parser, new[]{ "Result" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::User.VerifyUserPasswordReq), global::User.VerifyUserPasswordReq.Parser, new[]{ "Username", "Password" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::User.VerifyUserPasswordRes), global::User.VerifyUserPasswordRes.Parser, new[]{ "Result" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::User.ChangeUserPasswordReq), global::User.ChangeUserPasswordReq.Parser, new[]{ "Username", "Password" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::User.ChangeUserPasswordRes), global::User.ChangeUserPasswordRes.Parser, new[]{ "Result" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::ServiceGrpcProto.RegisterUserReq), global::ServiceGrpcProto.RegisterUserReq.Parser, new[]{ "Username", "Password" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::ServiceGrpcProto.RegisterUserRes), global::ServiceGrpcProto.RegisterUserRes.Parser, new[]{ "Result" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::ServiceGrpcProto.VerifyUserPasswordReq), global::ServiceGrpcProto.VerifyUserPasswordReq.Parser, new[]{ "Username", "Password" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::ServiceGrpcProto.VerifyUserPasswordRes), global::ServiceGrpcProto.VerifyUserPasswordRes.Parser, new[]{ "Result" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::ServiceGrpcProto.ChangeUserPasswordReq), global::ServiceGrpcProto.ChangeUserPasswordReq.Parser, new[]{ "Username", "Password" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::ServiceGrpcProto.ChangeUserPasswordRes), global::ServiceGrpcProto.ChangeUserPasswordRes.Parser, new[]{ "Result" }, null, null, null, null)
           }));
     }
     #endregion
@@ -70,7 +71,7 @@ namespace User {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::User.UserReflection.Descriptor.MessageTypes[0]; }
+      get { return global::ServiceGrpcProto.UserReflection.Descriptor.MessageTypes[0]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -296,7 +297,7 @@ namespace User {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::User.UserReflection.Descriptor.MessageTypes[1]; }
+      get { return global::ServiceGrpcProto.UserReflection.Descriptor.MessageTypes[1]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -328,10 +329,10 @@ namespace User {
 
     /// <summary>Field number for the "result" field.</summary>
     public const int ResultFieldNumber = 1;
-    private global::Shared.Result result_;
+    private global::ServiceGrpcProto.Result result_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::Shared.Result Result {
+    public global::ServiceGrpcProto.Result Result {
       get { return result_; }
       set {
         result_ = value;
@@ -425,7 +426,7 @@ namespace User {
       }
       if (other.result_ != null) {
         if (result_ == null) {
-          Result = new global::Shared.Result();
+          Result = new global::ServiceGrpcProto.Result();
         }
         Result.MergeFrom(other.Result);
       }
@@ -446,7 +447,7 @@ namespace User {
             break;
           case 10: {
             if (result_ == null) {
-              Result = new global::Shared.Result();
+              Result = new global::ServiceGrpcProto.Result();
             }
             input.ReadMessage(Result);
             break;
@@ -468,7 +469,7 @@ namespace User {
             break;
           case 10: {
             if (result_ == null) {
-              Result = new global::Shared.Result();
+              Result = new global::ServiceGrpcProto.Result();
             }
             input.ReadMessage(Result);
             break;
@@ -494,7 +495,7 @@ namespace User {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::User.UserReflection.Descriptor.MessageTypes[2]; }
+      get { return global::ServiceGrpcProto.UserReflection.Descriptor.MessageTypes[2]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -720,7 +721,7 @@ namespace User {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::User.UserReflection.Descriptor.MessageTypes[3]; }
+      get { return global::ServiceGrpcProto.UserReflection.Descriptor.MessageTypes[3]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -752,10 +753,10 @@ namespace User {
 
     /// <summary>Field number for the "result" field.</summary>
     public const int ResultFieldNumber = 1;
-    private global::Shared.Result result_;
+    private global::ServiceGrpcProto.Result result_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::Shared.Result Result {
+    public global::ServiceGrpcProto.Result Result {
       get { return result_; }
       set {
         result_ = value;
@@ -849,7 +850,7 @@ namespace User {
       }
       if (other.result_ != null) {
         if (result_ == null) {
-          Result = new global::Shared.Result();
+          Result = new global::ServiceGrpcProto.Result();
         }
         Result.MergeFrom(other.Result);
       }
@@ -870,7 +871,7 @@ namespace User {
             break;
           case 10: {
             if (result_ == null) {
-              Result = new global::Shared.Result();
+              Result = new global::ServiceGrpcProto.Result();
             }
             input.ReadMessage(Result);
             break;
@@ -892,7 +893,7 @@ namespace User {
             break;
           case 10: {
             if (result_ == null) {
-              Result = new global::Shared.Result();
+              Result = new global::ServiceGrpcProto.Result();
             }
             input.ReadMessage(Result);
             break;
@@ -918,7 +919,7 @@ namespace User {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::User.UserReflection.Descriptor.MessageTypes[4]; }
+      get { return global::ServiceGrpcProto.UserReflection.Descriptor.MessageTypes[4]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1144,7 +1145,7 @@ namespace User {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::User.UserReflection.Descriptor.MessageTypes[5]; }
+      get { return global::ServiceGrpcProto.UserReflection.Descriptor.MessageTypes[5]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1176,10 +1177,10 @@ namespace User {
 
     /// <summary>Field number for the "result" field.</summary>
     public const int ResultFieldNumber = 1;
-    private global::Shared.Result result_;
+    private global::ServiceGrpcProto.Result result_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::Shared.Result Result {
+    public global::ServiceGrpcProto.Result Result {
       get { return result_; }
       set {
         result_ = value;
@@ -1273,7 +1274,7 @@ namespace User {
       }
       if (other.result_ != null) {
         if (result_ == null) {
-          Result = new global::Shared.Result();
+          Result = new global::ServiceGrpcProto.Result();
         }
         Result.MergeFrom(other.Result);
       }
@@ -1294,7 +1295,7 @@ namespace User {
             break;
           case 10: {
             if (result_ == null) {
-              Result = new global::Shared.Result();
+              Result = new global::ServiceGrpcProto.Result();
             }
             input.ReadMessage(Result);
             break;
@@ -1316,7 +1317,7 @@ namespace User {
             break;
           case 10: {
             if (result_ == null) {
-              Result = new global::Shared.Result();
+              Result = new global::ServiceGrpcProto.Result();
             }
             input.ReadMessage(Result);
             break;

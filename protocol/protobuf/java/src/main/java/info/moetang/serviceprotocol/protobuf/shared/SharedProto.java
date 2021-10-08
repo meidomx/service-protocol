@@ -30,11 +30,11 @@ public final class SharedProto {
     java.lang.String[] descriptorData = {
       "\n\023shared/result.proto\022\006shared\"P\n\006Result\022" +
       "\021\n\007success\030\260\352\001 \001(\010\022\016\n\004code\030\261\352\001 \001(\t\022\020\n\006re" +
-      "sult\030\262\352\001 \001(\t\022\021\n\007message\030\263\352\001 \001(\tB~\n,info." +
-      "moetang.serviceprotocol.protobuf.sharedB" +
-      "\013SharedProtoP\001Z?github.com/meidomx/servi" +
-      "ce-protocol/protocol/protobuf/go/sharedb" +
-      "\006proto3"
+      "sult\030\262\352\001 \001(\t\022\021\n\007message\030\263\352\001 \001(\tB\221\001\n,info" +
+      ".moetang.serviceprotocol.protobuf.shared" +
+      "B\013SharedProtoP\001Z?github.com/meidomx/serv" +
+      "ice-protocol/protocol/protobuf/go/shared" +
+      "\252\002\020ServiceGrpcProtob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

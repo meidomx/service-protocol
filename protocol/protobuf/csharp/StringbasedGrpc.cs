@@ -7,7 +7,7 @@
 
 using grpc = global::Grpc.Core;
 
-namespace Uniqueidentifier {
+namespace ServiceGrpcProto {
   public static partial class StringBasedUniqueIdentifierService
   {
     static readonly string __ServiceName = "uniqueidentifier.StringBasedUniqueIdentifierService";
@@ -46,12 +46,12 @@ namespace Uniqueidentifier {
     }
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::Uniqueidentifier.GenerateStringReq> __Marshaller_uniqueidentifier_GenerateStringReq = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Uniqueidentifier.GenerateStringReq.Parser));
+    static readonly grpc::Marshaller<global::ServiceGrpcProto.GenerateStringReq> __Marshaller_uniqueidentifier_GenerateStringReq = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::ServiceGrpcProto.GenerateStringReq.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::Uniqueidentifier.GenerateStringRes> __Marshaller_uniqueidentifier_GenerateStringRes = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Uniqueidentifier.GenerateStringRes.Parser));
+    static readonly grpc::Marshaller<global::ServiceGrpcProto.GenerateStringRes> __Marshaller_uniqueidentifier_GenerateStringRes = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::ServiceGrpcProto.GenerateStringRes.Parser));
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Method<global::Uniqueidentifier.GenerateStringReq, global::Uniqueidentifier.GenerateStringRes> __Method_Generate = new grpc::Method<global::Uniqueidentifier.GenerateStringReq, global::Uniqueidentifier.GenerateStringRes>(
+    static readonly grpc::Method<global::ServiceGrpcProto.GenerateStringReq, global::ServiceGrpcProto.GenerateStringRes> __Method_Generate = new grpc::Method<global::ServiceGrpcProto.GenerateStringReq, global::ServiceGrpcProto.GenerateStringRes>(
         grpc::MethodType.Unary,
         __ServiceName,
         "Generate",
@@ -61,7 +61,7 @@ namespace Uniqueidentifier {
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
     {
-      get { return global::Uniqueidentifier.StringbasedReflection.Descriptor.Services[0]; }
+      get { return global::ServiceGrpcProto.StringbasedReflection.Descriptor.Services[0]; }
     }
 
     /// <summary>Base class for server-side implementations of StringBasedUniqueIdentifierService</summary>
@@ -69,7 +69,7 @@ namespace Uniqueidentifier {
     public abstract partial class StringBasedUniqueIdentifierServiceBase
     {
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::System.Threading.Tasks.Task<global::Uniqueidentifier.GenerateStringRes> Generate(global::Uniqueidentifier.GenerateStringReq request, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::ServiceGrpcProto.GenerateStringRes> Generate(global::ServiceGrpcProto.GenerateStringReq request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -104,22 +104,22 @@ namespace Uniqueidentifier {
       }
 
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Uniqueidentifier.GenerateStringRes Generate(global::Uniqueidentifier.GenerateStringReq request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual global::ServiceGrpcProto.GenerateStringRes Generate(global::ServiceGrpcProto.GenerateStringReq request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return Generate(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Uniqueidentifier.GenerateStringRes Generate(global::Uniqueidentifier.GenerateStringReq request, grpc::CallOptions options)
+      public virtual global::ServiceGrpcProto.GenerateStringRes Generate(global::ServiceGrpcProto.GenerateStringReq request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_Generate, null, options, request);
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Uniqueidentifier.GenerateStringRes> GenerateAsync(global::Uniqueidentifier.GenerateStringReq request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::ServiceGrpcProto.GenerateStringRes> GenerateAsync(global::ServiceGrpcProto.GenerateStringReq request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return GenerateAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Uniqueidentifier.GenerateStringRes> GenerateAsync(global::Uniqueidentifier.GenerateStringReq request, grpc::CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::ServiceGrpcProto.GenerateStringRes> GenerateAsync(global::ServiceGrpcProto.GenerateStringReq request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_Generate, null, options, request);
       }
@@ -147,7 +147,7 @@ namespace Uniqueidentifier {
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     public static void BindService(grpc::ServiceBinderBase serviceBinder, StringBasedUniqueIdentifierServiceBase serviceImpl)
     {
-      serviceBinder.AddMethod(__Method_Generate, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Uniqueidentifier.GenerateStringReq, global::Uniqueidentifier.GenerateStringRes>(serviceImpl.Generate));
+      serviceBinder.AddMethod(__Method_Generate, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::ServiceGrpcProto.GenerateStringReq, global::ServiceGrpcProto.GenerateStringRes>(serviceImpl.Generate));
     }
 
   }

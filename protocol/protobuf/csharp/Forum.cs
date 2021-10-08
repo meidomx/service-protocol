@@ -9,7 +9,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Forum {
+namespace ServiceGrpcProto {
 
   /// <summary>Holder for reflection information generated from forum/forum.proto</summary>
   public static partial class ForumReflection {
@@ -110,47 +110,48 @@ namespace Forum {
             "ZXJ5UmVwbHlCeUlkEhguZm9ydW0uUXVlcnlSZXBseUJ5SWRSZXEaGC5mb3J1",
             "bS5RdWVyeVJlcGx5QnlJZFJlcyIAEm0KG1F1ZXJ5UGFnZWRSZXBsaWVzQnlU",
             "aHJlYWRJZBIlLmZvcnVtLlF1ZXJ5UGFnZWRSZXBsaWVzQnlUaHJlYWRJZFJl",
-            "cRolLmZvcnVtLlF1ZXJ5UGFnZWRSZXBsaWVzQnlUaHJlYWRJZFJlcyIAQnsK",
-            "K2luZm8ubW9ldGFuZy5zZXJ2aWNlcHJvdG9jb2wucHJvdG9idWYuZm9ydW1C",
-            "CkZvcnVtUHJvdG9QAVo+Z2l0aHViLmNvbS9tZWlkb214L3NlcnZpY2UtcHJv",
-            "dG9jb2wvcHJvdG9jb2wvcHJvdG9idWYvZ28vZm9ydW1iBnByb3RvMw=="));
+            "cRolLmZvcnVtLlF1ZXJ5UGFnZWRSZXBsaWVzQnlUaHJlYWRJZFJlcyIAQo4B",
+            "CitpbmZvLm1vZXRhbmcuc2VydmljZXByb3RvY29sLnByb3RvYnVmLmZvcnVt",
+            "QgpGb3J1bVByb3RvUAFaPmdpdGh1Yi5jb20vbWVpZG9teC9zZXJ2aWNlLXBy",
+            "b3RvY29sL3Byb3RvY29sL3Byb3RvYnVmL2dvL2ZvcnVtqgIQU2VydmljZUdy",
+            "cGNQcm90b2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Shared.ResultReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::ServiceGrpcProto.ResultReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Forum.Forum), global::Forum.Forum.Parser, new[]{ "ForumId", "UserId", "ForumName", "ForumDescription", "TimeCreated", "TimeUpdated" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Forum.Thread), global::Forum.Thread.Parser, new[]{ "ThreadId", "ForumId", "UserId", "ThreadTitle", "ThreadContent", "TimeCreated", "TimeUpdated" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Forum.ThreadLite), global::Forum.ThreadLite.Parser, new[]{ "ThreadId", "ForumId", "UserId", "ThreadTitle", "ThreadContent", "TimeCreated", "TimeUpdated" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Forum.Reply), global::Forum.Reply.Parser, new[]{ "ReplyId", "ThreadId", "UserId", "ReplyTitle", "ReplyContent", "TimeCreated", "TimeUpdated" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Forum.CreateForumReq), global::Forum.CreateForumReq.Parser, new[]{ "UserId", "ForumName", "ForumDescription" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Forum.CreateForumRes), global::Forum.CreateForumRes.Parser, new[]{ "Result", "Forum" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Forum.ListAllForumsReq), global::Forum.ListAllForumsReq.Parser, null, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Forum.ListAllForumsRes), global::Forum.ListAllForumsRes.Parser, new[]{ "Result", "Forums" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Forum.QueryForumByIdReq), global::Forum.QueryForumByIdReq.Parser, new[]{ "ForumId" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Forum.QueryForumByIdRes), global::Forum.QueryForumByIdRes.Parser, new[]{ "Result", "Forum" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Forum.UpdateForumByIdReq), global::Forum.UpdateForumByIdReq.Parser, new[]{ "ForumId", "ForumName", "ForumDescription" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Forum.UpdateForumByIdRes), global::Forum.UpdateForumByIdRes.Parser, new[]{ "Result", "Forum" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Forum.DeleteForumByIdReq), global::Forum.DeleteForumByIdReq.Parser, new[]{ "ForumId" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Forum.DeleteForumByIdRes), global::Forum.DeleteForumByIdRes.Parser, new[]{ "Result" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Forum.CreateThreadReq), global::Forum.CreateThreadReq.Parser, new[]{ "ForumId", "UserId", "Title", "Content" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Forum.CreateThreadRes), global::Forum.CreateThreadRes.Parser, new[]{ "Result", "Thread" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Forum.QueryThreadByIdReq), global::Forum.QueryThreadByIdReq.Parser, new[]{ "ThreadId" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Forum.QueryThreadByIdRes), global::Forum.QueryThreadByIdRes.Parser, new[]{ "Result", "Thread" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Forum.UpdateThreadByIdReq), global::Forum.UpdateThreadByIdReq.Parser, new[]{ "ThreadId", "Title", "Content" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Forum.UpdateThreadByIdRes), global::Forum.UpdateThreadByIdRes.Parser, new[]{ "Result", "Thread" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Forum.QueryPagedThreadsByForumIdReq), global::Forum.QueryPagedThreadsByForumIdReq.Parser, new[]{ "ForumId", "Page", "PageSize" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Forum.QueryPagedThreadsByForumIdRes), global::Forum.QueryPagedThreadsByForumIdRes.Parser, new[]{ "Result", "Threads" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Forum.DeleteThreadByIdReq), global::Forum.DeleteThreadByIdReq.Parser, new[]{ "ThreadId" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Forum.DeleteThreadByIdRes), global::Forum.DeleteThreadByIdRes.Parser, new[]{ "Result" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Forum.CreateReplyReq), global::Forum.CreateReplyReq.Parser, new[]{ "ThreadId", "UserId", "Title", "Content" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Forum.CreateReplyRes), global::Forum.CreateReplyRes.Parser, new[]{ "Result", "Reply" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Forum.QueryReplyByIdReq), global::Forum.QueryReplyByIdReq.Parser, new[]{ "ReplyId" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Forum.QueryReplyByIdRes), global::Forum.QueryReplyByIdRes.Parser, new[]{ "Result", "Reply" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Forum.UpdateReplyReq), global::Forum.UpdateReplyReq.Parser, new[]{ "ReplyId", "Title", "Content" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Forum.UpdateReplyRes), global::Forum.UpdateReplyRes.Parser, new[]{ "Result", "Reply" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Forum.DeleteReplyByIdReq), global::Forum.DeleteReplyByIdReq.Parser, new[]{ "ReplyId" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Forum.DeleteReplyByIdRes), global::Forum.DeleteReplyByIdRes.Parser, new[]{ "Result" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Forum.QueryPagedRepliesByThreadIdReq), global::Forum.QueryPagedRepliesByThreadIdReq.Parser, new[]{ "ThreadId", "Page", "PageSize" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Forum.QueryPagedRepliesByThreadIdRes), global::Forum.QueryPagedRepliesByThreadIdRes.Parser, new[]{ "Result", "Replies" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::ServiceGrpcProto.Forum), global::ServiceGrpcProto.Forum.Parser, new[]{ "ForumId", "UserId", "ForumName", "ForumDescription", "TimeCreated", "TimeUpdated" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::ServiceGrpcProto.Thread), global::ServiceGrpcProto.Thread.Parser, new[]{ "ThreadId", "ForumId", "UserId", "ThreadTitle", "ThreadContent", "TimeCreated", "TimeUpdated" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::ServiceGrpcProto.ThreadLite), global::ServiceGrpcProto.ThreadLite.Parser, new[]{ "ThreadId", "ForumId", "UserId", "ThreadTitle", "ThreadContent", "TimeCreated", "TimeUpdated" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::ServiceGrpcProto.Reply), global::ServiceGrpcProto.Reply.Parser, new[]{ "ReplyId", "ThreadId", "UserId", "ReplyTitle", "ReplyContent", "TimeCreated", "TimeUpdated" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::ServiceGrpcProto.CreateForumReq), global::ServiceGrpcProto.CreateForumReq.Parser, new[]{ "UserId", "ForumName", "ForumDescription" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::ServiceGrpcProto.CreateForumRes), global::ServiceGrpcProto.CreateForumRes.Parser, new[]{ "Result", "Forum" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::ServiceGrpcProto.ListAllForumsReq), global::ServiceGrpcProto.ListAllForumsReq.Parser, null, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::ServiceGrpcProto.ListAllForumsRes), global::ServiceGrpcProto.ListAllForumsRes.Parser, new[]{ "Result", "Forums" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::ServiceGrpcProto.QueryForumByIdReq), global::ServiceGrpcProto.QueryForumByIdReq.Parser, new[]{ "ForumId" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::ServiceGrpcProto.QueryForumByIdRes), global::ServiceGrpcProto.QueryForumByIdRes.Parser, new[]{ "Result", "Forum" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::ServiceGrpcProto.UpdateForumByIdReq), global::ServiceGrpcProto.UpdateForumByIdReq.Parser, new[]{ "ForumId", "ForumName", "ForumDescription" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::ServiceGrpcProto.UpdateForumByIdRes), global::ServiceGrpcProto.UpdateForumByIdRes.Parser, new[]{ "Result", "Forum" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::ServiceGrpcProto.DeleteForumByIdReq), global::ServiceGrpcProto.DeleteForumByIdReq.Parser, new[]{ "ForumId" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::ServiceGrpcProto.DeleteForumByIdRes), global::ServiceGrpcProto.DeleteForumByIdRes.Parser, new[]{ "Result" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::ServiceGrpcProto.CreateThreadReq), global::ServiceGrpcProto.CreateThreadReq.Parser, new[]{ "ForumId", "UserId", "Title", "Content" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::ServiceGrpcProto.CreateThreadRes), global::ServiceGrpcProto.CreateThreadRes.Parser, new[]{ "Result", "Thread" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::ServiceGrpcProto.QueryThreadByIdReq), global::ServiceGrpcProto.QueryThreadByIdReq.Parser, new[]{ "ThreadId" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::ServiceGrpcProto.QueryThreadByIdRes), global::ServiceGrpcProto.QueryThreadByIdRes.Parser, new[]{ "Result", "Thread" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::ServiceGrpcProto.UpdateThreadByIdReq), global::ServiceGrpcProto.UpdateThreadByIdReq.Parser, new[]{ "ThreadId", "Title", "Content" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::ServiceGrpcProto.UpdateThreadByIdRes), global::ServiceGrpcProto.UpdateThreadByIdRes.Parser, new[]{ "Result", "Thread" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::ServiceGrpcProto.QueryPagedThreadsByForumIdReq), global::ServiceGrpcProto.QueryPagedThreadsByForumIdReq.Parser, new[]{ "ForumId", "Page", "PageSize" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::ServiceGrpcProto.QueryPagedThreadsByForumIdRes), global::ServiceGrpcProto.QueryPagedThreadsByForumIdRes.Parser, new[]{ "Result", "Threads" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::ServiceGrpcProto.DeleteThreadByIdReq), global::ServiceGrpcProto.DeleteThreadByIdReq.Parser, new[]{ "ThreadId" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::ServiceGrpcProto.DeleteThreadByIdRes), global::ServiceGrpcProto.DeleteThreadByIdRes.Parser, new[]{ "Result" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::ServiceGrpcProto.CreateReplyReq), global::ServiceGrpcProto.CreateReplyReq.Parser, new[]{ "ThreadId", "UserId", "Title", "Content" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::ServiceGrpcProto.CreateReplyRes), global::ServiceGrpcProto.CreateReplyRes.Parser, new[]{ "Result", "Reply" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::ServiceGrpcProto.QueryReplyByIdReq), global::ServiceGrpcProto.QueryReplyByIdReq.Parser, new[]{ "ReplyId" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::ServiceGrpcProto.QueryReplyByIdRes), global::ServiceGrpcProto.QueryReplyByIdRes.Parser, new[]{ "Result", "Reply" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::ServiceGrpcProto.UpdateReplyReq), global::ServiceGrpcProto.UpdateReplyReq.Parser, new[]{ "ReplyId", "Title", "Content" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::ServiceGrpcProto.UpdateReplyRes), global::ServiceGrpcProto.UpdateReplyRes.Parser, new[]{ "Result", "Reply" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::ServiceGrpcProto.DeleteReplyByIdReq), global::ServiceGrpcProto.DeleteReplyByIdReq.Parser, new[]{ "ReplyId" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::ServiceGrpcProto.DeleteReplyByIdRes), global::ServiceGrpcProto.DeleteReplyByIdRes.Parser, new[]{ "Result" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::ServiceGrpcProto.QueryPagedRepliesByThreadIdReq), global::ServiceGrpcProto.QueryPagedRepliesByThreadIdReq.Parser, new[]{ "ThreadId", "Page", "PageSize" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::ServiceGrpcProto.QueryPagedRepliesByThreadIdRes), global::ServiceGrpcProto.QueryPagedRepliesByThreadIdRes.Parser, new[]{ "Result", "Replies" }, null, null, null, null)
           }));
     }
     #endregion
@@ -171,7 +172,7 @@ namespace Forum {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Forum.ForumReflection.Descriptor.MessageTypes[0]; }
+      get { return global::ServiceGrpcProto.ForumReflection.Descriptor.MessageTypes[0]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -545,7 +546,7 @@ namespace Forum {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Forum.ForumReflection.Descriptor.MessageTypes[1]; }
+      get { return global::ServiceGrpcProto.ForumReflection.Descriptor.MessageTypes[1]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -956,7 +957,7 @@ namespace Forum {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Forum.ForumReflection.Descriptor.MessageTypes[2]; }
+      get { return global::ServiceGrpcProto.ForumReflection.Descriptor.MessageTypes[2]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1367,7 +1368,7 @@ namespace Forum {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Forum.ForumReflection.Descriptor.MessageTypes[3]; }
+      get { return global::ServiceGrpcProto.ForumReflection.Descriptor.MessageTypes[3]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1778,7 +1779,7 @@ namespace Forum {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Forum.ForumReflection.Descriptor.MessageTypes[4]; }
+      get { return global::ServiceGrpcProto.ForumReflection.Descriptor.MessageTypes[4]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2041,7 +2042,7 @@ namespace Forum {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Forum.ForumReflection.Descriptor.MessageTypes[5]; }
+      get { return global::ServiceGrpcProto.ForumReflection.Descriptor.MessageTypes[5]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2074,10 +2075,10 @@ namespace Forum {
 
     /// <summary>Field number for the "result" field.</summary>
     public const int ResultFieldNumber = 1;
-    private global::Shared.Result result_;
+    private global::ServiceGrpcProto.Result result_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::Shared.Result Result {
+    public global::ServiceGrpcProto.Result Result {
       get { return result_; }
       set {
         result_ = value;
@@ -2086,10 +2087,10 @@ namespace Forum {
 
     /// <summary>Field number for the "forum" field.</summary>
     public const int ForumFieldNumber = 2;
-    private global::Forum.Forum forum_;
+    private global::ServiceGrpcProto.Forum forum_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::Forum.Forum Forum {
+    public global::ServiceGrpcProto.Forum Forum {
       get { return forum_; }
       set {
         forum_ = value;
@@ -2196,13 +2197,13 @@ namespace Forum {
       }
       if (other.result_ != null) {
         if (result_ == null) {
-          Result = new global::Shared.Result();
+          Result = new global::ServiceGrpcProto.Result();
         }
         Result.MergeFrom(other.Result);
       }
       if (other.forum_ != null) {
         if (forum_ == null) {
-          Forum = new global::Forum.Forum();
+          Forum = new global::ServiceGrpcProto.Forum();
         }
         Forum.MergeFrom(other.Forum);
       }
@@ -2223,14 +2224,14 @@ namespace Forum {
             break;
           case 10: {
             if (result_ == null) {
-              Result = new global::Shared.Result();
+              Result = new global::ServiceGrpcProto.Result();
             }
             input.ReadMessage(Result);
             break;
           }
           case 18: {
             if (forum_ == null) {
-              Forum = new global::Forum.Forum();
+              Forum = new global::ServiceGrpcProto.Forum();
             }
             input.ReadMessage(Forum);
             break;
@@ -2252,14 +2253,14 @@ namespace Forum {
             break;
           case 10: {
             if (result_ == null) {
-              Result = new global::Shared.Result();
+              Result = new global::ServiceGrpcProto.Result();
             }
             input.ReadMessage(Result);
             break;
           }
           case 18: {
             if (forum_ == null) {
-              Forum = new global::Forum.Forum();
+              Forum = new global::ServiceGrpcProto.Forum();
             }
             input.ReadMessage(Forum);
             break;
@@ -2285,7 +2286,7 @@ namespace Forum {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Forum.ForumReflection.Descriptor.MessageTypes[6]; }
+      get { return global::ServiceGrpcProto.ForumReflection.Descriptor.MessageTypes[6]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2437,7 +2438,7 @@ namespace Forum {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Forum.ForumReflection.Descriptor.MessageTypes[7]; }
+      get { return global::ServiceGrpcProto.ForumReflection.Descriptor.MessageTypes[7]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2470,10 +2471,10 @@ namespace Forum {
 
     /// <summary>Field number for the "result" field.</summary>
     public const int ResultFieldNumber = 1;
-    private global::Shared.Result result_;
+    private global::ServiceGrpcProto.Result result_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::Shared.Result Result {
+    public global::ServiceGrpcProto.Result Result {
       get { return result_; }
       set {
         result_ = value;
@@ -2482,12 +2483,12 @@ namespace Forum {
 
     /// <summary>Field number for the "forums" field.</summary>
     public const int ForumsFieldNumber = 2;
-    private static readonly pb::FieldCodec<global::Forum.Forum> _repeated_forums_codec
-        = pb::FieldCodec.ForMessage(18, global::Forum.Forum.Parser);
-    private readonly pbc::RepeatedField<global::Forum.Forum> forums_ = new pbc::RepeatedField<global::Forum.Forum>();
+    private static readonly pb::FieldCodec<global::ServiceGrpcProto.Forum> _repeated_forums_codec
+        = pb::FieldCodec.ForMessage(18, global::ServiceGrpcProto.Forum.Parser);
+    private readonly pbc::RepeatedField<global::ServiceGrpcProto.Forum> forums_ = new pbc::RepeatedField<global::ServiceGrpcProto.Forum>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public pbc::RepeatedField<global::Forum.Forum> Forums {
+    public pbc::RepeatedField<global::ServiceGrpcProto.Forum> Forums {
       get { return forums_; }
     }
 
@@ -2583,7 +2584,7 @@ namespace Forum {
       }
       if (other.result_ != null) {
         if (result_ == null) {
-          Result = new global::Shared.Result();
+          Result = new global::ServiceGrpcProto.Result();
         }
         Result.MergeFrom(other.Result);
       }
@@ -2605,7 +2606,7 @@ namespace Forum {
             break;
           case 10: {
             if (result_ == null) {
-              Result = new global::Shared.Result();
+              Result = new global::ServiceGrpcProto.Result();
             }
             input.ReadMessage(Result);
             break;
@@ -2631,7 +2632,7 @@ namespace Forum {
             break;
           case 10: {
             if (result_ == null) {
-              Result = new global::Shared.Result();
+              Result = new global::ServiceGrpcProto.Result();
             }
             input.ReadMessage(Result);
             break;
@@ -2661,7 +2662,7 @@ namespace Forum {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Forum.ForumReflection.Descriptor.MessageTypes[8]; }
+      get { return global::ServiceGrpcProto.ForumReflection.Descriptor.MessageTypes[8]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2850,7 +2851,7 @@ namespace Forum {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Forum.ForumReflection.Descriptor.MessageTypes[9]; }
+      get { return global::ServiceGrpcProto.ForumReflection.Descriptor.MessageTypes[9]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2883,10 +2884,10 @@ namespace Forum {
 
     /// <summary>Field number for the "result" field.</summary>
     public const int ResultFieldNumber = 1;
-    private global::Shared.Result result_;
+    private global::ServiceGrpcProto.Result result_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::Shared.Result Result {
+    public global::ServiceGrpcProto.Result Result {
       get { return result_; }
       set {
         result_ = value;
@@ -2895,10 +2896,10 @@ namespace Forum {
 
     /// <summary>Field number for the "forum" field.</summary>
     public const int ForumFieldNumber = 2;
-    private global::Forum.Forum forum_;
+    private global::ServiceGrpcProto.Forum forum_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::Forum.Forum Forum {
+    public global::ServiceGrpcProto.Forum Forum {
       get { return forum_; }
       set {
         forum_ = value;
@@ -3005,13 +3006,13 @@ namespace Forum {
       }
       if (other.result_ != null) {
         if (result_ == null) {
-          Result = new global::Shared.Result();
+          Result = new global::ServiceGrpcProto.Result();
         }
         Result.MergeFrom(other.Result);
       }
       if (other.forum_ != null) {
         if (forum_ == null) {
-          Forum = new global::Forum.Forum();
+          Forum = new global::ServiceGrpcProto.Forum();
         }
         Forum.MergeFrom(other.Forum);
       }
@@ -3032,14 +3033,14 @@ namespace Forum {
             break;
           case 10: {
             if (result_ == null) {
-              Result = new global::Shared.Result();
+              Result = new global::ServiceGrpcProto.Result();
             }
             input.ReadMessage(Result);
             break;
           }
           case 18: {
             if (forum_ == null) {
-              Forum = new global::Forum.Forum();
+              Forum = new global::ServiceGrpcProto.Forum();
             }
             input.ReadMessage(Forum);
             break;
@@ -3061,14 +3062,14 @@ namespace Forum {
             break;
           case 10: {
             if (result_ == null) {
-              Result = new global::Shared.Result();
+              Result = new global::ServiceGrpcProto.Result();
             }
             input.ReadMessage(Result);
             break;
           }
           case 18: {
             if (forum_ == null) {
-              Forum = new global::Forum.Forum();
+              Forum = new global::ServiceGrpcProto.Forum();
             }
             input.ReadMessage(Forum);
             break;
@@ -3094,7 +3095,7 @@ namespace Forum {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Forum.ForumReflection.Descriptor.MessageTypes[10]; }
+      get { return global::ServiceGrpcProto.ForumReflection.Descriptor.MessageTypes[10]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -3357,7 +3358,7 @@ namespace Forum {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Forum.ForumReflection.Descriptor.MessageTypes[11]; }
+      get { return global::ServiceGrpcProto.ForumReflection.Descriptor.MessageTypes[11]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -3390,10 +3391,10 @@ namespace Forum {
 
     /// <summary>Field number for the "result" field.</summary>
     public const int ResultFieldNumber = 1;
-    private global::Shared.Result result_;
+    private global::ServiceGrpcProto.Result result_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::Shared.Result Result {
+    public global::ServiceGrpcProto.Result Result {
       get { return result_; }
       set {
         result_ = value;
@@ -3402,10 +3403,10 @@ namespace Forum {
 
     /// <summary>Field number for the "forum" field.</summary>
     public const int ForumFieldNumber = 2;
-    private global::Forum.Forum forum_;
+    private global::ServiceGrpcProto.Forum forum_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::Forum.Forum Forum {
+    public global::ServiceGrpcProto.Forum Forum {
       get { return forum_; }
       set {
         forum_ = value;
@@ -3512,13 +3513,13 @@ namespace Forum {
       }
       if (other.result_ != null) {
         if (result_ == null) {
-          Result = new global::Shared.Result();
+          Result = new global::ServiceGrpcProto.Result();
         }
         Result.MergeFrom(other.Result);
       }
       if (other.forum_ != null) {
         if (forum_ == null) {
-          Forum = new global::Forum.Forum();
+          Forum = new global::ServiceGrpcProto.Forum();
         }
         Forum.MergeFrom(other.Forum);
       }
@@ -3539,14 +3540,14 @@ namespace Forum {
             break;
           case 10: {
             if (result_ == null) {
-              Result = new global::Shared.Result();
+              Result = new global::ServiceGrpcProto.Result();
             }
             input.ReadMessage(Result);
             break;
           }
           case 18: {
             if (forum_ == null) {
-              Forum = new global::Forum.Forum();
+              Forum = new global::ServiceGrpcProto.Forum();
             }
             input.ReadMessage(Forum);
             break;
@@ -3568,14 +3569,14 @@ namespace Forum {
             break;
           case 10: {
             if (result_ == null) {
-              Result = new global::Shared.Result();
+              Result = new global::ServiceGrpcProto.Result();
             }
             input.ReadMessage(Result);
             break;
           }
           case 18: {
             if (forum_ == null) {
-              Forum = new global::Forum.Forum();
+              Forum = new global::ServiceGrpcProto.Forum();
             }
             input.ReadMessage(Forum);
             break;
@@ -3601,7 +3602,7 @@ namespace Forum {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Forum.ForumReflection.Descriptor.MessageTypes[12]; }
+      get { return global::ServiceGrpcProto.ForumReflection.Descriptor.MessageTypes[12]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -3790,7 +3791,7 @@ namespace Forum {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Forum.ForumReflection.Descriptor.MessageTypes[13]; }
+      get { return global::ServiceGrpcProto.ForumReflection.Descriptor.MessageTypes[13]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -3822,10 +3823,10 @@ namespace Forum {
 
     /// <summary>Field number for the "result" field.</summary>
     public const int ResultFieldNumber = 1;
-    private global::Shared.Result result_;
+    private global::ServiceGrpcProto.Result result_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::Shared.Result Result {
+    public global::ServiceGrpcProto.Result Result {
       get { return result_; }
       set {
         result_ = value;
@@ -3919,7 +3920,7 @@ namespace Forum {
       }
       if (other.result_ != null) {
         if (result_ == null) {
-          Result = new global::Shared.Result();
+          Result = new global::ServiceGrpcProto.Result();
         }
         Result.MergeFrom(other.Result);
       }
@@ -3940,7 +3941,7 @@ namespace Forum {
             break;
           case 10: {
             if (result_ == null) {
-              Result = new global::Shared.Result();
+              Result = new global::ServiceGrpcProto.Result();
             }
             input.ReadMessage(Result);
             break;
@@ -3962,7 +3963,7 @@ namespace Forum {
             break;
           case 10: {
             if (result_ == null) {
-              Result = new global::Shared.Result();
+              Result = new global::ServiceGrpcProto.Result();
             }
             input.ReadMessage(Result);
             break;
@@ -3988,7 +3989,7 @@ namespace Forum {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Forum.ForumReflection.Descriptor.MessageTypes[14]; }
+      get { return global::ServiceGrpcProto.ForumReflection.Descriptor.MessageTypes[14]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -4288,7 +4289,7 @@ namespace Forum {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Forum.ForumReflection.Descriptor.MessageTypes[15]; }
+      get { return global::ServiceGrpcProto.ForumReflection.Descriptor.MessageTypes[15]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -4321,10 +4322,10 @@ namespace Forum {
 
     /// <summary>Field number for the "result" field.</summary>
     public const int ResultFieldNumber = 1;
-    private global::Shared.Result result_;
+    private global::ServiceGrpcProto.Result result_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::Shared.Result Result {
+    public global::ServiceGrpcProto.Result Result {
       get { return result_; }
       set {
         result_ = value;
@@ -4333,10 +4334,10 @@ namespace Forum {
 
     /// <summary>Field number for the "thread" field.</summary>
     public const int ThreadFieldNumber = 2;
-    private global::Forum.Thread thread_;
+    private global::ServiceGrpcProto.Thread thread_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::Forum.Thread Thread {
+    public global::ServiceGrpcProto.Thread Thread {
       get { return thread_; }
       set {
         thread_ = value;
@@ -4443,13 +4444,13 @@ namespace Forum {
       }
       if (other.result_ != null) {
         if (result_ == null) {
-          Result = new global::Shared.Result();
+          Result = new global::ServiceGrpcProto.Result();
         }
         Result.MergeFrom(other.Result);
       }
       if (other.thread_ != null) {
         if (thread_ == null) {
-          Thread = new global::Forum.Thread();
+          Thread = new global::ServiceGrpcProto.Thread();
         }
         Thread.MergeFrom(other.Thread);
       }
@@ -4470,14 +4471,14 @@ namespace Forum {
             break;
           case 10: {
             if (result_ == null) {
-              Result = new global::Shared.Result();
+              Result = new global::ServiceGrpcProto.Result();
             }
             input.ReadMessage(Result);
             break;
           }
           case 18: {
             if (thread_ == null) {
-              Thread = new global::Forum.Thread();
+              Thread = new global::ServiceGrpcProto.Thread();
             }
             input.ReadMessage(Thread);
             break;
@@ -4499,14 +4500,14 @@ namespace Forum {
             break;
           case 10: {
             if (result_ == null) {
-              Result = new global::Shared.Result();
+              Result = new global::ServiceGrpcProto.Result();
             }
             input.ReadMessage(Result);
             break;
           }
           case 18: {
             if (thread_ == null) {
-              Thread = new global::Forum.Thread();
+              Thread = new global::ServiceGrpcProto.Thread();
             }
             input.ReadMessage(Thread);
             break;
@@ -4532,7 +4533,7 @@ namespace Forum {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Forum.ForumReflection.Descriptor.MessageTypes[16]; }
+      get { return global::ServiceGrpcProto.ForumReflection.Descriptor.MessageTypes[16]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -4721,7 +4722,7 @@ namespace Forum {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Forum.ForumReflection.Descriptor.MessageTypes[17]; }
+      get { return global::ServiceGrpcProto.ForumReflection.Descriptor.MessageTypes[17]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -4754,10 +4755,10 @@ namespace Forum {
 
     /// <summary>Field number for the "result" field.</summary>
     public const int ResultFieldNumber = 1;
-    private global::Shared.Result result_;
+    private global::ServiceGrpcProto.Result result_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::Shared.Result Result {
+    public global::ServiceGrpcProto.Result Result {
       get { return result_; }
       set {
         result_ = value;
@@ -4766,10 +4767,10 @@ namespace Forum {
 
     /// <summary>Field number for the "thread" field.</summary>
     public const int ThreadFieldNumber = 2;
-    private global::Forum.Thread thread_;
+    private global::ServiceGrpcProto.Thread thread_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::Forum.Thread Thread {
+    public global::ServiceGrpcProto.Thread Thread {
       get { return thread_; }
       set {
         thread_ = value;
@@ -4876,13 +4877,13 @@ namespace Forum {
       }
       if (other.result_ != null) {
         if (result_ == null) {
-          Result = new global::Shared.Result();
+          Result = new global::ServiceGrpcProto.Result();
         }
         Result.MergeFrom(other.Result);
       }
       if (other.thread_ != null) {
         if (thread_ == null) {
-          Thread = new global::Forum.Thread();
+          Thread = new global::ServiceGrpcProto.Thread();
         }
         Thread.MergeFrom(other.Thread);
       }
@@ -4903,14 +4904,14 @@ namespace Forum {
             break;
           case 10: {
             if (result_ == null) {
-              Result = new global::Shared.Result();
+              Result = new global::ServiceGrpcProto.Result();
             }
             input.ReadMessage(Result);
             break;
           }
           case 18: {
             if (thread_ == null) {
-              Thread = new global::Forum.Thread();
+              Thread = new global::ServiceGrpcProto.Thread();
             }
             input.ReadMessage(Thread);
             break;
@@ -4932,14 +4933,14 @@ namespace Forum {
             break;
           case 10: {
             if (result_ == null) {
-              Result = new global::Shared.Result();
+              Result = new global::ServiceGrpcProto.Result();
             }
             input.ReadMessage(Result);
             break;
           }
           case 18: {
             if (thread_ == null) {
-              Thread = new global::Forum.Thread();
+              Thread = new global::ServiceGrpcProto.Thread();
             }
             input.ReadMessage(Thread);
             break;
@@ -4965,7 +4966,7 @@ namespace Forum {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Forum.ForumReflection.Descriptor.MessageTypes[18]; }
+      get { return global::ServiceGrpcProto.ForumReflection.Descriptor.MessageTypes[18]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -5228,7 +5229,7 @@ namespace Forum {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Forum.ForumReflection.Descriptor.MessageTypes[19]; }
+      get { return global::ServiceGrpcProto.ForumReflection.Descriptor.MessageTypes[19]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -5261,10 +5262,10 @@ namespace Forum {
 
     /// <summary>Field number for the "result" field.</summary>
     public const int ResultFieldNumber = 1;
-    private global::Shared.Result result_;
+    private global::ServiceGrpcProto.Result result_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::Shared.Result Result {
+    public global::ServiceGrpcProto.Result Result {
       get { return result_; }
       set {
         result_ = value;
@@ -5273,10 +5274,10 @@ namespace Forum {
 
     /// <summary>Field number for the "thread" field.</summary>
     public const int ThreadFieldNumber = 2;
-    private global::Forum.Thread thread_;
+    private global::ServiceGrpcProto.Thread thread_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::Forum.Thread Thread {
+    public global::ServiceGrpcProto.Thread Thread {
       get { return thread_; }
       set {
         thread_ = value;
@@ -5383,13 +5384,13 @@ namespace Forum {
       }
       if (other.result_ != null) {
         if (result_ == null) {
-          Result = new global::Shared.Result();
+          Result = new global::ServiceGrpcProto.Result();
         }
         Result.MergeFrom(other.Result);
       }
       if (other.thread_ != null) {
         if (thread_ == null) {
-          Thread = new global::Forum.Thread();
+          Thread = new global::ServiceGrpcProto.Thread();
         }
         Thread.MergeFrom(other.Thread);
       }
@@ -5410,14 +5411,14 @@ namespace Forum {
             break;
           case 10: {
             if (result_ == null) {
-              Result = new global::Shared.Result();
+              Result = new global::ServiceGrpcProto.Result();
             }
             input.ReadMessage(Result);
             break;
           }
           case 18: {
             if (thread_ == null) {
-              Thread = new global::Forum.Thread();
+              Thread = new global::ServiceGrpcProto.Thread();
             }
             input.ReadMessage(Thread);
             break;
@@ -5439,14 +5440,14 @@ namespace Forum {
             break;
           case 10: {
             if (result_ == null) {
-              Result = new global::Shared.Result();
+              Result = new global::ServiceGrpcProto.Result();
             }
             input.ReadMessage(Result);
             break;
           }
           case 18: {
             if (thread_ == null) {
-              Thread = new global::Forum.Thread();
+              Thread = new global::ServiceGrpcProto.Thread();
             }
             input.ReadMessage(Thread);
             break;
@@ -5472,7 +5473,7 @@ namespace Forum {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Forum.ForumReflection.Descriptor.MessageTypes[20]; }
+      get { return global::ServiceGrpcProto.ForumReflection.Descriptor.MessageTypes[20]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -5735,7 +5736,7 @@ namespace Forum {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Forum.ForumReflection.Descriptor.MessageTypes[21]; }
+      get { return global::ServiceGrpcProto.ForumReflection.Descriptor.MessageTypes[21]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -5768,10 +5769,10 @@ namespace Forum {
 
     /// <summary>Field number for the "result" field.</summary>
     public const int ResultFieldNumber = 1;
-    private global::Shared.Result result_;
+    private global::ServiceGrpcProto.Result result_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::Shared.Result Result {
+    public global::ServiceGrpcProto.Result Result {
       get { return result_; }
       set {
         result_ = value;
@@ -5780,12 +5781,12 @@ namespace Forum {
 
     /// <summary>Field number for the "threads" field.</summary>
     public const int ThreadsFieldNumber = 2;
-    private static readonly pb::FieldCodec<global::Forum.ThreadLite> _repeated_threads_codec
-        = pb::FieldCodec.ForMessage(18, global::Forum.ThreadLite.Parser);
-    private readonly pbc::RepeatedField<global::Forum.ThreadLite> threads_ = new pbc::RepeatedField<global::Forum.ThreadLite>();
+    private static readonly pb::FieldCodec<global::ServiceGrpcProto.ThreadLite> _repeated_threads_codec
+        = pb::FieldCodec.ForMessage(18, global::ServiceGrpcProto.ThreadLite.Parser);
+    private readonly pbc::RepeatedField<global::ServiceGrpcProto.ThreadLite> threads_ = new pbc::RepeatedField<global::ServiceGrpcProto.ThreadLite>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public pbc::RepeatedField<global::Forum.ThreadLite> Threads {
+    public pbc::RepeatedField<global::ServiceGrpcProto.ThreadLite> Threads {
       get { return threads_; }
     }
 
@@ -5881,7 +5882,7 @@ namespace Forum {
       }
       if (other.result_ != null) {
         if (result_ == null) {
-          Result = new global::Shared.Result();
+          Result = new global::ServiceGrpcProto.Result();
         }
         Result.MergeFrom(other.Result);
       }
@@ -5903,7 +5904,7 @@ namespace Forum {
             break;
           case 10: {
             if (result_ == null) {
-              Result = new global::Shared.Result();
+              Result = new global::ServiceGrpcProto.Result();
             }
             input.ReadMessage(Result);
             break;
@@ -5929,7 +5930,7 @@ namespace Forum {
             break;
           case 10: {
             if (result_ == null) {
-              Result = new global::Shared.Result();
+              Result = new global::ServiceGrpcProto.Result();
             }
             input.ReadMessage(Result);
             break;
@@ -5959,7 +5960,7 @@ namespace Forum {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Forum.ForumReflection.Descriptor.MessageTypes[22]; }
+      get { return global::ServiceGrpcProto.ForumReflection.Descriptor.MessageTypes[22]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -6148,7 +6149,7 @@ namespace Forum {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Forum.ForumReflection.Descriptor.MessageTypes[23]; }
+      get { return global::ServiceGrpcProto.ForumReflection.Descriptor.MessageTypes[23]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -6180,10 +6181,10 @@ namespace Forum {
 
     /// <summary>Field number for the "result" field.</summary>
     public const int ResultFieldNumber = 1;
-    private global::Shared.Result result_;
+    private global::ServiceGrpcProto.Result result_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::Shared.Result Result {
+    public global::ServiceGrpcProto.Result Result {
       get { return result_; }
       set {
         result_ = value;
@@ -6277,7 +6278,7 @@ namespace Forum {
       }
       if (other.result_ != null) {
         if (result_ == null) {
-          Result = new global::Shared.Result();
+          Result = new global::ServiceGrpcProto.Result();
         }
         Result.MergeFrom(other.Result);
       }
@@ -6298,7 +6299,7 @@ namespace Forum {
             break;
           case 10: {
             if (result_ == null) {
-              Result = new global::Shared.Result();
+              Result = new global::ServiceGrpcProto.Result();
             }
             input.ReadMessage(Result);
             break;
@@ -6320,7 +6321,7 @@ namespace Forum {
             break;
           case 10: {
             if (result_ == null) {
-              Result = new global::Shared.Result();
+              Result = new global::ServiceGrpcProto.Result();
             }
             input.ReadMessage(Result);
             break;
@@ -6346,7 +6347,7 @@ namespace Forum {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Forum.ForumReflection.Descriptor.MessageTypes[24]; }
+      get { return global::ServiceGrpcProto.ForumReflection.Descriptor.MessageTypes[24]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -6646,7 +6647,7 @@ namespace Forum {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Forum.ForumReflection.Descriptor.MessageTypes[25]; }
+      get { return global::ServiceGrpcProto.ForumReflection.Descriptor.MessageTypes[25]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -6679,10 +6680,10 @@ namespace Forum {
 
     /// <summary>Field number for the "result" field.</summary>
     public const int ResultFieldNumber = 1;
-    private global::Shared.Result result_;
+    private global::ServiceGrpcProto.Result result_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::Shared.Result Result {
+    public global::ServiceGrpcProto.Result Result {
       get { return result_; }
       set {
         result_ = value;
@@ -6691,10 +6692,10 @@ namespace Forum {
 
     /// <summary>Field number for the "reply" field.</summary>
     public const int ReplyFieldNumber = 2;
-    private global::Forum.Reply reply_;
+    private global::ServiceGrpcProto.Reply reply_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::Forum.Reply Reply {
+    public global::ServiceGrpcProto.Reply Reply {
       get { return reply_; }
       set {
         reply_ = value;
@@ -6801,13 +6802,13 @@ namespace Forum {
       }
       if (other.result_ != null) {
         if (result_ == null) {
-          Result = new global::Shared.Result();
+          Result = new global::ServiceGrpcProto.Result();
         }
         Result.MergeFrom(other.Result);
       }
       if (other.reply_ != null) {
         if (reply_ == null) {
-          Reply = new global::Forum.Reply();
+          Reply = new global::ServiceGrpcProto.Reply();
         }
         Reply.MergeFrom(other.Reply);
       }
@@ -6828,14 +6829,14 @@ namespace Forum {
             break;
           case 10: {
             if (result_ == null) {
-              Result = new global::Shared.Result();
+              Result = new global::ServiceGrpcProto.Result();
             }
             input.ReadMessage(Result);
             break;
           }
           case 18: {
             if (reply_ == null) {
-              Reply = new global::Forum.Reply();
+              Reply = new global::ServiceGrpcProto.Reply();
             }
             input.ReadMessage(Reply);
             break;
@@ -6857,14 +6858,14 @@ namespace Forum {
             break;
           case 10: {
             if (result_ == null) {
-              Result = new global::Shared.Result();
+              Result = new global::ServiceGrpcProto.Result();
             }
             input.ReadMessage(Result);
             break;
           }
           case 18: {
             if (reply_ == null) {
-              Reply = new global::Forum.Reply();
+              Reply = new global::ServiceGrpcProto.Reply();
             }
             input.ReadMessage(Reply);
             break;
@@ -6890,7 +6891,7 @@ namespace Forum {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Forum.ForumReflection.Descriptor.MessageTypes[26]; }
+      get { return global::ServiceGrpcProto.ForumReflection.Descriptor.MessageTypes[26]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -7079,7 +7080,7 @@ namespace Forum {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Forum.ForumReflection.Descriptor.MessageTypes[27]; }
+      get { return global::ServiceGrpcProto.ForumReflection.Descriptor.MessageTypes[27]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -7112,10 +7113,10 @@ namespace Forum {
 
     /// <summary>Field number for the "result" field.</summary>
     public const int ResultFieldNumber = 1;
-    private global::Shared.Result result_;
+    private global::ServiceGrpcProto.Result result_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::Shared.Result Result {
+    public global::ServiceGrpcProto.Result Result {
       get { return result_; }
       set {
         result_ = value;
@@ -7124,10 +7125,10 @@ namespace Forum {
 
     /// <summary>Field number for the "reply" field.</summary>
     public const int ReplyFieldNumber = 2;
-    private global::Forum.Reply reply_;
+    private global::ServiceGrpcProto.Reply reply_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::Forum.Reply Reply {
+    public global::ServiceGrpcProto.Reply Reply {
       get { return reply_; }
       set {
         reply_ = value;
@@ -7234,13 +7235,13 @@ namespace Forum {
       }
       if (other.result_ != null) {
         if (result_ == null) {
-          Result = new global::Shared.Result();
+          Result = new global::ServiceGrpcProto.Result();
         }
         Result.MergeFrom(other.Result);
       }
       if (other.reply_ != null) {
         if (reply_ == null) {
-          Reply = new global::Forum.Reply();
+          Reply = new global::ServiceGrpcProto.Reply();
         }
         Reply.MergeFrom(other.Reply);
       }
@@ -7261,14 +7262,14 @@ namespace Forum {
             break;
           case 10: {
             if (result_ == null) {
-              Result = new global::Shared.Result();
+              Result = new global::ServiceGrpcProto.Result();
             }
             input.ReadMessage(Result);
             break;
           }
           case 18: {
             if (reply_ == null) {
-              Reply = new global::Forum.Reply();
+              Reply = new global::ServiceGrpcProto.Reply();
             }
             input.ReadMessage(Reply);
             break;
@@ -7290,14 +7291,14 @@ namespace Forum {
             break;
           case 10: {
             if (result_ == null) {
-              Result = new global::Shared.Result();
+              Result = new global::ServiceGrpcProto.Result();
             }
             input.ReadMessage(Result);
             break;
           }
           case 18: {
             if (reply_ == null) {
-              Reply = new global::Forum.Reply();
+              Reply = new global::ServiceGrpcProto.Reply();
             }
             input.ReadMessage(Reply);
             break;
@@ -7323,7 +7324,7 @@ namespace Forum {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Forum.ForumReflection.Descriptor.MessageTypes[28]; }
+      get { return global::ServiceGrpcProto.ForumReflection.Descriptor.MessageTypes[28]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -7586,7 +7587,7 @@ namespace Forum {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Forum.ForumReflection.Descriptor.MessageTypes[29]; }
+      get { return global::ServiceGrpcProto.ForumReflection.Descriptor.MessageTypes[29]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -7619,10 +7620,10 @@ namespace Forum {
 
     /// <summary>Field number for the "result" field.</summary>
     public const int ResultFieldNumber = 1;
-    private global::Shared.Result result_;
+    private global::ServiceGrpcProto.Result result_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::Shared.Result Result {
+    public global::ServiceGrpcProto.Result Result {
       get { return result_; }
       set {
         result_ = value;
@@ -7631,10 +7632,10 @@ namespace Forum {
 
     /// <summary>Field number for the "reply" field.</summary>
     public const int ReplyFieldNumber = 2;
-    private global::Forum.Reply reply_;
+    private global::ServiceGrpcProto.Reply reply_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::Forum.Reply Reply {
+    public global::ServiceGrpcProto.Reply Reply {
       get { return reply_; }
       set {
         reply_ = value;
@@ -7741,13 +7742,13 @@ namespace Forum {
       }
       if (other.result_ != null) {
         if (result_ == null) {
-          Result = new global::Shared.Result();
+          Result = new global::ServiceGrpcProto.Result();
         }
         Result.MergeFrom(other.Result);
       }
       if (other.reply_ != null) {
         if (reply_ == null) {
-          Reply = new global::Forum.Reply();
+          Reply = new global::ServiceGrpcProto.Reply();
         }
         Reply.MergeFrom(other.Reply);
       }
@@ -7768,14 +7769,14 @@ namespace Forum {
             break;
           case 10: {
             if (result_ == null) {
-              Result = new global::Shared.Result();
+              Result = new global::ServiceGrpcProto.Result();
             }
             input.ReadMessage(Result);
             break;
           }
           case 18: {
             if (reply_ == null) {
-              Reply = new global::Forum.Reply();
+              Reply = new global::ServiceGrpcProto.Reply();
             }
             input.ReadMessage(Reply);
             break;
@@ -7797,14 +7798,14 @@ namespace Forum {
             break;
           case 10: {
             if (result_ == null) {
-              Result = new global::Shared.Result();
+              Result = new global::ServiceGrpcProto.Result();
             }
             input.ReadMessage(Result);
             break;
           }
           case 18: {
             if (reply_ == null) {
-              Reply = new global::Forum.Reply();
+              Reply = new global::ServiceGrpcProto.Reply();
             }
             input.ReadMessage(Reply);
             break;
@@ -7830,7 +7831,7 @@ namespace Forum {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Forum.ForumReflection.Descriptor.MessageTypes[30]; }
+      get { return global::ServiceGrpcProto.ForumReflection.Descriptor.MessageTypes[30]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -8019,7 +8020,7 @@ namespace Forum {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Forum.ForumReflection.Descriptor.MessageTypes[31]; }
+      get { return global::ServiceGrpcProto.ForumReflection.Descriptor.MessageTypes[31]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -8051,10 +8052,10 @@ namespace Forum {
 
     /// <summary>Field number for the "result" field.</summary>
     public const int ResultFieldNumber = 1;
-    private global::Shared.Result result_;
+    private global::ServiceGrpcProto.Result result_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::Shared.Result Result {
+    public global::ServiceGrpcProto.Result Result {
       get { return result_; }
       set {
         result_ = value;
@@ -8148,7 +8149,7 @@ namespace Forum {
       }
       if (other.result_ != null) {
         if (result_ == null) {
-          Result = new global::Shared.Result();
+          Result = new global::ServiceGrpcProto.Result();
         }
         Result.MergeFrom(other.Result);
       }
@@ -8169,7 +8170,7 @@ namespace Forum {
             break;
           case 10: {
             if (result_ == null) {
-              Result = new global::Shared.Result();
+              Result = new global::ServiceGrpcProto.Result();
             }
             input.ReadMessage(Result);
             break;
@@ -8191,7 +8192,7 @@ namespace Forum {
             break;
           case 10: {
             if (result_ == null) {
-              Result = new global::Shared.Result();
+              Result = new global::ServiceGrpcProto.Result();
             }
             input.ReadMessage(Result);
             break;
@@ -8217,7 +8218,7 @@ namespace Forum {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Forum.ForumReflection.Descriptor.MessageTypes[32]; }
+      get { return global::ServiceGrpcProto.ForumReflection.Descriptor.MessageTypes[32]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -8480,7 +8481,7 @@ namespace Forum {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Forum.ForumReflection.Descriptor.MessageTypes[33]; }
+      get { return global::ServiceGrpcProto.ForumReflection.Descriptor.MessageTypes[33]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -8513,10 +8514,10 @@ namespace Forum {
 
     /// <summary>Field number for the "result" field.</summary>
     public const int ResultFieldNumber = 1;
-    private global::Shared.Result result_;
+    private global::ServiceGrpcProto.Result result_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::Shared.Result Result {
+    public global::ServiceGrpcProto.Result Result {
       get { return result_; }
       set {
         result_ = value;
@@ -8525,12 +8526,12 @@ namespace Forum {
 
     /// <summary>Field number for the "replies" field.</summary>
     public const int RepliesFieldNumber = 2;
-    private static readonly pb::FieldCodec<global::Forum.Reply> _repeated_replies_codec
-        = pb::FieldCodec.ForMessage(18, global::Forum.Reply.Parser);
-    private readonly pbc::RepeatedField<global::Forum.Reply> replies_ = new pbc::RepeatedField<global::Forum.Reply>();
+    private static readonly pb::FieldCodec<global::ServiceGrpcProto.Reply> _repeated_replies_codec
+        = pb::FieldCodec.ForMessage(18, global::ServiceGrpcProto.Reply.Parser);
+    private readonly pbc::RepeatedField<global::ServiceGrpcProto.Reply> replies_ = new pbc::RepeatedField<global::ServiceGrpcProto.Reply>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public pbc::RepeatedField<global::Forum.Reply> Replies {
+    public pbc::RepeatedField<global::ServiceGrpcProto.Reply> Replies {
       get { return replies_; }
     }
 
@@ -8626,7 +8627,7 @@ namespace Forum {
       }
       if (other.result_ != null) {
         if (result_ == null) {
-          Result = new global::Shared.Result();
+          Result = new global::ServiceGrpcProto.Result();
         }
         Result.MergeFrom(other.Result);
       }
@@ -8648,7 +8649,7 @@ namespace Forum {
             break;
           case 10: {
             if (result_ == null) {
-              Result = new global::Shared.Result();
+              Result = new global::ServiceGrpcProto.Result();
             }
             input.ReadMessage(Result);
             break;
@@ -8674,7 +8675,7 @@ namespace Forum {
             break;
           case 10: {
             if (result_ == null) {
-              Result = new global::Shared.Result();
+              Result = new global::ServiceGrpcProto.Result();
             }
             input.ReadMessage(Result);
             break;

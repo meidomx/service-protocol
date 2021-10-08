@@ -40,11 +40,12 @@ public final class StringBasedUniqueIdentifierProto {
       "\001(\t2z\n\"StringBasedUniqueIdentifierServic" +
       "e\022T\n\010Generate\022#.uniqueidentifier.Generat" +
       "eStringReq\032#.uniqueidentifier.GenerateSt" +
-      "ringResB\247\001\n6info.moetang.serviceprotocol" +
+      "ringResB\272\001\n6info.moetang.serviceprotocol" +
       ".protobuf.uniqueidentifierB StringBasedU" +
       "niqueIdentifierProtoP\001ZIgithub.com/meido" +
       "mx/service-protocol/protocol/protobuf/go" +
-      "/uniqueidentifierb\006proto3"
+      "/uniqueidentifier\252\002\020ServiceGrpcProtob\006pr" +
+      "oto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

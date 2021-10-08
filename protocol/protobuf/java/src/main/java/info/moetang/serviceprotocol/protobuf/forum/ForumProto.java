@@ -290,11 +290,11 @@ public final class ForumProto {
       "yReplyByIdReq\032\030.forum.QueryReplyByIdRes\"" +
       "\000\022m\n\033QueryPagedRepliesByThreadId\022%.forum" +
       ".QueryPagedRepliesByThreadIdReq\032%.forum." +
-      "QueryPagedRepliesByThreadIdRes\"\000B{\n+info" +
-      ".moetang.serviceprotocol.protobuf.forumB" +
-      "\nForumProtoP\001Z>github.com/meidomx/servic" +
-      "e-protocol/protocol/protobuf/go/forumb\006p" +
-      "roto3"
+      "QueryPagedRepliesByThreadIdRes\"\000B\216\001\n+inf" +
+      "o.moetang.serviceprotocol.protobuf.forum" +
+      "B\nForumProtoP\001Z>github.com/meidomx/servi" +
+      "ce-protocol/protocol/protobuf/go/forum\252\002" +
+      "\020ServiceGrpcProtob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

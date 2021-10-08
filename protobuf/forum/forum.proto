@@ -4,6 +4,7 @@ option go_package = "github.com/meidomx/service-protocol/protocol/protobuf/go/fo
 option java_multiple_files = true;
 option java_package = "info.moetang.serviceprotocol.protobuf.forum";
 option java_outer_classname = "ForumProto";
+option csharp_namespace = "ServiceGrpcProto";
 import "shared/result.proto";
 
 package forum;

@@ -104,11 +104,11 @@ public final class CountdownProto {
       "\001\n!QueryPagedExpringCountdownsByType\022/.c" +
       "ountdown.QueryPagedExpringCountdownsByTy" +
       "peReq\032/.countdown.QueryPagedExpringCount" +
-      "downsByTypeRes\"\000B\207\001\n/info.moetang.servic" +
+      "downsByTypeRes\"\000B\232\001\n/info.moetang.servic" +
       "eprotocol.protobuf.countdownB\016CountdownP" +
       "rotoP\001ZBgithub.com/meidomx/service-proto" +
-      "col/protocol/protobuf/go/countdownb\006prot" +
-      "o3"
+      "col/protocol/protobuf/go/countdown\252\002\020Ser" +
+      "viceGrpcProtob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

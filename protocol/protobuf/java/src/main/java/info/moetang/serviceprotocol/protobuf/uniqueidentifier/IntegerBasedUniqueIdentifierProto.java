@@ -40,11 +40,12 @@ public final class IntegerBasedUniqueIdentifierProto {
       "\030\013 \001(\0032}\n#IntegerBasedUniqueIdentifierSe" +
       "rvice\022V\n\010Generate\022$.uniqueidentifier.Gen" +
       "erateIntegerReq\032$.uniqueidentifier.Gener" +
-      "ateIntegerResB\250\001\n6info.moetang.servicepr" +
+      "ateIntegerResB\273\001\n6info.moetang.servicepr" +
       "otocol.protobuf.uniqueidentifierB!Intege" +
       "rBasedUniqueIdentifierProtoP\001ZIgithub.co" +
       "m/meidomx/service-protocol/protocol/prot" +
-      "obuf/go/uniqueidentifierb\006proto3"
+      "obuf/go/uniqueidentifier\252\002\020ServiceGrpcPr" +
+      "otob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

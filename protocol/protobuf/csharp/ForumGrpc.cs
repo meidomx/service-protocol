@@ -7,7 +7,7 @@
 
 using grpc = global::Grpc.Core;
 
-namespace Forum {
+namespace ServiceGrpcProto {
   public static partial class ForumService
   {
     static readonly string __ServiceName = "forum.ForumService";
@@ -46,68 +46,68 @@ namespace Forum {
     }
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::Forum.CreateForumReq> __Marshaller_forum_CreateForumReq = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Forum.CreateForumReq.Parser));
+    static readonly grpc::Marshaller<global::ServiceGrpcProto.CreateForumReq> __Marshaller_forum_CreateForumReq = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::ServiceGrpcProto.CreateForumReq.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::Forum.CreateForumRes> __Marshaller_forum_CreateForumRes = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Forum.CreateForumRes.Parser));
+    static readonly grpc::Marshaller<global::ServiceGrpcProto.CreateForumRes> __Marshaller_forum_CreateForumRes = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::ServiceGrpcProto.CreateForumRes.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::Forum.UpdateForumByIdReq> __Marshaller_forum_UpdateForumByIdReq = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Forum.UpdateForumByIdReq.Parser));
+    static readonly grpc::Marshaller<global::ServiceGrpcProto.UpdateForumByIdReq> __Marshaller_forum_UpdateForumByIdReq = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::ServiceGrpcProto.UpdateForumByIdReq.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::Forum.UpdateForumByIdRes> __Marshaller_forum_UpdateForumByIdRes = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Forum.UpdateForumByIdRes.Parser));
+    static readonly grpc::Marshaller<global::ServiceGrpcProto.UpdateForumByIdRes> __Marshaller_forum_UpdateForumByIdRes = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::ServiceGrpcProto.UpdateForumByIdRes.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::Forum.DeleteForumByIdReq> __Marshaller_forum_DeleteForumByIdReq = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Forum.DeleteForumByIdReq.Parser));
+    static readonly grpc::Marshaller<global::ServiceGrpcProto.DeleteForumByIdReq> __Marshaller_forum_DeleteForumByIdReq = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::ServiceGrpcProto.DeleteForumByIdReq.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::Forum.DeleteForumByIdRes> __Marshaller_forum_DeleteForumByIdRes = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Forum.DeleteForumByIdRes.Parser));
+    static readonly grpc::Marshaller<global::ServiceGrpcProto.DeleteForumByIdRes> __Marshaller_forum_DeleteForumByIdRes = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::ServiceGrpcProto.DeleteForumByIdRes.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::Forum.ListAllForumsReq> __Marshaller_forum_ListAllForumsReq = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Forum.ListAllForumsReq.Parser));
+    static readonly grpc::Marshaller<global::ServiceGrpcProto.ListAllForumsReq> __Marshaller_forum_ListAllForumsReq = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::ServiceGrpcProto.ListAllForumsReq.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::Forum.ListAllForumsRes> __Marshaller_forum_ListAllForumsRes = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Forum.ListAllForumsRes.Parser));
+    static readonly grpc::Marshaller<global::ServiceGrpcProto.ListAllForumsRes> __Marshaller_forum_ListAllForumsRes = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::ServiceGrpcProto.ListAllForumsRes.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::Forum.QueryForumByIdReq> __Marshaller_forum_QueryForumByIdReq = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Forum.QueryForumByIdReq.Parser));
+    static readonly grpc::Marshaller<global::ServiceGrpcProto.QueryForumByIdReq> __Marshaller_forum_QueryForumByIdReq = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::ServiceGrpcProto.QueryForumByIdReq.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::Forum.QueryForumByIdRes> __Marshaller_forum_QueryForumByIdRes = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Forum.QueryForumByIdRes.Parser));
+    static readonly grpc::Marshaller<global::ServiceGrpcProto.QueryForumByIdRes> __Marshaller_forum_QueryForumByIdRes = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::ServiceGrpcProto.QueryForumByIdRes.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::Forum.CreateThreadReq> __Marshaller_forum_CreateThreadReq = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Forum.CreateThreadReq.Parser));
+    static readonly grpc::Marshaller<global::ServiceGrpcProto.CreateThreadReq> __Marshaller_forum_CreateThreadReq = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::ServiceGrpcProto.CreateThreadReq.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::Forum.CreateThreadRes> __Marshaller_forum_CreateThreadRes = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Forum.CreateThreadRes.Parser));
+    static readonly grpc::Marshaller<global::ServiceGrpcProto.CreateThreadRes> __Marshaller_forum_CreateThreadRes = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::ServiceGrpcProto.CreateThreadRes.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::Forum.UpdateThreadByIdReq> __Marshaller_forum_UpdateThreadByIdReq = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Forum.UpdateThreadByIdReq.Parser));
+    static readonly grpc::Marshaller<global::ServiceGrpcProto.UpdateThreadByIdReq> __Marshaller_forum_UpdateThreadByIdReq = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::ServiceGrpcProto.UpdateThreadByIdReq.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::Forum.UpdateThreadByIdRes> __Marshaller_forum_UpdateThreadByIdRes = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Forum.UpdateThreadByIdRes.Parser));
+    static readonly grpc::Marshaller<global::ServiceGrpcProto.UpdateThreadByIdRes> __Marshaller_forum_UpdateThreadByIdRes = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::ServiceGrpcProto.UpdateThreadByIdRes.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::Forum.DeleteThreadByIdReq> __Marshaller_forum_DeleteThreadByIdReq = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Forum.DeleteThreadByIdReq.Parser));
+    static readonly grpc::Marshaller<global::ServiceGrpcProto.DeleteThreadByIdReq> __Marshaller_forum_DeleteThreadByIdReq = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::ServiceGrpcProto.DeleteThreadByIdReq.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::Forum.DeleteThreadByIdRes> __Marshaller_forum_DeleteThreadByIdRes = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Forum.DeleteThreadByIdRes.Parser));
+    static readonly grpc::Marshaller<global::ServiceGrpcProto.DeleteThreadByIdRes> __Marshaller_forum_DeleteThreadByIdRes = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::ServiceGrpcProto.DeleteThreadByIdRes.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::Forum.QueryThreadByIdReq> __Marshaller_forum_QueryThreadByIdReq = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Forum.QueryThreadByIdReq.Parser));
+    static readonly grpc::Marshaller<global::ServiceGrpcProto.QueryThreadByIdReq> __Marshaller_forum_QueryThreadByIdReq = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::ServiceGrpcProto.QueryThreadByIdReq.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::Forum.QueryThreadByIdRes> __Marshaller_forum_QueryThreadByIdRes = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Forum.QueryThreadByIdRes.Parser));
+    static readonly grpc::Marshaller<global::ServiceGrpcProto.QueryThreadByIdRes> __Marshaller_forum_QueryThreadByIdRes = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::ServiceGrpcProto.QueryThreadByIdRes.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::Forum.QueryPagedThreadsByForumIdReq> __Marshaller_forum_QueryPagedThreadsByForumIdReq = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Forum.QueryPagedThreadsByForumIdReq.Parser));
+    static readonly grpc::Marshaller<global::ServiceGrpcProto.QueryPagedThreadsByForumIdReq> __Marshaller_forum_QueryPagedThreadsByForumIdReq = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::ServiceGrpcProto.QueryPagedThreadsByForumIdReq.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::Forum.QueryPagedThreadsByForumIdRes> __Marshaller_forum_QueryPagedThreadsByForumIdRes = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Forum.QueryPagedThreadsByForumIdRes.Parser));
+    static readonly grpc::Marshaller<global::ServiceGrpcProto.QueryPagedThreadsByForumIdRes> __Marshaller_forum_QueryPagedThreadsByForumIdRes = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::ServiceGrpcProto.QueryPagedThreadsByForumIdRes.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::Forum.CreateReplyReq> __Marshaller_forum_CreateReplyReq = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Forum.CreateReplyReq.Parser));
+    static readonly grpc::Marshaller<global::ServiceGrpcProto.CreateReplyReq> __Marshaller_forum_CreateReplyReq = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::ServiceGrpcProto.CreateReplyReq.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::Forum.CreateReplyRes> __Marshaller_forum_CreateReplyRes = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Forum.CreateReplyRes.Parser));
+    static readonly grpc::Marshaller<global::ServiceGrpcProto.CreateReplyRes> __Marshaller_forum_CreateReplyRes = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::ServiceGrpcProto.CreateReplyRes.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::Forum.UpdateReplyReq> __Marshaller_forum_UpdateReplyReq = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Forum.UpdateReplyReq.Parser));
+    static readonly grpc::Marshaller<global::ServiceGrpcProto.UpdateReplyReq> __Marshaller_forum_UpdateReplyReq = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::ServiceGrpcProto.UpdateReplyReq.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::Forum.UpdateReplyRes> __Marshaller_forum_UpdateReplyRes = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Forum.UpdateReplyRes.Parser));
+    static readonly grpc::Marshaller<global::ServiceGrpcProto.UpdateReplyRes> __Marshaller_forum_UpdateReplyRes = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::ServiceGrpcProto.UpdateReplyRes.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::Forum.DeleteReplyByIdReq> __Marshaller_forum_DeleteReplyByIdReq = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Forum.DeleteReplyByIdReq.Parser));
+    static readonly grpc::Marshaller<global::ServiceGrpcProto.DeleteReplyByIdReq> __Marshaller_forum_DeleteReplyByIdReq = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::ServiceGrpcProto.DeleteReplyByIdReq.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::Forum.DeleteReplyByIdRes> __Marshaller_forum_DeleteReplyByIdRes = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Forum.DeleteReplyByIdRes.Parser));
+    static readonly grpc::Marshaller<global::ServiceGrpcProto.DeleteReplyByIdRes> __Marshaller_forum_DeleteReplyByIdRes = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::ServiceGrpcProto.DeleteReplyByIdRes.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::Forum.QueryReplyByIdReq> __Marshaller_forum_QueryReplyByIdReq = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Forum.QueryReplyByIdReq.Parser));
+    static readonly grpc::Marshaller<global::ServiceGrpcProto.QueryReplyByIdReq> __Marshaller_forum_QueryReplyByIdReq = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::ServiceGrpcProto.QueryReplyByIdReq.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::Forum.QueryReplyByIdRes> __Marshaller_forum_QueryReplyByIdRes = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Forum.QueryReplyByIdRes.Parser));
+    static readonly grpc::Marshaller<global::ServiceGrpcProto.QueryReplyByIdRes> __Marshaller_forum_QueryReplyByIdRes = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::ServiceGrpcProto.QueryReplyByIdRes.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::Forum.QueryPagedRepliesByThreadIdReq> __Marshaller_forum_QueryPagedRepliesByThreadIdReq = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Forum.QueryPagedRepliesByThreadIdReq.Parser));
+    static readonly grpc::Marshaller<global::ServiceGrpcProto.QueryPagedRepliesByThreadIdReq> __Marshaller_forum_QueryPagedRepliesByThreadIdReq = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::ServiceGrpcProto.QueryPagedRepliesByThreadIdReq.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::Forum.QueryPagedRepliesByThreadIdRes> __Marshaller_forum_QueryPagedRepliesByThreadIdRes = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Forum.QueryPagedRepliesByThreadIdRes.Parser));
+    static readonly grpc::Marshaller<global::ServiceGrpcProto.QueryPagedRepliesByThreadIdRes> __Marshaller_forum_QueryPagedRepliesByThreadIdRes = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::ServiceGrpcProto.QueryPagedRepliesByThreadIdRes.Parser));
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Method<global::Forum.CreateForumReq, global::Forum.CreateForumRes> __Method_CreateForum = new grpc::Method<global::Forum.CreateForumReq, global::Forum.CreateForumRes>(
+    static readonly grpc::Method<global::ServiceGrpcProto.CreateForumReq, global::ServiceGrpcProto.CreateForumRes> __Method_CreateForum = new grpc::Method<global::ServiceGrpcProto.CreateForumReq, global::ServiceGrpcProto.CreateForumRes>(
         grpc::MethodType.Unary,
         __ServiceName,
         "CreateForum",
@@ -115,7 +115,7 @@ namespace Forum {
         __Marshaller_forum_CreateForumRes);
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Method<global::Forum.UpdateForumByIdReq, global::Forum.UpdateForumByIdRes> __Method_UpdateForumById = new grpc::Method<global::Forum.UpdateForumByIdReq, global::Forum.UpdateForumByIdRes>(
+    static readonly grpc::Method<global::ServiceGrpcProto.UpdateForumByIdReq, global::ServiceGrpcProto.UpdateForumByIdRes> __Method_UpdateForumById = new grpc::Method<global::ServiceGrpcProto.UpdateForumByIdReq, global::ServiceGrpcProto.UpdateForumByIdRes>(
         grpc::MethodType.Unary,
         __ServiceName,
         "UpdateForumById",
@@ -123,7 +123,7 @@ namespace Forum {
         __Marshaller_forum_UpdateForumByIdRes);
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Method<global::Forum.DeleteForumByIdReq, global::Forum.DeleteForumByIdRes> __Method_DeleteForumById = new grpc::Method<global::Forum.DeleteForumByIdReq, global::Forum.DeleteForumByIdRes>(
+    static readonly grpc::Method<global::ServiceGrpcProto.DeleteForumByIdReq, global::ServiceGrpcProto.DeleteForumByIdRes> __Method_DeleteForumById = new grpc::Method<global::ServiceGrpcProto.DeleteForumByIdReq, global::ServiceGrpcProto.DeleteForumByIdRes>(
         grpc::MethodType.Unary,
         __ServiceName,
         "DeleteForumById",
@@ -131,7 +131,7 @@ namespace Forum {
         __Marshaller_forum_DeleteForumByIdRes);
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Method<global::Forum.ListAllForumsReq, global::Forum.ListAllForumsRes> __Method_ListAllForums = new grpc::Method<global::Forum.ListAllForumsReq, global::Forum.ListAllForumsRes>(
+    static readonly grpc::Method<global::ServiceGrpcProto.ListAllForumsReq, global::ServiceGrpcProto.ListAllForumsRes> __Method_ListAllForums = new grpc::Method<global::ServiceGrpcProto.ListAllForumsReq, global::ServiceGrpcProto.ListAllForumsRes>(
         grpc::MethodType.Unary,
         __ServiceName,
         "ListAllForums",
@@ -139,7 +139,7 @@ namespace Forum {
         __Marshaller_forum_ListAllForumsRes);
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Method<global::Forum.QueryForumByIdReq, global::Forum.QueryForumByIdRes> __Method_QueryForumById = new grpc::Method<global::Forum.QueryForumByIdReq, global::Forum.QueryForumByIdRes>(
+    static readonly grpc::Method<global::ServiceGrpcProto.QueryForumByIdReq, global::ServiceGrpcProto.QueryForumByIdRes> __Method_QueryForumById = new grpc::Method<global::ServiceGrpcProto.QueryForumByIdReq, global::ServiceGrpcProto.QueryForumByIdRes>(
         grpc::MethodType.Unary,
         __ServiceName,
         "QueryForumById",
@@ -147,7 +147,7 @@ namespace Forum {
         __Marshaller_forum_QueryForumByIdRes);
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Method<global::Forum.CreateThreadReq, global::Forum.CreateThreadRes> __Method_CreateThread = new grpc::Method<global::Forum.CreateThreadReq, global::Forum.CreateThreadRes>(
+    static readonly grpc::Method<global::ServiceGrpcProto.CreateThreadReq, global::ServiceGrpcProto.CreateThreadRes> __Method_CreateThread = new grpc::Method<global::ServiceGrpcProto.CreateThreadReq, global::ServiceGrpcProto.CreateThreadRes>(
         grpc::MethodType.Unary,
         __ServiceName,
         "CreateThread",
@@ -155,7 +155,7 @@ namespace Forum {
         __Marshaller_forum_CreateThreadRes);
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Method<global::Forum.UpdateThreadByIdReq, global::Forum.UpdateThreadByIdRes> __Method_UpdateThreadById = new grpc::Method<global::Forum.UpdateThreadByIdReq, global::Forum.UpdateThreadByIdRes>(
+    static readonly grpc::Method<global::ServiceGrpcProto.UpdateThreadByIdReq, global::ServiceGrpcProto.UpdateThreadByIdRes> __Method_UpdateThreadById = new grpc::Method<global::ServiceGrpcProto.UpdateThreadByIdReq, global::ServiceGrpcProto.UpdateThreadByIdRes>(
         grpc::MethodType.Unary,
         __ServiceName,
         "UpdateThreadById",
@@ -163,7 +163,7 @@ namespace Forum {
         __Marshaller_forum_UpdateThreadByIdRes);
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Method<global::Forum.DeleteThreadByIdReq, global::Forum.DeleteThreadByIdRes> __Method_DeleteThreadById = new grpc::Method<global::Forum.DeleteThreadByIdReq, global::Forum.DeleteThreadByIdRes>(
+    static readonly grpc::Method<global::ServiceGrpcProto.DeleteThreadByIdReq, global::ServiceGrpcProto.DeleteThreadByIdRes> __Method_DeleteThreadById = new grpc::Method<global::ServiceGrpcProto.DeleteThreadByIdReq, global::ServiceGrpcProto.DeleteThreadByIdRes>(
         grpc::MethodType.Unary,
         __ServiceName,
         "DeleteThreadById",
@@ -171,7 +171,7 @@ namespace Forum {
         __Marshaller_forum_DeleteThreadByIdRes);
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Method<global::Forum.QueryThreadByIdReq, global::Forum.QueryThreadByIdRes> __Method_QueryThreadById = new grpc::Method<global::Forum.QueryThreadByIdReq, global::Forum.QueryThreadByIdRes>(
+    static readonly grpc::Method<global::ServiceGrpcProto.QueryThreadByIdReq, global::ServiceGrpcProto.QueryThreadByIdRes> __Method_QueryThreadById = new grpc::Method<global::ServiceGrpcProto.QueryThreadByIdReq, global::ServiceGrpcProto.QueryThreadByIdRes>(
         grpc::MethodType.Unary,
         __ServiceName,
         "QueryThreadById",
@@ -179,7 +179,7 @@ namespace Forum {
         __Marshaller_forum_QueryThreadByIdRes);
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Method<global::Forum.QueryPagedThreadsByForumIdReq, global::Forum.QueryPagedThreadsByForumIdRes> __Method_QueryPagedThreadTitlesByForumId = new grpc::Method<global::Forum.QueryPagedThreadsByForumIdReq, global::Forum.QueryPagedThreadsByForumIdRes>(
+    static readonly grpc::Method<global::ServiceGrpcProto.QueryPagedThreadsByForumIdReq, global::ServiceGrpcProto.QueryPagedThreadsByForumIdRes> __Method_QueryPagedThreadTitlesByForumId = new grpc::Method<global::ServiceGrpcProto.QueryPagedThreadsByForumIdReq, global::ServiceGrpcProto.QueryPagedThreadsByForumIdRes>(
         grpc::MethodType.Unary,
         __ServiceName,
         "QueryPagedThreadTitlesByForumId",
@@ -187,7 +187,7 @@ namespace Forum {
         __Marshaller_forum_QueryPagedThreadsByForumIdRes);
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Method<global::Forum.CreateReplyReq, global::Forum.CreateReplyRes> __Method_CreateReply = new grpc::Method<global::Forum.CreateReplyReq, global::Forum.CreateReplyRes>(
+    static readonly grpc::Method<global::ServiceGrpcProto.CreateReplyReq, global::ServiceGrpcProto.CreateReplyRes> __Method_CreateReply = new grpc::Method<global::ServiceGrpcProto.CreateReplyReq, global::ServiceGrpcProto.CreateReplyRes>(
         grpc::MethodType.Unary,
         __ServiceName,
         "CreateReply",
@@ -195,7 +195,7 @@ namespace Forum {
         __Marshaller_forum_CreateReplyRes);
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Method<global::Forum.UpdateReplyReq, global::Forum.UpdateReplyRes> __Method_UpdateReplyById = new grpc::Method<global::Forum.UpdateReplyReq, global::Forum.UpdateReplyRes>(
+    static readonly grpc::Method<global::ServiceGrpcProto.UpdateReplyReq, global::ServiceGrpcProto.UpdateReplyRes> __Method_UpdateReplyById = new grpc::Method<global::ServiceGrpcProto.UpdateReplyReq, global::ServiceGrpcProto.UpdateReplyRes>(
         grpc::MethodType.Unary,
         __ServiceName,
         "UpdateReplyById",
@@ -203,7 +203,7 @@ namespace Forum {
         __Marshaller_forum_UpdateReplyRes);
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Method<global::Forum.DeleteReplyByIdReq, global::Forum.DeleteReplyByIdRes> __Method_DeleteReplyById = new grpc::Method<global::Forum.DeleteReplyByIdReq, global::Forum.DeleteReplyByIdRes>(
+    static readonly grpc::Method<global::ServiceGrpcProto.DeleteReplyByIdReq, global::ServiceGrpcProto.DeleteReplyByIdRes> __Method_DeleteReplyById = new grpc::Method<global::ServiceGrpcProto.DeleteReplyByIdReq, global::ServiceGrpcProto.DeleteReplyByIdRes>(
         grpc::MethodType.Unary,
         __ServiceName,
         "DeleteReplyById",
@@ -211,7 +211,7 @@ namespace Forum {
         __Marshaller_forum_DeleteReplyByIdRes);
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Method<global::Forum.QueryReplyByIdReq, global::Forum.QueryReplyByIdRes> __Method_QueryReplyById = new grpc::Method<global::Forum.QueryReplyByIdReq, global::Forum.QueryReplyByIdRes>(
+    static readonly grpc::Method<global::ServiceGrpcProto.QueryReplyByIdReq, global::ServiceGrpcProto.QueryReplyByIdRes> __Method_QueryReplyById = new grpc::Method<global::ServiceGrpcProto.QueryReplyByIdReq, global::ServiceGrpcProto.QueryReplyByIdRes>(
         grpc::MethodType.Unary,
         __ServiceName,
         "QueryReplyById",
@@ -219,7 +219,7 @@ namespace Forum {
         __Marshaller_forum_QueryReplyByIdRes);
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Method<global::Forum.QueryPagedRepliesByThreadIdReq, global::Forum.QueryPagedRepliesByThreadIdRes> __Method_QueryPagedRepliesByThreadId = new grpc::Method<global::Forum.QueryPagedRepliesByThreadIdReq, global::Forum.QueryPagedRepliesByThreadIdRes>(
+    static readonly grpc::Method<global::ServiceGrpcProto.QueryPagedRepliesByThreadIdReq, global::ServiceGrpcProto.QueryPagedRepliesByThreadIdRes> __Method_QueryPagedRepliesByThreadId = new grpc::Method<global::ServiceGrpcProto.QueryPagedRepliesByThreadIdReq, global::ServiceGrpcProto.QueryPagedRepliesByThreadIdRes>(
         grpc::MethodType.Unary,
         __ServiceName,
         "QueryPagedRepliesByThreadId",
@@ -229,7 +229,7 @@ namespace Forum {
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
     {
-      get { return global::Forum.ForumReflection.Descriptor.Services[0]; }
+      get { return global::ServiceGrpcProto.ForumReflection.Descriptor.Services[0]; }
     }
 
     /// <summary>Base class for server-side implementations of ForumService</summary>
@@ -237,91 +237,91 @@ namespace Forum {
     public abstract partial class ForumServiceBase
     {
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::System.Threading.Tasks.Task<global::Forum.CreateForumRes> CreateForum(global::Forum.CreateForumReq request, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::ServiceGrpcProto.CreateForumRes> CreateForum(global::ServiceGrpcProto.CreateForumReq request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
 
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::System.Threading.Tasks.Task<global::Forum.UpdateForumByIdRes> UpdateForumById(global::Forum.UpdateForumByIdReq request, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::ServiceGrpcProto.UpdateForumByIdRes> UpdateForumById(global::ServiceGrpcProto.UpdateForumByIdReq request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
 
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::System.Threading.Tasks.Task<global::Forum.DeleteForumByIdRes> DeleteForumById(global::Forum.DeleteForumByIdReq request, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::ServiceGrpcProto.DeleteForumByIdRes> DeleteForumById(global::ServiceGrpcProto.DeleteForumByIdReq request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
 
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::System.Threading.Tasks.Task<global::Forum.ListAllForumsRes> ListAllForums(global::Forum.ListAllForumsReq request, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::ServiceGrpcProto.ListAllForumsRes> ListAllForums(global::ServiceGrpcProto.ListAllForumsReq request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
 
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::System.Threading.Tasks.Task<global::Forum.QueryForumByIdRes> QueryForumById(global::Forum.QueryForumByIdReq request, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::ServiceGrpcProto.QueryForumByIdRes> QueryForumById(global::ServiceGrpcProto.QueryForumByIdReq request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
 
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::System.Threading.Tasks.Task<global::Forum.CreateThreadRes> CreateThread(global::Forum.CreateThreadReq request, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::ServiceGrpcProto.CreateThreadRes> CreateThread(global::ServiceGrpcProto.CreateThreadReq request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
 
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::System.Threading.Tasks.Task<global::Forum.UpdateThreadByIdRes> UpdateThreadById(global::Forum.UpdateThreadByIdReq request, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::ServiceGrpcProto.UpdateThreadByIdRes> UpdateThreadById(global::ServiceGrpcProto.UpdateThreadByIdReq request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
 
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::System.Threading.Tasks.Task<global::Forum.DeleteThreadByIdRes> DeleteThreadById(global::Forum.DeleteThreadByIdReq request, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::ServiceGrpcProto.DeleteThreadByIdRes> DeleteThreadById(global::ServiceGrpcProto.DeleteThreadByIdReq request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
 
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::System.Threading.Tasks.Task<global::Forum.QueryThreadByIdRes> QueryThreadById(global::Forum.QueryThreadByIdReq request, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::ServiceGrpcProto.QueryThreadByIdRes> QueryThreadById(global::ServiceGrpcProto.QueryThreadByIdReq request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
 
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::System.Threading.Tasks.Task<global::Forum.QueryPagedThreadsByForumIdRes> QueryPagedThreadTitlesByForumId(global::Forum.QueryPagedThreadsByForumIdReq request, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::ServiceGrpcProto.QueryPagedThreadsByForumIdRes> QueryPagedThreadTitlesByForumId(global::ServiceGrpcProto.QueryPagedThreadsByForumIdReq request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
 
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::System.Threading.Tasks.Task<global::Forum.CreateReplyRes> CreateReply(global::Forum.CreateReplyReq request, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::ServiceGrpcProto.CreateReplyRes> CreateReply(global::ServiceGrpcProto.CreateReplyReq request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
 
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::System.Threading.Tasks.Task<global::Forum.UpdateReplyRes> UpdateReplyById(global::Forum.UpdateReplyReq request, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::ServiceGrpcProto.UpdateReplyRes> UpdateReplyById(global::ServiceGrpcProto.UpdateReplyReq request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
 
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::System.Threading.Tasks.Task<global::Forum.DeleteReplyByIdRes> DeleteReplyById(global::Forum.DeleteReplyByIdReq request, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::ServiceGrpcProto.DeleteReplyByIdRes> DeleteReplyById(global::ServiceGrpcProto.DeleteReplyByIdReq request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
 
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::System.Threading.Tasks.Task<global::Forum.QueryReplyByIdRes> QueryReplyById(global::Forum.QueryReplyByIdReq request, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::ServiceGrpcProto.QueryReplyByIdRes> QueryReplyById(global::ServiceGrpcProto.QueryReplyByIdReq request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
 
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::System.Threading.Tasks.Task<global::Forum.QueryPagedRepliesByThreadIdRes> QueryPagedRepliesByThreadId(global::Forum.QueryPagedRepliesByThreadIdReq request, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::ServiceGrpcProto.QueryPagedRepliesByThreadIdRes> QueryPagedRepliesByThreadId(global::ServiceGrpcProto.QueryPagedRepliesByThreadIdReq request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -356,302 +356,302 @@ namespace Forum {
       }
 
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Forum.CreateForumRes CreateForum(global::Forum.CreateForumReq request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual global::ServiceGrpcProto.CreateForumRes CreateForum(global::ServiceGrpcProto.CreateForumReq request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return CreateForum(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Forum.CreateForumRes CreateForum(global::Forum.CreateForumReq request, grpc::CallOptions options)
+      public virtual global::ServiceGrpcProto.CreateForumRes CreateForum(global::ServiceGrpcProto.CreateForumReq request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_CreateForum, null, options, request);
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Forum.CreateForumRes> CreateForumAsync(global::Forum.CreateForumReq request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::ServiceGrpcProto.CreateForumRes> CreateForumAsync(global::ServiceGrpcProto.CreateForumReq request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return CreateForumAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Forum.CreateForumRes> CreateForumAsync(global::Forum.CreateForumReq request, grpc::CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::ServiceGrpcProto.CreateForumRes> CreateForumAsync(global::ServiceGrpcProto.CreateForumReq request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_CreateForum, null, options, request);
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Forum.UpdateForumByIdRes UpdateForumById(global::Forum.UpdateForumByIdReq request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual global::ServiceGrpcProto.UpdateForumByIdRes UpdateForumById(global::ServiceGrpcProto.UpdateForumByIdReq request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return UpdateForumById(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Forum.UpdateForumByIdRes UpdateForumById(global::Forum.UpdateForumByIdReq request, grpc::CallOptions options)
+      public virtual global::ServiceGrpcProto.UpdateForumByIdRes UpdateForumById(global::ServiceGrpcProto.UpdateForumByIdReq request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_UpdateForumById, null, options, request);
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Forum.UpdateForumByIdRes> UpdateForumByIdAsync(global::Forum.UpdateForumByIdReq request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::ServiceGrpcProto.UpdateForumByIdRes> UpdateForumByIdAsync(global::ServiceGrpcProto.UpdateForumByIdReq request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return UpdateForumByIdAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Forum.UpdateForumByIdRes> UpdateForumByIdAsync(global::Forum.UpdateForumByIdReq request, grpc::CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::ServiceGrpcProto.UpdateForumByIdRes> UpdateForumByIdAsync(global::ServiceGrpcProto.UpdateForumByIdReq request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_UpdateForumById, null, options, request);
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Forum.DeleteForumByIdRes DeleteForumById(global::Forum.DeleteForumByIdReq request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual global::ServiceGrpcProto.DeleteForumByIdRes DeleteForumById(global::ServiceGrpcProto.DeleteForumByIdReq request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return DeleteForumById(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Forum.DeleteForumByIdRes DeleteForumById(global::Forum.DeleteForumByIdReq request, grpc::CallOptions options)
+      public virtual global::ServiceGrpcProto.DeleteForumByIdRes DeleteForumById(global::ServiceGrpcProto.DeleteForumByIdReq request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_DeleteForumById, null, options, request);
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Forum.DeleteForumByIdRes> DeleteForumByIdAsync(global::Forum.DeleteForumByIdReq request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::ServiceGrpcProto.DeleteForumByIdRes> DeleteForumByIdAsync(global::ServiceGrpcProto.DeleteForumByIdReq request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return DeleteForumByIdAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Forum.DeleteForumByIdRes> DeleteForumByIdAsync(global::Forum.DeleteForumByIdReq request, grpc::CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::ServiceGrpcProto.DeleteForumByIdRes> DeleteForumByIdAsync(global::ServiceGrpcProto.DeleteForumByIdReq request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_DeleteForumById, null, options, request);
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Forum.ListAllForumsRes ListAllForums(global::Forum.ListAllForumsReq request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual global::ServiceGrpcProto.ListAllForumsRes ListAllForums(global::ServiceGrpcProto.ListAllForumsReq request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return ListAllForums(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Forum.ListAllForumsRes ListAllForums(global::Forum.ListAllForumsReq request, grpc::CallOptions options)
+      public virtual global::ServiceGrpcProto.ListAllForumsRes ListAllForums(global::ServiceGrpcProto.ListAllForumsReq request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_ListAllForums, null, options, request);
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Forum.ListAllForumsRes> ListAllForumsAsync(global::Forum.ListAllForumsReq request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::ServiceGrpcProto.ListAllForumsRes> ListAllForumsAsync(global::ServiceGrpcProto.ListAllForumsReq request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return ListAllForumsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Forum.ListAllForumsRes> ListAllForumsAsync(global::Forum.ListAllForumsReq request, grpc::CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::ServiceGrpcProto.ListAllForumsRes> ListAllForumsAsync(global::ServiceGrpcProto.ListAllForumsReq request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_ListAllForums, null, options, request);
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Forum.QueryForumByIdRes QueryForumById(global::Forum.QueryForumByIdReq request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual global::ServiceGrpcProto.QueryForumByIdRes QueryForumById(global::ServiceGrpcProto.QueryForumByIdReq request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return QueryForumById(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Forum.QueryForumByIdRes QueryForumById(global::Forum.QueryForumByIdReq request, grpc::CallOptions options)
+      public virtual global::ServiceGrpcProto.QueryForumByIdRes QueryForumById(global::ServiceGrpcProto.QueryForumByIdReq request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_QueryForumById, null, options, request);
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Forum.QueryForumByIdRes> QueryForumByIdAsync(global::Forum.QueryForumByIdReq request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::ServiceGrpcProto.QueryForumByIdRes> QueryForumByIdAsync(global::ServiceGrpcProto.QueryForumByIdReq request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return QueryForumByIdAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Forum.QueryForumByIdRes> QueryForumByIdAsync(global::Forum.QueryForumByIdReq request, grpc::CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::ServiceGrpcProto.QueryForumByIdRes> QueryForumByIdAsync(global::ServiceGrpcProto.QueryForumByIdReq request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_QueryForumById, null, options, request);
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Forum.CreateThreadRes CreateThread(global::Forum.CreateThreadReq request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual global::ServiceGrpcProto.CreateThreadRes CreateThread(global::ServiceGrpcProto.CreateThreadReq request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return CreateThread(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Forum.CreateThreadRes CreateThread(global::Forum.CreateThreadReq request, grpc::CallOptions options)
+      public virtual global::ServiceGrpcProto.CreateThreadRes CreateThread(global::ServiceGrpcProto.CreateThreadReq request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_CreateThread, null, options, request);
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Forum.CreateThreadRes> CreateThreadAsync(global::Forum.CreateThreadReq request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::ServiceGrpcProto.CreateThreadRes> CreateThreadAsync(global::ServiceGrpcProto.CreateThreadReq request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return CreateThreadAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Forum.CreateThreadRes> CreateThreadAsync(global::Forum.CreateThreadReq request, grpc::CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::ServiceGrpcProto.CreateThreadRes> CreateThreadAsync(global::ServiceGrpcProto.CreateThreadReq request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_CreateThread, null, options, request);
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Forum.UpdateThreadByIdRes UpdateThreadById(global::Forum.UpdateThreadByIdReq request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual global::ServiceGrpcProto.UpdateThreadByIdRes UpdateThreadById(global::ServiceGrpcProto.UpdateThreadByIdReq request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return UpdateThreadById(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Forum.UpdateThreadByIdRes UpdateThreadById(global::Forum.UpdateThreadByIdReq request, grpc::CallOptions options)
+      public virtual global::ServiceGrpcProto.UpdateThreadByIdRes UpdateThreadById(global::ServiceGrpcProto.UpdateThreadByIdReq request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_UpdateThreadById, null, options, request);
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Forum.UpdateThreadByIdRes> UpdateThreadByIdAsync(global::Forum.UpdateThreadByIdReq request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::ServiceGrpcProto.UpdateThreadByIdRes> UpdateThreadByIdAsync(global::ServiceGrpcProto.UpdateThreadByIdReq request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return UpdateThreadByIdAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Forum.UpdateThreadByIdRes> UpdateThreadByIdAsync(global::Forum.UpdateThreadByIdReq request, grpc::CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::ServiceGrpcProto.UpdateThreadByIdRes> UpdateThreadByIdAsync(global::ServiceGrpcProto.UpdateThreadByIdReq request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_UpdateThreadById, null, options, request);
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Forum.DeleteThreadByIdRes DeleteThreadById(global::Forum.DeleteThreadByIdReq request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual global::ServiceGrpcProto.DeleteThreadByIdRes DeleteThreadById(global::ServiceGrpcProto.DeleteThreadByIdReq request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return DeleteThreadById(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Forum.DeleteThreadByIdRes DeleteThreadById(global::Forum.DeleteThreadByIdReq request, grpc::CallOptions options)
+      public virtual global::ServiceGrpcProto.DeleteThreadByIdRes DeleteThreadById(global::ServiceGrpcProto.DeleteThreadByIdReq request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_DeleteThreadById, null, options, request);
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Forum.DeleteThreadByIdRes> DeleteThreadByIdAsync(global::Forum.DeleteThreadByIdReq request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::ServiceGrpcProto.DeleteThreadByIdRes> DeleteThreadByIdAsync(global::ServiceGrpcProto.DeleteThreadByIdReq request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return DeleteThreadByIdAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Forum.DeleteThreadByIdRes> DeleteThreadByIdAsync(global::Forum.DeleteThreadByIdReq request, grpc::CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::ServiceGrpcProto.DeleteThreadByIdRes> DeleteThreadByIdAsync(global::ServiceGrpcProto.DeleteThreadByIdReq request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_DeleteThreadById, null, options, request);
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Forum.QueryThreadByIdRes QueryThreadById(global::Forum.QueryThreadByIdReq request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual global::ServiceGrpcProto.QueryThreadByIdRes QueryThreadById(global::ServiceGrpcProto.QueryThreadByIdReq request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return QueryThreadById(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Forum.QueryThreadByIdRes QueryThreadById(global::Forum.QueryThreadByIdReq request, grpc::CallOptions options)
+      public virtual global::ServiceGrpcProto.QueryThreadByIdRes QueryThreadById(global::ServiceGrpcProto.QueryThreadByIdReq request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_QueryThreadById, null, options, request);
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Forum.QueryThreadByIdRes> QueryThreadByIdAsync(global::Forum.QueryThreadByIdReq request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::ServiceGrpcProto.QueryThreadByIdRes> QueryThreadByIdAsync(global::ServiceGrpcProto.QueryThreadByIdReq request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return QueryThreadByIdAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Forum.QueryThreadByIdRes> QueryThreadByIdAsync(global::Forum.QueryThreadByIdReq request, grpc::CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::ServiceGrpcProto.QueryThreadByIdRes> QueryThreadByIdAsync(global::ServiceGrpcProto.QueryThreadByIdReq request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_QueryThreadById, null, options, request);
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Forum.QueryPagedThreadsByForumIdRes QueryPagedThreadTitlesByForumId(global::Forum.QueryPagedThreadsByForumIdReq request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual global::ServiceGrpcProto.QueryPagedThreadsByForumIdRes QueryPagedThreadTitlesByForumId(global::ServiceGrpcProto.QueryPagedThreadsByForumIdReq request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return QueryPagedThreadTitlesByForumId(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Forum.QueryPagedThreadsByForumIdRes QueryPagedThreadTitlesByForumId(global::Forum.QueryPagedThreadsByForumIdReq request, grpc::CallOptions options)
+      public virtual global::ServiceGrpcProto.QueryPagedThreadsByForumIdRes QueryPagedThreadTitlesByForumId(global::ServiceGrpcProto.QueryPagedThreadsByForumIdReq request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_QueryPagedThreadTitlesByForumId, null, options, request);
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Forum.QueryPagedThreadsByForumIdRes> QueryPagedThreadTitlesByForumIdAsync(global::Forum.QueryPagedThreadsByForumIdReq request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::ServiceGrpcProto.QueryPagedThreadsByForumIdRes> QueryPagedThreadTitlesByForumIdAsync(global::ServiceGrpcProto.QueryPagedThreadsByForumIdReq request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return QueryPagedThreadTitlesByForumIdAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Forum.QueryPagedThreadsByForumIdRes> QueryPagedThreadTitlesByForumIdAsync(global::Forum.QueryPagedThreadsByForumIdReq request, grpc::CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::ServiceGrpcProto.QueryPagedThreadsByForumIdRes> QueryPagedThreadTitlesByForumIdAsync(global::ServiceGrpcProto.QueryPagedThreadsByForumIdReq request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_QueryPagedThreadTitlesByForumId, null, options, request);
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Forum.CreateReplyRes CreateReply(global::Forum.CreateReplyReq request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual global::ServiceGrpcProto.CreateReplyRes CreateReply(global::ServiceGrpcProto.CreateReplyReq request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return CreateReply(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Forum.CreateReplyRes CreateReply(global::Forum.CreateReplyReq request, grpc::CallOptions options)
+      public virtual global::ServiceGrpcProto.CreateReplyRes CreateReply(global::ServiceGrpcProto.CreateReplyReq request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_CreateReply, null, options, request);
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Forum.CreateReplyRes> CreateReplyAsync(global::Forum.CreateReplyReq request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::ServiceGrpcProto.CreateReplyRes> CreateReplyAsync(global::ServiceGrpcProto.CreateReplyReq request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return CreateReplyAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Forum.CreateReplyRes> CreateReplyAsync(global::Forum.CreateReplyReq request, grpc::CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::ServiceGrpcProto.CreateReplyRes> CreateReplyAsync(global::ServiceGrpcProto.CreateReplyReq request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_CreateReply, null, options, request);
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Forum.UpdateReplyRes UpdateReplyById(global::Forum.UpdateReplyReq request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual global::ServiceGrpcProto.UpdateReplyRes UpdateReplyById(global::ServiceGrpcProto.UpdateReplyReq request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return UpdateReplyById(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Forum.UpdateReplyRes UpdateReplyById(global::Forum.UpdateReplyReq request, grpc::CallOptions options)
+      public virtual global::ServiceGrpcProto.UpdateReplyRes UpdateReplyById(global::ServiceGrpcProto.UpdateReplyReq request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_UpdateReplyById, null, options, request);
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Forum.UpdateReplyRes> UpdateReplyByIdAsync(global::Forum.UpdateReplyReq request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::ServiceGrpcProto.UpdateReplyRes> UpdateReplyByIdAsync(global::ServiceGrpcProto.UpdateReplyReq request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return UpdateReplyByIdAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Forum.UpdateReplyRes> UpdateReplyByIdAsync(global::Forum.UpdateReplyReq request, grpc::CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::ServiceGrpcProto.UpdateReplyRes> UpdateReplyByIdAsync(global::ServiceGrpcProto.UpdateReplyReq request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_UpdateReplyById, null, options, request);
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Forum.DeleteReplyByIdRes DeleteReplyById(global::Forum.DeleteReplyByIdReq request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual global::ServiceGrpcProto.DeleteReplyByIdRes DeleteReplyById(global::ServiceGrpcProto.DeleteReplyByIdReq request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return DeleteReplyById(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Forum.DeleteReplyByIdRes DeleteReplyById(global::Forum.DeleteReplyByIdReq request, grpc::CallOptions options)
+      public virtual global::ServiceGrpcProto.DeleteReplyByIdRes DeleteReplyById(global::ServiceGrpcProto.DeleteReplyByIdReq request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_DeleteReplyById, null, options, request);
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Forum.DeleteReplyByIdRes> DeleteReplyByIdAsync(global::Forum.DeleteReplyByIdReq request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::ServiceGrpcProto.DeleteReplyByIdRes> DeleteReplyByIdAsync(global::ServiceGrpcProto.DeleteReplyByIdReq request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return DeleteReplyByIdAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Forum.DeleteReplyByIdRes> DeleteReplyByIdAsync(global::Forum.DeleteReplyByIdReq request, grpc::CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::ServiceGrpcProto.DeleteReplyByIdRes> DeleteReplyByIdAsync(global::ServiceGrpcProto.DeleteReplyByIdReq request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_DeleteReplyById, null, options, request);
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Forum.QueryReplyByIdRes QueryReplyById(global::Forum.QueryReplyByIdReq request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual global::ServiceGrpcProto.QueryReplyByIdRes QueryReplyById(global::ServiceGrpcProto.QueryReplyByIdReq request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return QueryReplyById(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Forum.QueryReplyByIdRes QueryReplyById(global::Forum.QueryReplyByIdReq request, grpc::CallOptions options)
+      public virtual global::ServiceGrpcProto.QueryReplyByIdRes QueryReplyById(global::ServiceGrpcProto.QueryReplyByIdReq request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_QueryReplyById, null, options, request);
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Forum.QueryReplyByIdRes> QueryReplyByIdAsync(global::Forum.QueryReplyByIdReq request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::ServiceGrpcProto.QueryReplyByIdRes> QueryReplyByIdAsync(global::ServiceGrpcProto.QueryReplyByIdReq request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return QueryReplyByIdAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Forum.QueryReplyByIdRes> QueryReplyByIdAsync(global::Forum.QueryReplyByIdReq request, grpc::CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::ServiceGrpcProto.QueryReplyByIdRes> QueryReplyByIdAsync(global::ServiceGrpcProto.QueryReplyByIdReq request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_QueryReplyById, null, options, request);
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Forum.QueryPagedRepliesByThreadIdRes QueryPagedRepliesByThreadId(global::Forum.QueryPagedRepliesByThreadIdReq request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual global::ServiceGrpcProto.QueryPagedRepliesByThreadIdRes QueryPagedRepliesByThreadId(global::ServiceGrpcProto.QueryPagedRepliesByThreadIdReq request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return QueryPagedRepliesByThreadId(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Forum.QueryPagedRepliesByThreadIdRes QueryPagedRepliesByThreadId(global::Forum.QueryPagedRepliesByThreadIdReq request, grpc::CallOptions options)
+      public virtual global::ServiceGrpcProto.QueryPagedRepliesByThreadIdRes QueryPagedRepliesByThreadId(global::ServiceGrpcProto.QueryPagedRepliesByThreadIdReq request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_QueryPagedRepliesByThreadId, null, options, request);
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Forum.QueryPagedRepliesByThreadIdRes> QueryPagedRepliesByThreadIdAsync(global::Forum.QueryPagedRepliesByThreadIdReq request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::ServiceGrpcProto.QueryPagedRepliesByThreadIdRes> QueryPagedRepliesByThreadIdAsync(global::ServiceGrpcProto.QueryPagedRepliesByThreadIdReq request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return QueryPagedRepliesByThreadIdAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Forum.QueryPagedRepliesByThreadIdRes> QueryPagedRepliesByThreadIdAsync(global::Forum.QueryPagedRepliesByThreadIdReq request, grpc::CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::ServiceGrpcProto.QueryPagedRepliesByThreadIdRes> QueryPagedRepliesByThreadIdAsync(global::ServiceGrpcProto.QueryPagedRepliesByThreadIdReq request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_QueryPagedRepliesByThreadId, null, options, request);
       }
@@ -693,21 +693,21 @@ namespace Forum {
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     public static void BindService(grpc::ServiceBinderBase serviceBinder, ForumServiceBase serviceImpl)
     {
-      serviceBinder.AddMethod(__Method_CreateForum, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Forum.CreateForumReq, global::Forum.CreateForumRes>(serviceImpl.CreateForum));
-      serviceBinder.AddMethod(__Method_UpdateForumById, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Forum.UpdateForumByIdReq, global::Forum.UpdateForumByIdRes>(serviceImpl.UpdateForumById));
-      serviceBinder.AddMethod(__Method_DeleteForumById, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Forum.DeleteForumByIdReq, global::Forum.DeleteForumByIdRes>(serviceImpl.DeleteForumById));
-      serviceBinder.AddMethod(__Method_ListAllForums, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Forum.ListAllForumsReq, global::Forum.ListAllForumsRes>(serviceImpl.ListAllForums));
-      serviceBinder.AddMethod(__Method_QueryForumById, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Forum.QueryForumByIdReq, global::Forum.QueryForumByIdRes>(serviceImpl.QueryForumById));
-      serviceBinder.AddMethod(__Method_CreateThread, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Forum.CreateThreadReq, global::Forum.CreateThreadRes>(serviceImpl.CreateThread));
-      serviceBinder.AddMethod(__Method_UpdateThreadById, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Forum.UpdateThreadByIdReq, global::Forum.UpdateThreadByIdRes>(serviceImpl.UpdateThreadById));
-      serviceBinder.AddMethod(__Method_DeleteThreadById, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Forum.DeleteThreadByIdReq, global::Forum.DeleteThreadByIdRes>(serviceImpl.DeleteThreadById));
-      serviceBinder.AddMethod(__Method_QueryThreadById, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Forum.QueryThreadByIdReq, global::Forum.QueryThreadByIdRes>(serviceImpl.QueryThreadById));
-      serviceBinder.AddMethod(__Method_QueryPagedThreadTitlesByForumId, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Forum.QueryPagedThreadsByForumIdReq, global::Forum.QueryPagedThreadsByForumIdRes>(serviceImpl.QueryPagedThreadTitlesByForumId));
-      serviceBinder.AddMethod(__Method_CreateReply, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Forum.CreateReplyReq, global::Forum.CreateReplyRes>(serviceImpl.CreateReply));
-      serviceBinder.AddMethod(__Method_UpdateReplyById, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Forum.UpdateReplyReq, global::Forum.UpdateReplyRes>(serviceImpl.UpdateReplyById));
-      serviceBinder.AddMethod(__Method_DeleteReplyById, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Forum.DeleteReplyByIdReq, global::Forum.DeleteReplyByIdRes>(serviceImpl.DeleteReplyById));
-      serviceBinder.AddMethod(__Method_QueryReplyById, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Forum.QueryReplyByIdReq, global::Forum.QueryReplyByIdRes>(serviceImpl.QueryReplyById));
-      serviceBinder.AddMethod(__Method_QueryPagedRepliesByThreadId, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Forum.QueryPagedRepliesByThreadIdReq, global::Forum.QueryPagedRepliesByThreadIdRes>(serviceImpl.QueryPagedRepliesByThreadId));
+      serviceBinder.AddMethod(__Method_CreateForum, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::ServiceGrpcProto.CreateForumReq, global::ServiceGrpcProto.CreateForumRes>(serviceImpl.CreateForum));
+      serviceBinder.AddMethod(__Method_UpdateForumById, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::ServiceGrpcProto.UpdateForumByIdReq, global::ServiceGrpcProto.UpdateForumByIdRes>(serviceImpl.UpdateForumById));
+      serviceBinder.AddMethod(__Method_DeleteForumById, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::ServiceGrpcProto.DeleteForumByIdReq, global::ServiceGrpcProto.DeleteForumByIdRes>(serviceImpl.DeleteForumById));
+      serviceBinder.AddMethod(__Method_ListAllForums, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::ServiceGrpcProto.ListAllForumsReq, global::ServiceGrpcProto.ListAllForumsRes>(serviceImpl.ListAllForums));
+      serviceBinder.AddMethod(__Method_QueryForumById, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::ServiceGrpcProto.QueryForumByIdReq, global::ServiceGrpcProto.QueryForumByIdRes>(serviceImpl.QueryForumById));
+      serviceBinder.AddMethod(__Method_CreateThread, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::ServiceGrpcProto.CreateThreadReq, global::ServiceGrpcProto.CreateThreadRes>(serviceImpl.CreateThread));
+      serviceBinder.AddMethod(__Method_UpdateThreadById, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::ServiceGrpcProto.UpdateThreadByIdReq, global::ServiceGrpcProto.UpdateThreadByIdRes>(serviceImpl.UpdateThreadById));
+      serviceBinder.AddMethod(__Method_DeleteThreadById, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::ServiceGrpcProto.DeleteThreadByIdReq, global::ServiceGrpcProto.DeleteThreadByIdRes>(serviceImpl.DeleteThreadById));
+      serviceBinder.AddMethod(__Method_QueryThreadById, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::ServiceGrpcProto.QueryThreadByIdReq, global::ServiceGrpcProto.QueryThreadByIdRes>(serviceImpl.QueryThreadById));
+      serviceBinder.AddMethod(__Method_QueryPagedThreadTitlesByForumId, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::ServiceGrpcProto.QueryPagedThreadsByForumIdReq, global::ServiceGrpcProto.QueryPagedThreadsByForumIdRes>(serviceImpl.QueryPagedThreadTitlesByForumId));
+      serviceBinder.AddMethod(__Method_CreateReply, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::ServiceGrpcProto.CreateReplyReq, global::ServiceGrpcProto.CreateReplyRes>(serviceImpl.CreateReply));
+      serviceBinder.AddMethod(__Method_UpdateReplyById, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::ServiceGrpcProto.UpdateReplyReq, global::ServiceGrpcProto.UpdateReplyRes>(serviceImpl.UpdateReplyById));
+      serviceBinder.AddMethod(__Method_DeleteReplyById, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::ServiceGrpcProto.DeleteReplyByIdReq, global::ServiceGrpcProto.DeleteReplyByIdRes>(serviceImpl.DeleteReplyById));
+      serviceBinder.AddMethod(__Method_QueryReplyById, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::ServiceGrpcProto.QueryReplyByIdReq, global::ServiceGrpcProto.QueryReplyByIdRes>(serviceImpl.QueryReplyById));
+      serviceBinder.AddMethod(__Method_QueryPagedRepliesByThreadId, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::ServiceGrpcProto.QueryPagedRepliesByThreadIdReq, global::ServiceGrpcProto.QueryPagedRepliesByThreadIdRes>(serviceImpl.QueryPagedRepliesByThreadId));
     }
 
   }

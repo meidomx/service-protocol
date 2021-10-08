@@ -9,7 +9,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Countdown {
+namespace ServiceGrpcProto {
 
   /// <summary>Holder for reflection information generated from countdown/countdown.proto</summary>
   public static partial class CountdownReflection {
@@ -56,22 +56,23 @@ namespace Countdown {
             "ZG93bkJ5SWRSZXMiABKHAQohUXVlcnlQYWdlZEV4cHJpbmdDb3VudGRvd25z",
             "QnlUeXBlEi8uY291bnRkb3duLlF1ZXJ5UGFnZWRFeHByaW5nQ291bnRkb3du",
             "c0J5VHlwZVJlcRovLmNvdW50ZG93bi5RdWVyeVBhZ2VkRXhwcmluZ0NvdW50",
-            "ZG93bnNCeVR5cGVSZXMiAEKHAQovaW5mby5tb2V0YW5nLnNlcnZpY2Vwcm90",
+            "ZG93bnNCeVR5cGVSZXMiAEKaAQovaW5mby5tb2V0YW5nLnNlcnZpY2Vwcm90",
             "b2NvbC5wcm90b2J1Zi5jb3VudGRvd25CDkNvdW50ZG93blByb3RvUAFaQmdp",
             "dGh1Yi5jb20vbWVpZG9teC9zZXJ2aWNlLXByb3RvY29sL3Byb3RvY29sL3By",
-            "b3RvYnVmL2dvL2NvdW50ZG93bmIGcHJvdG8z"));
+            "b3RvYnVmL2dvL2NvdW50ZG93bqoCEFNlcnZpY2VHcnBjUHJvdG9iBnByb3Rv",
+            "Mw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Shared.ResultReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::ServiceGrpcProto.ResultReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Countdown.Countdown), global::Countdown.Countdown.Parser, new[]{ "CountdownId", "UserId", "CountdownType", "Title", "Content", "TimeExpired", "TimeLastHandle", "TimeCreated", "TimeUpdated" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Countdown.CreateCountdownReq), global::Countdown.CreateCountdownReq.Parser, new[]{ "UserId", "CountdownType", "Title", "Content", "TimeExpired" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Countdown.CreateCountdownRes), global::Countdown.CreateCountdownRes.Parser, new[]{ "Result", "Countdown" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Countdown.QueryCountdownByIdReq), global::Countdown.QueryCountdownByIdReq.Parser, new[]{ "CountdownId" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Countdown.QueryCountdownByIdRes), global::Countdown.QueryCountdownByIdRes.Parser, new[]{ "Result", "Countdown" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Countdown.NextCountdownIntervalByIdReq), global::Countdown.NextCountdownIntervalByIdReq.Parser, new[]{ "CountdownId", "TimeExpired" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Countdown.NextCountdownIntervalByIdRes), global::Countdown.NextCountdownIntervalByIdRes.Parser, new[]{ "Result", "Countdown" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Countdown.QueryPagedExpringCountdownsByTypeReq), global::Countdown.QueryPagedExpringCountdownsByTypeReq.Parser, new[]{ "CountdownType", "Page", "PageSize" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Countdown.QueryPagedExpringCountdownsByTypeRes), global::Countdown.QueryPagedExpringCountdownsByTypeRes.Parser, new[]{ "Result", "Countdowns" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::ServiceGrpcProto.Countdown), global::ServiceGrpcProto.Countdown.Parser, new[]{ "CountdownId", "UserId", "CountdownType", "Title", "Content", "TimeExpired", "TimeLastHandle", "TimeCreated", "TimeUpdated" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::ServiceGrpcProto.CreateCountdownReq), global::ServiceGrpcProto.CreateCountdownReq.Parser, new[]{ "UserId", "CountdownType", "Title", "Content", "TimeExpired" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::ServiceGrpcProto.CreateCountdownRes), global::ServiceGrpcProto.CreateCountdownRes.Parser, new[]{ "Result", "Countdown" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::ServiceGrpcProto.QueryCountdownByIdReq), global::ServiceGrpcProto.QueryCountdownByIdReq.Parser, new[]{ "CountdownId" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::ServiceGrpcProto.QueryCountdownByIdRes), global::ServiceGrpcProto.QueryCountdownByIdRes.Parser, new[]{ "Result", "Countdown" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::ServiceGrpcProto.NextCountdownIntervalByIdReq), global::ServiceGrpcProto.NextCountdownIntervalByIdReq.Parser, new[]{ "CountdownId", "TimeExpired" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::ServiceGrpcProto.NextCountdownIntervalByIdRes), global::ServiceGrpcProto.NextCountdownIntervalByIdRes.Parser, new[]{ "Result", "Countdown" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::ServiceGrpcProto.QueryPagedExpringCountdownsByTypeReq), global::ServiceGrpcProto.QueryPagedExpringCountdownsByTypeReq.Parser, new[]{ "CountdownType", "Page", "PageSize" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::ServiceGrpcProto.QueryPagedExpringCountdownsByTypeRes), global::ServiceGrpcProto.QueryPagedExpringCountdownsByTypeRes.Parser, new[]{ "Result", "Countdowns" }, null, null, null, null)
           }));
     }
     #endregion
@@ -92,7 +93,7 @@ namespace Countdown {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Countdown.CountdownReflection.Descriptor.MessageTypes[0]; }
+      get { return global::ServiceGrpcProto.CountdownReflection.Descriptor.MessageTypes[0]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -577,7 +578,7 @@ namespace Countdown {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Countdown.CountdownReflection.Descriptor.MessageTypes[1]; }
+      get { return global::ServiceGrpcProto.CountdownReflection.Descriptor.MessageTypes[1]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -914,7 +915,7 @@ namespace Countdown {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Countdown.CountdownReflection.Descriptor.MessageTypes[2]; }
+      get { return global::ServiceGrpcProto.CountdownReflection.Descriptor.MessageTypes[2]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -947,10 +948,10 @@ namespace Countdown {
 
     /// <summary>Field number for the "result" field.</summary>
     public const int ResultFieldNumber = 1;
-    private global::Shared.Result result_;
+    private global::ServiceGrpcProto.Result result_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::Shared.Result Result {
+    public global::ServiceGrpcProto.Result Result {
       get { return result_; }
       set {
         result_ = value;
@@ -959,10 +960,10 @@ namespace Countdown {
 
     /// <summary>Field number for the "countdown" field.</summary>
     public const int CountdownFieldNumber = 2;
-    private global::Countdown.Countdown countdown_;
+    private global::ServiceGrpcProto.Countdown countdown_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::Countdown.Countdown Countdown {
+    public global::ServiceGrpcProto.Countdown Countdown {
       get { return countdown_; }
       set {
         countdown_ = value;
@@ -1069,13 +1070,13 @@ namespace Countdown {
       }
       if (other.result_ != null) {
         if (result_ == null) {
-          Result = new global::Shared.Result();
+          Result = new global::ServiceGrpcProto.Result();
         }
         Result.MergeFrom(other.Result);
       }
       if (other.countdown_ != null) {
         if (countdown_ == null) {
-          Countdown = new global::Countdown.Countdown();
+          Countdown = new global::ServiceGrpcProto.Countdown();
         }
         Countdown.MergeFrom(other.Countdown);
       }
@@ -1096,14 +1097,14 @@ namespace Countdown {
             break;
           case 10: {
             if (result_ == null) {
-              Result = new global::Shared.Result();
+              Result = new global::ServiceGrpcProto.Result();
             }
             input.ReadMessage(Result);
             break;
           }
           case 18: {
             if (countdown_ == null) {
-              Countdown = new global::Countdown.Countdown();
+              Countdown = new global::ServiceGrpcProto.Countdown();
             }
             input.ReadMessage(Countdown);
             break;
@@ -1125,14 +1126,14 @@ namespace Countdown {
             break;
           case 10: {
             if (result_ == null) {
-              Result = new global::Shared.Result();
+              Result = new global::ServiceGrpcProto.Result();
             }
             input.ReadMessage(Result);
             break;
           }
           case 18: {
             if (countdown_ == null) {
-              Countdown = new global::Countdown.Countdown();
+              Countdown = new global::ServiceGrpcProto.Countdown();
             }
             input.ReadMessage(Countdown);
             break;
@@ -1158,7 +1159,7 @@ namespace Countdown {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Countdown.CountdownReflection.Descriptor.MessageTypes[3]; }
+      get { return global::ServiceGrpcProto.CountdownReflection.Descriptor.MessageTypes[3]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1347,7 +1348,7 @@ namespace Countdown {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Countdown.CountdownReflection.Descriptor.MessageTypes[4]; }
+      get { return global::ServiceGrpcProto.CountdownReflection.Descriptor.MessageTypes[4]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1380,10 +1381,10 @@ namespace Countdown {
 
     /// <summary>Field number for the "result" field.</summary>
     public const int ResultFieldNumber = 1;
-    private global::Shared.Result result_;
+    private global::ServiceGrpcProto.Result result_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::Shared.Result Result {
+    public global::ServiceGrpcProto.Result Result {
       get { return result_; }
       set {
         result_ = value;
@@ -1392,10 +1393,10 @@ namespace Countdown {
 
     /// <summary>Field number for the "countdown" field.</summary>
     public const int CountdownFieldNumber = 2;
-    private global::Countdown.Countdown countdown_;
+    private global::ServiceGrpcProto.Countdown countdown_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::Countdown.Countdown Countdown {
+    public global::ServiceGrpcProto.Countdown Countdown {
       get { return countdown_; }
       set {
         countdown_ = value;
@@ -1502,13 +1503,13 @@ namespace Countdown {
       }
       if (other.result_ != null) {
         if (result_ == null) {
-          Result = new global::Shared.Result();
+          Result = new global::ServiceGrpcProto.Result();
         }
         Result.MergeFrom(other.Result);
       }
       if (other.countdown_ != null) {
         if (countdown_ == null) {
-          Countdown = new global::Countdown.Countdown();
+          Countdown = new global::ServiceGrpcProto.Countdown();
         }
         Countdown.MergeFrom(other.Countdown);
       }
@@ -1529,14 +1530,14 @@ namespace Countdown {
             break;
           case 10: {
             if (result_ == null) {
-              Result = new global::Shared.Result();
+              Result = new global::ServiceGrpcProto.Result();
             }
             input.ReadMessage(Result);
             break;
           }
           case 18: {
             if (countdown_ == null) {
-              Countdown = new global::Countdown.Countdown();
+              Countdown = new global::ServiceGrpcProto.Countdown();
             }
             input.ReadMessage(Countdown);
             break;
@@ -1558,14 +1559,14 @@ namespace Countdown {
             break;
           case 10: {
             if (result_ == null) {
-              Result = new global::Shared.Result();
+              Result = new global::ServiceGrpcProto.Result();
             }
             input.ReadMessage(Result);
             break;
           }
           case 18: {
             if (countdown_ == null) {
-              Countdown = new global::Countdown.Countdown();
+              Countdown = new global::ServiceGrpcProto.Countdown();
             }
             input.ReadMessage(Countdown);
             break;
@@ -1591,7 +1592,7 @@ namespace Countdown {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Countdown.CountdownReflection.Descriptor.MessageTypes[5]; }
+      get { return global::ServiceGrpcProto.CountdownReflection.Descriptor.MessageTypes[5]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1817,7 +1818,7 @@ namespace Countdown {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Countdown.CountdownReflection.Descriptor.MessageTypes[6]; }
+      get { return global::ServiceGrpcProto.CountdownReflection.Descriptor.MessageTypes[6]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1850,10 +1851,10 @@ namespace Countdown {
 
     /// <summary>Field number for the "result" field.</summary>
     public const int ResultFieldNumber = 1;
-    private global::Shared.Result result_;
+    private global::ServiceGrpcProto.Result result_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::Shared.Result Result {
+    public global::ServiceGrpcProto.Result Result {
       get { return result_; }
       set {
         result_ = value;
@@ -1862,10 +1863,10 @@ namespace Countdown {
 
     /// <summary>Field number for the "countdown" field.</summary>
     public const int CountdownFieldNumber = 2;
-    private global::Countdown.Countdown countdown_;
+    private global::ServiceGrpcProto.Countdown countdown_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::Countdown.Countdown Countdown {
+    public global::ServiceGrpcProto.Countdown Countdown {
       get { return countdown_; }
       set {
         countdown_ = value;
@@ -1972,13 +1973,13 @@ namespace Countdown {
       }
       if (other.result_ != null) {
         if (result_ == null) {
-          Result = new global::Shared.Result();
+          Result = new global::ServiceGrpcProto.Result();
         }
         Result.MergeFrom(other.Result);
       }
       if (other.countdown_ != null) {
         if (countdown_ == null) {
-          Countdown = new global::Countdown.Countdown();
+          Countdown = new global::ServiceGrpcProto.Countdown();
         }
         Countdown.MergeFrom(other.Countdown);
       }
@@ -1999,14 +2000,14 @@ namespace Countdown {
             break;
           case 10: {
             if (result_ == null) {
-              Result = new global::Shared.Result();
+              Result = new global::ServiceGrpcProto.Result();
             }
             input.ReadMessage(Result);
             break;
           }
           case 18: {
             if (countdown_ == null) {
-              Countdown = new global::Countdown.Countdown();
+              Countdown = new global::ServiceGrpcProto.Countdown();
             }
             input.ReadMessage(Countdown);
             break;
@@ -2028,14 +2029,14 @@ namespace Countdown {
             break;
           case 10: {
             if (result_ == null) {
-              Result = new global::Shared.Result();
+              Result = new global::ServiceGrpcProto.Result();
             }
             input.ReadMessage(Result);
             break;
           }
           case 18: {
             if (countdown_ == null) {
-              Countdown = new global::Countdown.Countdown();
+              Countdown = new global::ServiceGrpcProto.Countdown();
             }
             input.ReadMessage(Countdown);
             break;
@@ -2061,7 +2062,7 @@ namespace Countdown {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Countdown.CountdownReflection.Descriptor.MessageTypes[7]; }
+      get { return global::ServiceGrpcProto.CountdownReflection.Descriptor.MessageTypes[7]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2324,7 +2325,7 @@ namespace Countdown {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Countdown.CountdownReflection.Descriptor.MessageTypes[8]; }
+      get { return global::ServiceGrpcProto.CountdownReflection.Descriptor.MessageTypes[8]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2357,10 +2358,10 @@ namespace Countdown {
 
     /// <summary>Field number for the "result" field.</summary>
     public const int ResultFieldNumber = 1;
-    private global::Shared.Result result_;
+    private global::ServiceGrpcProto.Result result_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::Shared.Result Result {
+    public global::ServiceGrpcProto.Result Result {
       get { return result_; }
       set {
         result_ = value;
@@ -2369,12 +2370,12 @@ namespace Countdown {
 
     /// <summary>Field number for the "countdowns" field.</summary>
     public const int CountdownsFieldNumber = 2;
-    private static readonly pb::FieldCodec<global::Countdown.Countdown> _repeated_countdowns_codec
-        = pb::FieldCodec.ForMessage(18, global::Countdown.Countdown.Parser);
-    private readonly pbc::RepeatedField<global::Countdown.Countdown> countdowns_ = new pbc::RepeatedField<global::Countdown.Countdown>();
+    private static readonly pb::FieldCodec<global::ServiceGrpcProto.Countdown> _repeated_countdowns_codec
+        = pb::FieldCodec.ForMessage(18, global::ServiceGrpcProto.Countdown.Parser);
+    private readonly pbc::RepeatedField<global::ServiceGrpcProto.Countdown> countdowns_ = new pbc::RepeatedField<global::ServiceGrpcProto.Countdown>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public pbc::RepeatedField<global::Countdown.Countdown> Countdowns {
+    public pbc::RepeatedField<global::ServiceGrpcProto.Countdown> Countdowns {
       get { return countdowns_; }
     }
 
@@ -2470,7 +2471,7 @@ namespace Countdown {
       }
       if (other.result_ != null) {
         if (result_ == null) {
-          Result = new global::Shared.Result();
+          Result = new global::ServiceGrpcProto.Result();
         }
         Result.MergeFrom(other.Result);
       }
@@ -2492,7 +2493,7 @@ namespace Countdown {
             break;
           case 10: {
             if (result_ == null) {
-              Result = new global::Shared.Result();
+              Result = new global::ServiceGrpcProto.Result();
             }
             input.ReadMessage(Result);
             break;
@@ -2518,7 +2519,7 @@ namespace Countdown {
             break;
           case 10: {
             if (result_ == null) {
-              Result = new global::Shared.Result();
+              Result = new global::ServiceGrpcProto.Result();
             }
             input.ReadMessage(Result);
             break;

@@ -9,7 +9,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Note {
+namespace ServiceGrpcProto {
 
   /// <summary>Holder for reflection information generated from note/note.proto</summary>
   public static partial class NoteReflection {
@@ -49,24 +49,25 @@ namespace Note {
             "Fy5ub3RlLkRlbGV0ZU5vdGVCeUlkUmVzIgASTQoRUXVlcnlOb3RlQnlOb3Rl",
             "SWQSGi5ub3RlLlF1ZXJ5Tm90ZUJ5Tm90ZUlkUmVxGhoubm90ZS5RdWVyeU5v",
             "dGVCeU5vdGVJZFJlcyIAEkcKD1F1ZXJ5UGFnZWROb3RlcxIYLm5vdGUuUXVl",
-            "cnlQYWdlZE5vdGVzUmVxGhgubm90ZS5RdWVyeVBhZ2VkTm90ZXNSZXMiAEJ4",
-            "CippbmZvLm1vZXRhbmcuc2VydmljZXByb3RvY29sLnByb3RvYnVmLm5vdGVC",
-            "CU5vdGVQcm90b1ABWj1naXRodWIuY29tL21laWRvbXgvc2VydmljZS1wcm90",
-            "b2NvbC9wcm90b2NvbC9wcm90b2J1Zi9nby9ub3RlYgZwcm90bzM="));
+            "cnlQYWdlZE5vdGVzUmVxGhgubm90ZS5RdWVyeVBhZ2VkTm90ZXNSZXMiAEKL",
+            "AQoqaW5mby5tb2V0YW5nLnNlcnZpY2Vwcm90b2NvbC5wcm90b2J1Zi5ub3Rl",
+            "QglOb3RlUHJvdG9QAVo9Z2l0aHViLmNvbS9tZWlkb214L3NlcnZpY2UtcHJv",
+            "dG9jb2wvcHJvdG9jb2wvcHJvdG9idWYvZ28vbm90ZaoCEFNlcnZpY2VHcnBj",
+            "UHJvdG9iBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Shared.ResultReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::ServiceGrpcProto.ResultReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Note.Note), global::Note.Note.Parser, new[]{ "NoteId", "UserId", "Title", "Content", "TimeCreated", "TimeUpdated" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Note.CreateNoteReq), global::Note.CreateNoteReq.Parser, new[]{ "UserId", "Title", "Content" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Note.CreateNoteRes), global::Note.CreateNoteRes.Parser, new[]{ "Result", "Note" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Note.QueryNoteByNoteIdReq), global::Note.QueryNoteByNoteIdReq.Parser, new[]{ "NoteId" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Note.QueryNoteByNoteIdRes), global::Note.QueryNoteByNoteIdRes.Parser, new[]{ "Result", "Note" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Note.QueryPagedNotesReq), global::Note.QueryPagedNotesReq.Parser, new[]{ "Page", "PageSize" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Note.QueryPagedNotesRes), global::Note.QueryPagedNotesRes.Parser, new[]{ "Result", "Notes" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Note.UpdateNoteByIdReq), global::Note.UpdateNoteByIdReq.Parser, new[]{ "NoteId", "Title", "Content" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Note.UpdateNoteByIdRes), global::Note.UpdateNoteByIdRes.Parser, new[]{ "Result", "Note" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Note.DeleteNoteByIdReq), global::Note.DeleteNoteByIdReq.Parser, new[]{ "NoteId" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Note.DeleteNoteByIdRes), global::Note.DeleteNoteByIdRes.Parser, new[]{ "Result" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::ServiceGrpcProto.Note), global::ServiceGrpcProto.Note.Parser, new[]{ "NoteId", "UserId", "Title", "Content", "TimeCreated", "TimeUpdated" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::ServiceGrpcProto.CreateNoteReq), global::ServiceGrpcProto.CreateNoteReq.Parser, new[]{ "UserId", "Title", "Content" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::ServiceGrpcProto.CreateNoteRes), global::ServiceGrpcProto.CreateNoteRes.Parser, new[]{ "Result", "Note" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::ServiceGrpcProto.QueryNoteByNoteIdReq), global::ServiceGrpcProto.QueryNoteByNoteIdReq.Parser, new[]{ "NoteId" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::ServiceGrpcProto.QueryNoteByNoteIdRes), global::ServiceGrpcProto.QueryNoteByNoteIdRes.Parser, new[]{ "Result", "Note" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::ServiceGrpcProto.QueryPagedNotesReq), global::ServiceGrpcProto.QueryPagedNotesReq.Parser, new[]{ "Page", "PageSize" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::ServiceGrpcProto.QueryPagedNotesRes), global::ServiceGrpcProto.QueryPagedNotesRes.Parser, new[]{ "Result", "Notes" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::ServiceGrpcProto.UpdateNoteByIdReq), global::ServiceGrpcProto.UpdateNoteByIdReq.Parser, new[]{ "NoteId", "Title", "Content" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::ServiceGrpcProto.UpdateNoteByIdRes), global::ServiceGrpcProto.UpdateNoteByIdRes.Parser, new[]{ "Result", "Note" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::ServiceGrpcProto.DeleteNoteByIdReq), global::ServiceGrpcProto.DeleteNoteByIdReq.Parser, new[]{ "NoteId" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::ServiceGrpcProto.DeleteNoteByIdRes), global::ServiceGrpcProto.DeleteNoteByIdRes.Parser, new[]{ "Result" }, null, null, null, null)
           }));
     }
     #endregion
@@ -87,7 +88,7 @@ namespace Note {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Note.NoteReflection.Descriptor.MessageTypes[0]; }
+      get { return global::ServiceGrpcProto.NoteReflection.Descriptor.MessageTypes[0]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -461,7 +462,7 @@ namespace Note {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Note.NoteReflection.Descriptor.MessageTypes[1]; }
+      get { return global::ServiceGrpcProto.NoteReflection.Descriptor.MessageTypes[1]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -724,7 +725,7 @@ namespace Note {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Note.NoteReflection.Descriptor.MessageTypes[2]; }
+      get { return global::ServiceGrpcProto.NoteReflection.Descriptor.MessageTypes[2]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -757,10 +758,10 @@ namespace Note {
 
     /// <summary>Field number for the "result" field.</summary>
     public const int ResultFieldNumber = 1;
-    private global::Shared.Result result_;
+    private global::ServiceGrpcProto.Result result_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::Shared.Result Result {
+    public global::ServiceGrpcProto.Result Result {
       get { return result_; }
       set {
         result_ = value;
@@ -769,10 +770,10 @@ namespace Note {
 
     /// <summary>Field number for the "note" field.</summary>
     public const int NoteFieldNumber = 2;
-    private global::Note.Note note_;
+    private global::ServiceGrpcProto.Note note_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::Note.Note Note {
+    public global::ServiceGrpcProto.Note Note {
       get { return note_; }
       set {
         note_ = value;
@@ -879,13 +880,13 @@ namespace Note {
       }
       if (other.result_ != null) {
         if (result_ == null) {
-          Result = new global::Shared.Result();
+          Result = new global::ServiceGrpcProto.Result();
         }
         Result.MergeFrom(other.Result);
       }
       if (other.note_ != null) {
         if (note_ == null) {
-          Note = new global::Note.Note();
+          Note = new global::ServiceGrpcProto.Note();
         }
         Note.MergeFrom(other.Note);
       }
@@ -906,14 +907,14 @@ namespace Note {
             break;
           case 10: {
             if (result_ == null) {
-              Result = new global::Shared.Result();
+              Result = new global::ServiceGrpcProto.Result();
             }
             input.ReadMessage(Result);
             break;
           }
           case 18: {
             if (note_ == null) {
-              Note = new global::Note.Note();
+              Note = new global::ServiceGrpcProto.Note();
             }
             input.ReadMessage(Note);
             break;
@@ -935,14 +936,14 @@ namespace Note {
             break;
           case 10: {
             if (result_ == null) {
-              Result = new global::Shared.Result();
+              Result = new global::ServiceGrpcProto.Result();
             }
             input.ReadMessage(Result);
             break;
           }
           case 18: {
             if (note_ == null) {
-              Note = new global::Note.Note();
+              Note = new global::ServiceGrpcProto.Note();
             }
             input.ReadMessage(Note);
             break;
@@ -968,7 +969,7 @@ namespace Note {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Note.NoteReflection.Descriptor.MessageTypes[3]; }
+      get { return global::ServiceGrpcProto.NoteReflection.Descriptor.MessageTypes[3]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1157,7 +1158,7 @@ namespace Note {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Note.NoteReflection.Descriptor.MessageTypes[4]; }
+      get { return global::ServiceGrpcProto.NoteReflection.Descriptor.MessageTypes[4]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1190,10 +1191,10 @@ namespace Note {
 
     /// <summary>Field number for the "result" field.</summary>
     public const int ResultFieldNumber = 1;
-    private global::Shared.Result result_;
+    private global::ServiceGrpcProto.Result result_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::Shared.Result Result {
+    public global::ServiceGrpcProto.Result Result {
       get { return result_; }
       set {
         result_ = value;
@@ -1202,10 +1203,10 @@ namespace Note {
 
     /// <summary>Field number for the "note" field.</summary>
     public const int NoteFieldNumber = 2;
-    private global::Note.Note note_;
+    private global::ServiceGrpcProto.Note note_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::Note.Note Note {
+    public global::ServiceGrpcProto.Note Note {
       get { return note_; }
       set {
         note_ = value;
@@ -1312,13 +1313,13 @@ namespace Note {
       }
       if (other.result_ != null) {
         if (result_ == null) {
-          Result = new global::Shared.Result();
+          Result = new global::ServiceGrpcProto.Result();
         }
         Result.MergeFrom(other.Result);
       }
       if (other.note_ != null) {
         if (note_ == null) {
-          Note = new global::Note.Note();
+          Note = new global::ServiceGrpcProto.Note();
         }
         Note.MergeFrom(other.Note);
       }
@@ -1339,14 +1340,14 @@ namespace Note {
             break;
           case 10: {
             if (result_ == null) {
-              Result = new global::Shared.Result();
+              Result = new global::ServiceGrpcProto.Result();
             }
             input.ReadMessage(Result);
             break;
           }
           case 18: {
             if (note_ == null) {
-              Note = new global::Note.Note();
+              Note = new global::ServiceGrpcProto.Note();
             }
             input.ReadMessage(Note);
             break;
@@ -1368,14 +1369,14 @@ namespace Note {
             break;
           case 10: {
             if (result_ == null) {
-              Result = new global::Shared.Result();
+              Result = new global::ServiceGrpcProto.Result();
             }
             input.ReadMessage(Result);
             break;
           }
           case 18: {
             if (note_ == null) {
-              Note = new global::Note.Note();
+              Note = new global::ServiceGrpcProto.Note();
             }
             input.ReadMessage(Note);
             break;
@@ -1401,7 +1402,7 @@ namespace Note {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Note.NoteReflection.Descriptor.MessageTypes[5]; }
+      get { return global::ServiceGrpcProto.NoteReflection.Descriptor.MessageTypes[5]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1627,7 +1628,7 @@ namespace Note {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Note.NoteReflection.Descriptor.MessageTypes[6]; }
+      get { return global::ServiceGrpcProto.NoteReflection.Descriptor.MessageTypes[6]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1660,10 +1661,10 @@ namespace Note {
 
     /// <summary>Field number for the "result" field.</summary>
     public const int ResultFieldNumber = 1;
-    private global::Shared.Result result_;
+    private global::ServiceGrpcProto.Result result_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::Shared.Result Result {
+    public global::ServiceGrpcProto.Result Result {
       get { return result_; }
       set {
         result_ = value;
@@ -1672,12 +1673,12 @@ namespace Note {
 
     /// <summary>Field number for the "notes" field.</summary>
     public const int NotesFieldNumber = 2;
-    private static readonly pb::FieldCodec<global::Note.Note> _repeated_notes_codec
-        = pb::FieldCodec.ForMessage(18, global::Note.Note.Parser);
-    private readonly pbc::RepeatedField<global::Note.Note> notes_ = new pbc::RepeatedField<global::Note.Note>();
+    private static readonly pb::FieldCodec<global::ServiceGrpcProto.Note> _repeated_notes_codec
+        = pb::FieldCodec.ForMessage(18, global::ServiceGrpcProto.Note.Parser);
+    private readonly pbc::RepeatedField<global::ServiceGrpcProto.Note> notes_ = new pbc::RepeatedField<global::ServiceGrpcProto.Note>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public pbc::RepeatedField<global::Note.Note> Notes {
+    public pbc::RepeatedField<global::ServiceGrpcProto.Note> Notes {
       get { return notes_; }
     }
 
@@ -1773,7 +1774,7 @@ namespace Note {
       }
       if (other.result_ != null) {
         if (result_ == null) {
-          Result = new global::Shared.Result();
+          Result = new global::ServiceGrpcProto.Result();
         }
         Result.MergeFrom(other.Result);
       }
@@ -1795,7 +1796,7 @@ namespace Note {
             break;
           case 10: {
             if (result_ == null) {
-              Result = new global::Shared.Result();
+              Result = new global::ServiceGrpcProto.Result();
             }
             input.ReadMessage(Result);
             break;
@@ -1821,7 +1822,7 @@ namespace Note {
             break;
           case 10: {
             if (result_ == null) {
-              Result = new global::Shared.Result();
+              Result = new global::ServiceGrpcProto.Result();
             }
             input.ReadMessage(Result);
             break;
@@ -1851,7 +1852,7 @@ namespace Note {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Note.NoteReflection.Descriptor.MessageTypes[7]; }
+      get { return global::ServiceGrpcProto.NoteReflection.Descriptor.MessageTypes[7]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2114,7 +2115,7 @@ namespace Note {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Note.NoteReflection.Descriptor.MessageTypes[8]; }
+      get { return global::ServiceGrpcProto.NoteReflection.Descriptor.MessageTypes[8]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2147,10 +2148,10 @@ namespace Note {
 
     /// <summary>Field number for the "result" field.</summary>
     public const int ResultFieldNumber = 1;
-    private global::Shared.Result result_;
+    private global::ServiceGrpcProto.Result result_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::Shared.Result Result {
+    public global::ServiceGrpcProto.Result Result {
       get { return result_; }
       set {
         result_ = value;
@@ -2159,10 +2160,10 @@ namespace Note {
 
     /// <summary>Field number for the "note" field.</summary>
     public const int NoteFieldNumber = 2;
-    private global::Note.Note note_;
+    private global::ServiceGrpcProto.Note note_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::Note.Note Note {
+    public global::ServiceGrpcProto.Note Note {
       get { return note_; }
       set {
         note_ = value;
@@ -2269,13 +2270,13 @@ namespace Note {
       }
       if (other.result_ != null) {
         if (result_ == null) {
-          Result = new global::Shared.Result();
+          Result = new global::ServiceGrpcProto.Result();
         }
         Result.MergeFrom(other.Result);
       }
       if (other.note_ != null) {
         if (note_ == null) {
-          Note = new global::Note.Note();
+          Note = new global::ServiceGrpcProto.Note();
         }
         Note.MergeFrom(other.Note);
       }
@@ -2296,14 +2297,14 @@ namespace Note {
             break;
           case 10: {
             if (result_ == null) {
-              Result = new global::Shared.Result();
+              Result = new global::ServiceGrpcProto.Result();
             }
             input.ReadMessage(Result);
             break;
           }
           case 18: {
             if (note_ == null) {
-              Note = new global::Note.Note();
+              Note = new global::ServiceGrpcProto.Note();
             }
             input.ReadMessage(Note);
             break;
@@ -2325,14 +2326,14 @@ namespace Note {
             break;
           case 10: {
             if (result_ == null) {
-              Result = new global::Shared.Result();
+              Result = new global::ServiceGrpcProto.Result();
             }
             input.ReadMessage(Result);
             break;
           }
           case 18: {
             if (note_ == null) {
-              Note = new global::Note.Note();
+              Note = new global::ServiceGrpcProto.Note();
             }
             input.ReadMessage(Note);
             break;
@@ -2358,7 +2359,7 @@ namespace Note {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Note.NoteReflection.Descriptor.MessageTypes[9]; }
+      get { return global::ServiceGrpcProto.NoteReflection.Descriptor.MessageTypes[9]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2547,7 +2548,7 @@ namespace Note {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Note.NoteReflection.Descriptor.MessageTypes[10]; }
+      get { return global::ServiceGrpcProto.NoteReflection.Descriptor.MessageTypes[10]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2579,10 +2580,10 @@ namespace Note {
 
     /// <summary>Field number for the "result" field.</summary>
     public const int ResultFieldNumber = 1;
-    private global::Shared.Result result_;
+    private global::ServiceGrpcProto.Result result_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::Shared.Result Result {
+    public global::ServiceGrpcProto.Result Result {
       get { return result_; }
       set {
         result_ = value;
@@ -2676,7 +2677,7 @@ namespace Note {
       }
       if (other.result_ != null) {
         if (result_ == null) {
-          Result = new global::Shared.Result();
+          Result = new global::ServiceGrpcProto.Result();
         }
         Result.MergeFrom(other.Result);
       }
@@ -2697,7 +2698,7 @@ namespace Note {
             break;
           case 10: {
             if (result_ == null) {
-              Result = new global::Shared.Result();
+              Result = new global::ServiceGrpcProto.Result();
             }
             input.ReadMessage(Result);
             break;
@@ -2719,7 +2720,7 @@ namespace Note {
             break;
           case 10: {
             if (result_ == null) {
-              Result = new global::Shared.Result();
+              Result = new global::ServiceGrpcProto.Result();
             }
             input.ReadMessage(Result);
             break;

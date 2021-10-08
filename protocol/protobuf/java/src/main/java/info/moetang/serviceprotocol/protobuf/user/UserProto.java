@@ -68,10 +68,11 @@ public final class UserProto {
       "Password\022\033.user.VerifyUserPasswordReq\032\033." +
       "user.VerifyUserPasswordRes\"\000\022P\n\022ChangeUs" +
       "erPassword\022\033.user.ChangeUserPasswordReq\032" +
-      "\033.user.ChangeUserPasswordRes\"\000Bx\n*info.m" +
-      "oetang.serviceprotocol.protobuf.userB\tUs" +
-      "erProtoP\001Z=github.com/meidomx/service-pr" +
-      "otocol/protocol/protobuf/go/userb\006proto3"
+      "\033.user.ChangeUserPasswordRes\"\000B\213\001\n*info." +
+      "moetang.serviceprotocol.protobuf.userB\tU" +
+      "serProtoP\001Z=github.com/meidomx/service-p" +
+      "rotocol/protocol/protobuf/go/user\252\002\020Serv" +
+      "iceGrpcProtob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

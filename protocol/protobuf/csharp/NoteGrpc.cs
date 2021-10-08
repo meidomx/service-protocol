@@ -7,7 +7,7 @@
 
 using grpc = global::Grpc.Core;
 
-namespace Note {
+namespace ServiceGrpcProto {
   public static partial class NoteService
   {
     static readonly string __ServiceName = "note.NoteService";
@@ -46,28 +46,28 @@ namespace Note {
     }
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::Note.CreateNoteReq> __Marshaller_note_CreateNoteReq = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Note.CreateNoteReq.Parser));
+    static readonly grpc::Marshaller<global::ServiceGrpcProto.CreateNoteReq> __Marshaller_note_CreateNoteReq = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::ServiceGrpcProto.CreateNoteReq.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::Note.CreateNoteRes> __Marshaller_note_CreateNoteRes = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Note.CreateNoteRes.Parser));
+    static readonly grpc::Marshaller<global::ServiceGrpcProto.CreateNoteRes> __Marshaller_note_CreateNoteRes = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::ServiceGrpcProto.CreateNoteRes.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::Note.UpdateNoteByIdReq> __Marshaller_note_UpdateNoteByIdReq = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Note.UpdateNoteByIdReq.Parser));
+    static readonly grpc::Marshaller<global::ServiceGrpcProto.UpdateNoteByIdReq> __Marshaller_note_UpdateNoteByIdReq = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::ServiceGrpcProto.UpdateNoteByIdReq.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::Note.UpdateNoteByIdRes> __Marshaller_note_UpdateNoteByIdRes = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Note.UpdateNoteByIdRes.Parser));
+    static readonly grpc::Marshaller<global::ServiceGrpcProto.UpdateNoteByIdRes> __Marshaller_note_UpdateNoteByIdRes = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::ServiceGrpcProto.UpdateNoteByIdRes.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::Note.DeleteNoteByIdReq> __Marshaller_note_DeleteNoteByIdReq = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Note.DeleteNoteByIdReq.Parser));
+    static readonly grpc::Marshaller<global::ServiceGrpcProto.DeleteNoteByIdReq> __Marshaller_note_DeleteNoteByIdReq = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::ServiceGrpcProto.DeleteNoteByIdReq.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::Note.DeleteNoteByIdRes> __Marshaller_note_DeleteNoteByIdRes = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Note.DeleteNoteByIdRes.Parser));
+    static readonly grpc::Marshaller<global::ServiceGrpcProto.DeleteNoteByIdRes> __Marshaller_note_DeleteNoteByIdRes = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::ServiceGrpcProto.DeleteNoteByIdRes.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::Note.QueryNoteByNoteIdReq> __Marshaller_note_QueryNoteByNoteIdReq = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Note.QueryNoteByNoteIdReq.Parser));
+    static readonly grpc::Marshaller<global::ServiceGrpcProto.QueryNoteByNoteIdReq> __Marshaller_note_QueryNoteByNoteIdReq = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::ServiceGrpcProto.QueryNoteByNoteIdReq.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::Note.QueryNoteByNoteIdRes> __Marshaller_note_QueryNoteByNoteIdRes = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Note.QueryNoteByNoteIdRes.Parser));
+    static readonly grpc::Marshaller<global::ServiceGrpcProto.QueryNoteByNoteIdRes> __Marshaller_note_QueryNoteByNoteIdRes = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::ServiceGrpcProto.QueryNoteByNoteIdRes.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::Note.QueryPagedNotesReq> __Marshaller_note_QueryPagedNotesReq = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Note.QueryPagedNotesReq.Parser));
+    static readonly grpc::Marshaller<global::ServiceGrpcProto.QueryPagedNotesReq> __Marshaller_note_QueryPagedNotesReq = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::ServiceGrpcProto.QueryPagedNotesReq.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::Note.QueryPagedNotesRes> __Marshaller_note_QueryPagedNotesRes = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Note.QueryPagedNotesRes.Parser));
+    static readonly grpc::Marshaller<global::ServiceGrpcProto.QueryPagedNotesRes> __Marshaller_note_QueryPagedNotesRes = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::ServiceGrpcProto.QueryPagedNotesRes.Parser));
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Method<global::Note.CreateNoteReq, global::Note.CreateNoteRes> __Method_CreateNote = new grpc::Method<global::Note.CreateNoteReq, global::Note.CreateNoteRes>(
+    static readonly grpc::Method<global::ServiceGrpcProto.CreateNoteReq, global::ServiceGrpcProto.CreateNoteRes> __Method_CreateNote = new grpc::Method<global::ServiceGrpcProto.CreateNoteReq, global::ServiceGrpcProto.CreateNoteRes>(
         grpc::MethodType.Unary,
         __ServiceName,
         "CreateNote",
@@ -75,7 +75,7 @@ namespace Note {
         __Marshaller_note_CreateNoteRes);
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Method<global::Note.UpdateNoteByIdReq, global::Note.UpdateNoteByIdRes> __Method_UpdateNoteById = new grpc::Method<global::Note.UpdateNoteByIdReq, global::Note.UpdateNoteByIdRes>(
+    static readonly grpc::Method<global::ServiceGrpcProto.UpdateNoteByIdReq, global::ServiceGrpcProto.UpdateNoteByIdRes> __Method_UpdateNoteById = new grpc::Method<global::ServiceGrpcProto.UpdateNoteByIdReq, global::ServiceGrpcProto.UpdateNoteByIdRes>(
         grpc::MethodType.Unary,
         __ServiceName,
         "UpdateNoteById",
@@ -83,7 +83,7 @@ namespace Note {
         __Marshaller_note_UpdateNoteByIdRes);
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Method<global::Note.DeleteNoteByIdReq, global::Note.DeleteNoteByIdRes> __Method_DeleteNoteById = new grpc::Method<global::Note.DeleteNoteByIdReq, global::Note.DeleteNoteByIdRes>(
+    static readonly grpc::Method<global::ServiceGrpcProto.DeleteNoteByIdReq, global::ServiceGrpcProto.DeleteNoteByIdRes> __Method_DeleteNoteById = new grpc::Method<global::ServiceGrpcProto.DeleteNoteByIdReq, global::ServiceGrpcProto.DeleteNoteByIdRes>(
         grpc::MethodType.Unary,
         __ServiceName,
         "DeleteNoteById",
@@ -91,7 +91,7 @@ namespace Note {
         __Marshaller_note_DeleteNoteByIdRes);
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Method<global::Note.QueryNoteByNoteIdReq, global::Note.QueryNoteByNoteIdRes> __Method_QueryNoteByNoteId = new grpc::Method<global::Note.QueryNoteByNoteIdReq, global::Note.QueryNoteByNoteIdRes>(
+    static readonly grpc::Method<global::ServiceGrpcProto.QueryNoteByNoteIdReq, global::ServiceGrpcProto.QueryNoteByNoteIdRes> __Method_QueryNoteByNoteId = new grpc::Method<global::ServiceGrpcProto.QueryNoteByNoteIdReq, global::ServiceGrpcProto.QueryNoteByNoteIdRes>(
         grpc::MethodType.Unary,
         __ServiceName,
         "QueryNoteByNoteId",
@@ -99,7 +99,7 @@ namespace Note {
         __Marshaller_note_QueryNoteByNoteIdRes);
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Method<global::Note.QueryPagedNotesReq, global::Note.QueryPagedNotesRes> __Method_QueryPagedNotes = new grpc::Method<global::Note.QueryPagedNotesReq, global::Note.QueryPagedNotesRes>(
+    static readonly grpc::Method<global::ServiceGrpcProto.QueryPagedNotesReq, global::ServiceGrpcProto.QueryPagedNotesRes> __Method_QueryPagedNotes = new grpc::Method<global::ServiceGrpcProto.QueryPagedNotesReq, global::ServiceGrpcProto.QueryPagedNotesRes>(
         grpc::MethodType.Unary,
         __ServiceName,
         "QueryPagedNotes",
@@ -109,7 +109,7 @@ namespace Note {
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
     {
-      get { return global::Note.NoteReflection.Descriptor.Services[0]; }
+      get { return global::ServiceGrpcProto.NoteReflection.Descriptor.Services[0]; }
     }
 
     /// <summary>Base class for server-side implementations of NoteService</summary>
@@ -117,31 +117,31 @@ namespace Note {
     public abstract partial class NoteServiceBase
     {
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::System.Threading.Tasks.Task<global::Note.CreateNoteRes> CreateNote(global::Note.CreateNoteReq request, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::ServiceGrpcProto.CreateNoteRes> CreateNote(global::ServiceGrpcProto.CreateNoteReq request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
 
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::System.Threading.Tasks.Task<global::Note.UpdateNoteByIdRes> UpdateNoteById(global::Note.UpdateNoteByIdReq request, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::ServiceGrpcProto.UpdateNoteByIdRes> UpdateNoteById(global::ServiceGrpcProto.UpdateNoteByIdReq request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
 
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::System.Threading.Tasks.Task<global::Note.DeleteNoteByIdRes> DeleteNoteById(global::Note.DeleteNoteByIdReq request, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::ServiceGrpcProto.DeleteNoteByIdRes> DeleteNoteById(global::ServiceGrpcProto.DeleteNoteByIdReq request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
 
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::System.Threading.Tasks.Task<global::Note.QueryNoteByNoteIdRes> QueryNoteByNoteId(global::Note.QueryNoteByNoteIdReq request, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::ServiceGrpcProto.QueryNoteByNoteIdRes> QueryNoteByNoteId(global::ServiceGrpcProto.QueryNoteByNoteIdReq request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
 
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::System.Threading.Tasks.Task<global::Note.QueryPagedNotesRes> QueryPagedNotes(global::Note.QueryPagedNotesReq request, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::ServiceGrpcProto.QueryPagedNotesRes> QueryPagedNotes(global::ServiceGrpcProto.QueryPagedNotesReq request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -176,102 +176,102 @@ namespace Note {
       }
 
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Note.CreateNoteRes CreateNote(global::Note.CreateNoteReq request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual global::ServiceGrpcProto.CreateNoteRes CreateNote(global::ServiceGrpcProto.CreateNoteReq request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return CreateNote(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Note.CreateNoteRes CreateNote(global::Note.CreateNoteReq request, grpc::CallOptions options)
+      public virtual global::ServiceGrpcProto.CreateNoteRes CreateNote(global::ServiceGrpcProto.CreateNoteReq request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_CreateNote, null, options, request);
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Note.CreateNoteRes> CreateNoteAsync(global::Note.CreateNoteReq request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::ServiceGrpcProto.CreateNoteRes> CreateNoteAsync(global::ServiceGrpcProto.CreateNoteReq request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return CreateNoteAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Note.CreateNoteRes> CreateNoteAsync(global::Note.CreateNoteReq request, grpc::CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::ServiceGrpcProto.CreateNoteRes> CreateNoteAsync(global::ServiceGrpcProto.CreateNoteReq request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_CreateNote, null, options, request);
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Note.UpdateNoteByIdRes UpdateNoteById(global::Note.UpdateNoteByIdReq request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual global::ServiceGrpcProto.UpdateNoteByIdRes UpdateNoteById(global::ServiceGrpcProto.UpdateNoteByIdReq request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return UpdateNoteById(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Note.UpdateNoteByIdRes UpdateNoteById(global::Note.UpdateNoteByIdReq request, grpc::CallOptions options)
+      public virtual global::ServiceGrpcProto.UpdateNoteByIdRes UpdateNoteById(global::ServiceGrpcProto.UpdateNoteByIdReq request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_UpdateNoteById, null, options, request);
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Note.UpdateNoteByIdRes> UpdateNoteByIdAsync(global::Note.UpdateNoteByIdReq request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::ServiceGrpcProto.UpdateNoteByIdRes> UpdateNoteByIdAsync(global::ServiceGrpcProto.UpdateNoteByIdReq request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return UpdateNoteByIdAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Note.UpdateNoteByIdRes> UpdateNoteByIdAsync(global::Note.UpdateNoteByIdReq request, grpc::CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::ServiceGrpcProto.UpdateNoteByIdRes> UpdateNoteByIdAsync(global::ServiceGrpcProto.UpdateNoteByIdReq request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_UpdateNoteById, null, options, request);
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Note.DeleteNoteByIdRes DeleteNoteById(global::Note.DeleteNoteByIdReq request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual global::ServiceGrpcProto.DeleteNoteByIdRes DeleteNoteById(global::ServiceGrpcProto.DeleteNoteByIdReq request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return DeleteNoteById(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Note.DeleteNoteByIdRes DeleteNoteById(global::Note.DeleteNoteByIdReq request, grpc::CallOptions options)
+      public virtual global::ServiceGrpcProto.DeleteNoteByIdRes DeleteNoteById(global::ServiceGrpcProto.DeleteNoteByIdReq request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_DeleteNoteById, null, options, request);
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Note.DeleteNoteByIdRes> DeleteNoteByIdAsync(global::Note.DeleteNoteByIdReq request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::ServiceGrpcProto.DeleteNoteByIdRes> DeleteNoteByIdAsync(global::ServiceGrpcProto.DeleteNoteByIdReq request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return DeleteNoteByIdAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Note.DeleteNoteByIdRes> DeleteNoteByIdAsync(global::Note.DeleteNoteByIdReq request, grpc::CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::ServiceGrpcProto.DeleteNoteByIdRes> DeleteNoteByIdAsync(global::ServiceGrpcProto.DeleteNoteByIdReq request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_DeleteNoteById, null, options, request);
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Note.QueryNoteByNoteIdRes QueryNoteByNoteId(global::Note.QueryNoteByNoteIdReq request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual global::ServiceGrpcProto.QueryNoteByNoteIdRes QueryNoteByNoteId(global::ServiceGrpcProto.QueryNoteByNoteIdReq request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return QueryNoteByNoteId(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Note.QueryNoteByNoteIdRes QueryNoteByNoteId(global::Note.QueryNoteByNoteIdReq request, grpc::CallOptions options)
+      public virtual global::ServiceGrpcProto.QueryNoteByNoteIdRes QueryNoteByNoteId(global::ServiceGrpcProto.QueryNoteByNoteIdReq request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_QueryNoteByNoteId, null, options, request);
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Note.QueryNoteByNoteIdRes> QueryNoteByNoteIdAsync(global::Note.QueryNoteByNoteIdReq request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::ServiceGrpcProto.QueryNoteByNoteIdRes> QueryNoteByNoteIdAsync(global::ServiceGrpcProto.QueryNoteByNoteIdReq request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return QueryNoteByNoteIdAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Note.QueryNoteByNoteIdRes> QueryNoteByNoteIdAsync(global::Note.QueryNoteByNoteIdReq request, grpc::CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::ServiceGrpcProto.QueryNoteByNoteIdRes> QueryNoteByNoteIdAsync(global::ServiceGrpcProto.QueryNoteByNoteIdReq request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_QueryNoteByNoteId, null, options, request);
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Note.QueryPagedNotesRes QueryPagedNotes(global::Note.QueryPagedNotesReq request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual global::ServiceGrpcProto.QueryPagedNotesRes QueryPagedNotes(global::ServiceGrpcProto.QueryPagedNotesReq request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return QueryPagedNotes(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Note.QueryPagedNotesRes QueryPagedNotes(global::Note.QueryPagedNotesReq request, grpc::CallOptions options)
+      public virtual global::ServiceGrpcProto.QueryPagedNotesRes QueryPagedNotes(global::ServiceGrpcProto.QueryPagedNotesReq request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_QueryPagedNotes, null, options, request);
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Note.QueryPagedNotesRes> QueryPagedNotesAsync(global::Note.QueryPagedNotesReq request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::ServiceGrpcProto.QueryPagedNotesRes> QueryPagedNotesAsync(global::ServiceGrpcProto.QueryPagedNotesReq request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return QueryPagedNotesAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Note.QueryPagedNotesRes> QueryPagedNotesAsync(global::Note.QueryPagedNotesReq request, grpc::CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::ServiceGrpcProto.QueryPagedNotesRes> QueryPagedNotesAsync(global::ServiceGrpcProto.QueryPagedNotesReq request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_QueryPagedNotes, null, options, request);
       }
@@ -303,11 +303,11 @@ namespace Note {
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     public static void BindService(grpc::ServiceBinderBase serviceBinder, NoteServiceBase serviceImpl)
     {
-      serviceBinder.AddMethod(__Method_CreateNote, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Note.CreateNoteReq, global::Note.CreateNoteRes>(serviceImpl.CreateNote));
-      serviceBinder.AddMethod(__Method_UpdateNoteById, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Note.UpdateNoteByIdReq, global::Note.UpdateNoteByIdRes>(serviceImpl.UpdateNoteById));
-      serviceBinder.AddMethod(__Method_DeleteNoteById, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Note.DeleteNoteByIdReq, global::Note.DeleteNoteByIdRes>(serviceImpl.DeleteNoteById));
-      serviceBinder.AddMethod(__Method_QueryNoteByNoteId, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Note.QueryNoteByNoteIdReq, global::Note.QueryNoteByNoteIdRes>(serviceImpl.QueryNoteByNoteId));
-      serviceBinder.AddMethod(__Method_QueryPagedNotes, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Note.QueryPagedNotesReq, global::Note.QueryPagedNotesRes>(serviceImpl.QueryPagedNotes));
+      serviceBinder.AddMethod(__Method_CreateNote, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::ServiceGrpcProto.CreateNoteReq, global::ServiceGrpcProto.CreateNoteRes>(serviceImpl.CreateNote));
+      serviceBinder.AddMethod(__Method_UpdateNoteById, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::ServiceGrpcProto.UpdateNoteByIdReq, global::ServiceGrpcProto.UpdateNoteByIdRes>(serviceImpl.UpdateNoteById));
+      serviceBinder.AddMethod(__Method_DeleteNoteById, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::ServiceGrpcProto.DeleteNoteByIdReq, global::ServiceGrpcProto.DeleteNoteByIdRes>(serviceImpl.DeleteNoteById));
+      serviceBinder.AddMethod(__Method_QueryNoteByNoteId, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::ServiceGrpcProto.QueryNoteByNoteIdReq, global::ServiceGrpcProto.QueryNoteByNoteIdRes>(serviceImpl.QueryNoteByNoteId));
+      serviceBinder.AddMethod(__Method_QueryPagedNotes, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::ServiceGrpcProto.QueryPagedNotesReq, global::ServiceGrpcProto.QueryPagedNotesRes>(serviceImpl.QueryPagedNotes));
     }
 
   }
