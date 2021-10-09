@@ -21,4 +21,19 @@ public interface VerifyUserPasswordResOrBuilder extends
    * <code>.shared.Result result = 1;</code>
    */
   info.moetang.serviceprotocol.protobuf.shared.ResultOrBuilder getResultOrBuilder();
+
+  /**
+   * <code>.user.User user = 2;</code>
+   * @return Whether the user field is set.
+   */
+  boolean hasUser();
+  /**
+   * <code>.user.User user = 2;</code>
+   * @return The user.
+   */
+  info.moetang.serviceprotocol.protobuf.user.User getUser();
+  /**
+   * <code>.user.User user = 2;</code>
+   */
+  info.moetang.serviceprotocol.protobuf.user.UserOrBuilder getUserOrBuilder();
 }

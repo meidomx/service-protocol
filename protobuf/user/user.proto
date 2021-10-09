@@ -16,6 +16,15 @@ service UserService {
   rpc ChangeUserPassword (ChangeUserPasswordReq) returns (ChangeUserPasswordRes){}
 }
 
+message User {
+  string user_id = 1;
+  string scope = 2;
+  string user_type = 3;
+
+  int64 time_created = 11;
+  int64 time_updated = 12;
+}
+
 message RegisterUserReq {
   string username = 1;
   string password = 2;
@@ -32,6 +41,8 @@ message VerifyUserPasswordReq {
 
 message VerifyUserPasswordRes {
   shared.Result result = 1;
+
+  User user = 2;
 }
 
 message ChangeUserPasswordReq {

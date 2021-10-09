@@ -61,6 +61,19 @@ private static final long serialVersionUID = 0L;
 
             break;
           }
+          case 18: {
+            info.moetang.serviceprotocol.protobuf.user.User.Builder subBuilder = null;
+            if (user_ != null) {
+              subBuilder = user_.toBuilder();
+            }
+            user_ = input.readMessage(info.moetang.serviceprotocol.protobuf.user.User.parser(), extensionRegistry);
+            if (subBuilder != null) {
+              subBuilder.mergeFrom(user_);
+              user_ = subBuilder.buildPartial();
+            }
+
+            break;
+          }
           default: {
             if (!parseUnknownField(
                 input, unknownFields, extensionRegistry, tag)) {
@@ -119,6 +132,32 @@ private static final long serialVersionUID = 0L;
     return getResult();
   }
 
+  public static final int USER_FIELD_NUMBER = 2;
+  private info.moetang.serviceprotocol.protobuf.user.User user_;
+  /**
+   * <code>.user.User user = 2;</code>
+   * @return Whether the user field is set.
+   */
+  @java.lang.Override
+  public boolean hasUser() {
+    return user_ != null;
+  }
+  /**
+   * <code>.user.User user = 2;</code>
+   * @return The user.
+   */
+  @java.lang.Override
+  public info.moetang.serviceprotocol.protobuf.user.User getUser() {
+    return user_ == null ? info.moetang.serviceprotocol.protobuf.user.User.getDefaultInstance() : user_;
+  }
+  /**
+   * <code>.user.User user = 2;</code>
+   */
+  @java.lang.Override
+  public info.moetang.serviceprotocol.protobuf.user.UserOrBuilder getUserOrBuilder() {
+    return getUser();
+  }
+
   private byte memoizedIsInitialized = -1;
   @java.lang.Override
   public final boolean isInitialized() {
@@ -136,6 +175,9 @@ private static final long serialVersionUID = 0L;
     if (result_ != null) {
       output.writeMessage(1, getResult());
     }
+    if (user_ != null) {
+      output.writeMessage(2, getUser());
+    }
     unknownFields.writeTo(output);
   }
 
@@ -148,6 +190,10 @@ private static final long serialVersionUID = 0L;
     if (result_ != null) {
       size += com.google.protobuf.CodedOutputStream
         .computeMessageSize(1, getResult());
+    }
+    if (user_ != null) {
+      size += com.google.protobuf.CodedOutputStream
+        .computeMessageSize(2, getUser());
     }
     size += unknownFields.getSerializedSize();
     memoizedSize = size;
@@ -169,6 +215,11 @@ private static final long serialVersionUID = 0L;
       if (!getResult()
           .equals(other.getResult())) return false;
     }
+    if (hasUser() != other.hasUser()) return false;
+    if (hasUser()) {
+      if (!getUser()
+          .equals(other.getUser())) return false;
+    }
     if (!unknownFields.equals(other.unknownFields)) return false;
     return true;
   }
@@ -183,6 +234,10 @@ private static final long serialVersionUID = 0L;
     if (hasResult()) {
       hash = (37 * hash) + RESULT_FIELD_NUMBER;
       hash = (53 * hash) + getResult().hashCode();
+    }
+    if (hasUser()) {
+      hash = (37 * hash) + USER_FIELD_NUMBER;
+      hash = (53 * hash) + getUser().hashCode();
     }
     hash = (29 * hash) + unknownFields.hashCode();
     memoizedHashCode = hash;
@@ -323,6 +378,12 @@ private static final long serialVersionUID = 0L;
         result_ = null;
         resultBuilder_ = null;
       }
+      if (userBuilder_ == null) {
+        user_ = null;
+      } else {
+        user_ = null;
+        userBuilder_ = null;
+      }
       return this;
     }
 
@@ -353,6 +414,11 @@ private static final long serialVersionUID = 0L;
         result.result_ = result_;
       } else {
         result.result_ = resultBuilder_.build();
+      }
+      if (userBuilder_ == null) {
+        result.user_ = user_;
+      } else {
+        result.user_ = userBuilder_.build();
       }
       onBuilt();
       return result;
@@ -404,6 +470,9 @@ private static final long serialVersionUID = 0L;
       if (other == info.moetang.serviceprotocol.protobuf.user.VerifyUserPasswordRes.getDefaultInstance()) return this;
       if (other.hasResult()) {
         mergeResult(other.getResult());
+      }
+      if (other.hasUser()) {
+        mergeUser(other.getUser());
       }
       this.mergeUnknownFields(other.unknownFields);
       onChanged();
@@ -551,6 +620,125 @@ private static final long serialVersionUID = 0L;
         result_ = null;
       }
       return resultBuilder_;
+    }
+
+    private info.moetang.serviceprotocol.protobuf.user.User user_;
+    private com.google.protobuf.SingleFieldBuilderV3<
+        info.moetang.serviceprotocol.protobuf.user.User, info.moetang.serviceprotocol.protobuf.user.User.Builder, info.moetang.serviceprotocol.protobuf.user.UserOrBuilder> userBuilder_;
+    /**
+     * <code>.user.User user = 2;</code>
+     * @return Whether the user field is set.
+     */
+    public boolean hasUser() {
+      return userBuilder_ != null || user_ != null;
+    }
+    /**
+     * <code>.user.User user = 2;</code>
+     * @return The user.
+     */
+    public info.moetang.serviceprotocol.protobuf.user.User getUser() {
+      if (userBuilder_ == null) {
+        return user_ == null ? info.moetang.serviceprotocol.protobuf.user.User.getDefaultInstance() : user_;
+      } else {
+        return userBuilder_.getMessage();
+      }
+    }
+    /**
+     * <code>.user.User user = 2;</code>
+     */
+    public Builder setUser(info.moetang.serviceprotocol.protobuf.user.User value) {
+      if (userBuilder_ == null) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        user_ = value;
+        onChanged();
+      } else {
+        userBuilder_.setMessage(value);
+      }
+
+      return this;
+    }
+    /**
+     * <code>.user.User user = 2;</code>
+     */
+    public Builder setUser(
+        info.moetang.serviceprotocol.protobuf.user.User.Builder builderForValue) {
+      if (userBuilder_ == null) {
+        user_ = builderForValue.build();
+        onChanged();
+      } else {
+        userBuilder_.setMessage(builderForValue.build());
+      }
+
+      return this;
+    }
+    /**
+     * <code>.user.User user = 2;</code>
+     */
+    public Builder mergeUser(info.moetang.serviceprotocol.protobuf.user.User value) {
+      if (userBuilder_ == null) {
+        if (user_ != null) {
+          user_ =
+            info.moetang.serviceprotocol.protobuf.user.User.newBuilder(user_).mergeFrom(value).buildPartial();
+        } else {
+          user_ = value;
+        }
+        onChanged();
+      } else {
+        userBuilder_.mergeFrom(value);
+      }
+
+      return this;
+    }
+    /**
+     * <code>.user.User user = 2;</code>
+     */
+    public Builder clearUser() {
+      if (userBuilder_ == null) {
+        user_ = null;
+        onChanged();
+      } else {
+        user_ = null;
+        userBuilder_ = null;
+      }
+
+      return this;
+    }
+    /**
+     * <code>.user.User user = 2;</code>
+     */
+    public info.moetang.serviceprotocol.protobuf.user.User.Builder getUserBuilder() {
+      
+      onChanged();
+      return getUserFieldBuilder().getBuilder();
+    }
+    /**
+     * <code>.user.User user = 2;</code>
+     */
+    public info.moetang.serviceprotocol.protobuf.user.UserOrBuilder getUserOrBuilder() {
+      if (userBuilder_ != null) {
+        return userBuilder_.getMessageOrBuilder();
+      } else {
+        return user_ == null ?
+            info.moetang.serviceprotocol.protobuf.user.User.getDefaultInstance() : user_;
+      }
+    }
+    /**
+     * <code>.user.User user = 2;</code>
+     */
+    private com.google.protobuf.SingleFieldBuilderV3<
+        info.moetang.serviceprotocol.protobuf.user.User, info.moetang.serviceprotocol.protobuf.user.User.Builder, info.moetang.serviceprotocol.protobuf.user.UserOrBuilder> 
+        getUserFieldBuilder() {
+      if (userBuilder_ == null) {
+        userBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+            info.moetang.serviceprotocol.protobuf.user.User, info.moetang.serviceprotocol.protobuf.user.User.Builder, info.moetang.serviceprotocol.protobuf.user.UserOrBuilder>(
+                getUser(),
+                getParentForChildren(),
+                isClean());
+        user_ = null;
+      }
+      return userBuilder_;
     }
     @java.lang.Override
     public final Builder setUnknownFields(
