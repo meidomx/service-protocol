@@ -61,6 +61,10 @@ namespace ServiceGrpcProto {
     static readonly grpc::Marshaller<global::ServiceGrpcProto.QueryPagedExpringCountdownsByTypeReq> __Marshaller_countdown_QueryPagedExpringCountdownsByTypeReq = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::ServiceGrpcProto.QueryPagedExpringCountdownsByTypeReq.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::ServiceGrpcProto.QueryPagedExpringCountdownsByTypeRes> __Marshaller_countdown_QueryPagedExpringCountdownsByTypeRes = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::ServiceGrpcProto.QueryPagedExpringCountdownsByTypeRes.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::ServiceGrpcProto.QueryPagedCountdownsByTypeReq> __Marshaller_countdown_QueryPagedCountdownsByTypeReq = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::ServiceGrpcProto.QueryPagedCountdownsByTypeReq.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::ServiceGrpcProto.QueryPagedCountdownsByTypeRes> __Marshaller_countdown_QueryPagedCountdownsByTypeRes = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::ServiceGrpcProto.QueryPagedCountdownsByTypeRes.Parser));
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::ServiceGrpcProto.CreateCountdownReq, global::ServiceGrpcProto.CreateCountdownRes> __Method_CreateCountdown = new grpc::Method<global::ServiceGrpcProto.CreateCountdownReq, global::ServiceGrpcProto.CreateCountdownRes>(
@@ -94,6 +98,14 @@ namespace ServiceGrpcProto {
         __Marshaller_countdown_QueryPagedExpringCountdownsByTypeReq,
         __Marshaller_countdown_QueryPagedExpringCountdownsByTypeRes);
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::ServiceGrpcProto.QueryPagedCountdownsByTypeReq, global::ServiceGrpcProto.QueryPagedCountdownsByTypeRes> __Method_QueryPagedCountdownsByType = new grpc::Method<global::ServiceGrpcProto.QueryPagedCountdownsByTypeReq, global::ServiceGrpcProto.QueryPagedCountdownsByTypeRes>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "QueryPagedCountdownsByType",
+        __Marshaller_countdown_QueryPagedCountdownsByTypeReq,
+        __Marshaller_countdown_QueryPagedCountdownsByTypeRes);
+
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
     {
@@ -124,6 +136,12 @@ namespace ServiceGrpcProto {
 
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::System.Threading.Tasks.Task<global::ServiceGrpcProto.QueryPagedExpringCountdownsByTypeRes> QueryPagedExpringCountdownsByType(global::ServiceGrpcProto.QueryPagedExpringCountdownsByTypeReq request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task<global::ServiceGrpcProto.QueryPagedCountdownsByTypeRes> QueryPagedCountdownsByType(global::ServiceGrpcProto.QueryPagedCountdownsByTypeReq request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -237,6 +255,26 @@ namespace ServiceGrpcProto {
       {
         return CallInvoker.AsyncUnaryCall(__Method_QueryPagedExpringCountdownsByType, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::ServiceGrpcProto.QueryPagedCountdownsByTypeRes QueryPagedCountdownsByType(global::ServiceGrpcProto.QueryPagedCountdownsByTypeReq request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return QueryPagedCountdownsByType(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::ServiceGrpcProto.QueryPagedCountdownsByTypeRes QueryPagedCountdownsByType(global::ServiceGrpcProto.QueryPagedCountdownsByTypeReq request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_QueryPagedCountdownsByType, null, options, request);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::ServiceGrpcProto.QueryPagedCountdownsByTypeRes> QueryPagedCountdownsByTypeAsync(global::ServiceGrpcProto.QueryPagedCountdownsByTypeReq request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return QueryPagedCountdownsByTypeAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::ServiceGrpcProto.QueryPagedCountdownsByTypeRes> QueryPagedCountdownsByTypeAsync(global::ServiceGrpcProto.QueryPagedCountdownsByTypeReq request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_QueryPagedCountdownsByType, null, options, request);
+      }
       /// <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       protected override CountdownServiceClient NewInstance(ClientBaseConfiguration configuration)
@@ -254,7 +292,8 @@ namespace ServiceGrpcProto {
           .AddMethod(__Method_CreateCountdown, serviceImpl.CreateCountdown)
           .AddMethod(__Method_NextCountdownIntervalById, serviceImpl.NextCountdownIntervalById)
           .AddMethod(__Method_QueryCountdownById, serviceImpl.QueryCountdownById)
-          .AddMethod(__Method_QueryPagedExpringCountdownsByType, serviceImpl.QueryPagedExpringCountdownsByType).Build();
+          .AddMethod(__Method_QueryPagedExpringCountdownsByType, serviceImpl.QueryPagedExpringCountdownsByType)
+          .AddMethod(__Method_QueryPagedCountdownsByType, serviceImpl.QueryPagedCountdownsByType).Build();
     }
 
     /// <summary>Register service method with a service binder with or without implementation. Useful when customizing the  service binding logic.
@@ -268,6 +307,7 @@ namespace ServiceGrpcProto {
       serviceBinder.AddMethod(__Method_NextCountdownIntervalById, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::ServiceGrpcProto.NextCountdownIntervalByIdReq, global::ServiceGrpcProto.NextCountdownIntervalByIdRes>(serviceImpl.NextCountdownIntervalById));
       serviceBinder.AddMethod(__Method_QueryCountdownById, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::ServiceGrpcProto.QueryCountdownByIdReq, global::ServiceGrpcProto.QueryCountdownByIdRes>(serviceImpl.QueryCountdownById));
       serviceBinder.AddMethod(__Method_QueryPagedExpringCountdownsByType, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::ServiceGrpcProto.QueryPagedExpringCountdownsByTypeReq, global::ServiceGrpcProto.QueryPagedExpringCountdownsByTypeRes>(serviceImpl.QueryPagedExpringCountdownsByType));
+      serviceBinder.AddMethod(__Method_QueryPagedCountdownsByType, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::ServiceGrpcProto.QueryPagedCountdownsByTypeReq, global::ServiceGrpcProto.QueryPagedCountdownsByTypeRes>(serviceImpl.QueryPagedCountdownsByType));
     }
 
   }

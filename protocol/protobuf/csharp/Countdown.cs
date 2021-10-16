@@ -46,24 +46,34 @@ namespace ServiceGrpcProto {
             "ZRgBIAEoCRIMCgRwYWdlGAIgASgDEhEKCXBhZ2Vfc2l6ZRgDIAEoAyJwCiRR",
             "dWVyeVBhZ2VkRXhwcmluZ0NvdW50ZG93bnNCeVR5cGVSZXMSHgoGcmVzdWx0",
             "GAEgASgLMg4uc2hhcmVkLlJlc3VsdBIoCgpjb3VudGRvd25zGAIgAygLMhQu",
-            "Y291bnRkb3duLkNvdW50ZG93bjK8AwoQQ291bnRkb3duU2VydmljZRJRCg9D",
-            "cmVhdGVDb3VudGRvd24SHS5jb3VudGRvd24uQ3JlYXRlQ291bnRkb3duUmVx",
-            "Gh0uY291bnRkb3duLkNyZWF0ZUNvdW50ZG93blJlcyIAEm8KGU5leHRDb3Vu",
-            "dGRvd25JbnRlcnZhbEJ5SWQSJy5jb3VudGRvd24uTmV4dENvdW50ZG93bklu",
-            "dGVydmFsQnlJZFJlcRonLmNvdW50ZG93bi5OZXh0Q291bnRkb3duSW50ZXJ2",
-            "YWxCeUlkUmVzIgASWgoSUXVlcnlDb3VudGRvd25CeUlkEiAuY291bnRkb3du",
-            "LlF1ZXJ5Q291bnRkb3duQnlJZFJlcRogLmNvdW50ZG93bi5RdWVyeUNvdW50",
-            "ZG93bkJ5SWRSZXMiABKHAQohUXVlcnlQYWdlZEV4cHJpbmdDb3VudGRvd25z",
-            "QnlUeXBlEi8uY291bnRkb3duLlF1ZXJ5UGFnZWRFeHByaW5nQ291bnRkb3du",
-            "c0J5VHlwZVJlcRovLmNvdW50ZG93bi5RdWVyeVBhZ2VkRXhwcmluZ0NvdW50",
-            "ZG93bnNCeVR5cGVSZXMiAEKaAQovaW5mby5tb2V0YW5nLnNlcnZpY2Vwcm90",
-            "b2NvbC5wcm90b2J1Zi5jb3VudGRvd25CDkNvdW50ZG93blByb3RvUAFaQmdp",
-            "dGh1Yi5jb20vbWVpZG9teC9zZXJ2aWNlLXByb3RvY29sL3Byb3RvY29sL3By",
-            "b3RvYnVmL2dvL2NvdW50ZG93bqoCEFNlcnZpY2VHcnBjUHJvdG9iBnByb3Rv",
-            "Mw=="));
+            "Y291bnRkb3duLkNvdW50ZG93biKRAQodUXVlcnlQYWdlZENvdW50ZG93bnNC",
+            "eVR5cGVSZXESFgoOY291bnRkb3duX3R5cGUYASABKAkSDAoEcGFnZRgCIAEo",
+            "AxIRCglwYWdlX3NpemUYAyABKAMSNwoNZXhwaXJlX3N0YXR1cxgEIAEoDjIg",
+            "LmNvdW50ZG93bi5Db3VudGRvd25FeHBpcmVTdGF0dXMiaQodUXVlcnlQYWdl",
+            "ZENvdW50ZG93bnNCeVR5cGVSZXMSHgoGcmVzdWx0GAEgASgLMg4uc2hhcmVk",
+            "LlJlc3VsdBIoCgpjb3VudGRvd25zGAIgAygLMhQuY291bnRkb3duLkNvdW50",
+            "ZG93bipVChVDb3VudGRvd25FeHBpcmVTdGF0dXMSCwoHVU5LTk9XThAAEgwK",
+            "CEVYUElSSU5HEAESCwoHRVhQSVJFRBACEgsKB0RFTEVURUQQAxIHCgNBTEwQ",
+            "fzKwBAoQQ291bnRkb3duU2VydmljZRJRCg9DcmVhdGVDb3VudGRvd24SHS5j",
+            "b3VudGRvd24uQ3JlYXRlQ291bnRkb3duUmVxGh0uY291bnRkb3duLkNyZWF0",
+            "ZUNvdW50ZG93blJlcyIAEm8KGU5leHRDb3VudGRvd25JbnRlcnZhbEJ5SWQS",
+            "Jy5jb3VudGRvd24uTmV4dENvdW50ZG93bkludGVydmFsQnlJZFJlcRonLmNv",
+            "dW50ZG93bi5OZXh0Q291bnRkb3duSW50ZXJ2YWxCeUlkUmVzIgASWgoSUXVl",
+            "cnlDb3VudGRvd25CeUlkEiAuY291bnRkb3duLlF1ZXJ5Q291bnRkb3duQnlJ",
+            "ZFJlcRogLmNvdW50ZG93bi5RdWVyeUNvdW50ZG93bkJ5SWRSZXMiABKHAQoh",
+            "UXVlcnlQYWdlZEV4cHJpbmdDb3VudGRvd25zQnlUeXBlEi8uY291bnRkb3du",
+            "LlF1ZXJ5UGFnZWRFeHByaW5nQ291bnRkb3duc0J5VHlwZVJlcRovLmNvdW50",
+            "ZG93bi5RdWVyeVBhZ2VkRXhwcmluZ0NvdW50ZG93bnNCeVR5cGVSZXMiABJy",
+            "ChpRdWVyeVBhZ2VkQ291bnRkb3duc0J5VHlwZRIoLmNvdW50ZG93bi5RdWVy",
+            "eVBhZ2VkQ291bnRkb3duc0J5VHlwZVJlcRooLmNvdW50ZG93bi5RdWVyeVBh",
+            "Z2VkQ291bnRkb3duc0J5VHlwZVJlcyIAQpoBCi9pbmZvLm1vZXRhbmcuc2Vy",
+            "dmljZXByb3RvY29sLnByb3RvYnVmLmNvdW50ZG93bkIOQ291bnRkb3duUHJv",
+            "dG9QAVpCZ2l0aHViLmNvbS9tZWlkb214L3NlcnZpY2UtcHJvdG9jb2wvcHJv",
+            "dG9jb2wvcHJvdG9idWYvZ28vY291bnRkb3duqgIQU2VydmljZUdycGNQcm90",
+            "b2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::ServiceGrpcProto.ResultReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
+          new pbr::GeneratedClrTypeInfo(new[] {typeof(global::ServiceGrpcProto.CountdownExpireStatus), }, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::ServiceGrpcProto.Countdown), global::ServiceGrpcProto.Countdown.Parser, new[]{ "CountdownId", "UserId", "CountdownType", "Title", "Content", "TimeExpired", "TimeLastHandle", "TimeCreated", "TimeUpdated" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::ServiceGrpcProto.CreateCountdownReq), global::ServiceGrpcProto.CreateCountdownReq.Parser, new[]{ "UserId", "CountdownType", "Title", "Content", "TimeExpired" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::ServiceGrpcProto.CreateCountdownRes), global::ServiceGrpcProto.CreateCountdownRes.Parser, new[]{ "Result", "Countdown" }, null, null, null, null),
@@ -72,12 +82,25 @@ namespace ServiceGrpcProto {
             new pbr::GeneratedClrTypeInfo(typeof(global::ServiceGrpcProto.NextCountdownIntervalByIdReq), global::ServiceGrpcProto.NextCountdownIntervalByIdReq.Parser, new[]{ "CountdownId", "TimeExpired" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::ServiceGrpcProto.NextCountdownIntervalByIdRes), global::ServiceGrpcProto.NextCountdownIntervalByIdRes.Parser, new[]{ "Result", "Countdown" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::ServiceGrpcProto.QueryPagedExpringCountdownsByTypeReq), global::ServiceGrpcProto.QueryPagedExpringCountdownsByTypeReq.Parser, new[]{ "CountdownType", "Page", "PageSize" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::ServiceGrpcProto.QueryPagedExpringCountdownsByTypeRes), global::ServiceGrpcProto.QueryPagedExpringCountdownsByTypeRes.Parser, new[]{ "Result", "Countdowns" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::ServiceGrpcProto.QueryPagedExpringCountdownsByTypeRes), global::ServiceGrpcProto.QueryPagedExpringCountdownsByTypeRes.Parser, new[]{ "Result", "Countdowns" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::ServiceGrpcProto.QueryPagedCountdownsByTypeReq), global::ServiceGrpcProto.QueryPagedCountdownsByTypeReq.Parser, new[]{ "CountdownType", "Page", "PageSize", "ExpireStatus" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::ServiceGrpcProto.QueryPagedCountdownsByTypeRes), global::ServiceGrpcProto.QueryPagedCountdownsByTypeRes.Parser, new[]{ "Result", "Countdowns" }, null, null, null, null)
           }));
     }
     #endregion
 
   }
+  #region Enums
+  public enum CountdownExpireStatus {
+    [pbr::OriginalName("UNKNOWN")] Unknown = 0,
+    [pbr::OriginalName("EXPIRING")] Expiring = 1,
+    [pbr::OriginalName("EXPIRED")] Expired = 2,
+    [pbr::OriginalName("DELETED")] Deleted = 3,
+    [pbr::OriginalName("ALL")] All = 127,
+  }
+
+  #endregion
+
   #region Messages
   public sealed partial class Countdown : pb::IMessage<Countdown>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -2466,6 +2489,530 @@ namespace ServiceGrpcProto {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(QueryPagedExpringCountdownsByTypeRes other) {
+      if (other == null) {
+        return;
+      }
+      if (other.result_ != null) {
+        if (result_ == null) {
+          Result = new global::ServiceGrpcProto.Result();
+        }
+        Result.MergeFrom(other.Result);
+      }
+      countdowns_.Add(other.countdowns_);
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            if (result_ == null) {
+              Result = new global::ServiceGrpcProto.Result();
+            }
+            input.ReadMessage(Result);
+            break;
+          }
+          case 18: {
+            countdowns_.AddEntriesFrom(input, _repeated_countdowns_codec);
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            if (result_ == null) {
+              Result = new global::ServiceGrpcProto.Result();
+            }
+            input.ReadMessage(Result);
+            break;
+          }
+          case 18: {
+            countdowns_.AddEntriesFrom(ref input, _repeated_countdowns_codec);
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  public sealed partial class QueryPagedCountdownsByTypeReq : pb::IMessage<QueryPagedCountdownsByTypeReq>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<QueryPagedCountdownsByTypeReq> _parser = new pb::MessageParser<QueryPagedCountdownsByTypeReq>(() => new QueryPagedCountdownsByTypeReq());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<QueryPagedCountdownsByTypeReq> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::ServiceGrpcProto.CountdownReflection.Descriptor.MessageTypes[9]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public QueryPagedCountdownsByTypeReq() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public QueryPagedCountdownsByTypeReq(QueryPagedCountdownsByTypeReq other) : this() {
+      countdownType_ = other.countdownType_;
+      page_ = other.page_;
+      pageSize_ = other.pageSize_;
+      expireStatus_ = other.expireStatus_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public QueryPagedCountdownsByTypeReq Clone() {
+      return new QueryPagedCountdownsByTypeReq(this);
+    }
+
+    /// <summary>Field number for the "countdown_type" field.</summary>
+    public const int CountdownTypeFieldNumber = 1;
+    private string countdownType_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string CountdownType {
+      get { return countdownType_; }
+      set {
+        countdownType_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "page" field.</summary>
+    public const int PageFieldNumber = 2;
+    private long page_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public long Page {
+      get { return page_; }
+      set {
+        page_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "page_size" field.</summary>
+    public const int PageSizeFieldNumber = 3;
+    private long pageSize_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public long PageSize {
+      get { return pageSize_; }
+      set {
+        pageSize_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "expire_status" field.</summary>
+    public const int ExpireStatusFieldNumber = 4;
+    private global::ServiceGrpcProto.CountdownExpireStatus expireStatus_ = global::ServiceGrpcProto.CountdownExpireStatus.Unknown;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::ServiceGrpcProto.CountdownExpireStatus ExpireStatus {
+      get { return expireStatus_; }
+      set {
+        expireStatus_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as QueryPagedCountdownsByTypeReq);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(QueryPagedCountdownsByTypeReq other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (CountdownType != other.CountdownType) return false;
+      if (Page != other.Page) return false;
+      if (PageSize != other.PageSize) return false;
+      if (ExpireStatus != other.ExpireStatus) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (CountdownType.Length != 0) hash ^= CountdownType.GetHashCode();
+      if (Page != 0L) hash ^= Page.GetHashCode();
+      if (PageSize != 0L) hash ^= PageSize.GetHashCode();
+      if (ExpireStatus != global::ServiceGrpcProto.CountdownExpireStatus.Unknown) hash ^= ExpireStatus.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (CountdownType.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(CountdownType);
+      }
+      if (Page != 0L) {
+        output.WriteRawTag(16);
+        output.WriteInt64(Page);
+      }
+      if (PageSize != 0L) {
+        output.WriteRawTag(24);
+        output.WriteInt64(PageSize);
+      }
+      if (ExpireStatus != global::ServiceGrpcProto.CountdownExpireStatus.Unknown) {
+        output.WriteRawTag(32);
+        output.WriteEnum((int) ExpireStatus);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (CountdownType.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(CountdownType);
+      }
+      if (Page != 0L) {
+        output.WriteRawTag(16);
+        output.WriteInt64(Page);
+      }
+      if (PageSize != 0L) {
+        output.WriteRawTag(24);
+        output.WriteInt64(PageSize);
+      }
+      if (ExpireStatus != global::ServiceGrpcProto.CountdownExpireStatus.Unknown) {
+        output.WriteRawTag(32);
+        output.WriteEnum((int) ExpireStatus);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (CountdownType.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(CountdownType);
+      }
+      if (Page != 0L) {
+        size += 1 + pb::CodedOutputStream.ComputeInt64Size(Page);
+      }
+      if (PageSize != 0L) {
+        size += 1 + pb::CodedOutputStream.ComputeInt64Size(PageSize);
+      }
+      if (ExpireStatus != global::ServiceGrpcProto.CountdownExpireStatus.Unknown) {
+        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) ExpireStatus);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(QueryPagedCountdownsByTypeReq other) {
+      if (other == null) {
+        return;
+      }
+      if (other.CountdownType.Length != 0) {
+        CountdownType = other.CountdownType;
+      }
+      if (other.Page != 0L) {
+        Page = other.Page;
+      }
+      if (other.PageSize != 0L) {
+        PageSize = other.PageSize;
+      }
+      if (other.ExpireStatus != global::ServiceGrpcProto.CountdownExpireStatus.Unknown) {
+        ExpireStatus = other.ExpireStatus;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            CountdownType = input.ReadString();
+            break;
+          }
+          case 16: {
+            Page = input.ReadInt64();
+            break;
+          }
+          case 24: {
+            PageSize = input.ReadInt64();
+            break;
+          }
+          case 32: {
+            ExpireStatus = (global::ServiceGrpcProto.CountdownExpireStatus) input.ReadEnum();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            CountdownType = input.ReadString();
+            break;
+          }
+          case 16: {
+            Page = input.ReadInt64();
+            break;
+          }
+          case 24: {
+            PageSize = input.ReadInt64();
+            break;
+          }
+          case 32: {
+            ExpireStatus = (global::ServiceGrpcProto.CountdownExpireStatus) input.ReadEnum();
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  public sealed partial class QueryPagedCountdownsByTypeRes : pb::IMessage<QueryPagedCountdownsByTypeRes>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<QueryPagedCountdownsByTypeRes> _parser = new pb::MessageParser<QueryPagedCountdownsByTypeRes>(() => new QueryPagedCountdownsByTypeRes());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<QueryPagedCountdownsByTypeRes> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::ServiceGrpcProto.CountdownReflection.Descriptor.MessageTypes[10]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public QueryPagedCountdownsByTypeRes() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public QueryPagedCountdownsByTypeRes(QueryPagedCountdownsByTypeRes other) : this() {
+      result_ = other.result_ != null ? other.result_.Clone() : null;
+      countdowns_ = other.countdowns_.Clone();
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public QueryPagedCountdownsByTypeRes Clone() {
+      return new QueryPagedCountdownsByTypeRes(this);
+    }
+
+    /// <summary>Field number for the "result" field.</summary>
+    public const int ResultFieldNumber = 1;
+    private global::ServiceGrpcProto.Result result_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::ServiceGrpcProto.Result Result {
+      get { return result_; }
+      set {
+        result_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "countdowns" field.</summary>
+    public const int CountdownsFieldNumber = 2;
+    private static readonly pb::FieldCodec<global::ServiceGrpcProto.Countdown> _repeated_countdowns_codec
+        = pb::FieldCodec.ForMessage(18, global::ServiceGrpcProto.Countdown.Parser);
+    private readonly pbc::RepeatedField<global::ServiceGrpcProto.Countdown> countdowns_ = new pbc::RepeatedField<global::ServiceGrpcProto.Countdown>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pbc::RepeatedField<global::ServiceGrpcProto.Countdown> Countdowns {
+      get { return countdowns_; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as QueryPagedCountdownsByTypeRes);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(QueryPagedCountdownsByTypeRes other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (!object.Equals(Result, other.Result)) return false;
+      if(!countdowns_.Equals(other.countdowns_)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (result_ != null) hash ^= Result.GetHashCode();
+      hash ^= countdowns_.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (result_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(Result);
+      }
+      countdowns_.WriteTo(output, _repeated_countdowns_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (result_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(Result);
+      }
+      countdowns_.WriteTo(ref output, _repeated_countdowns_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (result_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Result);
+      }
+      size += countdowns_.CalculateSize(_repeated_countdowns_codec);
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(QueryPagedCountdownsByTypeRes other) {
       if (other == null) {
         return;
       }

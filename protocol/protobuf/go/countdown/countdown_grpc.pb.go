@@ -22,6 +22,7 @@ type CountdownServiceClient interface {
 	NextCountdownIntervalById(ctx context.Context, in *NextCountdownIntervalByIdReq, opts ...grpc.CallOption) (*NextCountdownIntervalByIdRes, error)
 	QueryCountdownById(ctx context.Context, in *QueryCountdownByIdReq, opts ...grpc.CallOption) (*QueryCountdownByIdRes, error)
 	QueryPagedExpringCountdownsByType(ctx context.Context, in *QueryPagedExpringCountdownsByTypeReq, opts ...grpc.CallOption) (*QueryPagedExpringCountdownsByTypeRes, error)
+	QueryPagedCountdownsByType(ctx context.Context, in *QueryPagedCountdownsByTypeReq, opts ...grpc.CallOption) (*QueryPagedCountdownsByTypeRes, error)
 }
 
 type countdownServiceClient struct {
@@ -68,6 +69,15 @@ func (c *countdownServiceClient) QueryPagedExpringCountdownsByType(ctx context.C
 	return out, nil
 }
 
+func (c *countdownServiceClient) QueryPagedCountdownsByType(ctx context.Context, in *QueryPagedCountdownsByTypeReq, opts ...grpc.CallOption) (*QueryPagedCountdownsByTypeRes, error) {
+	out := new(QueryPagedCountdownsByTypeRes)
+	err := c.cc.Invoke(ctx, "/countdown.CountdownService/QueryPagedCountdownsByType", in, out, opts...)
+	if err != nil {
+		return nil, err
+	}
+	return out, nil
+}
+
 // CountdownServiceServer is the server API for CountdownService service.
 // All implementations must embed UnimplementedCountdownServiceServer
 // for forward compatibility
@@ -76,6 +86,7 @@ type CountdownServiceServer interface {
 	NextCountdownIntervalById(context.Context, *NextCountdownIntervalByIdReq) (*NextCountdownIntervalByIdRes, error)
 	QueryCountdownById(context.Context, *QueryCountdownByIdReq) (*QueryCountdownByIdRes, error)
 	QueryPagedExpringCountdownsByType(context.Context, *QueryPagedExpringCountdownsByTypeReq) (*QueryPagedExpringCountdownsByTypeRes, error)
+	QueryPagedCountdownsByType(context.Context, *QueryPagedCountdownsByTypeReq) (*QueryPagedCountdownsByTypeRes, error)
 	mustEmbedUnimplementedCountdownServiceServer()
 }
 
@@ -94,6 +105,9 @@ func (UnimplementedCountdownServiceServer) QueryCountdownById(context.Context, *
 }
 func (UnimplementedCountdownServiceServer) QueryPagedExpringCountdownsByType(context.Context, *QueryPagedExpringCountdownsByTypeReq) (*QueryPagedExpringCountdownsByTypeRes, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method QueryPagedExpringCountdownsByType not implemented")
+}
+func (UnimplementedCountdownServiceServer) QueryPagedCountdownsByType(context.Context, *QueryPagedCountdownsByTypeReq) (*QueryPagedCountdownsByTypeRes, error) {
+	return nil, status.Errorf(codes.Unimplemented, "method QueryPagedCountdownsByType not implemented")
 }
 func (UnimplementedCountdownServiceServer) mustEmbedUnimplementedCountdownServiceServer() {}
 
@@ -180,6 +194,24 @@ func _CountdownService_QueryPagedExpringCountdownsByType_Handler(srv interface{}
 	return interceptor(ctx, in, info, handler)
 }
 
+func _CountdownService_QueryPagedCountdownsByType_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
+	in := new(QueryPagedCountdownsByTypeReq)
+	if err := dec(in); err != nil {
+		return nil, err
+	}
+	if interceptor == nil {
+		return srv.(CountdownServiceServer).QueryPagedCountdownsByType(ctx, in)
+	}
+	info := &grpc.UnaryServerInfo{
+		Server:     srv,
+		FullMethod: "/countdown.CountdownService/QueryPagedCountdownsByType",
+	}
+	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
+		return srv.(CountdownServiceServer).QueryPagedCountdownsByType(ctx, req.(*QueryPagedCountdownsByTypeReq))
+	}
+	return interceptor(ctx, in, info, handler)
+}
+
 // CountdownService_ServiceDesc is the grpc.ServiceDesc for CountdownService service.
 // It's only intended for direct use with grpc.RegisterService,
 // and not to be introspected or modified (even as a copy)
@@ -202,6 +234,10 @@ var CountdownService_ServiceDesc = grpc.ServiceDesc{
 		{
 			MethodName: "QueryPagedExpringCountdownsByType",
 			Handler:    _CountdownService_QueryPagedExpringCountdownsByType_Handler,
+		},
+		{
+			MethodName: "QueryPagedCountdownsByType",
+			Handler:    _CountdownService_QueryPagedCountdownsByType_Handler,
 		},
 	},
 	Streams:  []grpc.StreamDesc{},

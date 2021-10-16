@@ -59,6 +59,16 @@ public final class CountdownProto {
   static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_countdown_QueryPagedExpringCountdownsByTypeRes_fieldAccessorTable;
+  static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_countdown_QueryPagedCountdownsByTypeReq_descriptor;
+  static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_countdown_QueryPagedCountdownsByTypeReq_fieldAccessorTable;
+  static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_countdown_QueryPagedCountdownsByTypeRes_descriptor;
+  static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_countdown_QueryPagedCountdownsByTypeRes_fieldAccessorTable;
 
   public static com.google.protobuf.Descriptors.FileDescriptor
       getDescriptor() {
@@ -93,22 +103,33 @@ public final class CountdownProto {
       "page_size\030\003 \001(\003\"p\n$QueryPagedExpringCoun" +
       "tdownsByTypeRes\022\036\n\006result\030\001 \001(\0132\016.shared" +
       ".Result\022(\n\ncountdowns\030\002 \003(\0132\024.countdown." +
-      "Countdown2\274\003\n\020CountdownService\022Q\n\017Create" +
-      "Countdown\022\035.countdown.CreateCountdownReq" +
-      "\032\035.countdown.CreateCountdownRes\"\000\022o\n\031Nex" +
-      "tCountdownIntervalById\022\'.countdown.NextC" +
-      "ountdownIntervalByIdReq\032\'.countdown.Next" +
-      "CountdownIntervalByIdRes\"\000\022Z\n\022QueryCount" +
-      "downById\022 .countdown.QueryCountdownByIdR" +
-      "eq\032 .countdown.QueryCountdownByIdRes\"\000\022\207" +
-      "\001\n!QueryPagedExpringCountdownsByType\022/.c" +
-      "ountdown.QueryPagedExpringCountdownsByTy" +
-      "peReq\032/.countdown.QueryPagedExpringCount" +
-      "downsByTypeRes\"\000B\232\001\n/info.moetang.servic" +
-      "eprotocol.protobuf.countdownB\016CountdownP" +
-      "rotoP\001ZBgithub.com/meidomx/service-proto" +
-      "col/protocol/protobuf/go/countdown\252\002\020Ser" +
-      "viceGrpcProtob\006proto3"
+      "Countdown\"\221\001\n\035QueryPagedCountdownsByType" +
+      "Req\022\026\n\016countdown_type\030\001 \001(\t\022\014\n\004page\030\002 \001(" +
+      "\003\022\021\n\tpage_size\030\003 \001(\003\0227\n\rexpire_status\030\004 " +
+      "\001(\0162 .countdown.CountdownExpireStatus\"i\n" +
+      "\035QueryPagedCountdownsByTypeRes\022\036\n\006result" +
+      "\030\001 \001(\0132\016.shared.Result\022(\n\ncountdowns\030\002 \003" +
+      "(\0132\024.countdown.Countdown*U\n\025CountdownExp" +
+      "ireStatus\022\013\n\007UNKNOWN\020\000\022\014\n\010EXPIRING\020\001\022\013\n\007" +
+      "EXPIRED\020\002\022\013\n\007DELETED\020\003\022\007\n\003ALL\020\1772\260\004\n\020Coun" +
+      "tdownService\022Q\n\017CreateCountdown\022\035.countd" +
+      "own.CreateCountdownReq\032\035.countdown.Creat" +
+      "eCountdownRes\"\000\022o\n\031NextCountdownInterval" +
+      "ById\022\'.countdown.NextCountdownIntervalBy" +
+      "IdReq\032\'.countdown.NextCountdownIntervalB" +
+      "yIdRes\"\000\022Z\n\022QueryCountdownById\022 .countdo" +
+      "wn.QueryCountdownByIdReq\032 .countdown.Que" +
+      "ryCountdownByIdRes\"\000\022\207\001\n!QueryPagedExpri" +
+      "ngCountdownsByType\022/.countdown.QueryPage" +
+      "dExpringCountdownsByTypeReq\032/.countdown." +
+      "QueryPagedExpringCountdownsByTypeRes\"\000\022r" +
+      "\n\032QueryPagedCountdownsByType\022(.countdown" +
+      ".QueryPagedCountdownsByTypeReq\032(.countdo" +
+      "wn.QueryPagedCountdownsByTypeRes\"\000B\232\001\n/i" +
+      "nfo.moetang.serviceprotocol.protobuf.cou" +
+      "ntdownB\016CountdownProtoP\001ZBgithub.com/mei" +
+      "domx/service-protocol/protocol/protobuf/" +
+      "go/countdown\252\002\020ServiceGrpcProtob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -168,6 +189,18 @@ public final class CountdownProto {
     internal_static_countdown_QueryPagedExpringCountdownsByTypeRes_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_countdown_QueryPagedExpringCountdownsByTypeRes_descriptor,
+        new java.lang.String[] { "Result", "Countdowns", });
+    internal_static_countdown_QueryPagedCountdownsByTypeReq_descriptor =
+      getDescriptor().getMessageTypes().get(9);
+    internal_static_countdown_QueryPagedCountdownsByTypeReq_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_countdown_QueryPagedCountdownsByTypeReq_descriptor,
+        new java.lang.String[] { "CountdownType", "Page", "PageSize", "ExpireStatus", });
+    internal_static_countdown_QueryPagedCountdownsByTypeRes_descriptor =
+      getDescriptor().getMessageTypes().get(10);
+    internal_static_countdown_QueryPagedCountdownsByTypeRes_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_countdown_QueryPagedCountdownsByTypeRes_descriptor,
         new java.lang.String[] { "Result", "Countdowns", });
     info.moetang.serviceprotocol.protobuf.shared.SharedProto.getDescriptor();
   }

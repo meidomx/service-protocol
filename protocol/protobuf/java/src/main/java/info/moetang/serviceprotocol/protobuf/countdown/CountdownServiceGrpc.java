@@ -139,6 +139,37 @@ public final class CountdownServiceGrpc {
     return getQueryPagedExpringCountdownsByTypeMethod;
   }
 
+  private static volatile io.grpc.MethodDescriptor<info.moetang.serviceprotocol.protobuf.countdown.QueryPagedCountdownsByTypeReq,
+      info.moetang.serviceprotocol.protobuf.countdown.QueryPagedCountdownsByTypeRes> getQueryPagedCountdownsByTypeMethod;
+
+  @io.grpc.stub.annotations.RpcMethod(
+      fullMethodName = SERVICE_NAME + '/' + "QueryPagedCountdownsByType",
+      requestType = info.moetang.serviceprotocol.protobuf.countdown.QueryPagedCountdownsByTypeReq.class,
+      responseType = info.moetang.serviceprotocol.protobuf.countdown.QueryPagedCountdownsByTypeRes.class,
+      methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
+  public static io.grpc.MethodDescriptor<info.moetang.serviceprotocol.protobuf.countdown.QueryPagedCountdownsByTypeReq,
+      info.moetang.serviceprotocol.protobuf.countdown.QueryPagedCountdownsByTypeRes> getQueryPagedCountdownsByTypeMethod() {
+    io.grpc.MethodDescriptor<info.moetang.serviceprotocol.protobuf.countdown.QueryPagedCountdownsByTypeReq, info.moetang.serviceprotocol.protobuf.countdown.QueryPagedCountdownsByTypeRes> getQueryPagedCountdownsByTypeMethod;
+    if ((getQueryPagedCountdownsByTypeMethod = CountdownServiceGrpc.getQueryPagedCountdownsByTypeMethod) == null) {
+      synchronized (CountdownServiceGrpc.class) {
+        if ((getQueryPagedCountdownsByTypeMethod = CountdownServiceGrpc.getQueryPagedCountdownsByTypeMethod) == null) {
+          CountdownServiceGrpc.getQueryPagedCountdownsByTypeMethod = getQueryPagedCountdownsByTypeMethod =
+              io.grpc.MethodDescriptor.<info.moetang.serviceprotocol.protobuf.countdown.QueryPagedCountdownsByTypeReq, info.moetang.serviceprotocol.protobuf.countdown.QueryPagedCountdownsByTypeRes>newBuilder()
+              .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
+              .setFullMethodName(generateFullMethodName(SERVICE_NAME, "QueryPagedCountdownsByType"))
+              .setSampledToLocalTracing(true)
+              .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  info.moetang.serviceprotocol.protobuf.countdown.QueryPagedCountdownsByTypeReq.getDefaultInstance()))
+              .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  info.moetang.serviceprotocol.protobuf.countdown.QueryPagedCountdownsByTypeRes.getDefaultInstance()))
+              .setSchemaDescriptor(new CountdownServiceMethodDescriptorSupplier("QueryPagedCountdownsByType"))
+              .build();
+        }
+      }
+    }
+    return getQueryPagedCountdownsByTypeMethod;
+  }
+
   /**
    * Creates a new async stub that supports all call types for the service
    */
@@ -215,6 +246,13 @@ public final class CountdownServiceGrpc {
       io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getQueryPagedExpringCountdownsByTypeMethod(), responseObserver);
     }
 
+    /**
+     */
+    public void queryPagedCountdownsByType(info.moetang.serviceprotocol.protobuf.countdown.QueryPagedCountdownsByTypeReq request,
+        io.grpc.stub.StreamObserver<info.moetang.serviceprotocol.protobuf.countdown.QueryPagedCountdownsByTypeRes> responseObserver) {
+      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getQueryPagedCountdownsByTypeMethod(), responseObserver);
+    }
+
     @java.lang.Override public final io.grpc.ServerServiceDefinition bindService() {
       return io.grpc.ServerServiceDefinition.builder(getServiceDescriptor())
           .addMethod(
@@ -245,6 +283,13 @@ public final class CountdownServiceGrpc {
                 info.moetang.serviceprotocol.protobuf.countdown.QueryPagedExpringCountdownsByTypeReq,
                 info.moetang.serviceprotocol.protobuf.countdown.QueryPagedExpringCountdownsByTypeRes>(
                   this, METHODID_QUERY_PAGED_EXPRING_COUNTDOWNS_BY_TYPE)))
+          .addMethod(
+            getQueryPagedCountdownsByTypeMethod(),
+            io.grpc.stub.ServerCalls.asyncUnaryCall(
+              new MethodHandlers<
+                info.moetang.serviceprotocol.protobuf.countdown.QueryPagedCountdownsByTypeReq,
+                info.moetang.serviceprotocol.protobuf.countdown.QueryPagedCountdownsByTypeRes>(
+                  this, METHODID_QUERY_PAGED_COUNTDOWNS_BY_TYPE)))
           .build();
     }
   }
@@ -294,6 +339,14 @@ public final class CountdownServiceGrpc {
       io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getQueryPagedExpringCountdownsByTypeMethod(), getCallOptions()), request, responseObserver);
     }
+
+    /**
+     */
+    public void queryPagedCountdownsByType(info.moetang.serviceprotocol.protobuf.countdown.QueryPagedCountdownsByTypeReq request,
+        io.grpc.stub.StreamObserver<info.moetang.serviceprotocol.protobuf.countdown.QueryPagedCountdownsByTypeRes> responseObserver) {
+      io.grpc.stub.ClientCalls.asyncUnaryCall(
+          getChannel().newCall(getQueryPagedCountdownsByTypeMethod(), getCallOptions()), request, responseObserver);
+    }
   }
 
   /**
@@ -336,6 +389,13 @@ public final class CountdownServiceGrpc {
     public info.moetang.serviceprotocol.protobuf.countdown.QueryPagedExpringCountdownsByTypeRes queryPagedExpringCountdownsByType(info.moetang.serviceprotocol.protobuf.countdown.QueryPagedExpringCountdownsByTypeReq request) {
       return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getQueryPagedExpringCountdownsByTypeMethod(), getCallOptions(), request);
+    }
+
+    /**
+     */
+    public info.moetang.serviceprotocol.protobuf.countdown.QueryPagedCountdownsByTypeRes queryPagedCountdownsByType(info.moetang.serviceprotocol.protobuf.countdown.QueryPagedCountdownsByTypeReq request) {
+      return io.grpc.stub.ClientCalls.blockingUnaryCall(
+          getChannel(), getQueryPagedCountdownsByTypeMethod(), getCallOptions(), request);
     }
   }
 
@@ -384,12 +444,21 @@ public final class CountdownServiceGrpc {
       return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getQueryPagedExpringCountdownsByTypeMethod(), getCallOptions()), request);
     }
+
+    /**
+     */
+    public com.google.common.util.concurrent.ListenableFuture<info.moetang.serviceprotocol.protobuf.countdown.QueryPagedCountdownsByTypeRes> queryPagedCountdownsByType(
+        info.moetang.serviceprotocol.protobuf.countdown.QueryPagedCountdownsByTypeReq request) {
+      return io.grpc.stub.ClientCalls.futureUnaryCall(
+          getChannel().newCall(getQueryPagedCountdownsByTypeMethod(), getCallOptions()), request);
+    }
   }
 
   private static final int METHODID_CREATE_COUNTDOWN = 0;
   private static final int METHODID_NEXT_COUNTDOWN_INTERVAL_BY_ID = 1;
   private static final int METHODID_QUERY_COUNTDOWN_BY_ID = 2;
   private static final int METHODID_QUERY_PAGED_EXPRING_COUNTDOWNS_BY_TYPE = 3;
+  private static final int METHODID_QUERY_PAGED_COUNTDOWNS_BY_TYPE = 4;
 
   private static final class MethodHandlers<Req, Resp> implements
       io.grpc.stub.ServerCalls.UnaryMethod<Req, Resp>,
@@ -423,6 +492,10 @@ public final class CountdownServiceGrpc {
         case METHODID_QUERY_PAGED_EXPRING_COUNTDOWNS_BY_TYPE:
           serviceImpl.queryPagedExpringCountdownsByType((info.moetang.serviceprotocol.protobuf.countdown.QueryPagedExpringCountdownsByTypeReq) request,
               (io.grpc.stub.StreamObserver<info.moetang.serviceprotocol.protobuf.countdown.QueryPagedExpringCountdownsByTypeRes>) responseObserver);
+          break;
+        case METHODID_QUERY_PAGED_COUNTDOWNS_BY_TYPE:
+          serviceImpl.queryPagedCountdownsByType((info.moetang.serviceprotocol.protobuf.countdown.QueryPagedCountdownsByTypeReq) request,
+              (io.grpc.stub.StreamObserver<info.moetang.serviceprotocol.protobuf.countdown.QueryPagedCountdownsByTypeRes>) responseObserver);
           break;
         default:
           throw new AssertionError();
@@ -489,6 +562,7 @@ public final class CountdownServiceGrpc {
               .addMethod(getNextCountdownIntervalByIdMethod())
               .addMethod(getQueryCountdownByIdMethod())
               .addMethod(getQueryPagedExpringCountdownsByTypeMethod())
+              .addMethod(getQueryPagedCountdownsByTypeMethod())
               .build();
         }
       }
