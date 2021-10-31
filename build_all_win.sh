@@ -12,7 +12,7 @@ protoc --go_out=../protocol/protobuf/go/. \
  --plugin=protoc-gen-grpc-java.exe \
  --java_out=../protocol/protobuf/java/src/main/java/. \
  --grpc-java_out=../protocol/protobuf/java/src/main/java/. \
- --csharp_out=../protocol/protobuf/csharp/ \
+ --csharp_out=../protocol/protobuf/csharp/. \
  $(find . -iname "*.proto")
 
 protoc \

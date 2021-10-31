@@ -17,3 +17,6 @@
 # exclude generated
 /protocol/protobuf/java/bin
 /protocol/protobuf/java/.project
+
+# ide
+/.idea

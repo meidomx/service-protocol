@@ -1,0 +1,170 @@
+syntax = "proto3";
+
+option go_package = "github.com/meidomx/service-protocol/protocol/protobuf/go/keeptrack2";
+option java_multiple_files = true;
+option java_package = "info.moetang.serviceprotocol.protobuf.keeptrack2";
+option java_outer_classname = "Keeptrack2Proto";
+option csharp_namespace = "Keeptrack2.ServiceGrpcProto";
+import "shared/result.proto";
+
+package keeptrack2;
+
+service Keeptrack2Service {
+  rpc CreateProject (CreateProjectReq) returns (CreateProjectRes) {}
+  rpc DeleteProjectById (DeleteProjectReq) returns (DeleteProjectRes) {}
+  rpc UpdateProjectById (UpdateProjectReq) returns (UpdateProjectRes) {}
+
+  rpc QueryProjectById (QueryProjectByIdReq) returns (QueryProjectByIdRes) {}
+  rpc QueryAllProjects(QueryAllProjectsReq) returns (QueryAllProjectsRes) {}
+
+
+  rpc CreateItem (CreateItemReq) returns (CreateItemRes) {}
+  rpc DeleteItemById (DeleteItemReq) returns (DeleteItemRes) {}
+  rpc UpdateItemById (UpdateItemReq) returns (UpdateItemRes) {}
+
+  rpc QueryAvailableItemById (QueryItemByIdReq) returns (QueryItemByIdRes) {}
+  rpc QueryPagedAvailableItems(QueryPagedAvailableItemsReq) returns (QueryPagedAvailableItemsRes) {}
+}
+
+message Project {
+  string project_id = 1;
+  string user_id = 2;
+
+  string name = 11;
+  string description = 12;
+
+  int64 time_created = 21;
+  int64 time_updated = 22;
+}
+
+message Item {
+  string item_id = 1;
+  string project_id = 2;
+  string user_id = 3;
+
+  string name = 11;
+  string description = 12;
+
+  int64 time_created = 21;
+  int64 time_updated = 22;
+}
+
+message CreateProjectReq {
+  string user_id = 1;
+
+  string name = 11;
+  string description = 12;
+}
+
+message CreateProjectRes {
+  shared.Result result = 1;
+
+  Project project = 2;
+}
+
+
+message DeleteProjectReq {
+  string project_id = 1;
+}
+
+message DeleteProjectRes {
+  shared.Result result = 1;
+}
+
+
+message UpdateProjectReq {
+  string project_id = 1;
+
+  string name = 11;
+  string description = 12;
+}
+
+message UpdateProjectRes {
+  shared.Result result = 1;
+
+  Project project = 2;
+}
+
+
+message QueryProjectByIdReq {
+  string project_id = 1;
+}
+
+message QueryProjectByIdRes {
+  shared.Result result = 1;
+
+  Project project = 2;
+}
+
+
+message QueryAllProjectsReq {
+}
+
+message QueryAllProjectsRes {
+  shared.Result result = 1;
+
+  repeated Project projects = 2;
+}
+
+
+message CreateItemReq {
+  string user_id = 1;
+  string project_id = 2;
+
+  string name = 11;
+  string description = 12;
+}
+
+message CreateItemRes {
+  shared.Result result = 1;
+
+  Project project = 2;
+}
+
+
+message DeleteItemReq {
+  string item_id = 1;
+}
+
+message DeleteItemRes {
+  shared.Result result = 1;
+}
+
+
+message UpdateItemReq {
+  string item_id = 1;
+
+  string name = 11;
+  string description = 12;
+}
+
+message UpdateItemRes {
+  shared.Result result = 1;
+
+  Item item = 2;
+}
+
+
+message QueryItemByIdReq {
+  string item_id = 1;
+}
+
+message QueryItemByIdRes {
+  shared.Result result = 1;
+
+  Item item = 2;
+}
+
+
+message QueryPagedAvailableItemsReq {
+  string project_id = 1;
+  int64 page = 2;
+  int64 page_size = 3;
+}
+
+message QueryPagedAvailableItemsRes {
+  shared.Result result = 1;
+
+  repeated Item items = 2;
+}
+
