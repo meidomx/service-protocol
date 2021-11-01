@@ -28,6 +28,7 @@ const (
 	CountdownExpireStatus_EXPIRING CountdownExpireStatus = 1
 	CountdownExpireStatus_EXPIRED  CountdownExpireStatus = 2
 	CountdownExpireStatus_DELETED  CountdownExpireStatus = 3
+	CountdownExpireStatus_FINISHED CountdownExpireStatus = 4
 	CountdownExpireStatus_ALL      CountdownExpireStatus = 127
 )
 
@@ -38,6 +39,7 @@ var (
 		1:   "EXPIRING",
 		2:   "EXPIRED",
 		3:   "DELETED",
+		4:   "FINISHED",
 		127: "ALL",
 	}
 	CountdownExpireStatus_value = map[string]int32{
@@ -45,6 +47,7 @@ var (
 		"EXPIRING": 1,
 		"EXPIRED":  2,
 		"DELETED":  3,
+		"FINISHED": 4,
 		"ALL":      127,
 	}
 )
@@ -74,6 +77,64 @@ func (x CountdownExpireStatus) Number() protoreflect.EnumNumber {
 // Deprecated: Use CountdownExpireStatus.Descriptor instead.
 func (CountdownExpireStatus) EnumDescriptor() ([]byte, []int) {
 	return file_countdown_countdown_proto_rawDescGZIP(), []int{0}
+}
+
+type CountdownNoticeTimeType int32
+
+const (
+	CountdownNoticeTimeType_NONE    CountdownNoticeTimeType = 0
+	CountdownNoticeTimeType_DAY_30  CountdownNoticeTimeType = 1
+	CountdownNoticeTimeType_DAY_60  CountdownNoticeTimeType = 2
+	CountdownNoticeTimeType_DAY_90  CountdownNoticeTimeType = 3
+	CountdownNoticeTimeType_MONTH_6 CountdownNoticeTimeType = 4
+	CountdownNoticeTimeType_CUSTOM  CountdownNoticeTimeType = 127
+)
+
+// Enum value maps for CountdownNoticeTimeType.
+var (
+	CountdownNoticeTimeType_name = map[int32]string{
+		0:   "NONE",
+		1:   "DAY_30",
+		2:   "DAY_60",
+		3:   "DAY_90",
+		4:   "MONTH_6",
+		127: "CUSTOM",
+	}
+	CountdownNoticeTimeType_value = map[string]int32{
+		"NONE":    0,
+		"DAY_30":  1,
+		"DAY_60":  2,
+		"DAY_90":  3,
+		"MONTH_6": 4,
+		"CUSTOM":  127,
+	}
+)
+
+func (x CountdownNoticeTimeType) Enum() *CountdownNoticeTimeType {
+	p := new(CountdownNoticeTimeType)
+	*p = x
+	return p
+}
+
+func (x CountdownNoticeTimeType) String() string {
+	return protoimpl.X.EnumStringOf(x.Descriptor(), protoreflect.EnumNumber(x))
+}
+
+func (CountdownNoticeTimeType) Descriptor() protoreflect.EnumDescriptor {
+	return file_countdown_countdown_proto_enumTypes[1].Descriptor()
+}
+
+func (CountdownNoticeTimeType) Type() protoreflect.EnumType {
+	return &file_countdown_countdown_proto_enumTypes[1]
+}
+
+func (x CountdownNoticeTimeType) Number() protoreflect.EnumNumber {
+	return protoreflect.EnumNumber(x)
+}
+
+// Deprecated: Use CountdownNoticeTimeType.Descriptor instead.
+func (CountdownNoticeTimeType) EnumDescriptor() ([]byte, []int) {
+	return file_countdown_countdown_proto_rawDescGZIP(), []int{1}
 }
 
 type Countdown struct {
@@ -882,12 +943,19 @@ var file_countdown_countdown_proto_rawDesc = []byte{
 	0x34, 0x0a, 0x0a, 0x63, 0x6f, 0x75, 0x6e, 0x74, 0x64, 0x6f, 0x77, 0x6e, 0x73, 0x18, 0x02, 0x20,
 	0x03, 0x28, 0x0b, 0x32, 0x14, 0x2e, 0x63, 0x6f, 0x75, 0x6e, 0x74, 0x64, 0x6f, 0x77, 0x6e, 0x2e,
 	0x43, 0x6f, 0x75, 0x6e, 0x74, 0x64, 0x6f, 0x77, 0x6e, 0x52, 0x0a, 0x63, 0x6f, 0x75, 0x6e, 0x74,
-	0x64, 0x6f, 0x77, 0x6e, 0x73, 0x2a, 0x55, 0x0a, 0x15, 0x43, 0x6f, 0x75, 0x6e, 0x74, 0x64, 0x6f,
+	0x64, 0x6f, 0x77, 0x6e, 0x73, 0x2a, 0x63, 0x0a, 0x15, 0x43, 0x6f, 0x75, 0x6e, 0x74, 0x64, 0x6f,
 	0x77, 0x6e, 0x45, 0x78, 0x70, 0x69, 0x72, 0x65, 0x53, 0x74, 0x61, 0x74, 0x75, 0x73, 0x12, 0x0b,
 	0x0a, 0x07, 0x55, 0x4e, 0x4b, 0x4e, 0x4f, 0x57, 0x4e, 0x10, 0x00, 0x12, 0x0c, 0x0a, 0x08, 0x45,
 	0x58, 0x50, 0x49, 0x52, 0x49, 0x4e, 0x47, 0x10, 0x01, 0x12, 0x0b, 0x0a, 0x07, 0x45, 0x58, 0x50,
 	0x49, 0x52, 0x45, 0x44, 0x10, 0x02, 0x12, 0x0b, 0x0a, 0x07, 0x44, 0x45, 0x4c, 0x45, 0x54, 0x45,
-	0x44, 0x10, 0x03, 0x12, 0x07, 0x0a, 0x03, 0x41, 0x4c, 0x4c, 0x10, 0x7f, 0x32, 0xb0, 0x04, 0x0a,
+	0x44, 0x10, 0x03, 0x12, 0x0c, 0x0a, 0x08, 0x46, 0x49, 0x4e, 0x49, 0x53, 0x48, 0x45, 0x44, 0x10,
+	0x04, 0x12, 0x07, 0x0a, 0x03, 0x41, 0x4c, 0x4c, 0x10, 0x7f, 0x2a, 0x60, 0x0a, 0x17, 0x43, 0x6f,
+	0x75, 0x6e, 0x74, 0x64, 0x6f, 0x77, 0x6e, 0x4e, 0x6f, 0x74, 0x69, 0x63, 0x65, 0x54, 0x69, 0x6d,
+	0x65, 0x54, 0x79, 0x70, 0x65, 0x12, 0x08, 0x0a, 0x04, 0x4e, 0x4f, 0x4e, 0x45, 0x10, 0x00, 0x12,
+	0x0a, 0x0a, 0x06, 0x44, 0x41, 0x59, 0x5f, 0x33, 0x30, 0x10, 0x01, 0x12, 0x0a, 0x0a, 0x06, 0x44,
+	0x41, 0x59, 0x5f, 0x36, 0x30, 0x10, 0x02, 0x12, 0x0a, 0x0a, 0x06, 0x44, 0x41, 0x59, 0x5f, 0x39,
+	0x30, 0x10, 0x03, 0x12, 0x0b, 0x0a, 0x07, 0x4d, 0x4f, 0x4e, 0x54, 0x48, 0x5f, 0x36, 0x10, 0x04,
+	0x12, 0x0a, 0x0a, 0x06, 0x43, 0x55, 0x53, 0x54, 0x4f, 0x4d, 0x10, 0x7f, 0x32, 0xb0, 0x04, 0x0a,
 	0x10, 0x43, 0x6f, 0x75, 0x6e, 0x74, 0x64, 0x6f, 0x77, 0x6e, 0x53, 0x65, 0x72, 0x76, 0x69, 0x63,
 	0x65, 0x12, 0x51, 0x0a, 0x0f, 0x43, 0x72, 0x65, 0x61, 0x74, 0x65, 0x43, 0x6f, 0x75, 0x6e, 0x74,
 	0x64, 0x6f, 0x77, 0x6e, 0x12, 0x1d, 0x2e, 0x63, 0x6f, 0x75, 0x6e, 0x74, 0x64, 0x6f, 0x77, 0x6e,
@@ -948,45 +1016,46 @@ func file_countdown_countdown_proto_rawDescGZIP() []byte {
 	return file_countdown_countdown_proto_rawDescData
 }
 
-var file_countdown_countdown_proto_enumTypes = make([]protoimpl.EnumInfo, 1)
+var file_countdown_countdown_proto_enumTypes = make([]protoimpl.EnumInfo, 2)
 var file_countdown_countdown_proto_msgTypes = make([]protoimpl.MessageInfo, 11)
 var file_countdown_countdown_proto_goTypes = []interface{}{
 	(CountdownExpireStatus)(0),                   // 0: countdown.CountdownExpireStatus
-	(*Countdown)(nil),                            // 1: countdown.Countdown
-	(*CreateCountdownReq)(nil),                   // 2: countdown.CreateCountdownReq
-	(*CreateCountdownRes)(nil),                   // 3: countdown.CreateCountdownRes
-	(*QueryCountdownByIdReq)(nil),                // 4: countdown.QueryCountdownByIdReq
-	(*QueryCountdownByIdRes)(nil),                // 5: countdown.QueryCountdownByIdRes
-	(*NextCountdownIntervalByIdReq)(nil),         // 6: countdown.NextCountdownIntervalByIdReq
-	(*NextCountdownIntervalByIdRes)(nil),         // 7: countdown.NextCountdownIntervalByIdRes
-	(*QueryPagedExpringCountdownsByTypeReq)(nil), // 8: countdown.QueryPagedExpringCountdownsByTypeReq
-	(*QueryPagedExpringCountdownsByTypeRes)(nil), // 9: countdown.QueryPagedExpringCountdownsByTypeRes
-	(*QueryPagedCountdownsByTypeReq)(nil),        // 10: countdown.QueryPagedCountdownsByTypeReq
-	(*QueryPagedCountdownsByTypeRes)(nil),        // 11: countdown.QueryPagedCountdownsByTypeRes
-	(*shared.Result)(nil),                        // 12: shared.Result
+	(CountdownNoticeTimeType)(0),                 // 1: countdown.CountdownNoticeTimeType
+	(*Countdown)(nil),                            // 2: countdown.Countdown
+	(*CreateCountdownReq)(nil),                   // 3: countdown.CreateCountdownReq
+	(*CreateCountdownRes)(nil),                   // 4: countdown.CreateCountdownRes
+	(*QueryCountdownByIdReq)(nil),                // 5: countdown.QueryCountdownByIdReq
+	(*QueryCountdownByIdRes)(nil),                // 6: countdown.QueryCountdownByIdRes
+	(*NextCountdownIntervalByIdReq)(nil),         // 7: countdown.NextCountdownIntervalByIdReq
+	(*NextCountdownIntervalByIdRes)(nil),         // 8: countdown.NextCountdownIntervalByIdRes
+	(*QueryPagedExpringCountdownsByTypeReq)(nil), // 9: countdown.QueryPagedExpringCountdownsByTypeReq
+	(*QueryPagedExpringCountdownsByTypeRes)(nil), // 10: countdown.QueryPagedExpringCountdownsByTypeRes
+	(*QueryPagedCountdownsByTypeReq)(nil),        // 11: countdown.QueryPagedCountdownsByTypeReq
+	(*QueryPagedCountdownsByTypeRes)(nil),        // 12: countdown.QueryPagedCountdownsByTypeRes
+	(*shared.Result)(nil),                        // 13: shared.Result
 }
 var file_countdown_countdown_proto_depIdxs = []int32{
-	12, // 0: countdown.CreateCountdownRes.result:type_name -> shared.Result
-	1,  // 1: countdown.CreateCountdownRes.countdown:type_name -> countdown.Countdown
-	12, // 2: countdown.QueryCountdownByIdRes.result:type_name -> shared.Result
-	1,  // 3: countdown.QueryCountdownByIdRes.countdown:type_name -> countdown.Countdown
-	12, // 4: countdown.NextCountdownIntervalByIdRes.result:type_name -> shared.Result
-	1,  // 5: countdown.NextCountdownIntervalByIdRes.countdown:type_name -> countdown.Countdown
-	12, // 6: countdown.QueryPagedExpringCountdownsByTypeRes.result:type_name -> shared.Result
-	1,  // 7: countdown.QueryPagedExpringCountdownsByTypeRes.countdowns:type_name -> countdown.Countdown
+	13, // 0: countdown.CreateCountdownRes.result:type_name -> shared.Result
+	2,  // 1: countdown.CreateCountdownRes.countdown:type_name -> countdown.Countdown
+	13, // 2: countdown.QueryCountdownByIdRes.result:type_name -> shared.Result
+	2,  // 3: countdown.QueryCountdownByIdRes.countdown:type_name -> countdown.Countdown
+	13, // 4: countdown.NextCountdownIntervalByIdRes.result:type_name -> shared.Result
+	2,  // 5: countdown.NextCountdownIntervalByIdRes.countdown:type_name -> countdown.Countdown
+	13, // 6: countdown.QueryPagedExpringCountdownsByTypeRes.result:type_name -> shared.Result
+	2,  // 7: countdown.QueryPagedExpringCountdownsByTypeRes.countdowns:type_name -> countdown.Countdown
 	0,  // 8: countdown.QueryPagedCountdownsByTypeReq.expire_status:type_name -> countdown.CountdownExpireStatus
-	12, // 9: countdown.QueryPagedCountdownsByTypeRes.result:type_name -> shared.Result
-	1,  // 10: countdown.QueryPagedCountdownsByTypeRes.countdowns:type_name -> countdown.Countdown
-	2,  // 11: countdown.CountdownService.CreateCountdown:input_type -> countdown.CreateCountdownReq
-	6,  // 12: countdown.CountdownService.NextCountdownIntervalById:input_type -> countdown.NextCountdownIntervalByIdReq
-	4,  // 13: countdown.CountdownService.QueryCountdownById:input_type -> countdown.QueryCountdownByIdReq
-	8,  // 14: countdown.CountdownService.QueryPagedExpringCountdownsByType:input_type -> countdown.QueryPagedExpringCountdownsByTypeReq
-	10, // 15: countdown.CountdownService.QueryPagedCountdownsByType:input_type -> countdown.QueryPagedCountdownsByTypeReq
-	3,  // 16: countdown.CountdownService.CreateCountdown:output_type -> countdown.CreateCountdownRes
-	7,  // 17: countdown.CountdownService.NextCountdownIntervalById:output_type -> countdown.NextCountdownIntervalByIdRes
-	5,  // 18: countdown.CountdownService.QueryCountdownById:output_type -> countdown.QueryCountdownByIdRes
-	9,  // 19: countdown.CountdownService.QueryPagedExpringCountdownsByType:output_type -> countdown.QueryPagedExpringCountdownsByTypeRes
-	11, // 20: countdown.CountdownService.QueryPagedCountdownsByType:output_type -> countdown.QueryPagedCountdownsByTypeRes
+	13, // 9: countdown.QueryPagedCountdownsByTypeRes.result:type_name -> shared.Result
+	2,  // 10: countdown.QueryPagedCountdownsByTypeRes.countdowns:type_name -> countdown.Countdown
+	3,  // 11: countdown.CountdownService.CreateCountdown:input_type -> countdown.CreateCountdownReq
+	7,  // 12: countdown.CountdownService.NextCountdownIntervalById:input_type -> countdown.NextCountdownIntervalByIdReq
+	5,  // 13: countdown.CountdownService.QueryCountdownById:input_type -> countdown.QueryCountdownByIdReq
+	9,  // 14: countdown.CountdownService.QueryPagedExpringCountdownsByType:input_type -> countdown.QueryPagedExpringCountdownsByTypeReq
+	11, // 15: countdown.CountdownService.QueryPagedCountdownsByType:input_type -> countdown.QueryPagedCountdownsByTypeReq
+	4,  // 16: countdown.CountdownService.CreateCountdown:output_type -> countdown.CreateCountdownRes
+	8,  // 17: countdown.CountdownService.NextCountdownIntervalById:output_type -> countdown.NextCountdownIntervalByIdRes
+	6,  // 18: countdown.CountdownService.QueryCountdownById:output_type -> countdown.QueryCountdownByIdRes
+	10, // 19: countdown.CountdownService.QueryPagedExpringCountdownsByType:output_type -> countdown.QueryPagedExpringCountdownsByTypeRes
+	12, // 20: countdown.CountdownService.QueryPagedCountdownsByType:output_type -> countdown.QueryPagedCountdownsByTypeRes
 	16, // [16:21] is the sub-list for method output_type
 	11, // [11:16] is the sub-list for method input_type
 	11, // [11:11] is the sub-list for extension type_name
@@ -1138,7 +1207,7 @@ func file_countdown_countdown_proto_init() {
 		File: protoimpl.DescBuilder{
 			GoPackagePath: reflect.TypeOf(x{}).PkgPath(),
 			RawDescriptor: file_countdown_countdown_proto_rawDesc,
-			NumEnums:      1,
+			NumEnums:      2,
 			NumMessages:   11,
 			NumExtensions: 0,
 			NumServices:   1,

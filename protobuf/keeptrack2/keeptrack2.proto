@@ -118,7 +118,7 @@ message CreateItemReq {
 message CreateItemRes {
   shared.Result result = 1;
 
-  Project project = 2;
+  Item item = 2;
 }
 
 

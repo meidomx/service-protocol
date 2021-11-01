@@ -5,17 +5,18 @@ option java_multiple_files = true;
 option java_package = "info.moetang.serviceprotocol.protobuf.countdown";
 option java_outer_classname = "CountdownProto";
 option csharp_namespace = "ServiceGrpcProto";
-import "shared/result.proto";
 
 package countdown;
 
+import "shared/result.proto";
+
 service CountdownService {
-    rpc CreateCountdown (CreateCountdownReq) returns (CreateCountdownRes) {}
-    rpc NextCountdownIntervalById (NextCountdownIntervalByIdReq) returns (NextCountdownIntervalByIdRes) {}
-    
-    rpc QueryCountdownById (QueryCountdownByIdReq) returns (QueryCountdownByIdRes) {}
-    rpc QueryPagedExpringCountdownsByType (QueryPagedExpringCountdownsByTypeReq) returns (QueryPagedExpringCountdownsByTypeRes) {}
-    rpc QueryPagedCountdownsByType (QueryPagedCountdownsByTypeReq) returns (QueryPagedCountdownsByTypeRes) {}
+    rpc CreateCountdown(CreateCountdownReq) returns (CreateCountdownRes) {}
+    rpc NextCountdownIntervalById(NextCountdownIntervalByIdReq) returns (NextCountdownIntervalByIdRes) {}
+
+    rpc QueryCountdownById(QueryCountdownByIdReq) returns (QueryCountdownByIdRes) {}
+    rpc QueryPagedExpringCountdownsByType(QueryPagedExpringCountdownsByTypeReq) returns (QueryPagedExpringCountdownsByTypeRes) {}
+    rpc QueryPagedCountdownsByType(QueryPagedCountdownsByTypeReq) returns (QueryPagedCountdownsByTypeRes) {}
 }
 
 enum CountdownExpireStatus {
@@ -23,8 +24,19 @@ enum CountdownExpireStatus {
     EXPIRING = 1;
     EXPIRED = 2;
     DELETED = 3;
+    FINISHED = 4;
 
     ALL = 127;
+}
+
+enum CountdownNoticeTimeType {
+    NONE = 0;
+    DAY_30 = 1;
+    DAY_60 = 2;
+    DAY_90 = 3;
+    MONTH_6 = 4;
+
+    CUSTOM = 127;
 }
 
 message Countdown {

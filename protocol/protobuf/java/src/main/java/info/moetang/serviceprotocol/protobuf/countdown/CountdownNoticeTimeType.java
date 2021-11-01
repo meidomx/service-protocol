@@ -4,61 +4,61 @@
 package info.moetang.serviceprotocol.protobuf.countdown;
 
 /**
- * Protobuf enum {@code countdown.CountdownExpireStatus}
+ * Protobuf enum {@code countdown.CountdownNoticeTimeType}
  */
-public enum CountdownExpireStatus
+public enum CountdownNoticeTimeType
     implements com.google.protobuf.ProtocolMessageEnum {
   /**
-   * <code>UNKNOWN = 0;</code>
+   * <code>NONE = 0;</code>
    */
-  UNKNOWN(0),
+  NONE(0),
   /**
-   * <code>EXPIRING = 1;</code>
+   * <code>DAY_30 = 1;</code>
    */
-  EXPIRING(1),
+  DAY_30(1),
   /**
-   * <code>EXPIRED = 2;</code>
+   * <code>DAY_60 = 2;</code>
    */
-  EXPIRED(2),
+  DAY_60(2),
   /**
-   * <code>DELETED = 3;</code>
+   * <code>DAY_90 = 3;</code>
    */
-  DELETED(3),
+  DAY_90(3),
   /**
-   * <code>FINISHED = 4;</code>
+   * <code>MONTH_6 = 4;</code>
    */
-  FINISHED(4),
+  MONTH_6(4),
   /**
-   * <code>ALL = 127;</code>
+   * <code>CUSTOM = 127;</code>
    */
-  ALL(127),
+  CUSTOM(127),
   UNRECOGNIZED(-1),
   ;
 
   /**
-   * <code>UNKNOWN = 0;</code>
+   * <code>NONE = 0;</code>
    */
-  public static final int UNKNOWN_VALUE = 0;
+  public static final int NONE_VALUE = 0;
   /**
-   * <code>EXPIRING = 1;</code>
+   * <code>DAY_30 = 1;</code>
    */
-  public static final int EXPIRING_VALUE = 1;
+  public static final int DAY_30_VALUE = 1;
   /**
-   * <code>EXPIRED = 2;</code>
+   * <code>DAY_60 = 2;</code>
    */
-  public static final int EXPIRED_VALUE = 2;
+  public static final int DAY_60_VALUE = 2;
   /**
-   * <code>DELETED = 3;</code>
+   * <code>DAY_90 = 3;</code>
    */
-  public static final int DELETED_VALUE = 3;
+  public static final int DAY_90_VALUE = 3;
   /**
-   * <code>FINISHED = 4;</code>
+   * <code>MONTH_6 = 4;</code>
    */
-  public static final int FINISHED_VALUE = 4;
+  public static final int MONTH_6_VALUE = 4;
   /**
-   * <code>ALL = 127;</code>
+   * <code>CUSTOM = 127;</code>
    */
-  public static final int ALL_VALUE = 127;
+  public static final int CUSTOM_VALUE = 127;
 
 
   public final int getNumber() {
@@ -75,7 +75,7 @@ public enum CountdownExpireStatus
    * @deprecated Use {@link #forNumber(int)} instead.
    */
   @java.lang.Deprecated
-  public static CountdownExpireStatus valueOf(int value) {
+  public static CountdownNoticeTimeType valueOf(int value) {
     return forNumber(value);
   }
 
@@ -83,27 +83,27 @@ public enum CountdownExpireStatus
    * @param value The numeric wire value of the corresponding enum entry.
    * @return The enum associated with the given numeric wire value.
    */
-  public static CountdownExpireStatus forNumber(int value) {
+  public static CountdownNoticeTimeType forNumber(int value) {
     switch (value) {
-      case 0: return UNKNOWN;
-      case 1: return EXPIRING;
-      case 2: return EXPIRED;
-      case 3: return DELETED;
-      case 4: return FINISHED;
-      case 127: return ALL;
+      case 0: return NONE;
+      case 1: return DAY_30;
+      case 2: return DAY_60;
+      case 3: return DAY_90;
+      case 4: return MONTH_6;
+      case 127: return CUSTOM;
       default: return null;
     }
   }
 
-  public static com.google.protobuf.Internal.EnumLiteMap<CountdownExpireStatus>
+  public static com.google.protobuf.Internal.EnumLiteMap<CountdownNoticeTimeType>
       internalGetValueMap() {
     return internalValueMap;
   }
   private static final com.google.protobuf.Internal.EnumLiteMap<
-      CountdownExpireStatus> internalValueMap =
-        new com.google.protobuf.Internal.EnumLiteMap<CountdownExpireStatus>() {
-          public CountdownExpireStatus findValueByNumber(int number) {
-            return CountdownExpireStatus.forNumber(number);
+      CountdownNoticeTimeType> internalValueMap =
+        new com.google.protobuf.Internal.EnumLiteMap<CountdownNoticeTimeType>() {
+          public CountdownNoticeTimeType findValueByNumber(int number) {
+            return CountdownNoticeTimeType.forNumber(number);
           }
         };
 
@@ -121,12 +121,12 @@ public enum CountdownExpireStatus
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return info.moetang.serviceprotocol.protobuf.countdown.CountdownProto.getDescriptor().getEnumTypes().get(0);
+    return info.moetang.serviceprotocol.protobuf.countdown.CountdownProto.getDescriptor().getEnumTypes().get(1);
   }
 
-  private static final CountdownExpireStatus[] VALUES = values();
+  private static final CountdownNoticeTimeType[] VALUES = values();
 
-  public static CountdownExpireStatus valueOf(
+  public static CountdownNoticeTimeType valueOf(
       com.google.protobuf.Descriptors.EnumValueDescriptor desc) {
     if (desc.getType() != getDescriptor()) {
       throw new java.lang.IllegalArgumentException(
@@ -140,10 +140,10 @@ public enum CountdownExpireStatus
 
   private final int value;
 
-  private CountdownExpireStatus(int value) {
+  private CountdownNoticeTimeType(int value) {
     this.value = value;
   }
 
-  // @@protoc_insertion_point(enum_scope:countdown.CountdownExpireStatus)
+  // @@protoc_insertion_point(enum_scope:countdown.CountdownNoticeTimeType)
 }
 

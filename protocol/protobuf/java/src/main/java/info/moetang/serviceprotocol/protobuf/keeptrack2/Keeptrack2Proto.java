@@ -160,48 +160,48 @@ public final class Keeptrack2Proto {
       "sult\022%\n\010projects\030\002 \003(\0132\023.keeptrack2.Proj" +
       "ect\"W\n\rCreateItemReq\022\017\n\007user_id\030\001 \001(\t\022\022\n" +
       "\nproject_id\030\002 \001(\t\022\014\n\004name\030\013 \001(\t\022\023\n\013descr" +
-      "iption\030\014 \001(\t\"U\n\rCreateItemRes\022\036\n\006result\030" +
-      "\001 \001(\0132\016.shared.Result\022$\n\007project\030\002 \001(\0132\023" +
-      ".keeptrack2.Project\" \n\rDeleteItemReq\022\017\n\007" +
-      "item_id\030\001 \001(\t\"/\n\rDeleteItemRes\022\036\n\006result" +
-      "\030\001 \001(\0132\016.shared.Result\"C\n\rUpdateItemReq\022" +
-      "\017\n\007item_id\030\001 \001(\t\022\014\n\004name\030\013 \001(\t\022\023\n\013descri" +
-      "ption\030\014 \001(\t\"O\n\rUpdateItemRes\022\036\n\006result\030\001" +
-      " \001(\0132\016.shared.Result\022\036\n\004item\030\002 \001(\0132\020.kee" +
-      "ptrack2.Item\"#\n\020QueryItemByIdReq\022\017\n\007item" +
-      "_id\030\001 \001(\t\"R\n\020QueryItemByIdRes\022\036\n\006result\030" +
+      "iption\030\014 \001(\t\"O\n\rCreateItemRes\022\036\n\006result\030" +
       "\001 \001(\0132\016.shared.Result\022\036\n\004item\030\002 \001(\0132\020.ke" +
-      "eptrack2.Item\"R\n\033QueryPagedAvailableItem" +
-      "sReq\022\022\n\nproject_id\030\001 \001(\t\022\014\n\004page\030\002 \001(\003\022\021" +
-      "\n\tpage_size\030\003 \001(\003\"^\n\033QueryPagedAvailable" +
-      "ItemsRes\022\036\n\006result\030\001 \001(\0132\016.shared.Result" +
-      "\022\037\n\005items\030\002 \003(\0132\020.keeptrack2.Item2\332\006\n\021Ke" +
-      "eptrack2Service\022M\n\rCreateProject\022\034.keept" +
-      "rack2.CreateProjectReq\032\034.keeptrack2.Crea" +
-      "teProjectRes\"\000\022Q\n\021DeleteProjectById\022\034.ke" +
-      "eptrack2.DeleteProjectReq\032\034.keeptrack2.D" +
-      "eleteProjectRes\"\000\022Q\n\021UpdateProjectById\022\034" +
-      ".keeptrack2.UpdateProjectReq\032\034.keeptrack" +
-      "2.UpdateProjectRes\"\000\022V\n\020QueryProjectById" +
-      "\022\037.keeptrack2.QueryProjectByIdReq\032\037.keep" +
-      "track2.QueryProjectByIdRes\"\000\022V\n\020QueryAll" +
-      "Projects\022\037.keeptrack2.QueryAllProjectsRe" +
-      "q\032\037.keeptrack2.QueryAllProjectsRes\"\000\022D\n\n" +
-      "CreateItem\022\031.keeptrack2.CreateItemReq\032\031." +
-      "keeptrack2.CreateItemRes\"\000\022H\n\016DeleteItem" +
-      "ById\022\031.keeptrack2.DeleteItemReq\032\031.keeptr" +
-      "ack2.DeleteItemRes\"\000\022H\n\016UpdateItemById\022\031" +
-      ".keeptrack2.UpdateItemReq\032\031.keeptrack2.U" +
-      "pdateItemRes\"\000\022V\n\026QueryAvailableItemById" +
-      "\022\034.keeptrack2.QueryItemByIdReq\032\034.keeptra" +
-      "ck2.QueryItemByIdRes\"\000\022n\n\030QueryPagedAvai" +
-      "lableItems\022\'.keeptrack2.QueryPagedAvaila" +
-      "bleItemsReq\032\'.keeptrack2.QueryPagedAvail" +
-      "ableItemsRes\"\000B\250\001\n0info.moetang.servicep" +
-      "rotocol.protobuf.keeptrack2B\017Keeptrack2P" +
-      "rotoP\001ZCgithub.com/meidomx/service-proto" +
-      "col/protocol/protobuf/go/keeptrack2\252\002\033Ke" +
-      "eptrack2.ServiceGrpcProtob\006proto3"
+      "eptrack2.Item\" \n\rDeleteItemReq\022\017\n\007item_i" +
+      "d\030\001 \001(\t\"/\n\rDeleteItemRes\022\036\n\006result\030\001 \001(\013" +
+      "2\016.shared.Result\"C\n\rUpdateItemReq\022\017\n\007ite" +
+      "m_id\030\001 \001(\t\022\014\n\004name\030\013 \001(\t\022\023\n\013description\030" +
+      "\014 \001(\t\"O\n\rUpdateItemRes\022\036\n\006result\030\001 \001(\0132\016" +
+      ".shared.Result\022\036\n\004item\030\002 \001(\0132\020.keeptrack" +
+      "2.Item\"#\n\020QueryItemByIdReq\022\017\n\007item_id\030\001 " +
+      "\001(\t\"R\n\020QueryItemByIdRes\022\036\n\006result\030\001 \001(\0132" +
+      "\016.shared.Result\022\036\n\004item\030\002 \001(\0132\020.keeptrac" +
+      "k2.Item\"R\n\033QueryPagedAvailableItemsReq\022\022" +
+      "\n\nproject_id\030\001 \001(\t\022\014\n\004page\030\002 \001(\003\022\021\n\tpage" +
+      "_size\030\003 \001(\003\"^\n\033QueryPagedAvailableItemsR" +
+      "es\022\036\n\006result\030\001 \001(\0132\016.shared.Result\022\037\n\005it" +
+      "ems\030\002 \003(\0132\020.keeptrack2.Item2\332\006\n\021Keeptrac" +
+      "k2Service\022M\n\rCreateProject\022\034.keeptrack2." +
+      "CreateProjectReq\032\034.keeptrack2.CreateProj" +
+      "ectRes\"\000\022Q\n\021DeleteProjectById\022\034.keeptrac" +
+      "k2.DeleteProjectReq\032\034.keeptrack2.DeleteP" +
+      "rojectRes\"\000\022Q\n\021UpdateProjectById\022\034.keept" +
+      "rack2.UpdateProjectReq\032\034.keeptrack2.Upda" +
+      "teProjectRes\"\000\022V\n\020QueryProjectById\022\037.kee" +
+      "ptrack2.QueryProjectByIdReq\032\037.keeptrack2" +
+      ".QueryProjectByIdRes\"\000\022V\n\020QueryAllProjec" +
+      "ts\022\037.keeptrack2.QueryAllProjectsReq\032\037.ke" +
+      "eptrack2.QueryAllProjectsRes\"\000\022D\n\nCreate" +
+      "Item\022\031.keeptrack2.CreateItemReq\032\031.keeptr" +
+      "ack2.CreateItemRes\"\000\022H\n\016DeleteItemById\022\031" +
+      ".keeptrack2.DeleteItemReq\032\031.keeptrack2.D" +
+      "eleteItemRes\"\000\022H\n\016UpdateItemById\022\031.keept" +
+      "rack2.UpdateItemReq\032\031.keeptrack2.UpdateI" +
+      "temRes\"\000\022V\n\026QueryAvailableItemById\022\034.kee" +
+      "ptrack2.QueryItemByIdReq\032\034.keeptrack2.Qu" +
+      "eryItemByIdRes\"\000\022n\n\030QueryPagedAvailableI" +
+      "tems\022\'.keeptrack2.QueryPagedAvailableIte" +
+      "msReq\032\'.keeptrack2.QueryPagedAvailableIt" +
+      "emsRes\"\000B\250\001\n0info.moetang.serviceprotoco" +
+      "l.protobuf.keeptrack2B\017Keeptrack2ProtoP\001" +
+      "ZCgithub.com/meidomx/service-protocol/pr" +
+      "otocol/protobuf/go/keeptrack2\252\002\033Keeptrac" +
+      "k2.ServiceGrpcProtob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -291,7 +291,7 @@ public final class Keeptrack2Proto {
     internal_static_keeptrack2_CreateItemRes_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_keeptrack2_CreateItemRes_descriptor,
-        new java.lang.String[] { "Result", "Project", });
+        new java.lang.String[] { "Result", "Item", });
     internal_static_keeptrack2_DeleteItemReq_descriptor =
       getDescriptor().getMessageTypes().get(14);
     internal_static_keeptrack2_DeleteItemReq_fieldAccessorTable = new

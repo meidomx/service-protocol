@@ -23,17 +23,17 @@ public interface CreateItemResOrBuilder extends
   info.moetang.serviceprotocol.protobuf.shared.ResultOrBuilder getResultOrBuilder();
 
   /**
-   * <code>.keeptrack2.Project project = 2;</code>
-   * @return Whether the project field is set.
+   * <code>.keeptrack2.Item item = 2;</code>
+   * @return Whether the item field is set.
    */
-  boolean hasProject();
+  boolean hasItem();
   /**
-   * <code>.keeptrack2.Project project = 2;</code>
-   * @return The project.
+   * <code>.keeptrack2.Item item = 2;</code>
+   * @return The item.
    */
-  info.moetang.serviceprotocol.protobuf.keeptrack2.Project getProject();
+  info.moetang.serviceprotocol.protobuf.keeptrack2.Item getItem();
   /**
-   * <code>.keeptrack2.Project project = 2;</code>
+   * <code>.keeptrack2.Item item = 2;</code>
    */
-  info.moetang.serviceprotocol.protobuf.keeptrack2.ProjectOrBuilder getProjectOrBuilder();
+  info.moetang.serviceprotocol.protobuf.keeptrack2.ItemOrBuilder getItemOrBuilder();
 }

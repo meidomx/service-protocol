@@ -48,44 +48,44 @@ namespace Keeptrack2.ServiceGrpcProto {
             "ASgLMg4uc2hhcmVkLlJlc3VsdBIlCghwcm9qZWN0cxgCIAMoCzITLmtlZXB0",
             "cmFjazIuUHJvamVjdCJXCg1DcmVhdGVJdGVtUmVxEg8KB3VzZXJfaWQYASAB",
             "KAkSEgoKcHJvamVjdF9pZBgCIAEoCRIMCgRuYW1lGAsgASgJEhMKC2Rlc2Ny",
-            "aXB0aW9uGAwgASgJIlUKDUNyZWF0ZUl0ZW1SZXMSHgoGcmVzdWx0GAEgASgL",
-            "Mg4uc2hhcmVkLlJlc3VsdBIkCgdwcm9qZWN0GAIgASgLMhMua2VlcHRyYWNr",
-            "Mi5Qcm9qZWN0IiAKDURlbGV0ZUl0ZW1SZXESDwoHaXRlbV9pZBgBIAEoCSIv",
-            "Cg1EZWxldGVJdGVtUmVzEh4KBnJlc3VsdBgBIAEoCzIOLnNoYXJlZC5SZXN1",
-            "bHQiQwoNVXBkYXRlSXRlbVJlcRIPCgdpdGVtX2lkGAEgASgJEgwKBG5hbWUY",
-            "CyABKAkSEwoLZGVzY3JpcHRpb24YDCABKAkiTwoNVXBkYXRlSXRlbVJlcxIe",
-            "CgZyZXN1bHQYASABKAsyDi5zaGFyZWQuUmVzdWx0Eh4KBGl0ZW0YAiABKAsy",
-            "EC5rZWVwdHJhY2syLkl0ZW0iIwoQUXVlcnlJdGVtQnlJZFJlcRIPCgdpdGVt",
-            "X2lkGAEgASgJIlIKEFF1ZXJ5SXRlbUJ5SWRSZXMSHgoGcmVzdWx0GAEgASgL",
+            "aXB0aW9uGAwgASgJIk8KDUNyZWF0ZUl0ZW1SZXMSHgoGcmVzdWx0GAEgASgL",
             "Mg4uc2hhcmVkLlJlc3VsdBIeCgRpdGVtGAIgASgLMhAua2VlcHRyYWNrMi5J",
-            "dGVtIlIKG1F1ZXJ5UGFnZWRBdmFpbGFibGVJdGVtc1JlcRISCgpwcm9qZWN0",
-            "X2lkGAEgASgJEgwKBHBhZ2UYAiABKAMSEQoJcGFnZV9zaXplGAMgASgDIl4K",
-            "G1F1ZXJ5UGFnZWRBdmFpbGFibGVJdGVtc1JlcxIeCgZyZXN1bHQYASABKAsy",
-            "Di5zaGFyZWQuUmVzdWx0Eh8KBWl0ZW1zGAIgAygLMhAua2VlcHRyYWNrMi5J",
-            "dGVtMtoGChFLZWVwdHJhY2syU2VydmljZRJNCg1DcmVhdGVQcm9qZWN0Ehwu",
-            "a2VlcHRyYWNrMi5DcmVhdGVQcm9qZWN0UmVxGhwua2VlcHRyYWNrMi5DcmVh",
-            "dGVQcm9qZWN0UmVzIgASUQoRRGVsZXRlUHJvamVjdEJ5SWQSHC5rZWVwdHJh",
-            "Y2syLkRlbGV0ZVByb2plY3RSZXEaHC5rZWVwdHJhY2syLkRlbGV0ZVByb2pl",
-            "Y3RSZXMiABJRChFVcGRhdGVQcm9qZWN0QnlJZBIcLmtlZXB0cmFjazIuVXBk",
-            "YXRlUHJvamVjdFJlcRocLmtlZXB0cmFjazIuVXBkYXRlUHJvamVjdFJlcyIA",
-            "ElYKEFF1ZXJ5UHJvamVjdEJ5SWQSHy5rZWVwdHJhY2syLlF1ZXJ5UHJvamVj",
-            "dEJ5SWRSZXEaHy5rZWVwdHJhY2syLlF1ZXJ5UHJvamVjdEJ5SWRSZXMiABJW",
-            "ChBRdWVyeUFsbFByb2plY3RzEh8ua2VlcHRyYWNrMi5RdWVyeUFsbFByb2pl",
-            "Y3RzUmVxGh8ua2VlcHRyYWNrMi5RdWVyeUFsbFByb2plY3RzUmVzIgASRAoK",
-            "Q3JlYXRlSXRlbRIZLmtlZXB0cmFjazIuQ3JlYXRlSXRlbVJlcRoZLmtlZXB0",
-            "cmFjazIuQ3JlYXRlSXRlbVJlcyIAEkgKDkRlbGV0ZUl0ZW1CeUlkEhkua2Vl",
-            "cHRyYWNrMi5EZWxldGVJdGVtUmVxGhkua2VlcHRyYWNrMi5EZWxldGVJdGVt",
-            "UmVzIgASSAoOVXBkYXRlSXRlbUJ5SWQSGS5rZWVwdHJhY2syLlVwZGF0ZUl0",
-            "ZW1SZXEaGS5rZWVwdHJhY2syLlVwZGF0ZUl0ZW1SZXMiABJWChZRdWVyeUF2",
-            "YWlsYWJsZUl0ZW1CeUlkEhwua2VlcHRyYWNrMi5RdWVyeUl0ZW1CeUlkUmVx",
-            "Ghwua2VlcHRyYWNrMi5RdWVyeUl0ZW1CeUlkUmVzIgASbgoYUXVlcnlQYWdl",
-            "ZEF2YWlsYWJsZUl0ZW1zEicua2VlcHRyYWNrMi5RdWVyeVBhZ2VkQXZhaWxh",
-            "YmxlSXRlbXNSZXEaJy5rZWVwdHJhY2syLlF1ZXJ5UGFnZWRBdmFpbGFibGVJ",
-            "dGVtc1JlcyIAQqgBCjBpbmZvLm1vZXRhbmcuc2VydmljZXByb3RvY29sLnBy",
-            "b3RvYnVmLmtlZXB0cmFjazJCD0tlZXB0cmFjazJQcm90b1ABWkNnaXRodWIu",
-            "Y29tL21laWRvbXgvc2VydmljZS1wcm90b2NvbC9wcm90b2NvbC9wcm90b2J1",
-            "Zi9nby9rZWVwdHJhY2syqgIbS2VlcHRyYWNrMi5TZXJ2aWNlR3JwY1Byb3Rv",
-            "YgZwcm90bzM="));
+            "dGVtIiAKDURlbGV0ZUl0ZW1SZXESDwoHaXRlbV9pZBgBIAEoCSIvCg1EZWxl",
+            "dGVJdGVtUmVzEh4KBnJlc3VsdBgBIAEoCzIOLnNoYXJlZC5SZXN1bHQiQwoN",
+            "VXBkYXRlSXRlbVJlcRIPCgdpdGVtX2lkGAEgASgJEgwKBG5hbWUYCyABKAkS",
+            "EwoLZGVzY3JpcHRpb24YDCABKAkiTwoNVXBkYXRlSXRlbVJlcxIeCgZyZXN1",
+            "bHQYASABKAsyDi5zaGFyZWQuUmVzdWx0Eh4KBGl0ZW0YAiABKAsyEC5rZWVw",
+            "dHJhY2syLkl0ZW0iIwoQUXVlcnlJdGVtQnlJZFJlcRIPCgdpdGVtX2lkGAEg",
+            "ASgJIlIKEFF1ZXJ5SXRlbUJ5SWRSZXMSHgoGcmVzdWx0GAEgASgLMg4uc2hh",
+            "cmVkLlJlc3VsdBIeCgRpdGVtGAIgASgLMhAua2VlcHRyYWNrMi5JdGVtIlIK",
+            "G1F1ZXJ5UGFnZWRBdmFpbGFibGVJdGVtc1JlcRISCgpwcm9qZWN0X2lkGAEg",
+            "ASgJEgwKBHBhZ2UYAiABKAMSEQoJcGFnZV9zaXplGAMgASgDIl4KG1F1ZXJ5",
+            "UGFnZWRBdmFpbGFibGVJdGVtc1JlcxIeCgZyZXN1bHQYASABKAsyDi5zaGFy",
+            "ZWQuUmVzdWx0Eh8KBWl0ZW1zGAIgAygLMhAua2VlcHRyYWNrMi5JdGVtMtoG",
+            "ChFLZWVwdHJhY2syU2VydmljZRJNCg1DcmVhdGVQcm9qZWN0Ehwua2VlcHRy",
+            "YWNrMi5DcmVhdGVQcm9qZWN0UmVxGhwua2VlcHRyYWNrMi5DcmVhdGVQcm9q",
+            "ZWN0UmVzIgASUQoRRGVsZXRlUHJvamVjdEJ5SWQSHC5rZWVwdHJhY2syLkRl",
+            "bGV0ZVByb2plY3RSZXEaHC5rZWVwdHJhY2syLkRlbGV0ZVByb2plY3RSZXMi",
+            "ABJRChFVcGRhdGVQcm9qZWN0QnlJZBIcLmtlZXB0cmFjazIuVXBkYXRlUHJv",
+            "amVjdFJlcRocLmtlZXB0cmFjazIuVXBkYXRlUHJvamVjdFJlcyIAElYKEFF1",
+            "ZXJ5UHJvamVjdEJ5SWQSHy5rZWVwdHJhY2syLlF1ZXJ5UHJvamVjdEJ5SWRS",
+            "ZXEaHy5rZWVwdHJhY2syLlF1ZXJ5UHJvamVjdEJ5SWRSZXMiABJWChBRdWVy",
+            "eUFsbFByb2plY3RzEh8ua2VlcHRyYWNrMi5RdWVyeUFsbFByb2plY3RzUmVx",
+            "Gh8ua2VlcHRyYWNrMi5RdWVyeUFsbFByb2plY3RzUmVzIgASRAoKQ3JlYXRl",
+            "SXRlbRIZLmtlZXB0cmFjazIuQ3JlYXRlSXRlbVJlcRoZLmtlZXB0cmFjazIu",
+            "Q3JlYXRlSXRlbVJlcyIAEkgKDkRlbGV0ZUl0ZW1CeUlkEhkua2VlcHRyYWNr",
+            "Mi5EZWxldGVJdGVtUmVxGhkua2VlcHRyYWNrMi5EZWxldGVJdGVtUmVzIgAS",
+            "SAoOVXBkYXRlSXRlbUJ5SWQSGS5rZWVwdHJhY2syLlVwZGF0ZUl0ZW1SZXEa",
+            "GS5rZWVwdHJhY2syLlVwZGF0ZUl0ZW1SZXMiABJWChZRdWVyeUF2YWlsYWJs",
+            "ZUl0ZW1CeUlkEhwua2VlcHRyYWNrMi5RdWVyeUl0ZW1CeUlkUmVxGhwua2Vl",
+            "cHRyYWNrMi5RdWVyeUl0ZW1CeUlkUmVzIgASbgoYUXVlcnlQYWdlZEF2YWls",
+            "YWJsZUl0ZW1zEicua2VlcHRyYWNrMi5RdWVyeVBhZ2VkQXZhaWxhYmxlSXRl",
+            "bXNSZXEaJy5rZWVwdHJhY2syLlF1ZXJ5UGFnZWRBdmFpbGFibGVJdGVtc1Jl",
+            "cyIAQqgBCjBpbmZvLm1vZXRhbmcuc2VydmljZXByb3RvY29sLnByb3RvYnVm",
+            "LmtlZXB0cmFjazJCD0tlZXB0cmFjazJQcm90b1ABWkNnaXRodWIuY29tL21l",
+            "aWRvbXgvc2VydmljZS1wcm90b2NvbC9wcm90b2NvbC9wcm90b2J1Zi9nby9r",
+            "ZWVwdHJhY2syqgIbS2VlcHRyYWNrMi5TZXJ2aWNlR3JwY1Byb3RvYgZwcm90",
+            "bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::ServiceGrpcProto.ResultReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -102,7 +102,7 @@ namespace Keeptrack2.ServiceGrpcProto {
             new pbr::GeneratedClrTypeInfo(typeof(global::Keeptrack2.ServiceGrpcProto.QueryAllProjectsReq), global::Keeptrack2.ServiceGrpcProto.QueryAllProjectsReq.Parser, null, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Keeptrack2.ServiceGrpcProto.QueryAllProjectsRes), global::Keeptrack2.ServiceGrpcProto.QueryAllProjectsRes.Parser, new[]{ "Result", "Projects" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Keeptrack2.ServiceGrpcProto.CreateItemReq), global::Keeptrack2.ServiceGrpcProto.CreateItemReq.Parser, new[]{ "UserId", "ProjectId", "Name", "Description" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Keeptrack2.ServiceGrpcProto.CreateItemRes), global::Keeptrack2.ServiceGrpcProto.CreateItemRes.Parser, new[]{ "Result", "Project" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Keeptrack2.ServiceGrpcProto.CreateItemRes), global::Keeptrack2.ServiceGrpcProto.CreateItemRes.Parser, new[]{ "Result", "Item" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Keeptrack2.ServiceGrpcProto.DeleteItemReq), global::Keeptrack2.ServiceGrpcProto.DeleteItemReq.Parser, new[]{ "ItemId" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Keeptrack2.ServiceGrpcProto.DeleteItemRes), global::Keeptrack2.ServiceGrpcProto.DeleteItemRes.Parser, new[]{ "Result" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Keeptrack2.ServiceGrpcProto.UpdateItemReq), global::Keeptrack2.ServiceGrpcProto.UpdateItemReq.Parser, new[]{ "ItemId", "Name", "Description" }, null, null, null, null),
@@ -3447,7 +3447,7 @@ namespace Keeptrack2.ServiceGrpcProto {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public CreateItemRes(CreateItemRes other) : this() {
       result_ = other.result_ != null ? other.result_.Clone() : null;
-      project_ = other.project_ != null ? other.project_.Clone() : null;
+      item_ = other.item_ != null ? other.item_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -3469,15 +3469,15 @@ namespace Keeptrack2.ServiceGrpcProto {
       }
     }
 
-    /// <summary>Field number for the "project" field.</summary>
-    public const int ProjectFieldNumber = 2;
-    private global::Keeptrack2.ServiceGrpcProto.Project project_;
+    /// <summary>Field number for the "item" field.</summary>
+    public const int ItemFieldNumber = 2;
+    private global::Keeptrack2.ServiceGrpcProto.Item item_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::Keeptrack2.ServiceGrpcProto.Project Project {
-      get { return project_; }
+    public global::Keeptrack2.ServiceGrpcProto.Item Item {
+      get { return item_; }
       set {
-        project_ = value;
+        item_ = value;
       }
     }
 
@@ -3497,7 +3497,7 @@ namespace Keeptrack2.ServiceGrpcProto {
         return true;
       }
       if (!object.Equals(Result, other.Result)) return false;
-      if (!object.Equals(Project, other.Project)) return false;
+      if (!object.Equals(Item, other.Item)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -3506,7 +3506,7 @@ namespace Keeptrack2.ServiceGrpcProto {
     public override int GetHashCode() {
       int hash = 1;
       if (result_ != null) hash ^= Result.GetHashCode();
-      if (project_ != null) hash ^= Project.GetHashCode();
+      if (item_ != null) hash ^= Item.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -3529,9 +3529,9 @@ namespace Keeptrack2.ServiceGrpcProto {
         output.WriteRawTag(10);
         output.WriteMessage(Result);
       }
-      if (project_ != null) {
+      if (item_ != null) {
         output.WriteRawTag(18);
-        output.WriteMessage(Project);
+        output.WriteMessage(Item);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -3547,9 +3547,9 @@ namespace Keeptrack2.ServiceGrpcProto {
         output.WriteRawTag(10);
         output.WriteMessage(Result);
       }
-      if (project_ != null) {
+      if (item_ != null) {
         output.WriteRawTag(18);
-        output.WriteMessage(Project);
+        output.WriteMessage(Item);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
@@ -3564,8 +3564,8 @@ namespace Keeptrack2.ServiceGrpcProto {
       if (result_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(Result);
       }
-      if (project_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Project);
+      if (item_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Item);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -3585,11 +3585,11 @@ namespace Keeptrack2.ServiceGrpcProto {
         }
         Result.MergeFrom(other.Result);
       }
-      if (other.project_ != null) {
-        if (project_ == null) {
-          Project = new global::Keeptrack2.ServiceGrpcProto.Project();
+      if (other.item_ != null) {
+        if (item_ == null) {
+          Item = new global::Keeptrack2.ServiceGrpcProto.Item();
         }
-        Project.MergeFrom(other.Project);
+        Item.MergeFrom(other.Item);
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -3614,10 +3614,10 @@ namespace Keeptrack2.ServiceGrpcProto {
             break;
           }
           case 18: {
-            if (project_ == null) {
-              Project = new global::Keeptrack2.ServiceGrpcProto.Project();
+            if (item_ == null) {
+              Item = new global::Keeptrack2.ServiceGrpcProto.Item();
             }
-            input.ReadMessage(Project);
+            input.ReadMessage(Item);
             break;
           }
         }
@@ -3643,10 +3643,10 @@ namespace Keeptrack2.ServiceGrpcProto {
             break;
           }
           case 18: {
-            if (project_ == null) {
-              Project = new global::Keeptrack2.ServiceGrpcProto.Project();
+            if (item_ == null) {
+              Item = new global::Keeptrack2.ServiceGrpcProto.Item();
             }
-            input.ReadMessage(Project);
+            input.ReadMessage(Item);
             break;
           }
         }

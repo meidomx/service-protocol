@@ -109,27 +109,30 @@ public final class CountdownProto {
       "\001(\0162 .countdown.CountdownExpireStatus\"i\n" +
       "\035QueryPagedCountdownsByTypeRes\022\036\n\006result" +
       "\030\001 \001(\0132\016.shared.Result\022(\n\ncountdowns\030\002 \003" +
-      "(\0132\024.countdown.Countdown*U\n\025CountdownExp" +
+      "(\0132\024.countdown.Countdown*c\n\025CountdownExp" +
       "ireStatus\022\013\n\007UNKNOWN\020\000\022\014\n\010EXPIRING\020\001\022\013\n\007" +
-      "EXPIRED\020\002\022\013\n\007DELETED\020\003\022\007\n\003ALL\020\1772\260\004\n\020Coun" +
-      "tdownService\022Q\n\017CreateCountdown\022\035.countd" +
-      "own.CreateCountdownReq\032\035.countdown.Creat" +
-      "eCountdownRes\"\000\022o\n\031NextCountdownInterval" +
-      "ById\022\'.countdown.NextCountdownIntervalBy" +
-      "IdReq\032\'.countdown.NextCountdownIntervalB" +
-      "yIdRes\"\000\022Z\n\022QueryCountdownById\022 .countdo" +
-      "wn.QueryCountdownByIdReq\032 .countdown.Que" +
-      "ryCountdownByIdRes\"\000\022\207\001\n!QueryPagedExpri" +
-      "ngCountdownsByType\022/.countdown.QueryPage" +
-      "dExpringCountdownsByTypeReq\032/.countdown." +
-      "QueryPagedExpringCountdownsByTypeRes\"\000\022r" +
-      "\n\032QueryPagedCountdownsByType\022(.countdown" +
-      ".QueryPagedCountdownsByTypeReq\032(.countdo" +
-      "wn.QueryPagedCountdownsByTypeRes\"\000B\232\001\n/i" +
-      "nfo.moetang.serviceprotocol.protobuf.cou" +
-      "ntdownB\016CountdownProtoP\001ZBgithub.com/mei" +
-      "domx/service-protocol/protocol/protobuf/" +
-      "go/countdown\252\002\020ServiceGrpcProtob\006proto3"
+      "EXPIRED\020\002\022\013\n\007DELETED\020\003\022\014\n\010FINISHED\020\004\022\007\n\003" +
+      "ALL\020\177*`\n\027CountdownNoticeTimeType\022\010\n\004NONE" +
+      "\020\000\022\n\n\006DAY_30\020\001\022\n\n\006DAY_60\020\002\022\n\n\006DAY_90\020\003\022\013" +
+      "\n\007MONTH_6\020\004\022\n\n\006CUSTOM\020\1772\260\004\n\020CountdownSer" +
+      "vice\022Q\n\017CreateCountdown\022\035.countdown.Crea" +
+      "teCountdownReq\032\035.countdown.CreateCountdo" +
+      "wnRes\"\000\022o\n\031NextCountdownIntervalById\022\'.c" +
+      "ountdown.NextCountdownIntervalByIdReq\032\'." +
+      "countdown.NextCountdownIntervalByIdRes\"\000" +
+      "\022Z\n\022QueryCountdownById\022 .countdown.Query" +
+      "CountdownByIdReq\032 .countdown.QueryCountd" +
+      "ownByIdRes\"\000\022\207\001\n!QueryPagedExpringCountd" +
+      "ownsByType\022/.countdown.QueryPagedExpring" +
+      "CountdownsByTypeReq\032/.countdown.QueryPag" +
+      "edExpringCountdownsByTypeRes\"\000\022r\n\032QueryP" +
+      "agedCountdownsByType\022(.countdown.QueryPa" +
+      "gedCountdownsByTypeReq\032(.countdown.Query" +
+      "PagedCountdownsByTypeRes\"\000B\232\001\n/info.moet" +
+      "ang.serviceprotocol.protobuf.countdownB\016" +
+      "CountdownProtoP\001ZBgithub.com/meidomx/ser" +
+      "vice-protocol/protocol/protobuf/go/count" +
+      "down\252\002\020ServiceGrpcProtob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
