@@ -24,6 +24,24 @@ service Keeptrack2Service {
 
   rpc QueryAvailableItemById (QueryItemByIdReq) returns (QueryItemByIdRes) {}
   rpc QueryPagedAvailableItems(QueryPagedAvailableItemsReq) returns (QueryPagedAvailableItemsRes) {}
+
+
+  rpc CreatePart (CreatePartReq) returns (CreatePartRes) {}
+  rpc DeletePartById (DeletePartReq) returns (DeletePartRes) {}
+  rpc UpdatePartById (UpdatePartReq) returns (UpdatePartRes) {}
+  rpc UpdatePartStatusById (UpdatePartStatusByIdReq) returns (UpdatePartStatusByIdRes) {}
+
+  rpc QueryAvailablePartById (QueryPartByIdReq) returns (QueryPartByIdRes) {}
+  rpc QueryPagedAvailableParts(QueryPagedAvailablePartsReq) returns (QueryPagedAvailablePartsRes) {}
+
+}
+
+enum GeneralStatus {
+  GENERAL_STATUS_UNKNOWN = 0;
+  GENERAL_STATUS_NORMAL = 1;
+  GENERAL_STATUS_DELETED = 2;
+  GENERAL_STATUS_COMPLETE = 3;
+  GENERAL_STATUS_ABANDONED = 4;
 }
 
 message Project {
@@ -47,6 +65,19 @@ message Item {
 
   int64 time_created = 21;
   int64 time_updated = 22;
+}
+
+message Part {
+  string part_id = 1;
+  string item_id = 2;
+  string user_id = 3;
+
+  string name = 11;
+  string description = 12;
+
+  int64 time_created = 21;
+  int64 time_updated = 22;
+  GeneralStatus part_status = 23;
 }
 
 message CreateProjectReq {
@@ -166,5 +197,78 @@ message QueryPagedAvailableItemsRes {
   shared.Result result = 1;
 
   repeated Item items = 2;
+}
+
+
+message CreatePartReq {
+  string user_id = 1;
+  string item_id = 2;
+
+  string name = 11;
+  string description = 12;
+}
+
+message CreatePartRes {
+  shared.Result result = 1;
+
+  Part part = 2;
+}
+
+
+message DeletePartReq {
+  string part_id = 1;
+}
+
+message DeletePartRes {
+  shared.Result result = 1;
+}
+
+
+message UpdatePartReq {
+  string part_id = 1;
+
+  string name = 11;
+  string description = 12;
+}
+
+message UpdatePartRes {
+  shared.Result result = 1;
+
+  Part part = 2;
+}
+
+
+message QueryPartByIdReq {
+  string part_id = 1;
+}
+
+message QueryPartByIdRes {
+  shared.Result result = 1;
+
+  Part part = 2;
+}
+
+
+message QueryPagedAvailablePartsReq {
+  string item_id = 1;
+  int64 page = 2;
+  int64 page_size = 3;
+}
+
+message QueryPagedAvailablePartsRes {
+  shared.Result result = 1;
+
+  repeated Part parts = 2;
+}
+
+
+message UpdatePartStatusByIdReq {
+  string part_id = 1;
+  GeneralStatus old_status = 2;
+  GeneralStatus new_status = 3;
+}
+
+message UpdatePartStatusByIdRes {
+  shared.Result result = 1;
 }
 

@@ -325,6 +325,192 @@ public final class Keeptrack2ServiceGrpc {
     return getQueryPagedAvailableItemsMethod;
   }
 
+  private static volatile io.grpc.MethodDescriptor<info.moetang.serviceprotocol.protobuf.keeptrack2.CreatePartReq,
+      info.moetang.serviceprotocol.protobuf.keeptrack2.CreatePartRes> getCreatePartMethod;
+
+  @io.grpc.stub.annotations.RpcMethod(
+      fullMethodName = SERVICE_NAME + '/' + "CreatePart",
+      requestType = info.moetang.serviceprotocol.protobuf.keeptrack2.CreatePartReq.class,
+      responseType = info.moetang.serviceprotocol.protobuf.keeptrack2.CreatePartRes.class,
+      methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
+  public static io.grpc.MethodDescriptor<info.moetang.serviceprotocol.protobuf.keeptrack2.CreatePartReq,
+      info.moetang.serviceprotocol.protobuf.keeptrack2.CreatePartRes> getCreatePartMethod() {
+    io.grpc.MethodDescriptor<info.moetang.serviceprotocol.protobuf.keeptrack2.CreatePartReq, info.moetang.serviceprotocol.protobuf.keeptrack2.CreatePartRes> getCreatePartMethod;
+    if ((getCreatePartMethod = Keeptrack2ServiceGrpc.getCreatePartMethod) == null) {
+      synchronized (Keeptrack2ServiceGrpc.class) {
+        if ((getCreatePartMethod = Keeptrack2ServiceGrpc.getCreatePartMethod) == null) {
+          Keeptrack2ServiceGrpc.getCreatePartMethod = getCreatePartMethod =
+              io.grpc.MethodDescriptor.<info.moetang.serviceprotocol.protobuf.keeptrack2.CreatePartReq, info.moetang.serviceprotocol.protobuf.keeptrack2.CreatePartRes>newBuilder()
+              .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
+              .setFullMethodName(generateFullMethodName(SERVICE_NAME, "CreatePart"))
+              .setSampledToLocalTracing(true)
+              .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  info.moetang.serviceprotocol.protobuf.keeptrack2.CreatePartReq.getDefaultInstance()))
+              .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  info.moetang.serviceprotocol.protobuf.keeptrack2.CreatePartRes.getDefaultInstance()))
+              .setSchemaDescriptor(new Keeptrack2ServiceMethodDescriptorSupplier("CreatePart"))
+              .build();
+        }
+      }
+    }
+    return getCreatePartMethod;
+  }
+
+  private static volatile io.grpc.MethodDescriptor<info.moetang.serviceprotocol.protobuf.keeptrack2.DeletePartReq,
+      info.moetang.serviceprotocol.protobuf.keeptrack2.DeletePartRes> getDeletePartByIdMethod;
+
+  @io.grpc.stub.annotations.RpcMethod(
+      fullMethodName = SERVICE_NAME + '/' + "DeletePartById",
+      requestType = info.moetang.serviceprotocol.protobuf.keeptrack2.DeletePartReq.class,
+      responseType = info.moetang.serviceprotocol.protobuf.keeptrack2.DeletePartRes.class,
+      methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
+  public static io.grpc.MethodDescriptor<info.moetang.serviceprotocol.protobuf.keeptrack2.DeletePartReq,
+      info.moetang.serviceprotocol.protobuf.keeptrack2.DeletePartRes> getDeletePartByIdMethod() {
+    io.grpc.MethodDescriptor<info.moetang.serviceprotocol.protobuf.keeptrack2.DeletePartReq, info.moetang.serviceprotocol.protobuf.keeptrack2.DeletePartRes> getDeletePartByIdMethod;
+    if ((getDeletePartByIdMethod = Keeptrack2ServiceGrpc.getDeletePartByIdMethod) == null) {
+      synchronized (Keeptrack2ServiceGrpc.class) {
+        if ((getDeletePartByIdMethod = Keeptrack2ServiceGrpc.getDeletePartByIdMethod) == null) {
+          Keeptrack2ServiceGrpc.getDeletePartByIdMethod = getDeletePartByIdMethod =
+              io.grpc.MethodDescriptor.<info.moetang.serviceprotocol.protobuf.keeptrack2.DeletePartReq, info.moetang.serviceprotocol.protobuf.keeptrack2.DeletePartRes>newBuilder()
+              .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
+              .setFullMethodName(generateFullMethodName(SERVICE_NAME, "DeletePartById"))
+              .setSampledToLocalTracing(true)
+              .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  info.moetang.serviceprotocol.protobuf.keeptrack2.DeletePartReq.getDefaultInstance()))
+              .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  info.moetang.serviceprotocol.protobuf.keeptrack2.DeletePartRes.getDefaultInstance()))
+              .setSchemaDescriptor(new Keeptrack2ServiceMethodDescriptorSupplier("DeletePartById"))
+              .build();
+        }
+      }
+    }
+    return getDeletePartByIdMethod;
+  }
+
+  private static volatile io.grpc.MethodDescriptor<info.moetang.serviceprotocol.protobuf.keeptrack2.UpdatePartReq,
+      info.moetang.serviceprotocol.protobuf.keeptrack2.UpdatePartRes> getUpdatePartByIdMethod;
+
+  @io.grpc.stub.annotations.RpcMethod(
+      fullMethodName = SERVICE_NAME + '/' + "UpdatePartById",
+      requestType = info.moetang.serviceprotocol.protobuf.keeptrack2.UpdatePartReq.class,
+      responseType = info.moetang.serviceprotocol.protobuf.keeptrack2.UpdatePartRes.class,
+      methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
+  public static io.grpc.MethodDescriptor<info.moetang.serviceprotocol.protobuf.keeptrack2.UpdatePartReq,
+      info.moetang.serviceprotocol.protobuf.keeptrack2.UpdatePartRes> getUpdatePartByIdMethod() {
+    io.grpc.MethodDescriptor<info.moetang.serviceprotocol.protobuf.keeptrack2.UpdatePartReq, info.moetang.serviceprotocol.protobuf.keeptrack2.UpdatePartRes> getUpdatePartByIdMethod;
+    if ((getUpdatePartByIdMethod = Keeptrack2ServiceGrpc.getUpdatePartByIdMethod) == null) {
+      synchronized (Keeptrack2ServiceGrpc.class) {
+        if ((getUpdatePartByIdMethod = Keeptrack2ServiceGrpc.getUpdatePartByIdMethod) == null) {
+          Keeptrack2ServiceGrpc.getUpdatePartByIdMethod = getUpdatePartByIdMethod =
+              io.grpc.MethodDescriptor.<info.moetang.serviceprotocol.protobuf.keeptrack2.UpdatePartReq, info.moetang.serviceprotocol.protobuf.keeptrack2.UpdatePartRes>newBuilder()
+              .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
+              .setFullMethodName(generateFullMethodName(SERVICE_NAME, "UpdatePartById"))
+              .setSampledToLocalTracing(true)
+              .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  info.moetang.serviceprotocol.protobuf.keeptrack2.UpdatePartReq.getDefaultInstance()))
+              .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  info.moetang.serviceprotocol.protobuf.keeptrack2.UpdatePartRes.getDefaultInstance()))
+              .setSchemaDescriptor(new Keeptrack2ServiceMethodDescriptorSupplier("UpdatePartById"))
+              .build();
+        }
+      }
+    }
+    return getUpdatePartByIdMethod;
+  }
+
+  private static volatile io.grpc.MethodDescriptor<info.moetang.serviceprotocol.protobuf.keeptrack2.UpdatePartStatusByIdReq,
+      info.moetang.serviceprotocol.protobuf.keeptrack2.UpdatePartStatusByIdRes> getUpdatePartStatusByIdMethod;
+
+  @io.grpc.stub.annotations.RpcMethod(
+      fullMethodName = SERVICE_NAME + '/' + "UpdatePartStatusById",
+      requestType = info.moetang.serviceprotocol.protobuf.keeptrack2.UpdatePartStatusByIdReq.class,
+      responseType = info.moetang.serviceprotocol.protobuf.keeptrack2.UpdatePartStatusByIdRes.class,
+      methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
+  public static io.grpc.MethodDescriptor<info.moetang.serviceprotocol.protobuf.keeptrack2.UpdatePartStatusByIdReq,
+      info.moetang.serviceprotocol.protobuf.keeptrack2.UpdatePartStatusByIdRes> getUpdatePartStatusByIdMethod() {
+    io.grpc.MethodDescriptor<info.moetang.serviceprotocol.protobuf.keeptrack2.UpdatePartStatusByIdReq, info.moetang.serviceprotocol.protobuf.keeptrack2.UpdatePartStatusByIdRes> getUpdatePartStatusByIdMethod;
+    if ((getUpdatePartStatusByIdMethod = Keeptrack2ServiceGrpc.getUpdatePartStatusByIdMethod) == null) {
+      synchronized (Keeptrack2ServiceGrpc.class) {
+        if ((getUpdatePartStatusByIdMethod = Keeptrack2ServiceGrpc.getUpdatePartStatusByIdMethod) == null) {
+          Keeptrack2ServiceGrpc.getUpdatePartStatusByIdMethod = getUpdatePartStatusByIdMethod =
+              io.grpc.MethodDescriptor.<info.moetang.serviceprotocol.protobuf.keeptrack2.UpdatePartStatusByIdReq, info.moetang.serviceprotocol.protobuf.keeptrack2.UpdatePartStatusByIdRes>newBuilder()
+              .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
+              .setFullMethodName(generateFullMethodName(SERVICE_NAME, "UpdatePartStatusById"))
+              .setSampledToLocalTracing(true)
+              .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  info.moetang.serviceprotocol.protobuf.keeptrack2.UpdatePartStatusByIdReq.getDefaultInstance()))
+              .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  info.moetang.serviceprotocol.protobuf.keeptrack2.UpdatePartStatusByIdRes.getDefaultInstance()))
+              .setSchemaDescriptor(new Keeptrack2ServiceMethodDescriptorSupplier("UpdatePartStatusById"))
+              .build();
+        }
+      }
+    }
+    return getUpdatePartStatusByIdMethod;
+  }
+
+  private static volatile io.grpc.MethodDescriptor<info.moetang.serviceprotocol.protobuf.keeptrack2.QueryPartByIdReq,
+      info.moetang.serviceprotocol.protobuf.keeptrack2.QueryPartByIdRes> getQueryAvailablePartByIdMethod;
+
+  @io.grpc.stub.annotations.RpcMethod(
+      fullMethodName = SERVICE_NAME + '/' + "QueryAvailablePartById",
+      requestType = info.moetang.serviceprotocol.protobuf.keeptrack2.QueryPartByIdReq.class,
+      responseType = info.moetang.serviceprotocol.protobuf.keeptrack2.QueryPartByIdRes.class,
+      methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
+  public static io.grpc.MethodDescriptor<info.moetang.serviceprotocol.protobuf.keeptrack2.QueryPartByIdReq,
+      info.moetang.serviceprotocol.protobuf.keeptrack2.QueryPartByIdRes> getQueryAvailablePartByIdMethod() {
+    io.grpc.MethodDescriptor<info.moetang.serviceprotocol.protobuf.keeptrack2.QueryPartByIdReq, info.moetang.serviceprotocol.protobuf.keeptrack2.QueryPartByIdRes> getQueryAvailablePartByIdMethod;
+    if ((getQueryAvailablePartByIdMethod = Keeptrack2ServiceGrpc.getQueryAvailablePartByIdMethod) == null) {
+      synchronized (Keeptrack2ServiceGrpc.class) {
+        if ((getQueryAvailablePartByIdMethod = Keeptrack2ServiceGrpc.getQueryAvailablePartByIdMethod) == null) {
+          Keeptrack2ServiceGrpc.getQueryAvailablePartByIdMethod = getQueryAvailablePartByIdMethod =
+              io.grpc.MethodDescriptor.<info.moetang.serviceprotocol.protobuf.keeptrack2.QueryPartByIdReq, info.moetang.serviceprotocol.protobuf.keeptrack2.QueryPartByIdRes>newBuilder()
+              .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
+              .setFullMethodName(generateFullMethodName(SERVICE_NAME, "QueryAvailablePartById"))
+              .setSampledToLocalTracing(true)
+              .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  info.moetang.serviceprotocol.protobuf.keeptrack2.QueryPartByIdReq.getDefaultInstance()))
+              .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  info.moetang.serviceprotocol.protobuf.keeptrack2.QueryPartByIdRes.getDefaultInstance()))
+              .setSchemaDescriptor(new Keeptrack2ServiceMethodDescriptorSupplier("QueryAvailablePartById"))
+              .build();
+        }
+      }
+    }
+    return getQueryAvailablePartByIdMethod;
+  }
+
+  private static volatile io.grpc.MethodDescriptor<info.moetang.serviceprotocol.protobuf.keeptrack2.QueryPagedAvailablePartsReq,
+      info.moetang.serviceprotocol.protobuf.keeptrack2.QueryPagedAvailablePartsRes> getQueryPagedAvailablePartsMethod;
+
+  @io.grpc.stub.annotations.RpcMethod(
+      fullMethodName = SERVICE_NAME + '/' + "QueryPagedAvailableParts",
+      requestType = info.moetang.serviceprotocol.protobuf.keeptrack2.QueryPagedAvailablePartsReq.class,
+      responseType = info.moetang.serviceprotocol.protobuf.keeptrack2.QueryPagedAvailablePartsRes.class,
+      methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
+  public static io.grpc.MethodDescriptor<info.moetang.serviceprotocol.protobuf.keeptrack2.QueryPagedAvailablePartsReq,
+      info.moetang.serviceprotocol.protobuf.keeptrack2.QueryPagedAvailablePartsRes> getQueryPagedAvailablePartsMethod() {
+    io.grpc.MethodDescriptor<info.moetang.serviceprotocol.protobuf.keeptrack2.QueryPagedAvailablePartsReq, info.moetang.serviceprotocol.protobuf.keeptrack2.QueryPagedAvailablePartsRes> getQueryPagedAvailablePartsMethod;
+    if ((getQueryPagedAvailablePartsMethod = Keeptrack2ServiceGrpc.getQueryPagedAvailablePartsMethod) == null) {
+      synchronized (Keeptrack2ServiceGrpc.class) {
+        if ((getQueryPagedAvailablePartsMethod = Keeptrack2ServiceGrpc.getQueryPagedAvailablePartsMethod) == null) {
+          Keeptrack2ServiceGrpc.getQueryPagedAvailablePartsMethod = getQueryPagedAvailablePartsMethod =
+              io.grpc.MethodDescriptor.<info.moetang.serviceprotocol.protobuf.keeptrack2.QueryPagedAvailablePartsReq, info.moetang.serviceprotocol.protobuf.keeptrack2.QueryPagedAvailablePartsRes>newBuilder()
+              .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
+              .setFullMethodName(generateFullMethodName(SERVICE_NAME, "QueryPagedAvailableParts"))
+              .setSampledToLocalTracing(true)
+              .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  info.moetang.serviceprotocol.protobuf.keeptrack2.QueryPagedAvailablePartsReq.getDefaultInstance()))
+              .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  info.moetang.serviceprotocol.protobuf.keeptrack2.QueryPagedAvailablePartsRes.getDefaultInstance()))
+              .setSchemaDescriptor(new Keeptrack2ServiceMethodDescriptorSupplier("QueryPagedAvailableParts"))
+              .build();
+        }
+      }
+    }
+    return getQueryPagedAvailablePartsMethod;
+  }
+
   /**
    * Creates a new async stub that supports all call types for the service
    */
@@ -443,6 +629,48 @@ public final class Keeptrack2ServiceGrpc {
       io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getQueryPagedAvailableItemsMethod(), responseObserver);
     }
 
+    /**
+     */
+    public void createPart(info.moetang.serviceprotocol.protobuf.keeptrack2.CreatePartReq request,
+        io.grpc.stub.StreamObserver<info.moetang.serviceprotocol.protobuf.keeptrack2.CreatePartRes> responseObserver) {
+      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getCreatePartMethod(), responseObserver);
+    }
+
+    /**
+     */
+    public void deletePartById(info.moetang.serviceprotocol.protobuf.keeptrack2.DeletePartReq request,
+        io.grpc.stub.StreamObserver<info.moetang.serviceprotocol.protobuf.keeptrack2.DeletePartRes> responseObserver) {
+      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getDeletePartByIdMethod(), responseObserver);
+    }
+
+    /**
+     */
+    public void updatePartById(info.moetang.serviceprotocol.protobuf.keeptrack2.UpdatePartReq request,
+        io.grpc.stub.StreamObserver<info.moetang.serviceprotocol.protobuf.keeptrack2.UpdatePartRes> responseObserver) {
+      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getUpdatePartByIdMethod(), responseObserver);
+    }
+
+    /**
+     */
+    public void updatePartStatusById(info.moetang.serviceprotocol.protobuf.keeptrack2.UpdatePartStatusByIdReq request,
+        io.grpc.stub.StreamObserver<info.moetang.serviceprotocol.protobuf.keeptrack2.UpdatePartStatusByIdRes> responseObserver) {
+      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getUpdatePartStatusByIdMethod(), responseObserver);
+    }
+
+    /**
+     */
+    public void queryAvailablePartById(info.moetang.serviceprotocol.protobuf.keeptrack2.QueryPartByIdReq request,
+        io.grpc.stub.StreamObserver<info.moetang.serviceprotocol.protobuf.keeptrack2.QueryPartByIdRes> responseObserver) {
+      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getQueryAvailablePartByIdMethod(), responseObserver);
+    }
+
+    /**
+     */
+    public void queryPagedAvailableParts(info.moetang.serviceprotocol.protobuf.keeptrack2.QueryPagedAvailablePartsReq request,
+        io.grpc.stub.StreamObserver<info.moetang.serviceprotocol.protobuf.keeptrack2.QueryPagedAvailablePartsRes> responseObserver) {
+      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getQueryPagedAvailablePartsMethod(), responseObserver);
+    }
+
     @java.lang.Override public final io.grpc.ServerServiceDefinition bindService() {
       return io.grpc.ServerServiceDefinition.builder(getServiceDescriptor())
           .addMethod(
@@ -515,6 +743,48 @@ public final class Keeptrack2ServiceGrpc {
                 info.moetang.serviceprotocol.protobuf.keeptrack2.QueryPagedAvailableItemsReq,
                 info.moetang.serviceprotocol.protobuf.keeptrack2.QueryPagedAvailableItemsRes>(
                   this, METHODID_QUERY_PAGED_AVAILABLE_ITEMS)))
+          .addMethod(
+            getCreatePartMethod(),
+            io.grpc.stub.ServerCalls.asyncUnaryCall(
+              new MethodHandlers<
+                info.moetang.serviceprotocol.protobuf.keeptrack2.CreatePartReq,
+                info.moetang.serviceprotocol.protobuf.keeptrack2.CreatePartRes>(
+                  this, METHODID_CREATE_PART)))
+          .addMethod(
+            getDeletePartByIdMethod(),
+            io.grpc.stub.ServerCalls.asyncUnaryCall(
+              new MethodHandlers<
+                info.moetang.serviceprotocol.protobuf.keeptrack2.DeletePartReq,
+                info.moetang.serviceprotocol.protobuf.keeptrack2.DeletePartRes>(
+                  this, METHODID_DELETE_PART_BY_ID)))
+          .addMethod(
+            getUpdatePartByIdMethod(),
+            io.grpc.stub.ServerCalls.asyncUnaryCall(
+              new MethodHandlers<
+                info.moetang.serviceprotocol.protobuf.keeptrack2.UpdatePartReq,
+                info.moetang.serviceprotocol.protobuf.keeptrack2.UpdatePartRes>(
+                  this, METHODID_UPDATE_PART_BY_ID)))
+          .addMethod(
+            getUpdatePartStatusByIdMethod(),
+            io.grpc.stub.ServerCalls.asyncUnaryCall(
+              new MethodHandlers<
+                info.moetang.serviceprotocol.protobuf.keeptrack2.UpdatePartStatusByIdReq,
+                info.moetang.serviceprotocol.protobuf.keeptrack2.UpdatePartStatusByIdRes>(
+                  this, METHODID_UPDATE_PART_STATUS_BY_ID)))
+          .addMethod(
+            getQueryAvailablePartByIdMethod(),
+            io.grpc.stub.ServerCalls.asyncUnaryCall(
+              new MethodHandlers<
+                info.moetang.serviceprotocol.protobuf.keeptrack2.QueryPartByIdReq,
+                info.moetang.serviceprotocol.protobuf.keeptrack2.QueryPartByIdRes>(
+                  this, METHODID_QUERY_AVAILABLE_PART_BY_ID)))
+          .addMethod(
+            getQueryPagedAvailablePartsMethod(),
+            io.grpc.stub.ServerCalls.asyncUnaryCall(
+              new MethodHandlers<
+                info.moetang.serviceprotocol.protobuf.keeptrack2.QueryPagedAvailablePartsReq,
+                info.moetang.serviceprotocol.protobuf.keeptrack2.QueryPagedAvailablePartsRes>(
+                  this, METHODID_QUERY_PAGED_AVAILABLE_PARTS)))
           .build();
     }
   }
@@ -612,6 +882,54 @@ public final class Keeptrack2ServiceGrpc {
       io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getQueryPagedAvailableItemsMethod(), getCallOptions()), request, responseObserver);
     }
+
+    /**
+     */
+    public void createPart(info.moetang.serviceprotocol.protobuf.keeptrack2.CreatePartReq request,
+        io.grpc.stub.StreamObserver<info.moetang.serviceprotocol.protobuf.keeptrack2.CreatePartRes> responseObserver) {
+      io.grpc.stub.ClientCalls.asyncUnaryCall(
+          getChannel().newCall(getCreatePartMethod(), getCallOptions()), request, responseObserver);
+    }
+
+    /**
+     */
+    public void deletePartById(info.moetang.serviceprotocol.protobuf.keeptrack2.DeletePartReq request,
+        io.grpc.stub.StreamObserver<info.moetang.serviceprotocol.protobuf.keeptrack2.DeletePartRes> responseObserver) {
+      io.grpc.stub.ClientCalls.asyncUnaryCall(
+          getChannel().newCall(getDeletePartByIdMethod(), getCallOptions()), request, responseObserver);
+    }
+
+    /**
+     */
+    public void updatePartById(info.moetang.serviceprotocol.protobuf.keeptrack2.UpdatePartReq request,
+        io.grpc.stub.StreamObserver<info.moetang.serviceprotocol.protobuf.keeptrack2.UpdatePartRes> responseObserver) {
+      io.grpc.stub.ClientCalls.asyncUnaryCall(
+          getChannel().newCall(getUpdatePartByIdMethod(), getCallOptions()), request, responseObserver);
+    }
+
+    /**
+     */
+    public void updatePartStatusById(info.moetang.serviceprotocol.protobuf.keeptrack2.UpdatePartStatusByIdReq request,
+        io.grpc.stub.StreamObserver<info.moetang.serviceprotocol.protobuf.keeptrack2.UpdatePartStatusByIdRes> responseObserver) {
+      io.grpc.stub.ClientCalls.asyncUnaryCall(
+          getChannel().newCall(getUpdatePartStatusByIdMethod(), getCallOptions()), request, responseObserver);
+    }
+
+    /**
+     */
+    public void queryAvailablePartById(info.moetang.serviceprotocol.protobuf.keeptrack2.QueryPartByIdReq request,
+        io.grpc.stub.StreamObserver<info.moetang.serviceprotocol.protobuf.keeptrack2.QueryPartByIdRes> responseObserver) {
+      io.grpc.stub.ClientCalls.asyncUnaryCall(
+          getChannel().newCall(getQueryAvailablePartByIdMethod(), getCallOptions()), request, responseObserver);
+    }
+
+    /**
+     */
+    public void queryPagedAvailableParts(info.moetang.serviceprotocol.protobuf.keeptrack2.QueryPagedAvailablePartsReq request,
+        io.grpc.stub.StreamObserver<info.moetang.serviceprotocol.protobuf.keeptrack2.QueryPagedAvailablePartsRes> responseObserver) {
+      io.grpc.stub.ClientCalls.asyncUnaryCall(
+          getChannel().newCall(getQueryPagedAvailablePartsMethod(), getCallOptions()), request, responseObserver);
+    }
   }
 
   /**
@@ -696,6 +1014,48 @@ public final class Keeptrack2ServiceGrpc {
     public info.moetang.serviceprotocol.protobuf.keeptrack2.QueryPagedAvailableItemsRes queryPagedAvailableItems(info.moetang.serviceprotocol.protobuf.keeptrack2.QueryPagedAvailableItemsReq request) {
       return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getQueryPagedAvailableItemsMethod(), getCallOptions(), request);
+    }
+
+    /**
+     */
+    public info.moetang.serviceprotocol.protobuf.keeptrack2.CreatePartRes createPart(info.moetang.serviceprotocol.protobuf.keeptrack2.CreatePartReq request) {
+      return io.grpc.stub.ClientCalls.blockingUnaryCall(
+          getChannel(), getCreatePartMethod(), getCallOptions(), request);
+    }
+
+    /**
+     */
+    public info.moetang.serviceprotocol.protobuf.keeptrack2.DeletePartRes deletePartById(info.moetang.serviceprotocol.protobuf.keeptrack2.DeletePartReq request) {
+      return io.grpc.stub.ClientCalls.blockingUnaryCall(
+          getChannel(), getDeletePartByIdMethod(), getCallOptions(), request);
+    }
+
+    /**
+     */
+    public info.moetang.serviceprotocol.protobuf.keeptrack2.UpdatePartRes updatePartById(info.moetang.serviceprotocol.protobuf.keeptrack2.UpdatePartReq request) {
+      return io.grpc.stub.ClientCalls.blockingUnaryCall(
+          getChannel(), getUpdatePartByIdMethod(), getCallOptions(), request);
+    }
+
+    /**
+     */
+    public info.moetang.serviceprotocol.protobuf.keeptrack2.UpdatePartStatusByIdRes updatePartStatusById(info.moetang.serviceprotocol.protobuf.keeptrack2.UpdatePartStatusByIdReq request) {
+      return io.grpc.stub.ClientCalls.blockingUnaryCall(
+          getChannel(), getUpdatePartStatusByIdMethod(), getCallOptions(), request);
+    }
+
+    /**
+     */
+    public info.moetang.serviceprotocol.protobuf.keeptrack2.QueryPartByIdRes queryAvailablePartById(info.moetang.serviceprotocol.protobuf.keeptrack2.QueryPartByIdReq request) {
+      return io.grpc.stub.ClientCalls.blockingUnaryCall(
+          getChannel(), getQueryAvailablePartByIdMethod(), getCallOptions(), request);
+    }
+
+    /**
+     */
+    public info.moetang.serviceprotocol.protobuf.keeptrack2.QueryPagedAvailablePartsRes queryPagedAvailableParts(info.moetang.serviceprotocol.protobuf.keeptrack2.QueryPagedAvailablePartsReq request) {
+      return io.grpc.stub.ClientCalls.blockingUnaryCall(
+          getChannel(), getQueryPagedAvailablePartsMethod(), getCallOptions(), request);
     }
   }
 
@@ -792,6 +1152,54 @@ public final class Keeptrack2ServiceGrpc {
       return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getQueryPagedAvailableItemsMethod(), getCallOptions()), request);
     }
+
+    /**
+     */
+    public com.google.common.util.concurrent.ListenableFuture<info.moetang.serviceprotocol.protobuf.keeptrack2.CreatePartRes> createPart(
+        info.moetang.serviceprotocol.protobuf.keeptrack2.CreatePartReq request) {
+      return io.grpc.stub.ClientCalls.futureUnaryCall(
+          getChannel().newCall(getCreatePartMethod(), getCallOptions()), request);
+    }
+
+    /**
+     */
+    public com.google.common.util.concurrent.ListenableFuture<info.moetang.serviceprotocol.protobuf.keeptrack2.DeletePartRes> deletePartById(
+        info.moetang.serviceprotocol.protobuf.keeptrack2.DeletePartReq request) {
+      return io.grpc.stub.ClientCalls.futureUnaryCall(
+          getChannel().newCall(getDeletePartByIdMethod(), getCallOptions()), request);
+    }
+
+    /**
+     */
+    public com.google.common.util.concurrent.ListenableFuture<info.moetang.serviceprotocol.protobuf.keeptrack2.UpdatePartRes> updatePartById(
+        info.moetang.serviceprotocol.protobuf.keeptrack2.UpdatePartReq request) {
+      return io.grpc.stub.ClientCalls.futureUnaryCall(
+          getChannel().newCall(getUpdatePartByIdMethod(), getCallOptions()), request);
+    }
+
+    /**
+     */
+    public com.google.common.util.concurrent.ListenableFuture<info.moetang.serviceprotocol.protobuf.keeptrack2.UpdatePartStatusByIdRes> updatePartStatusById(
+        info.moetang.serviceprotocol.protobuf.keeptrack2.UpdatePartStatusByIdReq request) {
+      return io.grpc.stub.ClientCalls.futureUnaryCall(
+          getChannel().newCall(getUpdatePartStatusByIdMethod(), getCallOptions()), request);
+    }
+
+    /**
+     */
+    public com.google.common.util.concurrent.ListenableFuture<info.moetang.serviceprotocol.protobuf.keeptrack2.QueryPartByIdRes> queryAvailablePartById(
+        info.moetang.serviceprotocol.protobuf.keeptrack2.QueryPartByIdReq request) {
+      return io.grpc.stub.ClientCalls.futureUnaryCall(
+          getChannel().newCall(getQueryAvailablePartByIdMethod(), getCallOptions()), request);
+    }
+
+    /**
+     */
+    public com.google.common.util.concurrent.ListenableFuture<info.moetang.serviceprotocol.protobuf.keeptrack2.QueryPagedAvailablePartsRes> queryPagedAvailableParts(
+        info.moetang.serviceprotocol.protobuf.keeptrack2.QueryPagedAvailablePartsReq request) {
+      return io.grpc.stub.ClientCalls.futureUnaryCall(
+          getChannel().newCall(getQueryPagedAvailablePartsMethod(), getCallOptions()), request);
+    }
   }
 
   private static final int METHODID_CREATE_PROJECT = 0;
@@ -804,6 +1212,12 @@ public final class Keeptrack2ServiceGrpc {
   private static final int METHODID_UPDATE_ITEM_BY_ID = 7;
   private static final int METHODID_QUERY_AVAILABLE_ITEM_BY_ID = 8;
   private static final int METHODID_QUERY_PAGED_AVAILABLE_ITEMS = 9;
+  private static final int METHODID_CREATE_PART = 10;
+  private static final int METHODID_DELETE_PART_BY_ID = 11;
+  private static final int METHODID_UPDATE_PART_BY_ID = 12;
+  private static final int METHODID_UPDATE_PART_STATUS_BY_ID = 13;
+  private static final int METHODID_QUERY_AVAILABLE_PART_BY_ID = 14;
+  private static final int METHODID_QUERY_PAGED_AVAILABLE_PARTS = 15;
 
   private static final class MethodHandlers<Req, Resp> implements
       io.grpc.stub.ServerCalls.UnaryMethod<Req, Resp>,
@@ -861,6 +1275,30 @@ public final class Keeptrack2ServiceGrpc {
         case METHODID_QUERY_PAGED_AVAILABLE_ITEMS:
           serviceImpl.queryPagedAvailableItems((info.moetang.serviceprotocol.protobuf.keeptrack2.QueryPagedAvailableItemsReq) request,
               (io.grpc.stub.StreamObserver<info.moetang.serviceprotocol.protobuf.keeptrack2.QueryPagedAvailableItemsRes>) responseObserver);
+          break;
+        case METHODID_CREATE_PART:
+          serviceImpl.createPart((info.moetang.serviceprotocol.protobuf.keeptrack2.CreatePartReq) request,
+              (io.grpc.stub.StreamObserver<info.moetang.serviceprotocol.protobuf.keeptrack2.CreatePartRes>) responseObserver);
+          break;
+        case METHODID_DELETE_PART_BY_ID:
+          serviceImpl.deletePartById((info.moetang.serviceprotocol.protobuf.keeptrack2.DeletePartReq) request,
+              (io.grpc.stub.StreamObserver<info.moetang.serviceprotocol.protobuf.keeptrack2.DeletePartRes>) responseObserver);
+          break;
+        case METHODID_UPDATE_PART_BY_ID:
+          serviceImpl.updatePartById((info.moetang.serviceprotocol.protobuf.keeptrack2.UpdatePartReq) request,
+              (io.grpc.stub.StreamObserver<info.moetang.serviceprotocol.protobuf.keeptrack2.UpdatePartRes>) responseObserver);
+          break;
+        case METHODID_UPDATE_PART_STATUS_BY_ID:
+          serviceImpl.updatePartStatusById((info.moetang.serviceprotocol.protobuf.keeptrack2.UpdatePartStatusByIdReq) request,
+              (io.grpc.stub.StreamObserver<info.moetang.serviceprotocol.protobuf.keeptrack2.UpdatePartStatusByIdRes>) responseObserver);
+          break;
+        case METHODID_QUERY_AVAILABLE_PART_BY_ID:
+          serviceImpl.queryAvailablePartById((info.moetang.serviceprotocol.protobuf.keeptrack2.QueryPartByIdReq) request,
+              (io.grpc.stub.StreamObserver<info.moetang.serviceprotocol.protobuf.keeptrack2.QueryPartByIdRes>) responseObserver);
+          break;
+        case METHODID_QUERY_PAGED_AVAILABLE_PARTS:
+          serviceImpl.queryPagedAvailableParts((info.moetang.serviceprotocol.protobuf.keeptrack2.QueryPagedAvailablePartsReq) request,
+              (io.grpc.stub.StreamObserver<info.moetang.serviceprotocol.protobuf.keeptrack2.QueryPagedAvailablePartsRes>) responseObserver);
           break;
         default:
           throw new AssertionError();
@@ -933,6 +1371,12 @@ public final class Keeptrack2ServiceGrpc {
               .addMethod(getUpdateItemByIdMethod())
               .addMethod(getQueryAvailableItemByIdMethod())
               .addMethod(getQueryPagedAvailableItemsMethod())
+              .addMethod(getCreatePartMethod())
+              .addMethod(getDeletePartByIdMethod())
+              .addMethod(getUpdatePartByIdMethod())
+              .addMethod(getUpdatePartStatusByIdMethod())
+              .addMethod(getQueryAvailablePartByIdMethod())
+              .addMethod(getQueryPagedAvailablePartsMethod())
               .build();
         }
       }

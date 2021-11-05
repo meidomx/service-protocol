@@ -28,6 +28,12 @@ type Keeptrack2ServiceClient interface {
 	UpdateItemById(ctx context.Context, in *UpdateItemReq, opts ...grpc.CallOption) (*UpdateItemRes, error)
 	QueryAvailableItemById(ctx context.Context, in *QueryItemByIdReq, opts ...grpc.CallOption) (*QueryItemByIdRes, error)
 	QueryPagedAvailableItems(ctx context.Context, in *QueryPagedAvailableItemsReq, opts ...grpc.CallOption) (*QueryPagedAvailableItemsRes, error)
+	CreatePart(ctx context.Context, in *CreatePartReq, opts ...grpc.CallOption) (*CreatePartRes, error)
+	DeletePartById(ctx context.Context, in *DeletePartReq, opts ...grpc.CallOption) (*DeletePartRes, error)
+	UpdatePartById(ctx context.Context, in *UpdatePartReq, opts ...grpc.CallOption) (*UpdatePartRes, error)
+	UpdatePartStatusById(ctx context.Context, in *UpdatePartStatusByIdReq, opts ...grpc.CallOption) (*UpdatePartStatusByIdRes, error)
+	QueryAvailablePartById(ctx context.Context, in *QueryPartByIdReq, opts ...grpc.CallOption) (*QueryPartByIdRes, error)
+	QueryPagedAvailableParts(ctx context.Context, in *QueryPagedAvailablePartsReq, opts ...grpc.CallOption) (*QueryPagedAvailablePartsRes, error)
 }
 
 type keeptrack2ServiceClient struct {
@@ -128,6 +134,60 @@ func (c *keeptrack2ServiceClient) QueryPagedAvailableItems(ctx context.Context, 
 	return out, nil
 }
 
+func (c *keeptrack2ServiceClient) CreatePart(ctx context.Context, in *CreatePartReq, opts ...grpc.CallOption) (*CreatePartRes, error) {
+	out := new(CreatePartRes)
+	err := c.cc.Invoke(ctx, "/keeptrack2.Keeptrack2Service/CreatePart", in, out, opts...)
+	if err != nil {
+		return nil, err
+	}
+	return out, nil
+}
+
+func (c *keeptrack2ServiceClient) DeletePartById(ctx context.Context, in *DeletePartReq, opts ...grpc.CallOption) (*DeletePartRes, error) {
+	out := new(DeletePartRes)
+	err := c.cc.Invoke(ctx, "/keeptrack2.Keeptrack2Service/DeletePartById", in, out, opts...)
+	if err != nil {
+		return nil, err
+	}
+	return out, nil
+}
+
+func (c *keeptrack2ServiceClient) UpdatePartById(ctx context.Context, in *UpdatePartReq, opts ...grpc.CallOption) (*UpdatePartRes, error) {
+	out := new(UpdatePartRes)
+	err := c.cc.Invoke(ctx, "/keeptrack2.Keeptrack2Service/UpdatePartById", in, out, opts...)
+	if err != nil {
+		return nil, err
+	}
+	return out, nil
+}
+
+func (c *keeptrack2ServiceClient) UpdatePartStatusById(ctx context.Context, in *UpdatePartStatusByIdReq, opts ...grpc.CallOption) (*UpdatePartStatusByIdRes, error) {
+	out := new(UpdatePartStatusByIdRes)
+	err := c.cc.Invoke(ctx, "/keeptrack2.Keeptrack2Service/UpdatePartStatusById", in, out, opts...)
+	if err != nil {
+		return nil, err
+	}
+	return out, nil
+}
+
+func (c *keeptrack2ServiceClient) QueryAvailablePartById(ctx context.Context, in *QueryPartByIdReq, opts ...grpc.CallOption) (*QueryPartByIdRes, error) {
+	out := new(QueryPartByIdRes)
+	err := c.cc.Invoke(ctx, "/keeptrack2.Keeptrack2Service/QueryAvailablePartById", in, out, opts...)
+	if err != nil {
+		return nil, err
+	}
+	return out, nil
+}
+
+func (c *keeptrack2ServiceClient) QueryPagedAvailableParts(ctx context.Context, in *QueryPagedAvailablePartsReq, opts ...grpc.CallOption) (*QueryPagedAvailablePartsRes, error) {
+	out := new(QueryPagedAvailablePartsRes)
+	err := c.cc.Invoke(ctx, "/keeptrack2.Keeptrack2Service/QueryPagedAvailableParts", in, out, opts...)
+	if err != nil {
+		return nil, err
+	}
+	return out, nil
+}
+
 // Keeptrack2ServiceServer is the server API for Keeptrack2Service service.
 // All implementations must embed UnimplementedKeeptrack2ServiceServer
 // for forward compatibility
@@ -142,6 +202,12 @@ type Keeptrack2ServiceServer interface {
 	UpdateItemById(context.Context, *UpdateItemReq) (*UpdateItemRes, error)
 	QueryAvailableItemById(context.Context, *QueryItemByIdReq) (*QueryItemByIdRes, error)
 	QueryPagedAvailableItems(context.Context, *QueryPagedAvailableItemsReq) (*QueryPagedAvailableItemsRes, error)
+	CreatePart(context.Context, *CreatePartReq) (*CreatePartRes, error)
+	DeletePartById(context.Context, *DeletePartReq) (*DeletePartRes, error)
+	UpdatePartById(context.Context, *UpdatePartReq) (*UpdatePartRes, error)
+	UpdatePartStatusById(context.Context, *UpdatePartStatusByIdReq) (*UpdatePartStatusByIdRes, error)
+	QueryAvailablePartById(context.Context, *QueryPartByIdReq) (*QueryPartByIdRes, error)
+	QueryPagedAvailableParts(context.Context, *QueryPagedAvailablePartsReq) (*QueryPagedAvailablePartsRes, error)
 	mustEmbedUnimplementedKeeptrack2ServiceServer()
 }
 
@@ -178,6 +244,24 @@ func (UnimplementedKeeptrack2ServiceServer) QueryAvailableItemById(context.Conte
 }
 func (UnimplementedKeeptrack2ServiceServer) QueryPagedAvailableItems(context.Context, *QueryPagedAvailableItemsReq) (*QueryPagedAvailableItemsRes, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method QueryPagedAvailableItems not implemented")
+}
+func (UnimplementedKeeptrack2ServiceServer) CreatePart(context.Context, *CreatePartReq) (*CreatePartRes, error) {
+	return nil, status.Errorf(codes.Unimplemented, "method CreatePart not implemented")
+}
+func (UnimplementedKeeptrack2ServiceServer) DeletePartById(context.Context, *DeletePartReq) (*DeletePartRes, error) {
+	return nil, status.Errorf(codes.Unimplemented, "method DeletePartById not implemented")
+}
+func (UnimplementedKeeptrack2ServiceServer) UpdatePartById(context.Context, *UpdatePartReq) (*UpdatePartRes, error) {
+	return nil, status.Errorf(codes.Unimplemented, "method UpdatePartById not implemented")
+}
+func (UnimplementedKeeptrack2ServiceServer) UpdatePartStatusById(context.Context, *UpdatePartStatusByIdReq) (*UpdatePartStatusByIdRes, error) {
+	return nil, status.Errorf(codes.Unimplemented, "method UpdatePartStatusById not implemented")
+}
+func (UnimplementedKeeptrack2ServiceServer) QueryAvailablePartById(context.Context, *QueryPartByIdReq) (*QueryPartByIdRes, error) {
+	return nil, status.Errorf(codes.Unimplemented, "method QueryAvailablePartById not implemented")
+}
+func (UnimplementedKeeptrack2ServiceServer) QueryPagedAvailableParts(context.Context, *QueryPagedAvailablePartsReq) (*QueryPagedAvailablePartsRes, error) {
+	return nil, status.Errorf(codes.Unimplemented, "method QueryPagedAvailableParts not implemented")
 }
 func (UnimplementedKeeptrack2ServiceServer) mustEmbedUnimplementedKeeptrack2ServiceServer() {}
 
@@ -372,6 +456,114 @@ func _Keeptrack2Service_QueryPagedAvailableItems_Handler(srv interface{}, ctx co
 	return interceptor(ctx, in, info, handler)
 }
 
+func _Keeptrack2Service_CreatePart_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
+	in := new(CreatePartReq)
+	if err := dec(in); err != nil {
+		return nil, err
+	}
+	if interceptor == nil {
+		return srv.(Keeptrack2ServiceServer).CreatePart(ctx, in)
+	}
+	info := &grpc.UnaryServerInfo{
+		Server:     srv,
+		FullMethod: "/keeptrack2.Keeptrack2Service/CreatePart",
+	}
+	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
+		return srv.(Keeptrack2ServiceServer).CreatePart(ctx, req.(*CreatePartReq))
+	}
+	return interceptor(ctx, in, info, handler)
+}
+
+func _Keeptrack2Service_DeletePartById_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
+	in := new(DeletePartReq)
+	if err := dec(in); err != nil {
+		return nil, err
+	}
+	if interceptor == nil {
+		return srv.(Keeptrack2ServiceServer).DeletePartById(ctx, in)
+	}
+	info := &grpc.UnaryServerInfo{
+		Server:     srv,
+		FullMethod: "/keeptrack2.Keeptrack2Service/DeletePartById",
+	}
+	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
+		return srv.(Keeptrack2ServiceServer).DeletePartById(ctx, req.(*DeletePartReq))
+	}
+	return interceptor(ctx, in, info, handler)
+}
+
+func _Keeptrack2Service_UpdatePartById_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
+	in := new(UpdatePartReq)
+	if err := dec(in); err != nil {
+		return nil, err
+	}
+	if interceptor == nil {
+		return srv.(Keeptrack2ServiceServer).UpdatePartById(ctx, in)
+	}
+	info := &grpc.UnaryServerInfo{
+		Server:     srv,
+		FullMethod: "/keeptrack2.Keeptrack2Service/UpdatePartById",
+	}
+	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
+		return srv.(Keeptrack2ServiceServer).UpdatePartById(ctx, req.(*UpdatePartReq))
+	}
+	return interceptor(ctx, in, info, handler)
+}
+
+func _Keeptrack2Service_UpdatePartStatusById_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
+	in := new(UpdatePartStatusByIdReq)
+	if err := dec(in); err != nil {
+		return nil, err
+	}
+	if interceptor == nil {
+		return srv.(Keeptrack2ServiceServer).UpdatePartStatusById(ctx, in)
+	}
+	info := &grpc.UnaryServerInfo{
+		Server:     srv,
+		FullMethod: "/keeptrack2.Keeptrack2Service/UpdatePartStatusById",
+	}
+	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
+		return srv.(Keeptrack2ServiceServer).UpdatePartStatusById(ctx, req.(*UpdatePartStatusByIdReq))
+	}
+	return interceptor(ctx, in, info, handler)
+}
+
+func _Keeptrack2Service_QueryAvailablePartById_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
+	in := new(QueryPartByIdReq)
+	if err := dec(in); err != nil {
+		return nil, err
+	}
+	if interceptor == nil {
+		return srv.(Keeptrack2ServiceServer).QueryAvailablePartById(ctx, in)
+	}
+	info := &grpc.UnaryServerInfo{
+		Server:     srv,
+		FullMethod: "/keeptrack2.Keeptrack2Service/QueryAvailablePartById",
+	}
+	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
+		return srv.(Keeptrack2ServiceServer).QueryAvailablePartById(ctx, req.(*QueryPartByIdReq))
+	}
+	return interceptor(ctx, in, info, handler)
+}
+
+func _Keeptrack2Service_QueryPagedAvailableParts_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
+	in := new(QueryPagedAvailablePartsReq)
+	if err := dec(in); err != nil {
+		return nil, err
+	}
+	if interceptor == nil {
+		return srv.(Keeptrack2ServiceServer).QueryPagedAvailableParts(ctx, in)
+	}
+	info := &grpc.UnaryServerInfo{
+		Server:     srv,
+		FullMethod: "/keeptrack2.Keeptrack2Service/QueryPagedAvailableParts",
+	}
+	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
+		return srv.(Keeptrack2ServiceServer).QueryPagedAvailableParts(ctx, req.(*QueryPagedAvailablePartsReq))
+	}
+	return interceptor(ctx, in, info, handler)
+}
+
 // Keeptrack2Service_ServiceDesc is the grpc.ServiceDesc for Keeptrack2Service service.
 // It's only intended for direct use with grpc.RegisterService,
 // and not to be introspected or modified (even as a copy)
@@ -418,6 +610,30 @@ var Keeptrack2Service_ServiceDesc = grpc.ServiceDesc{
 		{
 			MethodName: "QueryPagedAvailableItems",
 			Handler:    _Keeptrack2Service_QueryPagedAvailableItems_Handler,
+		},
+		{
+			MethodName: "CreatePart",
+			Handler:    _Keeptrack2Service_CreatePart_Handler,
+		},
+		{
+			MethodName: "DeletePartById",
+			Handler:    _Keeptrack2Service_DeletePartById_Handler,
+		},
+		{
+			MethodName: "UpdatePartById",
+			Handler:    _Keeptrack2Service_UpdatePartById_Handler,
+		},
+		{
+			MethodName: "UpdatePartStatusById",
+			Handler:    _Keeptrack2Service_UpdatePartStatusById_Handler,
+		},
+		{
+			MethodName: "QueryAvailablePartById",
+			Handler:    _Keeptrack2Service_QueryAvailablePartById_Handler,
+		},
+		{
+			MethodName: "QueryPagedAvailableParts",
+			Handler:    _Keeptrack2Service_QueryPagedAvailableParts_Handler,
 		},
 	},
 	Streams:  []grpc.StreamDesc{},

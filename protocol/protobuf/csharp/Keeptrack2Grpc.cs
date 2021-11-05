@@ -85,6 +85,30 @@ namespace Keeptrack2.ServiceGrpcProto {
     static readonly grpc::Marshaller<global::Keeptrack2.ServiceGrpcProto.QueryPagedAvailableItemsReq> __Marshaller_keeptrack2_QueryPagedAvailableItemsReq = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Keeptrack2.ServiceGrpcProto.QueryPagedAvailableItemsReq.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Keeptrack2.ServiceGrpcProto.QueryPagedAvailableItemsRes> __Marshaller_keeptrack2_QueryPagedAvailableItemsRes = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Keeptrack2.ServiceGrpcProto.QueryPagedAvailableItemsRes.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Keeptrack2.ServiceGrpcProto.CreatePartReq> __Marshaller_keeptrack2_CreatePartReq = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Keeptrack2.ServiceGrpcProto.CreatePartReq.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Keeptrack2.ServiceGrpcProto.CreatePartRes> __Marshaller_keeptrack2_CreatePartRes = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Keeptrack2.ServiceGrpcProto.CreatePartRes.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Keeptrack2.ServiceGrpcProto.DeletePartReq> __Marshaller_keeptrack2_DeletePartReq = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Keeptrack2.ServiceGrpcProto.DeletePartReq.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Keeptrack2.ServiceGrpcProto.DeletePartRes> __Marshaller_keeptrack2_DeletePartRes = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Keeptrack2.ServiceGrpcProto.DeletePartRes.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Keeptrack2.ServiceGrpcProto.UpdatePartReq> __Marshaller_keeptrack2_UpdatePartReq = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Keeptrack2.ServiceGrpcProto.UpdatePartReq.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Keeptrack2.ServiceGrpcProto.UpdatePartRes> __Marshaller_keeptrack2_UpdatePartRes = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Keeptrack2.ServiceGrpcProto.UpdatePartRes.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Keeptrack2.ServiceGrpcProto.UpdatePartStatusByIdReq> __Marshaller_keeptrack2_UpdatePartStatusByIdReq = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Keeptrack2.ServiceGrpcProto.UpdatePartStatusByIdReq.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Keeptrack2.ServiceGrpcProto.UpdatePartStatusByIdRes> __Marshaller_keeptrack2_UpdatePartStatusByIdRes = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Keeptrack2.ServiceGrpcProto.UpdatePartStatusByIdRes.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Keeptrack2.ServiceGrpcProto.QueryPartByIdReq> __Marshaller_keeptrack2_QueryPartByIdReq = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Keeptrack2.ServiceGrpcProto.QueryPartByIdReq.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Keeptrack2.ServiceGrpcProto.QueryPartByIdRes> __Marshaller_keeptrack2_QueryPartByIdRes = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Keeptrack2.ServiceGrpcProto.QueryPartByIdRes.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Keeptrack2.ServiceGrpcProto.QueryPagedAvailablePartsReq> __Marshaller_keeptrack2_QueryPagedAvailablePartsReq = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Keeptrack2.ServiceGrpcProto.QueryPagedAvailablePartsReq.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Keeptrack2.ServiceGrpcProto.QueryPagedAvailablePartsRes> __Marshaller_keeptrack2_QueryPagedAvailablePartsRes = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Keeptrack2.ServiceGrpcProto.QueryPagedAvailablePartsRes.Parser));
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::Keeptrack2.ServiceGrpcProto.CreateProjectReq, global::Keeptrack2.ServiceGrpcProto.CreateProjectRes> __Method_CreateProject = new grpc::Method<global::Keeptrack2.ServiceGrpcProto.CreateProjectReq, global::Keeptrack2.ServiceGrpcProto.CreateProjectRes>(
@@ -166,6 +190,54 @@ namespace Keeptrack2.ServiceGrpcProto {
         __Marshaller_keeptrack2_QueryPagedAvailableItemsReq,
         __Marshaller_keeptrack2_QueryPagedAvailableItemsRes);
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Keeptrack2.ServiceGrpcProto.CreatePartReq, global::Keeptrack2.ServiceGrpcProto.CreatePartRes> __Method_CreatePart = new grpc::Method<global::Keeptrack2.ServiceGrpcProto.CreatePartReq, global::Keeptrack2.ServiceGrpcProto.CreatePartRes>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "CreatePart",
+        __Marshaller_keeptrack2_CreatePartReq,
+        __Marshaller_keeptrack2_CreatePartRes);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Keeptrack2.ServiceGrpcProto.DeletePartReq, global::Keeptrack2.ServiceGrpcProto.DeletePartRes> __Method_DeletePartById = new grpc::Method<global::Keeptrack2.ServiceGrpcProto.DeletePartReq, global::Keeptrack2.ServiceGrpcProto.DeletePartRes>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "DeletePartById",
+        __Marshaller_keeptrack2_DeletePartReq,
+        __Marshaller_keeptrack2_DeletePartRes);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Keeptrack2.ServiceGrpcProto.UpdatePartReq, global::Keeptrack2.ServiceGrpcProto.UpdatePartRes> __Method_UpdatePartById = new grpc::Method<global::Keeptrack2.ServiceGrpcProto.UpdatePartReq, global::Keeptrack2.ServiceGrpcProto.UpdatePartRes>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "UpdatePartById",
+        __Marshaller_keeptrack2_UpdatePartReq,
+        __Marshaller_keeptrack2_UpdatePartRes);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Keeptrack2.ServiceGrpcProto.UpdatePartStatusByIdReq, global::Keeptrack2.ServiceGrpcProto.UpdatePartStatusByIdRes> __Method_UpdatePartStatusById = new grpc::Method<global::Keeptrack2.ServiceGrpcProto.UpdatePartStatusByIdReq, global::Keeptrack2.ServiceGrpcProto.UpdatePartStatusByIdRes>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "UpdatePartStatusById",
+        __Marshaller_keeptrack2_UpdatePartStatusByIdReq,
+        __Marshaller_keeptrack2_UpdatePartStatusByIdRes);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Keeptrack2.ServiceGrpcProto.QueryPartByIdReq, global::Keeptrack2.ServiceGrpcProto.QueryPartByIdRes> __Method_QueryAvailablePartById = new grpc::Method<global::Keeptrack2.ServiceGrpcProto.QueryPartByIdReq, global::Keeptrack2.ServiceGrpcProto.QueryPartByIdRes>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "QueryAvailablePartById",
+        __Marshaller_keeptrack2_QueryPartByIdReq,
+        __Marshaller_keeptrack2_QueryPartByIdRes);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Keeptrack2.ServiceGrpcProto.QueryPagedAvailablePartsReq, global::Keeptrack2.ServiceGrpcProto.QueryPagedAvailablePartsRes> __Method_QueryPagedAvailableParts = new grpc::Method<global::Keeptrack2.ServiceGrpcProto.QueryPagedAvailablePartsReq, global::Keeptrack2.ServiceGrpcProto.QueryPagedAvailablePartsRes>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "QueryPagedAvailableParts",
+        __Marshaller_keeptrack2_QueryPagedAvailablePartsReq,
+        __Marshaller_keeptrack2_QueryPagedAvailablePartsRes);
+
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
     {
@@ -232,6 +304,42 @@ namespace Keeptrack2.ServiceGrpcProto {
 
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::System.Threading.Tasks.Task<global::Keeptrack2.ServiceGrpcProto.QueryPagedAvailableItemsRes> QueryPagedAvailableItems(global::Keeptrack2.ServiceGrpcProto.QueryPagedAvailableItemsReq request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task<global::Keeptrack2.ServiceGrpcProto.CreatePartRes> CreatePart(global::Keeptrack2.ServiceGrpcProto.CreatePartReq request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task<global::Keeptrack2.ServiceGrpcProto.DeletePartRes> DeletePartById(global::Keeptrack2.ServiceGrpcProto.DeletePartReq request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task<global::Keeptrack2.ServiceGrpcProto.UpdatePartRes> UpdatePartById(global::Keeptrack2.ServiceGrpcProto.UpdatePartReq request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task<global::Keeptrack2.ServiceGrpcProto.UpdatePartStatusByIdRes> UpdatePartStatusById(global::Keeptrack2.ServiceGrpcProto.UpdatePartStatusByIdReq request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task<global::Keeptrack2.ServiceGrpcProto.QueryPartByIdRes> QueryAvailablePartById(global::Keeptrack2.ServiceGrpcProto.QueryPartByIdReq request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task<global::Keeptrack2.ServiceGrpcProto.QueryPagedAvailablePartsRes> QueryPagedAvailableParts(global::Keeptrack2.ServiceGrpcProto.QueryPagedAvailablePartsReq request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -465,6 +573,126 @@ namespace Keeptrack2.ServiceGrpcProto {
       {
         return CallInvoker.AsyncUnaryCall(__Method_QueryPagedAvailableItems, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Keeptrack2.ServiceGrpcProto.CreatePartRes CreatePart(global::Keeptrack2.ServiceGrpcProto.CreatePartReq request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return CreatePart(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Keeptrack2.ServiceGrpcProto.CreatePartRes CreatePart(global::Keeptrack2.ServiceGrpcProto.CreatePartReq request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_CreatePart, null, options, request);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Keeptrack2.ServiceGrpcProto.CreatePartRes> CreatePartAsync(global::Keeptrack2.ServiceGrpcProto.CreatePartReq request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return CreatePartAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Keeptrack2.ServiceGrpcProto.CreatePartRes> CreatePartAsync(global::Keeptrack2.ServiceGrpcProto.CreatePartReq request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_CreatePart, null, options, request);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Keeptrack2.ServiceGrpcProto.DeletePartRes DeletePartById(global::Keeptrack2.ServiceGrpcProto.DeletePartReq request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return DeletePartById(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Keeptrack2.ServiceGrpcProto.DeletePartRes DeletePartById(global::Keeptrack2.ServiceGrpcProto.DeletePartReq request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_DeletePartById, null, options, request);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Keeptrack2.ServiceGrpcProto.DeletePartRes> DeletePartByIdAsync(global::Keeptrack2.ServiceGrpcProto.DeletePartReq request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return DeletePartByIdAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Keeptrack2.ServiceGrpcProto.DeletePartRes> DeletePartByIdAsync(global::Keeptrack2.ServiceGrpcProto.DeletePartReq request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_DeletePartById, null, options, request);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Keeptrack2.ServiceGrpcProto.UpdatePartRes UpdatePartById(global::Keeptrack2.ServiceGrpcProto.UpdatePartReq request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return UpdatePartById(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Keeptrack2.ServiceGrpcProto.UpdatePartRes UpdatePartById(global::Keeptrack2.ServiceGrpcProto.UpdatePartReq request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_UpdatePartById, null, options, request);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Keeptrack2.ServiceGrpcProto.UpdatePartRes> UpdatePartByIdAsync(global::Keeptrack2.ServiceGrpcProto.UpdatePartReq request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return UpdatePartByIdAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Keeptrack2.ServiceGrpcProto.UpdatePartRes> UpdatePartByIdAsync(global::Keeptrack2.ServiceGrpcProto.UpdatePartReq request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_UpdatePartById, null, options, request);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Keeptrack2.ServiceGrpcProto.UpdatePartStatusByIdRes UpdatePartStatusById(global::Keeptrack2.ServiceGrpcProto.UpdatePartStatusByIdReq request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return UpdatePartStatusById(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Keeptrack2.ServiceGrpcProto.UpdatePartStatusByIdRes UpdatePartStatusById(global::Keeptrack2.ServiceGrpcProto.UpdatePartStatusByIdReq request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_UpdatePartStatusById, null, options, request);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Keeptrack2.ServiceGrpcProto.UpdatePartStatusByIdRes> UpdatePartStatusByIdAsync(global::Keeptrack2.ServiceGrpcProto.UpdatePartStatusByIdReq request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return UpdatePartStatusByIdAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Keeptrack2.ServiceGrpcProto.UpdatePartStatusByIdRes> UpdatePartStatusByIdAsync(global::Keeptrack2.ServiceGrpcProto.UpdatePartStatusByIdReq request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_UpdatePartStatusById, null, options, request);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Keeptrack2.ServiceGrpcProto.QueryPartByIdRes QueryAvailablePartById(global::Keeptrack2.ServiceGrpcProto.QueryPartByIdReq request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return QueryAvailablePartById(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Keeptrack2.ServiceGrpcProto.QueryPartByIdRes QueryAvailablePartById(global::Keeptrack2.ServiceGrpcProto.QueryPartByIdReq request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_QueryAvailablePartById, null, options, request);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Keeptrack2.ServiceGrpcProto.QueryPartByIdRes> QueryAvailablePartByIdAsync(global::Keeptrack2.ServiceGrpcProto.QueryPartByIdReq request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return QueryAvailablePartByIdAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Keeptrack2.ServiceGrpcProto.QueryPartByIdRes> QueryAvailablePartByIdAsync(global::Keeptrack2.ServiceGrpcProto.QueryPartByIdReq request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_QueryAvailablePartById, null, options, request);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Keeptrack2.ServiceGrpcProto.QueryPagedAvailablePartsRes QueryPagedAvailableParts(global::Keeptrack2.ServiceGrpcProto.QueryPagedAvailablePartsReq request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return QueryPagedAvailableParts(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Keeptrack2.ServiceGrpcProto.QueryPagedAvailablePartsRes QueryPagedAvailableParts(global::Keeptrack2.ServiceGrpcProto.QueryPagedAvailablePartsReq request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_QueryPagedAvailableParts, null, options, request);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Keeptrack2.ServiceGrpcProto.QueryPagedAvailablePartsRes> QueryPagedAvailablePartsAsync(global::Keeptrack2.ServiceGrpcProto.QueryPagedAvailablePartsReq request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return QueryPagedAvailablePartsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Keeptrack2.ServiceGrpcProto.QueryPagedAvailablePartsRes> QueryPagedAvailablePartsAsync(global::Keeptrack2.ServiceGrpcProto.QueryPagedAvailablePartsReq request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_QueryPagedAvailableParts, null, options, request);
+      }
       /// <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       protected override Keeptrack2ServiceClient NewInstance(ClientBaseConfiguration configuration)
@@ -488,7 +716,13 @@ namespace Keeptrack2.ServiceGrpcProto {
           .AddMethod(__Method_DeleteItemById, serviceImpl.DeleteItemById)
           .AddMethod(__Method_UpdateItemById, serviceImpl.UpdateItemById)
           .AddMethod(__Method_QueryAvailableItemById, serviceImpl.QueryAvailableItemById)
-          .AddMethod(__Method_QueryPagedAvailableItems, serviceImpl.QueryPagedAvailableItems).Build();
+          .AddMethod(__Method_QueryPagedAvailableItems, serviceImpl.QueryPagedAvailableItems)
+          .AddMethod(__Method_CreatePart, serviceImpl.CreatePart)
+          .AddMethod(__Method_DeletePartById, serviceImpl.DeletePartById)
+          .AddMethod(__Method_UpdatePartById, serviceImpl.UpdatePartById)
+          .AddMethod(__Method_UpdatePartStatusById, serviceImpl.UpdatePartStatusById)
+          .AddMethod(__Method_QueryAvailablePartById, serviceImpl.QueryAvailablePartById)
+          .AddMethod(__Method_QueryPagedAvailableParts, serviceImpl.QueryPagedAvailableParts).Build();
     }
 
     /// <summary>Register service method with a service binder with or without implementation. Useful when customizing the  service binding logic.
@@ -508,6 +742,12 @@ namespace Keeptrack2.ServiceGrpcProto {
       serviceBinder.AddMethod(__Method_UpdateItemById, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Keeptrack2.ServiceGrpcProto.UpdateItemReq, global::Keeptrack2.ServiceGrpcProto.UpdateItemRes>(serviceImpl.UpdateItemById));
       serviceBinder.AddMethod(__Method_QueryAvailableItemById, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Keeptrack2.ServiceGrpcProto.QueryItemByIdReq, global::Keeptrack2.ServiceGrpcProto.QueryItemByIdRes>(serviceImpl.QueryAvailableItemById));
       serviceBinder.AddMethod(__Method_QueryPagedAvailableItems, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Keeptrack2.ServiceGrpcProto.QueryPagedAvailableItemsReq, global::Keeptrack2.ServiceGrpcProto.QueryPagedAvailableItemsRes>(serviceImpl.QueryPagedAvailableItems));
+      serviceBinder.AddMethod(__Method_CreatePart, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Keeptrack2.ServiceGrpcProto.CreatePartReq, global::Keeptrack2.ServiceGrpcProto.CreatePartRes>(serviceImpl.CreatePart));
+      serviceBinder.AddMethod(__Method_DeletePartById, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Keeptrack2.ServiceGrpcProto.DeletePartReq, global::Keeptrack2.ServiceGrpcProto.DeletePartRes>(serviceImpl.DeletePartById));
+      serviceBinder.AddMethod(__Method_UpdatePartById, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Keeptrack2.ServiceGrpcProto.UpdatePartReq, global::Keeptrack2.ServiceGrpcProto.UpdatePartRes>(serviceImpl.UpdatePartById));
+      serviceBinder.AddMethod(__Method_UpdatePartStatusById, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Keeptrack2.ServiceGrpcProto.UpdatePartStatusByIdReq, global::Keeptrack2.ServiceGrpcProto.UpdatePartStatusByIdRes>(serviceImpl.UpdatePartStatusById));
+      serviceBinder.AddMethod(__Method_QueryAvailablePartById, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Keeptrack2.ServiceGrpcProto.QueryPartByIdReq, global::Keeptrack2.ServiceGrpcProto.QueryPartByIdRes>(serviceImpl.QueryAvailablePartById));
+      serviceBinder.AddMethod(__Method_QueryPagedAvailableParts, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Keeptrack2.ServiceGrpcProto.QueryPagedAvailablePartsReq, global::Keeptrack2.ServiceGrpcProto.QueryPagedAvailablePartsRes>(serviceImpl.QueryPagedAvailableParts));
     }
 
   }
