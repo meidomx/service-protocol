@@ -203,10 +203,10 @@ private static final long serialVersionUID = 0L;
     if (success_ != false) {
       output.writeBool(1, success_);
     }
-    if (!getErrorMessageBytes().isEmpty()) {
+    if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(errorMessage_)) {
       com.google.protobuf.GeneratedMessageV3.writeString(output, 2, errorMessage_);
     }
-    if (!getUniqueIdentifierBytes().isEmpty()) {
+    if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(uniqueIdentifier_)) {
       com.google.protobuf.GeneratedMessageV3.writeString(output, 11, uniqueIdentifier_);
     }
     unknownFields.writeTo(output);
@@ -222,10 +222,10 @@ private static final long serialVersionUID = 0L;
       size += com.google.protobuf.CodedOutputStream
         .computeBoolSize(1, success_);
     }
-    if (!getErrorMessageBytes().isEmpty()) {
+    if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(errorMessage_)) {
       size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, errorMessage_);
     }
-    if (!getUniqueIdentifierBytes().isEmpty()) {
+    if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(uniqueIdentifier_)) {
       size += com.google.protobuf.GeneratedMessageV3.computeStringSize(11, uniqueIdentifier_);
     }
     size += unknownFields.getSerializedSize();

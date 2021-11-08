@@ -13,6 +13,7 @@ import "shared/result.proto";
 service CountdownService {
     rpc CreateCountdown(CreateCountdownReq) returns (CreateCountdownRes) {}
     rpc NextCountdownIntervalById(NextCountdownIntervalByIdReq) returns (NextCountdownIntervalByIdRes) {}
+    rpc ChangeCountdownStatus(ChangeCountdownStatusReq) returns (ChangeCountdownStatusRes) {}
 
     rpc QueryCountdownById(QueryCountdownByIdReq) returns (QueryCountdownByIdRes) {}
     rpc QueryPagedExpringCountdownsByType(QueryPagedExpringCountdownsByTypeReq) returns (QueryPagedExpringCountdownsByTypeRes) {}
@@ -122,5 +123,17 @@ message QueryPagedCountdownsByTypeRes {
     shared.Result result = 1;
 
     repeated Countdown countdowns = 2;
+}
+
+
+message ChangeCountdownStatusReq {
+    string countdown_id = 1;
+
+    CountdownExpireStatus old_status = 11;
+    CountdownExpireStatus new_status = 12;
+}
+
+message ChangeCountdownStatusRes {
+    shared.Result result = 1;
 }
 

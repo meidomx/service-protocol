@@ -69,6 +69,16 @@ public final class CountdownProto {
   static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_countdown_QueryPagedCountdownsByTypeRes_fieldAccessorTable;
+  static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_countdown_ChangeCountdownStatusReq_descriptor;
+  static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_countdown_ChangeCountdownStatusReq_fieldAccessorTable;
+  static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_countdown_ChangeCountdownStatusRes_descriptor;
+  static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_countdown_ChangeCountdownStatusRes_fieldAccessorTable;
 
   public static com.google.protobuf.Descriptors.FileDescriptor
       getDescriptor() {
@@ -109,17 +119,25 @@ public final class CountdownProto {
       "\001(\0162 .countdown.CountdownExpireStatus\"i\n" +
       "\035QueryPagedCountdownsByTypeRes\022\036\n\006result" +
       "\030\001 \001(\0132\016.shared.Result\022(\n\ncountdowns\030\002 \003" +
-      "(\0132\024.countdown.Countdown*c\n\025CountdownExp" +
-      "ireStatus\022\013\n\007UNKNOWN\020\000\022\014\n\010EXPIRING\020\001\022\013\n\007" +
-      "EXPIRED\020\002\022\013\n\007DELETED\020\003\022\014\n\010FINISHED\020\004\022\007\n\003" +
-      "ALL\020\177*`\n\027CountdownNoticeTimeType\022\010\n\004NONE" +
-      "\020\000\022\n\n\006DAY_30\020\001\022\n\n\006DAY_60\020\002\022\n\n\006DAY_90\020\003\022\013" +
-      "\n\007MONTH_6\020\004\022\n\n\006CUSTOM\020\1772\260\004\n\020CountdownSer" +
-      "vice\022Q\n\017CreateCountdown\022\035.countdown.Crea" +
-      "teCountdownReq\032\035.countdown.CreateCountdo" +
-      "wnRes\"\000\022o\n\031NextCountdownIntervalById\022\'.c" +
-      "ountdown.NextCountdownIntervalByIdReq\032\'." +
-      "countdown.NextCountdownIntervalByIdRes\"\000" +
+      "(\0132\024.countdown.Countdown\"\234\001\n\030ChangeCount" +
+      "downStatusReq\022\024\n\014countdown_id\030\001 \001(\t\0224\n\no" +
+      "ld_status\030\013 \001(\0162 .countdown.CountdownExp" +
+      "ireStatus\0224\n\nnew_status\030\014 \001(\0162 .countdow" +
+      "n.CountdownExpireStatus\":\n\030ChangeCountdo" +
+      "wnStatusRes\022\036\n\006result\030\001 \001(\0132\016.shared.Res" +
+      "ult*c\n\025CountdownExpireStatus\022\013\n\007UNKNOWN\020" +
+      "\000\022\014\n\010EXPIRING\020\001\022\013\n\007EXPIRED\020\002\022\013\n\007DELETED\020" +
+      "\003\022\014\n\010FINISHED\020\004\022\007\n\003ALL\020\177*`\n\027CountdownNot" +
+      "iceTimeType\022\010\n\004NONE\020\000\022\n\n\006DAY_30\020\001\022\n\n\006DAY" +
+      "_60\020\002\022\n\n\006DAY_90\020\003\022\013\n\007MONTH_6\020\004\022\n\n\006CUSTOM" +
+      "\020\1772\225\005\n\020CountdownService\022Q\n\017CreateCountdo" +
+      "wn\022\035.countdown.CreateCountdownReq\032\035.coun" +
+      "tdown.CreateCountdownRes\"\000\022o\n\031NextCountd" +
+      "ownIntervalById\022\'.countdown.NextCountdow" +
+      "nIntervalByIdReq\032\'.countdown.NextCountdo" +
+      "wnIntervalByIdRes\"\000\022c\n\025ChangeCountdownSt" +
+      "atus\022#.countdown.ChangeCountdownStatusRe" +
+      "q\032#.countdown.ChangeCountdownStatusRes\"\000" +
       "\022Z\n\022QueryCountdownById\022 .countdown.Query" +
       "CountdownByIdReq\032 .countdown.QueryCountd" +
       "ownByIdRes\"\000\022\207\001\n!QueryPagedExpringCountd" +
@@ -205,6 +223,18 @@ public final class CountdownProto {
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_countdown_QueryPagedCountdownsByTypeRes_descriptor,
         new java.lang.String[] { "Result", "Countdowns", });
+    internal_static_countdown_ChangeCountdownStatusReq_descriptor =
+      getDescriptor().getMessageTypes().get(11);
+    internal_static_countdown_ChangeCountdownStatusReq_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_countdown_ChangeCountdownStatusReq_descriptor,
+        new java.lang.String[] { "CountdownId", "OldStatus", "NewStatus", });
+    internal_static_countdown_ChangeCountdownStatusRes_descriptor =
+      getDescriptor().getMessageTypes().get(12);
+    internal_static_countdown_ChangeCountdownStatusRes_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_countdown_ChangeCountdownStatusRes_descriptor,
+        new java.lang.String[] { "Result", });
     info.moetang.serviceprotocol.protobuf.shared.SharedProto.getDescriptor();
   }
 

@@ -351,19 +351,19 @@ private static final long serialVersionUID = 0L;
   @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
-    if (!getThreadIdBytes().isEmpty()) {
+    if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(threadId_)) {
       com.google.protobuf.GeneratedMessageV3.writeString(output, 1, threadId_);
     }
-    if (!getForumIdBytes().isEmpty()) {
+    if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(forumId_)) {
       com.google.protobuf.GeneratedMessageV3.writeString(output, 2, forumId_);
     }
-    if (!getUserIdBytes().isEmpty()) {
+    if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(userId_)) {
       com.google.protobuf.GeneratedMessageV3.writeString(output, 3, userId_);
     }
-    if (!getThreadTitleBytes().isEmpty()) {
+    if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(threadTitle_)) {
       com.google.protobuf.GeneratedMessageV3.writeString(output, 11, threadTitle_);
     }
-    if (!getThreadContentBytes().isEmpty()) {
+    if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(threadContent_)) {
       com.google.protobuf.GeneratedMessageV3.writeString(output, 12, threadContent_);
     }
     if (timeCreated_ != 0L) {
@@ -381,19 +381,19 @@ private static final long serialVersionUID = 0L;
     if (size != -1) return size;
 
     size = 0;
-    if (!getThreadIdBytes().isEmpty()) {
+    if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(threadId_)) {
       size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, threadId_);
     }
-    if (!getForumIdBytes().isEmpty()) {
+    if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(forumId_)) {
       size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, forumId_);
     }
-    if (!getUserIdBytes().isEmpty()) {
+    if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(userId_)) {
       size += com.google.protobuf.GeneratedMessageV3.computeStringSize(3, userId_);
     }
-    if (!getThreadTitleBytes().isEmpty()) {
+    if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(threadTitle_)) {
       size += com.google.protobuf.GeneratedMessageV3.computeStringSize(11, threadTitle_);
     }
-    if (!getThreadContentBytes().isEmpty()) {
+    if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(threadContent_)) {
       size += com.google.protobuf.GeneratedMessageV3.computeStringSize(12, threadContent_);
     }
     if (timeCreated_ != 0L) {
