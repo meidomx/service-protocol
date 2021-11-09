@@ -52,6 +52,7 @@ message Countdown {
     int64 time_last_handle = 22;
     int64 time_created = 23;
     int64 time_updated = 24;
+    CountdownExpireStatus status = 25;
 }
 
 
