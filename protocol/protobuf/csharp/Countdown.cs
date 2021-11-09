@@ -52,34 +52,35 @@ namespace ServiceGrpcProto {
             "LmNvdW50ZG93bi5Db3VudGRvd25FeHBpcmVTdGF0dXMiaQodUXVlcnlQYWdl",
             "ZENvdW50ZG93bnNCeVR5cGVSZXMSHgoGcmVzdWx0GAEgASgLMg4uc2hhcmVk",
             "LlJlc3VsdBIoCgpjb3VudGRvd25zGAIgAygLMhQuY291bnRkb3duLkNvdW50",
-            "ZG93biKcAQoYQ2hhbmdlQ291bnRkb3duU3RhdHVzUmVxEhQKDGNvdW50ZG93",
-            "bl9pZBgBIAEoCRI0CgpvbGRfc3RhdHVzGAsgASgOMiAuY291bnRkb3duLkNv",
-            "dW50ZG93bkV4cGlyZVN0YXR1cxI0CgpuZXdfc3RhdHVzGAwgASgOMiAuY291",
-            "bnRkb3duLkNvdW50ZG93bkV4cGlyZVN0YXR1cyI6ChhDaGFuZ2VDb3VudGRv",
-            "d25TdGF0dXNSZXMSHgoGcmVzdWx0GAEgASgLMg4uc2hhcmVkLlJlc3VsdCpj",
-            "ChVDb3VudGRvd25FeHBpcmVTdGF0dXMSCwoHVU5LTk9XThAAEgwKCEVYUElS",
-            "SU5HEAESCwoHRVhQSVJFRBACEgsKB0RFTEVURUQQAxIMCghGSU5JU0hFRBAE",
-            "EgcKA0FMTBB/KmAKF0NvdW50ZG93bk5vdGljZVRpbWVUeXBlEggKBE5PTkUQ",
-            "ABIKCgZEQVlfMzAQARIKCgZEQVlfNjAQAhIKCgZEQVlfOTAQAxILCgdNT05U",
-            "SF82EAQSCgoGQ1VTVE9NEH8ylQUKEENvdW50ZG93blNlcnZpY2USUQoPQ3Jl",
-            "YXRlQ291bnRkb3duEh0uY291bnRkb3duLkNyZWF0ZUNvdW50ZG93blJlcRod",
-            "LmNvdW50ZG93bi5DcmVhdGVDb3VudGRvd25SZXMiABJvChlOZXh0Q291bnRk",
-            "b3duSW50ZXJ2YWxCeUlkEicuY291bnRkb3duLk5leHRDb3VudGRvd25JbnRl",
-            "cnZhbEJ5SWRSZXEaJy5jb3VudGRvd24uTmV4dENvdW50ZG93bkludGVydmFs",
-            "QnlJZFJlcyIAEmMKFUNoYW5nZUNvdW50ZG93blN0YXR1cxIjLmNvdW50ZG93",
-            "bi5DaGFuZ2VDb3VudGRvd25TdGF0dXNSZXEaIy5jb3VudGRvd24uQ2hhbmdl",
-            "Q291bnRkb3duU3RhdHVzUmVzIgASWgoSUXVlcnlDb3VudGRvd25CeUlkEiAu",
-            "Y291bnRkb3duLlF1ZXJ5Q291bnRkb3duQnlJZFJlcRogLmNvdW50ZG93bi5R",
-            "dWVyeUNvdW50ZG93bkJ5SWRSZXMiABKHAQohUXVlcnlQYWdlZEV4cHJpbmdD",
-            "b3VudGRvd25zQnlUeXBlEi8uY291bnRkb3duLlF1ZXJ5UGFnZWRFeHByaW5n",
-            "Q291bnRkb3duc0J5VHlwZVJlcRovLmNvdW50ZG93bi5RdWVyeVBhZ2VkRXhw",
-            "cmluZ0NvdW50ZG93bnNCeVR5cGVSZXMiABJyChpRdWVyeVBhZ2VkQ291bnRk",
-            "b3duc0J5VHlwZRIoLmNvdW50ZG93bi5RdWVyeVBhZ2VkQ291bnRkb3duc0J5",
-            "VHlwZVJlcRooLmNvdW50ZG93bi5RdWVyeVBhZ2VkQ291bnRkb3duc0J5VHlw",
-            "ZVJlcyIAQpoBCi9pbmZvLm1vZXRhbmcuc2VydmljZXByb3RvY29sLnByb3Rv",
-            "YnVmLmNvdW50ZG93bkIOQ291bnRkb3duUHJvdG9QAVpCZ2l0aHViLmNvbS9t",
-            "ZWlkb214L3NlcnZpY2UtcHJvdG9jb2wvcHJvdG9jb2wvcHJvdG9idWYvZ28v",
-            "Y291bnRkb3duqgIQU2VydmljZUdycGNQcm90b2IGcHJvdG8z"));
+            "ZG93biK0AQoYQ2hhbmdlQ291bnRkb3duU3RhdHVzUmVxEhQKDGNvdW50ZG93",
+            "bl9pZBgBIAEoCRIWCg5jb3VudGRvd25fdHlwZRgCIAEoCRI0CgpvbGRfc3Rh",
+            "dHVzGAsgASgOMiAuY291bnRkb3duLkNvdW50ZG93bkV4cGlyZVN0YXR1cxI0",
+            "CgpuZXdfc3RhdHVzGAwgASgOMiAuY291bnRkb3duLkNvdW50ZG93bkV4cGly",
+            "ZVN0YXR1cyI6ChhDaGFuZ2VDb3VudGRvd25TdGF0dXNSZXMSHgoGcmVzdWx0",
+            "GAEgASgLMg4uc2hhcmVkLlJlc3VsdCpjChVDb3VudGRvd25FeHBpcmVTdGF0",
+            "dXMSCwoHVU5LTk9XThAAEgwKCEVYUElSSU5HEAESCwoHRVhQSVJFRBACEgsK",
+            "B0RFTEVURUQQAxIMCghGSU5JU0hFRBAEEgcKA0FMTBB/KmAKF0NvdW50ZG93",
+            "bk5vdGljZVRpbWVUeXBlEggKBE5PTkUQABIKCgZEQVlfMzAQARIKCgZEQVlf",
+            "NjAQAhIKCgZEQVlfOTAQAxILCgdNT05USF82EAQSCgoGQ1VTVE9NEH8ylQUK",
+            "EENvdW50ZG93blNlcnZpY2USUQoPQ3JlYXRlQ291bnRkb3duEh0uY291bnRk",
+            "b3duLkNyZWF0ZUNvdW50ZG93blJlcRodLmNvdW50ZG93bi5DcmVhdGVDb3Vu",
+            "dGRvd25SZXMiABJvChlOZXh0Q291bnRkb3duSW50ZXJ2YWxCeUlkEicuY291",
+            "bnRkb3duLk5leHRDb3VudGRvd25JbnRlcnZhbEJ5SWRSZXEaJy5jb3VudGRv",
+            "d24uTmV4dENvdW50ZG93bkludGVydmFsQnlJZFJlcyIAEmMKFUNoYW5nZUNv",
+            "dW50ZG93blN0YXR1cxIjLmNvdW50ZG93bi5DaGFuZ2VDb3VudGRvd25TdGF0",
+            "dXNSZXEaIy5jb3VudGRvd24uQ2hhbmdlQ291bnRkb3duU3RhdHVzUmVzIgAS",
+            "WgoSUXVlcnlDb3VudGRvd25CeUlkEiAuY291bnRkb3duLlF1ZXJ5Q291bnRk",
+            "b3duQnlJZFJlcRogLmNvdW50ZG93bi5RdWVyeUNvdW50ZG93bkJ5SWRSZXMi",
+            "ABKHAQohUXVlcnlQYWdlZEV4cHJpbmdDb3VudGRvd25zQnlUeXBlEi8uY291",
+            "bnRkb3duLlF1ZXJ5UGFnZWRFeHByaW5nQ291bnRkb3duc0J5VHlwZVJlcRov",
+            "LmNvdW50ZG93bi5RdWVyeVBhZ2VkRXhwcmluZ0NvdW50ZG93bnNCeVR5cGVS",
+            "ZXMiABJyChpRdWVyeVBhZ2VkQ291bnRkb3duc0J5VHlwZRIoLmNvdW50ZG93",
+            "bi5RdWVyeVBhZ2VkQ291bnRkb3duc0J5VHlwZVJlcRooLmNvdW50ZG93bi5R",
+            "dWVyeVBhZ2VkQ291bnRkb3duc0J5VHlwZVJlcyIAQpoBCi9pbmZvLm1vZXRh",
+            "bmcuc2VydmljZXByb3RvY29sLnByb3RvYnVmLmNvdW50ZG93bkIOQ291bnRk",
+            "b3duUHJvdG9QAVpCZ2l0aHViLmNvbS9tZWlkb214L3NlcnZpY2UtcHJvdG9j",
+            "b2wvcHJvdG9jb2wvcHJvdG9idWYvZ28vY291bnRkb3duqgIQU2VydmljZUdy",
+            "cGNQcm90b2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::ServiceGrpcProto.ResultReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::ServiceGrpcProto.CountdownExpireStatus), typeof(global::ServiceGrpcProto.CountdownNoticeTimeType), }, null, new pbr::GeneratedClrTypeInfo[] {
@@ -94,7 +95,7 @@ namespace ServiceGrpcProto {
             new pbr::GeneratedClrTypeInfo(typeof(global::ServiceGrpcProto.QueryPagedExpringCountdownsByTypeRes), global::ServiceGrpcProto.QueryPagedExpringCountdownsByTypeRes.Parser, new[]{ "Result", "Countdowns" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::ServiceGrpcProto.QueryPagedCountdownsByTypeReq), global::ServiceGrpcProto.QueryPagedCountdownsByTypeReq.Parser, new[]{ "CountdownType", "Page", "PageSize", "ExpireStatus" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::ServiceGrpcProto.QueryPagedCountdownsByTypeRes), global::ServiceGrpcProto.QueryPagedCountdownsByTypeRes.Parser, new[]{ "Result", "Countdowns" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::ServiceGrpcProto.ChangeCountdownStatusReq), global::ServiceGrpcProto.ChangeCountdownStatusReq.Parser, new[]{ "CountdownId", "OldStatus", "NewStatus" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::ServiceGrpcProto.ChangeCountdownStatusReq), global::ServiceGrpcProto.ChangeCountdownStatusReq.Parser, new[]{ "CountdownId", "CountdownType", "OldStatus", "NewStatus" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::ServiceGrpcProto.ChangeCountdownStatusRes), global::ServiceGrpcProto.ChangeCountdownStatusRes.Parser, new[]{ "Result" }, null, null, null, null)
           }));
     }
@@ -3138,6 +3139,7 @@ namespace ServiceGrpcProto {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ChangeCountdownStatusReq(ChangeCountdownStatusReq other) : this() {
       countdownId_ = other.countdownId_;
+      countdownType_ = other.countdownType_;
       oldStatus_ = other.oldStatus_;
       newStatus_ = other.newStatus_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
@@ -3158,6 +3160,18 @@ namespace ServiceGrpcProto {
       get { return countdownId_; }
       set {
         countdownId_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "countdown_type" field.</summary>
+    public const int CountdownTypeFieldNumber = 2;
+    private string countdownType_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string CountdownType {
+      get { return countdownType_; }
+      set {
+        countdownType_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
       }
     }
 
@@ -3201,6 +3215,7 @@ namespace ServiceGrpcProto {
         return true;
       }
       if (CountdownId != other.CountdownId) return false;
+      if (CountdownType != other.CountdownType) return false;
       if (OldStatus != other.OldStatus) return false;
       if (NewStatus != other.NewStatus) return false;
       return Equals(_unknownFields, other._unknownFields);
@@ -3211,6 +3226,7 @@ namespace ServiceGrpcProto {
     public override int GetHashCode() {
       int hash = 1;
       if (CountdownId.Length != 0) hash ^= CountdownId.GetHashCode();
+      if (CountdownType.Length != 0) hash ^= CountdownType.GetHashCode();
       if (OldStatus != global::ServiceGrpcProto.CountdownExpireStatus.Unknown) hash ^= OldStatus.GetHashCode();
       if (NewStatus != global::ServiceGrpcProto.CountdownExpireStatus.Unknown) hash ^= NewStatus.GetHashCode();
       if (_unknownFields != null) {
@@ -3235,6 +3251,10 @@ namespace ServiceGrpcProto {
         output.WriteRawTag(10);
         output.WriteString(CountdownId);
       }
+      if (CountdownType.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(CountdownType);
+      }
       if (OldStatus != global::ServiceGrpcProto.CountdownExpireStatus.Unknown) {
         output.WriteRawTag(88);
         output.WriteEnum((int) OldStatus);
@@ -3257,6 +3277,10 @@ namespace ServiceGrpcProto {
         output.WriteRawTag(10);
         output.WriteString(CountdownId);
       }
+      if (CountdownType.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(CountdownType);
+      }
       if (OldStatus != global::ServiceGrpcProto.CountdownExpireStatus.Unknown) {
         output.WriteRawTag(88);
         output.WriteEnum((int) OldStatus);
@@ -3278,6 +3302,9 @@ namespace ServiceGrpcProto {
       if (CountdownId.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(CountdownId);
       }
+      if (CountdownType.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(CountdownType);
+      }
       if (OldStatus != global::ServiceGrpcProto.CountdownExpireStatus.Unknown) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) OldStatus);
       }
@@ -3298,6 +3325,9 @@ namespace ServiceGrpcProto {
       }
       if (other.CountdownId.Length != 0) {
         CountdownId = other.CountdownId;
+      }
+      if (other.CountdownType.Length != 0) {
+        CountdownType = other.CountdownType;
       }
       if (other.OldStatus != global::ServiceGrpcProto.CountdownExpireStatus.Unknown) {
         OldStatus = other.OldStatus;
@@ -3322,6 +3352,10 @@ namespace ServiceGrpcProto {
             break;
           case 10: {
             CountdownId = input.ReadString();
+            break;
+          }
+          case 18: {
+            CountdownType = input.ReadString();
             break;
           }
           case 88: {
@@ -3349,6 +3383,10 @@ namespace ServiceGrpcProto {
             break;
           case 10: {
             CountdownId = input.ReadString();
+            break;
+          }
+          case 18: {
+            CountdownType = input.ReadString();
             break;
           }
           case 88: {

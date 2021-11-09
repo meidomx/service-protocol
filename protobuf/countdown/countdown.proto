@@ -128,6 +128,7 @@ message QueryPagedCountdownsByTypeRes {
 
 message ChangeCountdownStatusReq {
     string countdown_id = 1;
+    string countdown_type = 2;
 
     CountdownExpireStatus old_status = 11;
     CountdownExpireStatus new_status = 12;
