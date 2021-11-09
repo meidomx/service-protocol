@@ -25,66 +25,67 @@ namespace ServiceGrpcProto {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "Chljb3VudGRvd24vY291bnRkb3duLnByb3RvEgljb3VudGRvd24aE3NoYXJl",
-            "ZC9yZXN1bHQucHJvdG8ixgEKCUNvdW50ZG93bhIUCgxjb3VudGRvd25faWQY",
+            "ZC9yZXN1bHQucHJvdG8i+AEKCUNvdW50ZG93bhIUCgxjb3VudGRvd25faWQY",
             "ASABKAkSDwoHdXNlcl9pZBgCIAEoCRIWCg5jb3VudGRvd25fdHlwZRgDIAEo",
             "CRINCgV0aXRsZRgLIAEoCRIPCgdjb250ZW50GAwgASgJEhQKDHRpbWVfZXhw",
             "aXJlZBgVIAEoAxIYChB0aW1lX2xhc3RfaGFuZGxlGBYgASgDEhQKDHRpbWVf",
-            "Y3JlYXRlZBgXIAEoAxIUCgx0aW1lX3VwZGF0ZWQYGCABKAMicwoSQ3JlYXRl",
-            "Q291bnRkb3duUmVxEg8KB3VzZXJfaWQYASABKAkSFgoOY291bnRkb3duX3R5",
-            "cGUYAiABKAkSDQoFdGl0bGUYCyABKAkSDwoHY29udGVudBgMIAEoCRIUCgx0",
-            "aW1lX2V4cGlyZWQYFSABKAMiXQoSQ3JlYXRlQ291bnRkb3duUmVzEh4KBnJl",
-            "c3VsdBgBIAEoCzIOLnNoYXJlZC5SZXN1bHQSJwoJY291bnRkb3duGAIgASgL",
-            "MhQuY291bnRkb3duLkNvdW50ZG93biItChVRdWVyeUNvdW50ZG93bkJ5SWRS",
-            "ZXESFAoMY291bnRkb3duX2lkGAEgASgJImAKFVF1ZXJ5Q291bnRkb3duQnlJ",
-            "ZFJlcxIeCgZyZXN1bHQYASABKAsyDi5zaGFyZWQuUmVzdWx0EicKCWNvdW50",
-            "ZG93bhgCIAEoCzIULmNvdW50ZG93bi5Db3VudGRvd24iSgocTmV4dENvdW50",
-            "ZG93bkludGVydmFsQnlJZFJlcRIUCgxjb3VudGRvd25faWQYASABKAkSFAoM",
-            "dGltZV9leHBpcmVkGAIgASgDImcKHE5leHRDb3VudGRvd25JbnRlcnZhbEJ5",
-            "SWRSZXMSHgoGcmVzdWx0GAEgASgLMg4uc2hhcmVkLlJlc3VsdBInCgljb3Vu",
-            "dGRvd24YAiABKAsyFC5jb3VudGRvd24uQ291bnRkb3duIl8KJFF1ZXJ5UGFn",
-            "ZWRFeHByaW5nQ291bnRkb3duc0J5VHlwZVJlcRIWCg5jb3VudGRvd25fdHlw",
-            "ZRgBIAEoCRIMCgRwYWdlGAIgASgDEhEKCXBhZ2Vfc2l6ZRgDIAEoAyJwCiRR",
-            "dWVyeVBhZ2VkRXhwcmluZ0NvdW50ZG93bnNCeVR5cGVSZXMSHgoGcmVzdWx0",
-            "GAEgASgLMg4uc2hhcmVkLlJlc3VsdBIoCgpjb3VudGRvd25zGAIgAygLMhQu",
-            "Y291bnRkb3duLkNvdW50ZG93biKRAQodUXVlcnlQYWdlZENvdW50ZG93bnNC",
-            "eVR5cGVSZXESFgoOY291bnRkb3duX3R5cGUYASABKAkSDAoEcGFnZRgCIAEo",
-            "AxIRCglwYWdlX3NpemUYAyABKAMSNwoNZXhwaXJlX3N0YXR1cxgEIAEoDjIg",
-            "LmNvdW50ZG93bi5Db3VudGRvd25FeHBpcmVTdGF0dXMiaQodUXVlcnlQYWdl",
-            "ZENvdW50ZG93bnNCeVR5cGVSZXMSHgoGcmVzdWx0GAEgASgLMg4uc2hhcmVk",
-            "LlJlc3VsdBIoCgpjb3VudGRvd25zGAIgAygLMhQuY291bnRkb3duLkNvdW50",
-            "ZG93biK0AQoYQ2hhbmdlQ291bnRkb3duU3RhdHVzUmVxEhQKDGNvdW50ZG93",
-            "bl9pZBgBIAEoCRIWCg5jb3VudGRvd25fdHlwZRgCIAEoCRI0CgpvbGRfc3Rh",
-            "dHVzGAsgASgOMiAuY291bnRkb3duLkNvdW50ZG93bkV4cGlyZVN0YXR1cxI0",
-            "CgpuZXdfc3RhdHVzGAwgASgOMiAuY291bnRkb3duLkNvdW50ZG93bkV4cGly",
-            "ZVN0YXR1cyI6ChhDaGFuZ2VDb3VudGRvd25TdGF0dXNSZXMSHgoGcmVzdWx0",
-            "GAEgASgLMg4uc2hhcmVkLlJlc3VsdCpjChVDb3VudGRvd25FeHBpcmVTdGF0",
-            "dXMSCwoHVU5LTk9XThAAEgwKCEVYUElSSU5HEAESCwoHRVhQSVJFRBACEgsK",
-            "B0RFTEVURUQQAxIMCghGSU5JU0hFRBAEEgcKA0FMTBB/KmAKF0NvdW50ZG93",
-            "bk5vdGljZVRpbWVUeXBlEggKBE5PTkUQABIKCgZEQVlfMzAQARIKCgZEQVlf",
-            "NjAQAhIKCgZEQVlfOTAQAxILCgdNT05USF82EAQSCgoGQ1VTVE9NEH8ylQUK",
-            "EENvdW50ZG93blNlcnZpY2USUQoPQ3JlYXRlQ291bnRkb3duEh0uY291bnRk",
-            "b3duLkNyZWF0ZUNvdW50ZG93blJlcRodLmNvdW50ZG93bi5DcmVhdGVDb3Vu",
-            "dGRvd25SZXMiABJvChlOZXh0Q291bnRkb3duSW50ZXJ2YWxCeUlkEicuY291",
-            "bnRkb3duLk5leHRDb3VudGRvd25JbnRlcnZhbEJ5SWRSZXEaJy5jb3VudGRv",
-            "d24uTmV4dENvdW50ZG93bkludGVydmFsQnlJZFJlcyIAEmMKFUNoYW5nZUNv",
-            "dW50ZG93blN0YXR1cxIjLmNvdW50ZG93bi5DaGFuZ2VDb3VudGRvd25TdGF0",
-            "dXNSZXEaIy5jb3VudGRvd24uQ2hhbmdlQ291bnRkb3duU3RhdHVzUmVzIgAS",
-            "WgoSUXVlcnlDb3VudGRvd25CeUlkEiAuY291bnRkb3duLlF1ZXJ5Q291bnRk",
-            "b3duQnlJZFJlcRogLmNvdW50ZG93bi5RdWVyeUNvdW50ZG93bkJ5SWRSZXMi",
-            "ABKHAQohUXVlcnlQYWdlZEV4cHJpbmdDb3VudGRvd25zQnlUeXBlEi8uY291",
-            "bnRkb3duLlF1ZXJ5UGFnZWRFeHByaW5nQ291bnRkb3duc0J5VHlwZVJlcRov",
-            "LmNvdW50ZG93bi5RdWVyeVBhZ2VkRXhwcmluZ0NvdW50ZG93bnNCeVR5cGVS",
-            "ZXMiABJyChpRdWVyeVBhZ2VkQ291bnRkb3duc0J5VHlwZRIoLmNvdW50ZG93",
-            "bi5RdWVyeVBhZ2VkQ291bnRkb3duc0J5VHlwZVJlcRooLmNvdW50ZG93bi5R",
-            "dWVyeVBhZ2VkQ291bnRkb3duc0J5VHlwZVJlcyIAQpoBCi9pbmZvLm1vZXRh",
-            "bmcuc2VydmljZXByb3RvY29sLnByb3RvYnVmLmNvdW50ZG93bkIOQ291bnRk",
-            "b3duUHJvdG9QAVpCZ2l0aHViLmNvbS9tZWlkb214L3NlcnZpY2UtcHJvdG9j",
-            "b2wvcHJvdG9jb2wvcHJvdG9idWYvZ28vY291bnRkb3duqgIQU2VydmljZUdy",
-            "cGNQcm90b2IGcHJvdG8z"));
+            "Y3JlYXRlZBgXIAEoAxIUCgx0aW1lX3VwZGF0ZWQYGCABKAMSMAoGc3RhdHVz",
+            "GBkgASgOMiAuY291bnRkb3duLkNvdW50ZG93bkV4cGlyZVN0YXR1cyJzChJD",
+            "cmVhdGVDb3VudGRvd25SZXESDwoHdXNlcl9pZBgBIAEoCRIWCg5jb3VudGRv",
+            "d25fdHlwZRgCIAEoCRINCgV0aXRsZRgLIAEoCRIPCgdjb250ZW50GAwgASgJ",
+            "EhQKDHRpbWVfZXhwaXJlZBgVIAEoAyJdChJDcmVhdGVDb3VudGRvd25SZXMS",
+            "HgoGcmVzdWx0GAEgASgLMg4uc2hhcmVkLlJlc3VsdBInCgljb3VudGRvd24Y",
+            "AiABKAsyFC5jb3VudGRvd24uQ291bnRkb3duIi0KFVF1ZXJ5Q291bnRkb3du",
+            "QnlJZFJlcRIUCgxjb3VudGRvd25faWQYASABKAkiYAoVUXVlcnlDb3VudGRv",
+            "d25CeUlkUmVzEh4KBnJlc3VsdBgBIAEoCzIOLnNoYXJlZC5SZXN1bHQSJwoJ",
+            "Y291bnRkb3duGAIgASgLMhQuY291bnRkb3duLkNvdW50ZG93biJKChxOZXh0",
+            "Q291bnRkb3duSW50ZXJ2YWxCeUlkUmVxEhQKDGNvdW50ZG93bl9pZBgBIAEo",
+            "CRIUCgx0aW1lX2V4cGlyZWQYAiABKAMiZwocTmV4dENvdW50ZG93bkludGVy",
+            "dmFsQnlJZFJlcxIeCgZyZXN1bHQYASABKAsyDi5zaGFyZWQuUmVzdWx0EicK",
+            "CWNvdW50ZG93bhgCIAEoCzIULmNvdW50ZG93bi5Db3VudGRvd24iXwokUXVl",
+            "cnlQYWdlZEV4cHJpbmdDb3VudGRvd25zQnlUeXBlUmVxEhYKDmNvdW50ZG93",
+            "bl90eXBlGAEgASgJEgwKBHBhZ2UYAiABKAMSEQoJcGFnZV9zaXplGAMgASgD",
+            "InAKJFF1ZXJ5UGFnZWRFeHByaW5nQ291bnRkb3duc0J5VHlwZVJlcxIeCgZy",
+            "ZXN1bHQYASABKAsyDi5zaGFyZWQuUmVzdWx0EigKCmNvdW50ZG93bnMYAiAD",
+            "KAsyFC5jb3VudGRvd24uQ291bnRkb3duIpEBCh1RdWVyeVBhZ2VkQ291bnRk",
+            "b3duc0J5VHlwZVJlcRIWCg5jb3VudGRvd25fdHlwZRgBIAEoCRIMCgRwYWdl",
+            "GAIgASgDEhEKCXBhZ2Vfc2l6ZRgDIAEoAxI3Cg1leHBpcmVfc3RhdHVzGAQg",
+            "ASgOMiAuY291bnRkb3duLkNvdW50ZG93bkV4cGlyZVN0YXR1cyJpCh1RdWVy",
+            "eVBhZ2VkQ291bnRkb3duc0J5VHlwZVJlcxIeCgZyZXN1bHQYASABKAsyDi5z",
+            "aGFyZWQuUmVzdWx0EigKCmNvdW50ZG93bnMYAiADKAsyFC5jb3VudGRvd24u",
+            "Q291bnRkb3duIrQBChhDaGFuZ2VDb3VudGRvd25TdGF0dXNSZXESFAoMY291",
+            "bnRkb3duX2lkGAEgASgJEhYKDmNvdW50ZG93bl90eXBlGAIgASgJEjQKCm9s",
+            "ZF9zdGF0dXMYCyABKA4yIC5jb3VudGRvd24uQ291bnRkb3duRXhwaXJlU3Rh",
+            "dHVzEjQKCm5ld19zdGF0dXMYDCABKA4yIC5jb3VudGRvd24uQ291bnRkb3du",
+            "RXhwaXJlU3RhdHVzIjoKGENoYW5nZUNvdW50ZG93blN0YXR1c1JlcxIeCgZy",
+            "ZXN1bHQYASABKAsyDi5zaGFyZWQuUmVzdWx0KmMKFUNvdW50ZG93bkV4cGly",
+            "ZVN0YXR1cxILCgdVTktOT1dOEAASDAoIRVhQSVJJTkcQARILCgdFWFBJUkVE",
+            "EAISCwoHREVMRVRFRBADEgwKCEZJTklTSEVEEAQSBwoDQUxMEH8qYAoXQ291",
+            "bnRkb3duTm90aWNlVGltZVR5cGUSCAoETk9ORRAAEgoKBkRBWV8zMBABEgoK",
+            "BkRBWV82MBACEgoKBkRBWV85MBADEgsKB01PTlRIXzYQBBIKCgZDVVNUT00Q",
+            "fzKVBQoQQ291bnRkb3duU2VydmljZRJRCg9DcmVhdGVDb3VudGRvd24SHS5j",
+            "b3VudGRvd24uQ3JlYXRlQ291bnRkb3duUmVxGh0uY291bnRkb3duLkNyZWF0",
+            "ZUNvdW50ZG93blJlcyIAEm8KGU5leHRDb3VudGRvd25JbnRlcnZhbEJ5SWQS",
+            "Jy5jb3VudGRvd24uTmV4dENvdW50ZG93bkludGVydmFsQnlJZFJlcRonLmNv",
+            "dW50ZG93bi5OZXh0Q291bnRkb3duSW50ZXJ2YWxCeUlkUmVzIgASYwoVQ2hh",
+            "bmdlQ291bnRkb3duU3RhdHVzEiMuY291bnRkb3duLkNoYW5nZUNvdW50ZG93",
+            "blN0YXR1c1JlcRojLmNvdW50ZG93bi5DaGFuZ2VDb3VudGRvd25TdGF0dXNS",
+            "ZXMiABJaChJRdWVyeUNvdW50ZG93bkJ5SWQSIC5jb3VudGRvd24uUXVlcnlD",
+            "b3VudGRvd25CeUlkUmVxGiAuY291bnRkb3duLlF1ZXJ5Q291bnRkb3duQnlJ",
+            "ZFJlcyIAEocBCiFRdWVyeVBhZ2VkRXhwcmluZ0NvdW50ZG93bnNCeVR5cGUS",
+            "Ly5jb3VudGRvd24uUXVlcnlQYWdlZEV4cHJpbmdDb3VudGRvd25zQnlUeXBl",
+            "UmVxGi8uY291bnRkb3duLlF1ZXJ5UGFnZWRFeHByaW5nQ291bnRkb3duc0J5",
+            "VHlwZVJlcyIAEnIKGlF1ZXJ5UGFnZWRDb3VudGRvd25zQnlUeXBlEiguY291",
+            "bnRkb3duLlF1ZXJ5UGFnZWRDb3VudGRvd25zQnlUeXBlUmVxGiguY291bnRk",
+            "b3duLlF1ZXJ5UGFnZWRDb3VudGRvd25zQnlUeXBlUmVzIgBCmgEKL2luZm8u",
+            "bW9ldGFuZy5zZXJ2aWNlcHJvdG9jb2wucHJvdG9idWYuY291bnRkb3duQg5D",
+            "b3VudGRvd25Qcm90b1ABWkJnaXRodWIuY29tL21laWRvbXgvc2VydmljZS1w",
+            "cm90b2NvbC9wcm90b2NvbC9wcm90b2J1Zi9nby9jb3VudGRvd26qAhBTZXJ2",
+            "aWNlR3JwY1Byb3RvYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::ServiceGrpcProto.ResultReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::ServiceGrpcProto.CountdownExpireStatus), typeof(global::ServiceGrpcProto.CountdownNoticeTimeType), }, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::ServiceGrpcProto.Countdown), global::ServiceGrpcProto.Countdown.Parser, new[]{ "CountdownId", "UserId", "CountdownType", "Title", "Content", "TimeExpired", "TimeLastHandle", "TimeCreated", "TimeUpdated" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::ServiceGrpcProto.Countdown), global::ServiceGrpcProto.Countdown.Parser, new[]{ "CountdownId", "UserId", "CountdownType", "Title", "Content", "TimeExpired", "TimeLastHandle", "TimeCreated", "TimeUpdated", "Status" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::ServiceGrpcProto.CreateCountdownReq), global::ServiceGrpcProto.CreateCountdownReq.Parser, new[]{ "UserId", "CountdownType", "Title", "Content", "TimeExpired" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::ServiceGrpcProto.CreateCountdownRes), global::ServiceGrpcProto.CreateCountdownRes.Parser, new[]{ "Result", "Countdown" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::ServiceGrpcProto.QueryCountdownByIdReq), global::ServiceGrpcProto.QueryCountdownByIdReq.Parser, new[]{ "CountdownId" }, null, null, null, null),
@@ -167,6 +168,7 @@ namespace ServiceGrpcProto {
       timeLastHandle_ = other.timeLastHandle_;
       timeCreated_ = other.timeCreated_;
       timeUpdated_ = other.timeUpdated_;
+      status_ = other.status_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -284,6 +286,18 @@ namespace ServiceGrpcProto {
       }
     }
 
+    /// <summary>Field number for the "status" field.</summary>
+    public const int StatusFieldNumber = 25;
+    private global::ServiceGrpcProto.CountdownExpireStatus status_ = global::ServiceGrpcProto.CountdownExpireStatus.Unknown;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::ServiceGrpcProto.CountdownExpireStatus Status {
+      get { return status_; }
+      set {
+        status_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -308,6 +322,7 @@ namespace ServiceGrpcProto {
       if (TimeLastHandle != other.TimeLastHandle) return false;
       if (TimeCreated != other.TimeCreated) return false;
       if (TimeUpdated != other.TimeUpdated) return false;
+      if (Status != other.Status) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -324,6 +339,7 @@ namespace ServiceGrpcProto {
       if (TimeLastHandle != 0L) hash ^= TimeLastHandle.GetHashCode();
       if (TimeCreated != 0L) hash ^= TimeCreated.GetHashCode();
       if (TimeUpdated != 0L) hash ^= TimeUpdated.GetHashCode();
+      if (Status != global::ServiceGrpcProto.CountdownExpireStatus.Unknown) hash ^= Status.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -378,6 +394,10 @@ namespace ServiceGrpcProto {
         output.WriteRawTag(192, 1);
         output.WriteInt64(TimeUpdated);
       }
+      if (Status != global::ServiceGrpcProto.CountdownExpireStatus.Unknown) {
+        output.WriteRawTag(200, 1);
+        output.WriteEnum((int) Status);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -424,6 +444,10 @@ namespace ServiceGrpcProto {
         output.WriteRawTag(192, 1);
         output.WriteInt64(TimeUpdated);
       }
+      if (Status != global::ServiceGrpcProto.CountdownExpireStatus.Unknown) {
+        output.WriteRawTag(200, 1);
+        output.WriteEnum((int) Status);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -460,6 +484,9 @@ namespace ServiceGrpcProto {
       }
       if (TimeUpdated != 0L) {
         size += 2 + pb::CodedOutputStream.ComputeInt64Size(TimeUpdated);
+      }
+      if (Status != global::ServiceGrpcProto.CountdownExpireStatus.Unknown) {
+        size += 2 + pb::CodedOutputStream.ComputeEnumSize((int) Status);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -499,6 +526,9 @@ namespace ServiceGrpcProto {
       }
       if (other.TimeUpdated != 0L) {
         TimeUpdated = other.TimeUpdated;
+      }
+      if (other.Status != global::ServiceGrpcProto.CountdownExpireStatus.Unknown) {
+        Status = other.Status;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -551,6 +581,10 @@ namespace ServiceGrpcProto {
             TimeUpdated = input.ReadInt64();
             break;
           }
+          case 200: {
+            Status = (global::ServiceGrpcProto.CountdownExpireStatus) input.ReadEnum();
+            break;
+          }
         }
       }
     #endif
@@ -600,6 +634,10 @@ namespace ServiceGrpcProto {
           }
           case 192: {
             TimeUpdated = input.ReadInt64();
+            break;
+          }
+          case 200: {
+            Status = (global::ServiceGrpcProto.CountdownExpireStatus) input.ReadEnum();
             break;
           }
         }

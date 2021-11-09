@@ -21,6 +21,7 @@ private static final long serialVersionUID = 0L;
     countdownType_ = "";
     title_ = "";
     content_ = "";
+    status_ = 0;
   }
 
   @java.lang.Override
@@ -101,6 +102,12 @@ private static final long serialVersionUID = 0L;
           case 192: {
 
             timeUpdated_ = input.readInt64();
+            break;
+          }
+          case 200: {
+            int rawValue = input.readEnum();
+
+            status_ = rawValue;
             break;
           }
           default: {
@@ -369,6 +376,25 @@ private static final long serialVersionUID = 0L;
     return timeUpdated_;
   }
 
+  public static final int STATUS_FIELD_NUMBER = 25;
+  private int status_;
+  /**
+   * <code>.countdown.CountdownExpireStatus status = 25;</code>
+   * @return The enum numeric value on the wire for status.
+   */
+  @java.lang.Override public int getStatusValue() {
+    return status_;
+  }
+  /**
+   * <code>.countdown.CountdownExpireStatus status = 25;</code>
+   * @return The status.
+   */
+  @java.lang.Override public info.moetang.serviceprotocol.protobuf.countdown.CountdownExpireStatus getStatus() {
+    @SuppressWarnings("deprecation")
+    info.moetang.serviceprotocol.protobuf.countdown.CountdownExpireStatus result = info.moetang.serviceprotocol.protobuf.countdown.CountdownExpireStatus.valueOf(status_);
+    return result == null ? info.moetang.serviceprotocol.protobuf.countdown.CountdownExpireStatus.UNRECOGNIZED : result;
+  }
+
   private byte memoizedIsInitialized = -1;
   @java.lang.Override
   public final boolean isInitialized() {
@@ -410,6 +436,9 @@ private static final long serialVersionUID = 0L;
     if (timeUpdated_ != 0L) {
       output.writeInt64(24, timeUpdated_);
     }
+    if (status_ != info.moetang.serviceprotocol.protobuf.countdown.CountdownExpireStatus.UNKNOWN.getNumber()) {
+      output.writeEnum(25, status_);
+    }
     unknownFields.writeTo(output);
   }
 
@@ -450,6 +479,10 @@ private static final long serialVersionUID = 0L;
       size += com.google.protobuf.CodedOutputStream
         .computeInt64Size(24, timeUpdated_);
     }
+    if (status_ != info.moetang.serviceprotocol.protobuf.countdown.CountdownExpireStatus.UNKNOWN.getNumber()) {
+      size += com.google.protobuf.CodedOutputStream
+        .computeEnumSize(25, status_);
+    }
     size += unknownFields.getSerializedSize();
     memoizedSize = size;
     return size;
@@ -483,6 +516,7 @@ private static final long serialVersionUID = 0L;
         != other.getTimeCreated()) return false;
     if (getTimeUpdated()
         != other.getTimeUpdated()) return false;
+    if (status_ != other.status_) return false;
     if (!unknownFields.equals(other.unknownFields)) return false;
     return true;
   }
@@ -516,6 +550,8 @@ private static final long serialVersionUID = 0L;
     hash = (37 * hash) + TIME_UPDATED_FIELD_NUMBER;
     hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
         getTimeUpdated());
+    hash = (37 * hash) + STATUS_FIELD_NUMBER;
+    hash = (53 * hash) + status_;
     hash = (29 * hash) + unknownFields.hashCode();
     memoizedHashCode = hash;
     return hash;
@@ -667,6 +703,8 @@ private static final long serialVersionUID = 0L;
 
       timeUpdated_ = 0L;
 
+      status_ = 0;
+
       return this;
     }
 
@@ -702,6 +740,7 @@ private static final long serialVersionUID = 0L;
       result.timeLastHandle_ = timeLastHandle_;
       result.timeCreated_ = timeCreated_;
       result.timeUpdated_ = timeUpdated_;
+      result.status_ = status_;
       onBuilt();
       return result;
     }
@@ -781,6 +820,9 @@ private static final long serialVersionUID = 0L;
       }
       if (other.getTimeUpdated() != 0L) {
         setTimeUpdated(other.getTimeUpdated());
+      }
+      if (other.status_ != 0) {
+        setStatusValue(other.getStatusValue());
       }
       this.mergeUnknownFields(other.unknownFields);
       onChanged();
@@ -1311,6 +1353,60 @@ private static final long serialVersionUID = 0L;
     public Builder clearTimeUpdated() {
       
       timeUpdated_ = 0L;
+      onChanged();
+      return this;
+    }
+
+    private int status_ = 0;
+    /**
+     * <code>.countdown.CountdownExpireStatus status = 25;</code>
+     * @return The enum numeric value on the wire for status.
+     */
+    @java.lang.Override public int getStatusValue() {
+      return status_;
+    }
+    /**
+     * <code>.countdown.CountdownExpireStatus status = 25;</code>
+     * @param value The enum numeric value on the wire for status to set.
+     * @return This builder for chaining.
+     */
+    public Builder setStatusValue(int value) {
+      
+      status_ = value;
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>.countdown.CountdownExpireStatus status = 25;</code>
+     * @return The status.
+     */
+    @java.lang.Override
+    public info.moetang.serviceprotocol.protobuf.countdown.CountdownExpireStatus getStatus() {
+      @SuppressWarnings("deprecation")
+      info.moetang.serviceprotocol.protobuf.countdown.CountdownExpireStatus result = info.moetang.serviceprotocol.protobuf.countdown.CountdownExpireStatus.valueOf(status_);
+      return result == null ? info.moetang.serviceprotocol.protobuf.countdown.CountdownExpireStatus.UNRECOGNIZED : result;
+    }
+    /**
+     * <code>.countdown.CountdownExpireStatus status = 25;</code>
+     * @param value The status to set.
+     * @return This builder for chaining.
+     */
+    public Builder setStatus(info.moetang.serviceprotocol.protobuf.countdown.CountdownExpireStatus value) {
+      if (value == null) {
+        throw new NullPointerException();
+      }
+      
+      status_ = value.getNumber();
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>.countdown.CountdownExpireStatus status = 25;</code>
+     * @return This builder for chaining.
+     */
+    public Builder clearStatus() {
+      
+      status_ = 0;
       onChanged();
       return this;
     }

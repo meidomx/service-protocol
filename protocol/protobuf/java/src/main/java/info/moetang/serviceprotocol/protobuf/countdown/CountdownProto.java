@@ -89,69 +89,70 @@ public final class CountdownProto {
   static {
     java.lang.String[] descriptorData = {
       "\n\031countdown/countdown.proto\022\tcountdown\032\023" +
-      "shared/result.proto\"\306\001\n\tCountdown\022\024\n\014cou" +
+      "shared/result.proto\"\370\001\n\tCountdown\022\024\n\014cou" +
       "ntdown_id\030\001 \001(\t\022\017\n\007user_id\030\002 \001(\t\022\026\n\016coun" +
       "tdown_type\030\003 \001(\t\022\r\n\005title\030\013 \001(\t\022\017\n\007conte" +
       "nt\030\014 \001(\t\022\024\n\014time_expired\030\025 \001(\003\022\030\n\020time_l" +
       "ast_handle\030\026 \001(\003\022\024\n\014time_created\030\027 \001(\003\022\024" +
-      "\n\014time_updated\030\030 \001(\003\"s\n\022CreateCountdownR" +
-      "eq\022\017\n\007user_id\030\001 \001(\t\022\026\n\016countdown_type\030\002 " +
-      "\001(\t\022\r\n\005title\030\013 \001(\t\022\017\n\007content\030\014 \001(\t\022\024\n\014t" +
-      "ime_expired\030\025 \001(\003\"]\n\022CreateCountdownRes\022" +
-      "\036\n\006result\030\001 \001(\0132\016.shared.Result\022\'\n\tcount" +
-      "down\030\002 \001(\0132\024.countdown.Countdown\"-\n\025Quer" +
-      "yCountdownByIdReq\022\024\n\014countdown_id\030\001 \001(\t\"" +
-      "`\n\025QueryCountdownByIdRes\022\036\n\006result\030\001 \001(\013" +
-      "2\016.shared.Result\022\'\n\tcountdown\030\002 \001(\0132\024.co" +
-      "untdown.Countdown\"J\n\034NextCountdownInterv" +
-      "alByIdReq\022\024\n\014countdown_id\030\001 \001(\t\022\024\n\014time_" +
-      "expired\030\002 \001(\003\"g\n\034NextCountdownIntervalBy" +
-      "IdRes\022\036\n\006result\030\001 \001(\0132\016.shared.Result\022\'\n" +
-      "\tcountdown\030\002 \001(\0132\024.countdown.Countdown\"_" +
-      "\n$QueryPagedExpringCountdownsByTypeReq\022\026" +
-      "\n\016countdown_type\030\001 \001(\t\022\014\n\004page\030\002 \001(\003\022\021\n\t" +
-      "page_size\030\003 \001(\003\"p\n$QueryPagedExpringCoun" +
-      "tdownsByTypeRes\022\036\n\006result\030\001 \001(\0132\016.shared" +
-      ".Result\022(\n\ncountdowns\030\002 \003(\0132\024.countdown." +
-      "Countdown\"\221\001\n\035QueryPagedCountdownsByType" +
-      "Req\022\026\n\016countdown_type\030\001 \001(\t\022\014\n\004page\030\002 \001(" +
-      "\003\022\021\n\tpage_size\030\003 \001(\003\0227\n\rexpire_status\030\004 " +
-      "\001(\0162 .countdown.CountdownExpireStatus\"i\n" +
-      "\035QueryPagedCountdownsByTypeRes\022\036\n\006result" +
-      "\030\001 \001(\0132\016.shared.Result\022(\n\ncountdowns\030\002 \003" +
-      "(\0132\024.countdown.Countdown\"\264\001\n\030ChangeCount" +
-      "downStatusReq\022\024\n\014countdown_id\030\001 \001(\t\022\026\n\016c" +
-      "ountdown_type\030\002 \001(\t\0224\n\nold_status\030\013 \001(\0162" +
-      " .countdown.CountdownExpireStatus\0224\n\nnew" +
-      "_status\030\014 \001(\0162 .countdown.CountdownExpir" +
-      "eStatus\":\n\030ChangeCountdownStatusRes\022\036\n\006r" +
-      "esult\030\001 \001(\0132\016.shared.Result*c\n\025Countdown" +
-      "ExpireStatus\022\013\n\007UNKNOWN\020\000\022\014\n\010EXPIRING\020\001\022" +
-      "\013\n\007EXPIRED\020\002\022\013\n\007DELETED\020\003\022\014\n\010FINISHED\020\004\022" +
-      "\007\n\003ALL\020\177*`\n\027CountdownNoticeTimeType\022\010\n\004N" +
-      "ONE\020\000\022\n\n\006DAY_30\020\001\022\n\n\006DAY_60\020\002\022\n\n\006DAY_90\020" +
-      "\003\022\013\n\007MONTH_6\020\004\022\n\n\006CUSTOM\020\1772\225\005\n\020Countdown" +
-      "Service\022Q\n\017CreateCountdown\022\035.countdown.C" +
-      "reateCountdownReq\032\035.countdown.CreateCoun" +
-      "tdownRes\"\000\022o\n\031NextCountdownIntervalById\022" +
-      "\'.countdown.NextCountdownIntervalByIdReq" +
-      "\032\'.countdown.NextCountdownIntervalByIdRe" +
-      "s\"\000\022c\n\025ChangeCountdownStatus\022#.countdown" +
-      ".ChangeCountdownStatusReq\032#.countdown.Ch" +
-      "angeCountdownStatusRes\"\000\022Z\n\022QueryCountdo" +
-      "wnById\022 .countdown.QueryCountdownByIdReq" +
-      "\032 .countdown.QueryCountdownByIdRes\"\000\022\207\001\n" +
-      "!QueryPagedExpringCountdownsByType\022/.cou" +
-      "ntdown.QueryPagedExpringCountdownsByType" +
-      "Req\032/.countdown.QueryPagedExpringCountdo" +
-      "wnsByTypeRes\"\000\022r\n\032QueryPagedCountdownsBy" +
-      "Type\022(.countdown.QueryPagedCountdownsByT" +
-      "ypeReq\032(.countdown.QueryPagedCountdownsB" +
-      "yTypeRes\"\000B\232\001\n/info.moetang.serviceproto" +
-      "col.protobuf.countdownB\016CountdownProtoP\001" +
-      "ZBgithub.com/meidomx/service-protocol/pr" +
-      "otocol/protobuf/go/countdown\252\002\020ServiceGr" +
-      "pcProtob\006proto3"
+      "\n\014time_updated\030\030 \001(\003\0220\n\006status\030\031 \001(\0162 .c" +
+      "ountdown.CountdownExpireStatus\"s\n\022Create" +
+      "CountdownReq\022\017\n\007user_id\030\001 \001(\t\022\026\n\016countdo" +
+      "wn_type\030\002 \001(\t\022\r\n\005title\030\013 \001(\t\022\017\n\007content\030" +
+      "\014 \001(\t\022\024\n\014time_expired\030\025 \001(\003\"]\n\022CreateCou" +
+      "ntdownRes\022\036\n\006result\030\001 \001(\0132\016.shared.Resul" +
+      "t\022\'\n\tcountdown\030\002 \001(\0132\024.countdown.Countdo" +
+      "wn\"-\n\025QueryCountdownByIdReq\022\024\n\014countdown" +
+      "_id\030\001 \001(\t\"`\n\025QueryCountdownByIdRes\022\036\n\006re" +
+      "sult\030\001 \001(\0132\016.shared.Result\022\'\n\tcountdown\030" +
+      "\002 \001(\0132\024.countdown.Countdown\"J\n\034NextCount" +
+      "downIntervalByIdReq\022\024\n\014countdown_id\030\001 \001(" +
+      "\t\022\024\n\014time_expired\030\002 \001(\003\"g\n\034NextCountdown" +
+      "IntervalByIdRes\022\036\n\006result\030\001 \001(\0132\016.shared" +
+      ".Result\022\'\n\tcountdown\030\002 \001(\0132\024.countdown.C" +
+      "ountdown\"_\n$QueryPagedExpringCountdownsB" +
+      "yTypeReq\022\026\n\016countdown_type\030\001 \001(\t\022\014\n\004page" +
+      "\030\002 \001(\003\022\021\n\tpage_size\030\003 \001(\003\"p\n$QueryPagedE" +
+      "xpringCountdownsByTypeRes\022\036\n\006result\030\001 \001(" +
+      "\0132\016.shared.Result\022(\n\ncountdowns\030\002 \003(\0132\024." +
+      "countdown.Countdown\"\221\001\n\035QueryPagedCountd" +
+      "ownsByTypeReq\022\026\n\016countdown_type\030\001 \001(\t\022\014\n" +
+      "\004page\030\002 \001(\003\022\021\n\tpage_size\030\003 \001(\003\0227\n\rexpire" +
+      "_status\030\004 \001(\0162 .countdown.CountdownExpir" +
+      "eStatus\"i\n\035QueryPagedCountdownsByTypeRes" +
+      "\022\036\n\006result\030\001 \001(\0132\016.shared.Result\022(\n\ncoun" +
+      "tdowns\030\002 \003(\0132\024.countdown.Countdown\"\264\001\n\030C" +
+      "hangeCountdownStatusReq\022\024\n\014countdown_id\030" +
+      "\001 \001(\t\022\026\n\016countdown_type\030\002 \001(\t\0224\n\nold_sta" +
+      "tus\030\013 \001(\0162 .countdown.CountdownExpireSta" +
+      "tus\0224\n\nnew_status\030\014 \001(\0162 .countdown.Coun" +
+      "tdownExpireStatus\":\n\030ChangeCountdownStat" +
+      "usRes\022\036\n\006result\030\001 \001(\0132\016.shared.Result*c\n" +
+      "\025CountdownExpireStatus\022\013\n\007UNKNOWN\020\000\022\014\n\010E" +
+      "XPIRING\020\001\022\013\n\007EXPIRED\020\002\022\013\n\007DELETED\020\003\022\014\n\010F" +
+      "INISHED\020\004\022\007\n\003ALL\020\177*`\n\027CountdownNoticeTim" +
+      "eType\022\010\n\004NONE\020\000\022\n\n\006DAY_30\020\001\022\n\n\006DAY_60\020\002\022" +
+      "\n\n\006DAY_90\020\003\022\013\n\007MONTH_6\020\004\022\n\n\006CUSTOM\020\1772\225\005\n" +
+      "\020CountdownService\022Q\n\017CreateCountdown\022\035.c" +
+      "ountdown.CreateCountdownReq\032\035.countdown." +
+      "CreateCountdownRes\"\000\022o\n\031NextCountdownInt" +
+      "ervalById\022\'.countdown.NextCountdownInter" +
+      "valByIdReq\032\'.countdown.NextCountdownInte" +
+      "rvalByIdRes\"\000\022c\n\025ChangeCountdownStatus\022#" +
+      ".countdown.ChangeCountdownStatusReq\032#.co" +
+      "untdown.ChangeCountdownStatusRes\"\000\022Z\n\022Qu" +
+      "eryCountdownById\022 .countdown.QueryCountd" +
+      "ownByIdReq\032 .countdown.QueryCountdownByI" +
+      "dRes\"\000\022\207\001\n!QueryPagedExpringCountdownsBy" +
+      "Type\022/.countdown.QueryPagedExpringCountd" +
+      "ownsByTypeReq\032/.countdown.QueryPagedExpr" +
+      "ingCountdownsByTypeRes\"\000\022r\n\032QueryPagedCo" +
+      "untdownsByType\022(.countdown.QueryPagedCou" +
+      "ntdownsByTypeReq\032(.countdown.QueryPagedC" +
+      "ountdownsByTypeRes\"\000B\232\001\n/info.moetang.se" +
+      "rviceprotocol.protobuf.countdownB\016Countd" +
+      "ownProtoP\001ZBgithub.com/meidomx/service-p" +
+      "rotocol/protocol/protobuf/go/countdown\252\002" +
+      "\020ServiceGrpcProtob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -163,7 +164,7 @@ public final class CountdownProto {
     internal_static_countdown_Countdown_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_countdown_Countdown_descriptor,
-        new java.lang.String[] { "CountdownId", "UserId", "CountdownType", "Title", "Content", "TimeExpired", "TimeLastHandle", "TimeCreated", "TimeUpdated", });
+        new java.lang.String[] { "CountdownId", "UserId", "CountdownType", "Title", "Content", "TimeExpired", "TimeLastHandle", "TimeCreated", "TimeUpdated", "Status", });
     internal_static_countdown_CreateCountdownReq_descriptor =
       getDescriptor().getMessageTypes().get(1);
     internal_static_countdown_CreateCountdownReq_fieldAccessorTable = new

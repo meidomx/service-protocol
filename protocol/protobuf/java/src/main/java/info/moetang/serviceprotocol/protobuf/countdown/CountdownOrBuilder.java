@@ -90,4 +90,15 @@ public interface CountdownOrBuilder extends
    * @return The timeUpdated.
    */
   long getTimeUpdated();
+
+  /**
+   * <code>.countdown.CountdownExpireStatus status = 25;</code>
+   * @return The enum numeric value on the wire for status.
+   */
+  int getStatusValue();
+  /**
+   * <code>.countdown.CountdownExpireStatus status = 25;</code>
+   * @return The status.
+   */
+  info.moetang.serviceprotocol.protobuf.countdown.CountdownExpireStatus getStatus();
 }
