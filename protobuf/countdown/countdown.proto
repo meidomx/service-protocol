@@ -14,6 +14,7 @@ service CountdownService {
     rpc CreateCountdown(CreateCountdownReq) returns (CreateCountdownRes) {}
     rpc NextCountdownIntervalById(NextCountdownIntervalByIdReq) returns (NextCountdownIntervalByIdRes) {}
     rpc ChangeCountdownStatus(ChangeCountdownStatusReq) returns (ChangeCountdownStatusRes) {}
+    rpc UpdateCountdownById(UpdateCountdownReq) returns (UpdateCountdownRes) {}
 
     rpc QueryCountdownById(QueryCountdownByIdReq) returns (QueryCountdownByIdRes) {}
     rpc QueryPagedExpringCountdownsByType(QueryPagedExpringCountdownsByTypeReq) returns (QueryPagedExpringCountdownsByTypeRes) {}
@@ -139,3 +140,16 @@ message ChangeCountdownStatusRes {
     shared.Result result = 1;
 }
 
+
+message UpdateCountdownReq {
+    string countdown_id = 1;
+
+    string title = 11;
+    string content = 12;
+}
+
+message UpdateCountdownRes {
+    shared.Result result = 1;
+
+    Countdown countdown = 2;
+}

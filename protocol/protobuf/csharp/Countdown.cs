@@ -58,30 +58,36 @@ namespace ServiceGrpcProto {
             "ZF9zdGF0dXMYCyABKA4yIC5jb3VudGRvd24uQ291bnRkb3duRXhwaXJlU3Rh",
             "dHVzEjQKCm5ld19zdGF0dXMYDCABKA4yIC5jb3VudGRvd24uQ291bnRkb3du",
             "RXhwaXJlU3RhdHVzIjoKGENoYW5nZUNvdW50ZG93blN0YXR1c1JlcxIeCgZy",
-            "ZXN1bHQYASABKAsyDi5zaGFyZWQuUmVzdWx0KmMKFUNvdW50ZG93bkV4cGly",
-            "ZVN0YXR1cxILCgdVTktOT1dOEAASDAoIRVhQSVJJTkcQARILCgdFWFBJUkVE",
-            "EAISCwoHREVMRVRFRBADEgwKCEZJTklTSEVEEAQSBwoDQUxMEH8qYAoXQ291",
-            "bnRkb3duTm90aWNlVGltZVR5cGUSCAoETk9ORRAAEgoKBkRBWV8zMBABEgoK",
-            "BkRBWV82MBACEgoKBkRBWV85MBADEgsKB01PTlRIXzYQBBIKCgZDVVNUT00Q",
-            "fzKVBQoQQ291bnRkb3duU2VydmljZRJRCg9DcmVhdGVDb3VudGRvd24SHS5j",
-            "b3VudGRvd24uQ3JlYXRlQ291bnRkb3duUmVxGh0uY291bnRkb3duLkNyZWF0",
-            "ZUNvdW50ZG93blJlcyIAEm8KGU5leHRDb3VudGRvd25JbnRlcnZhbEJ5SWQS",
-            "Jy5jb3VudGRvd24uTmV4dENvdW50ZG93bkludGVydmFsQnlJZFJlcRonLmNv",
-            "dW50ZG93bi5OZXh0Q291bnRkb3duSW50ZXJ2YWxCeUlkUmVzIgASYwoVQ2hh",
-            "bmdlQ291bnRkb3duU3RhdHVzEiMuY291bnRkb3duLkNoYW5nZUNvdW50ZG93",
-            "blN0YXR1c1JlcRojLmNvdW50ZG93bi5DaGFuZ2VDb3VudGRvd25TdGF0dXNS",
-            "ZXMiABJaChJRdWVyeUNvdW50ZG93bkJ5SWQSIC5jb3VudGRvd24uUXVlcnlD",
-            "b3VudGRvd25CeUlkUmVxGiAuY291bnRkb3duLlF1ZXJ5Q291bnRkb3duQnlJ",
-            "ZFJlcyIAEocBCiFRdWVyeVBhZ2VkRXhwcmluZ0NvdW50ZG93bnNCeVR5cGUS",
-            "Ly5jb3VudGRvd24uUXVlcnlQYWdlZEV4cHJpbmdDb3VudGRvd25zQnlUeXBl",
-            "UmVxGi8uY291bnRkb3duLlF1ZXJ5UGFnZWRFeHByaW5nQ291bnRkb3duc0J5",
-            "VHlwZVJlcyIAEnIKGlF1ZXJ5UGFnZWRDb3VudGRvd25zQnlUeXBlEiguY291",
-            "bnRkb3duLlF1ZXJ5UGFnZWRDb3VudGRvd25zQnlUeXBlUmVxGiguY291bnRk",
-            "b3duLlF1ZXJ5UGFnZWRDb3VudGRvd25zQnlUeXBlUmVzIgBCmgEKL2luZm8u",
-            "bW9ldGFuZy5zZXJ2aWNlcHJvdG9jb2wucHJvdG9idWYuY291bnRkb3duQg5D",
-            "b3VudGRvd25Qcm90b1ABWkJnaXRodWIuY29tL21laWRvbXgvc2VydmljZS1w",
-            "cm90b2NvbC9wcm90b2NvbC9wcm90b2J1Zi9nby9jb3VudGRvd26qAhBTZXJ2",
-            "aWNlR3JwY1Byb3RvYgZwcm90bzM="));
+            "ZXN1bHQYASABKAsyDi5zaGFyZWQuUmVzdWx0IkoKElVwZGF0ZUNvdW50ZG93",
+            "blJlcRIUCgxjb3VudGRvd25faWQYASABKAkSDQoFdGl0bGUYCyABKAkSDwoH",
+            "Y29udGVudBgMIAEoCSJdChJVcGRhdGVDb3VudGRvd25SZXMSHgoGcmVzdWx0",
+            "GAEgASgLMg4uc2hhcmVkLlJlc3VsdBInCgljb3VudGRvd24YAiABKAsyFC5j",
+            "b3VudGRvd24uQ291bnRkb3duKmMKFUNvdW50ZG93bkV4cGlyZVN0YXR1cxIL",
+            "CgdVTktOT1dOEAASDAoIRVhQSVJJTkcQARILCgdFWFBJUkVEEAISCwoHREVM",
+            "RVRFRBADEgwKCEZJTklTSEVEEAQSBwoDQUxMEH8qYAoXQ291bnRkb3duTm90",
+            "aWNlVGltZVR5cGUSCAoETk9ORRAAEgoKBkRBWV8zMBABEgoKBkRBWV82MBAC",
+            "EgoKBkRBWV85MBADEgsKB01PTlRIXzYQBBIKCgZDVVNUT00QfzLsBQoQQ291",
+            "bnRkb3duU2VydmljZRJRCg9DcmVhdGVDb3VudGRvd24SHS5jb3VudGRvd24u",
+            "Q3JlYXRlQ291bnRkb3duUmVxGh0uY291bnRkb3duLkNyZWF0ZUNvdW50ZG93",
+            "blJlcyIAEm8KGU5leHRDb3VudGRvd25JbnRlcnZhbEJ5SWQSJy5jb3VudGRv",
+            "d24uTmV4dENvdW50ZG93bkludGVydmFsQnlJZFJlcRonLmNvdW50ZG93bi5O",
+            "ZXh0Q291bnRkb3duSW50ZXJ2YWxCeUlkUmVzIgASYwoVQ2hhbmdlQ291bnRk",
+            "b3duU3RhdHVzEiMuY291bnRkb3duLkNoYW5nZUNvdW50ZG93blN0YXR1c1Jl",
+            "cRojLmNvdW50ZG93bi5DaGFuZ2VDb3VudGRvd25TdGF0dXNSZXMiABJVChNV",
+            "cGRhdGVDb3VudGRvd25CeUlkEh0uY291bnRkb3duLlVwZGF0ZUNvdW50ZG93",
+            "blJlcRodLmNvdW50ZG93bi5VcGRhdGVDb3VudGRvd25SZXMiABJaChJRdWVy",
+            "eUNvdW50ZG93bkJ5SWQSIC5jb3VudGRvd24uUXVlcnlDb3VudGRvd25CeUlk",
+            "UmVxGiAuY291bnRkb3duLlF1ZXJ5Q291bnRkb3duQnlJZFJlcyIAEocBCiFR",
+            "dWVyeVBhZ2VkRXhwcmluZ0NvdW50ZG93bnNCeVR5cGUSLy5jb3VudGRvd24u",
+            "UXVlcnlQYWdlZEV4cHJpbmdDb3VudGRvd25zQnlUeXBlUmVxGi8uY291bnRk",
+            "b3duLlF1ZXJ5UGFnZWRFeHByaW5nQ291bnRkb3duc0J5VHlwZVJlcyIAEnIK",
+            "GlF1ZXJ5UGFnZWRDb3VudGRvd25zQnlUeXBlEiguY291bnRkb3duLlF1ZXJ5",
+            "UGFnZWRDb3VudGRvd25zQnlUeXBlUmVxGiguY291bnRkb3duLlF1ZXJ5UGFn",
+            "ZWRDb3VudGRvd25zQnlUeXBlUmVzIgBCmgEKL2luZm8ubW9ldGFuZy5zZXJ2",
+            "aWNlcHJvdG9jb2wucHJvdG9idWYuY291bnRkb3duQg5Db3VudGRvd25Qcm90",
+            "b1ABWkJnaXRodWIuY29tL21laWRvbXgvc2VydmljZS1wcm90b2NvbC9wcm90",
+            "b2NvbC9wcm90b2J1Zi9nby9jb3VudGRvd26qAhBTZXJ2aWNlR3JwY1Byb3Rv",
+            "YgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::ServiceGrpcProto.ResultReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::ServiceGrpcProto.CountdownExpireStatus), typeof(global::ServiceGrpcProto.CountdownNoticeTimeType), }, null, new pbr::GeneratedClrTypeInfo[] {
@@ -97,7 +103,9 @@ namespace ServiceGrpcProto {
             new pbr::GeneratedClrTypeInfo(typeof(global::ServiceGrpcProto.QueryPagedCountdownsByTypeReq), global::ServiceGrpcProto.QueryPagedCountdownsByTypeReq.Parser, new[]{ "CountdownType", "Page", "PageSize", "ExpireStatus" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::ServiceGrpcProto.QueryPagedCountdownsByTypeRes), global::ServiceGrpcProto.QueryPagedCountdownsByTypeRes.Parser, new[]{ "Result", "Countdowns" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::ServiceGrpcProto.ChangeCountdownStatusReq), global::ServiceGrpcProto.ChangeCountdownStatusReq.Parser, new[]{ "CountdownId", "CountdownType", "OldStatus", "NewStatus" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::ServiceGrpcProto.ChangeCountdownStatusRes), global::ServiceGrpcProto.ChangeCountdownStatusRes.Parser, new[]{ "Result" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::ServiceGrpcProto.ChangeCountdownStatusRes), global::ServiceGrpcProto.ChangeCountdownStatusRes.Parser, new[]{ "Result" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::ServiceGrpcProto.UpdateCountdownReq), global::ServiceGrpcProto.UpdateCountdownReq.Parser, new[]{ "CountdownId", "Title", "Content" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::ServiceGrpcProto.UpdateCountdownRes), global::ServiceGrpcProto.UpdateCountdownRes.Parser, new[]{ "Result", "Countdown" }, null, null, null, null)
           }));
     }
     #endregion
@@ -3631,6 +3639,513 @@ namespace ServiceGrpcProto {
               Result = new global::ServiceGrpcProto.Result();
             }
             input.ReadMessage(Result);
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  public sealed partial class UpdateCountdownReq : pb::IMessage<UpdateCountdownReq>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<UpdateCountdownReq> _parser = new pb::MessageParser<UpdateCountdownReq>(() => new UpdateCountdownReq());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<UpdateCountdownReq> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::ServiceGrpcProto.CountdownReflection.Descriptor.MessageTypes[13]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public UpdateCountdownReq() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public UpdateCountdownReq(UpdateCountdownReq other) : this() {
+      countdownId_ = other.countdownId_;
+      title_ = other.title_;
+      content_ = other.content_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public UpdateCountdownReq Clone() {
+      return new UpdateCountdownReq(this);
+    }
+
+    /// <summary>Field number for the "countdown_id" field.</summary>
+    public const int CountdownIdFieldNumber = 1;
+    private string countdownId_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string CountdownId {
+      get { return countdownId_; }
+      set {
+        countdownId_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "title" field.</summary>
+    public const int TitleFieldNumber = 11;
+    private string title_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string Title {
+      get { return title_; }
+      set {
+        title_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "content" field.</summary>
+    public const int ContentFieldNumber = 12;
+    private string content_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string Content {
+      get { return content_; }
+      set {
+        content_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as UpdateCountdownReq);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(UpdateCountdownReq other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (CountdownId != other.CountdownId) return false;
+      if (Title != other.Title) return false;
+      if (Content != other.Content) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (CountdownId.Length != 0) hash ^= CountdownId.GetHashCode();
+      if (Title.Length != 0) hash ^= Title.GetHashCode();
+      if (Content.Length != 0) hash ^= Content.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (CountdownId.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(CountdownId);
+      }
+      if (Title.Length != 0) {
+        output.WriteRawTag(90);
+        output.WriteString(Title);
+      }
+      if (Content.Length != 0) {
+        output.WriteRawTag(98);
+        output.WriteString(Content);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (CountdownId.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(CountdownId);
+      }
+      if (Title.Length != 0) {
+        output.WriteRawTag(90);
+        output.WriteString(Title);
+      }
+      if (Content.Length != 0) {
+        output.WriteRawTag(98);
+        output.WriteString(Content);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (CountdownId.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(CountdownId);
+      }
+      if (Title.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Title);
+      }
+      if (Content.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Content);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(UpdateCountdownReq other) {
+      if (other == null) {
+        return;
+      }
+      if (other.CountdownId.Length != 0) {
+        CountdownId = other.CountdownId;
+      }
+      if (other.Title.Length != 0) {
+        Title = other.Title;
+      }
+      if (other.Content.Length != 0) {
+        Content = other.Content;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            CountdownId = input.ReadString();
+            break;
+          }
+          case 90: {
+            Title = input.ReadString();
+            break;
+          }
+          case 98: {
+            Content = input.ReadString();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            CountdownId = input.ReadString();
+            break;
+          }
+          case 90: {
+            Title = input.ReadString();
+            break;
+          }
+          case 98: {
+            Content = input.ReadString();
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  public sealed partial class UpdateCountdownRes : pb::IMessage<UpdateCountdownRes>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<UpdateCountdownRes> _parser = new pb::MessageParser<UpdateCountdownRes>(() => new UpdateCountdownRes());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<UpdateCountdownRes> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::ServiceGrpcProto.CountdownReflection.Descriptor.MessageTypes[14]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public UpdateCountdownRes() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public UpdateCountdownRes(UpdateCountdownRes other) : this() {
+      result_ = other.result_ != null ? other.result_.Clone() : null;
+      countdown_ = other.countdown_ != null ? other.countdown_.Clone() : null;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public UpdateCountdownRes Clone() {
+      return new UpdateCountdownRes(this);
+    }
+
+    /// <summary>Field number for the "result" field.</summary>
+    public const int ResultFieldNumber = 1;
+    private global::ServiceGrpcProto.Result result_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::ServiceGrpcProto.Result Result {
+      get { return result_; }
+      set {
+        result_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "countdown" field.</summary>
+    public const int CountdownFieldNumber = 2;
+    private global::ServiceGrpcProto.Countdown countdown_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::ServiceGrpcProto.Countdown Countdown {
+      get { return countdown_; }
+      set {
+        countdown_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as UpdateCountdownRes);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(UpdateCountdownRes other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (!object.Equals(Result, other.Result)) return false;
+      if (!object.Equals(Countdown, other.Countdown)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (result_ != null) hash ^= Result.GetHashCode();
+      if (countdown_ != null) hash ^= Countdown.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (result_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(Result);
+      }
+      if (countdown_ != null) {
+        output.WriteRawTag(18);
+        output.WriteMessage(Countdown);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (result_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(Result);
+      }
+      if (countdown_ != null) {
+        output.WriteRawTag(18);
+        output.WriteMessage(Countdown);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (result_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Result);
+      }
+      if (countdown_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Countdown);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(UpdateCountdownRes other) {
+      if (other == null) {
+        return;
+      }
+      if (other.result_ != null) {
+        if (result_ == null) {
+          Result = new global::ServiceGrpcProto.Result();
+        }
+        Result.MergeFrom(other.Result);
+      }
+      if (other.countdown_ != null) {
+        if (countdown_ == null) {
+          Countdown = new global::ServiceGrpcProto.Countdown();
+        }
+        Countdown.MergeFrom(other.Countdown);
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            if (result_ == null) {
+              Result = new global::ServiceGrpcProto.Result();
+            }
+            input.ReadMessage(Result);
+            break;
+          }
+          case 18: {
+            if (countdown_ == null) {
+              Countdown = new global::ServiceGrpcProto.Countdown();
+            }
+            input.ReadMessage(Countdown);
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            if (result_ == null) {
+              Result = new global::ServiceGrpcProto.Result();
+            }
+            input.ReadMessage(Result);
+            break;
+          }
+          case 18: {
+            if (countdown_ == null) {
+              Countdown = new global::ServiceGrpcProto.Countdown();
+            }
+            input.ReadMessage(Countdown);
             break;
           }
         }

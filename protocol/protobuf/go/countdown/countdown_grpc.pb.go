@@ -21,6 +21,7 @@ type CountdownServiceClient interface {
 	CreateCountdown(ctx context.Context, in *CreateCountdownReq, opts ...grpc.CallOption) (*CreateCountdownRes, error)
 	NextCountdownIntervalById(ctx context.Context, in *NextCountdownIntervalByIdReq, opts ...grpc.CallOption) (*NextCountdownIntervalByIdRes, error)
 	ChangeCountdownStatus(ctx context.Context, in *ChangeCountdownStatusReq, opts ...grpc.CallOption) (*ChangeCountdownStatusRes, error)
+	UpdateCountdownById(ctx context.Context, in *UpdateCountdownReq, opts ...grpc.CallOption) (*UpdateCountdownRes, error)
 	QueryCountdownById(ctx context.Context, in *QueryCountdownByIdReq, opts ...grpc.CallOption) (*QueryCountdownByIdRes, error)
 	QueryPagedExpringCountdownsByType(ctx context.Context, in *QueryPagedExpringCountdownsByTypeReq, opts ...grpc.CallOption) (*QueryPagedExpringCountdownsByTypeRes, error)
 	QueryPagedCountdownsByType(ctx context.Context, in *QueryPagedCountdownsByTypeReq, opts ...grpc.CallOption) (*QueryPagedCountdownsByTypeRes, error)
@@ -61,6 +62,15 @@ func (c *countdownServiceClient) ChangeCountdownStatus(ctx context.Context, in *
 	return out, nil
 }
 
+func (c *countdownServiceClient) UpdateCountdownById(ctx context.Context, in *UpdateCountdownReq, opts ...grpc.CallOption) (*UpdateCountdownRes, error) {
+	out := new(UpdateCountdownRes)
+	err := c.cc.Invoke(ctx, "/countdown.CountdownService/UpdateCountdownById", in, out, opts...)
+	if err != nil {
+		return nil, err
+	}
+	return out, nil
+}
+
 func (c *countdownServiceClient) QueryCountdownById(ctx context.Context, in *QueryCountdownByIdReq, opts ...grpc.CallOption) (*QueryCountdownByIdRes, error) {
 	out := new(QueryCountdownByIdRes)
 	err := c.cc.Invoke(ctx, "/countdown.CountdownService/QueryCountdownById", in, out, opts...)
@@ -95,6 +105,7 @@ type CountdownServiceServer interface {
 	CreateCountdown(context.Context, *CreateCountdownReq) (*CreateCountdownRes, error)
 	NextCountdownIntervalById(context.Context, *NextCountdownIntervalByIdReq) (*NextCountdownIntervalByIdRes, error)
 	ChangeCountdownStatus(context.Context, *ChangeCountdownStatusReq) (*ChangeCountdownStatusRes, error)
+	UpdateCountdownById(context.Context, *UpdateCountdownReq) (*UpdateCountdownRes, error)
 	QueryCountdownById(context.Context, *QueryCountdownByIdReq) (*QueryCountdownByIdRes, error)
 	QueryPagedExpringCountdownsByType(context.Context, *QueryPagedExpringCountdownsByTypeReq) (*QueryPagedExpringCountdownsByTypeRes, error)
 	QueryPagedCountdownsByType(context.Context, *QueryPagedCountdownsByTypeReq) (*QueryPagedCountdownsByTypeRes, error)
@@ -113,6 +124,9 @@ func (UnimplementedCountdownServiceServer) NextCountdownIntervalById(context.Con
 }
 func (UnimplementedCountdownServiceServer) ChangeCountdownStatus(context.Context, *ChangeCountdownStatusReq) (*ChangeCountdownStatusRes, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method ChangeCountdownStatus not implemented")
+}
+func (UnimplementedCountdownServiceServer) UpdateCountdownById(context.Context, *UpdateCountdownReq) (*UpdateCountdownRes, error) {
+	return nil, status.Errorf(codes.Unimplemented, "method UpdateCountdownById not implemented")
 }
 func (UnimplementedCountdownServiceServer) QueryCountdownById(context.Context, *QueryCountdownByIdReq) (*QueryCountdownByIdRes, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method QueryCountdownById not implemented")
@@ -190,6 +204,24 @@ func _CountdownService_ChangeCountdownStatus_Handler(srv interface{}, ctx contex
 	return interceptor(ctx, in, info, handler)
 }
 
+func _CountdownService_UpdateCountdownById_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
+	in := new(UpdateCountdownReq)
+	if err := dec(in); err != nil {
+		return nil, err
+	}
+	if interceptor == nil {
+		return srv.(CountdownServiceServer).UpdateCountdownById(ctx, in)
+	}
+	info := &grpc.UnaryServerInfo{
+		Server:     srv,
+		FullMethod: "/countdown.CountdownService/UpdateCountdownById",
+	}
+	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
+		return srv.(CountdownServiceServer).UpdateCountdownById(ctx, req.(*UpdateCountdownReq))
+	}
+	return interceptor(ctx, in, info, handler)
+}
+
 func _CountdownService_QueryCountdownById_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
 	in := new(QueryCountdownByIdReq)
 	if err := dec(in); err != nil {
@@ -262,6 +294,10 @@ var CountdownService_ServiceDesc = grpc.ServiceDesc{
 		{
 			MethodName: "ChangeCountdownStatus",
 			Handler:    _CountdownService_ChangeCountdownStatus_Handler,
+		},
+		{
+			MethodName: "UpdateCountdownById",
+			Handler:    _CountdownService_UpdateCountdownById_Handler,
 		},
 		{
 			MethodName: "QueryCountdownById",

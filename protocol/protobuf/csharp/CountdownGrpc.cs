@@ -58,6 +58,10 @@ namespace ServiceGrpcProto {
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::ServiceGrpcProto.ChangeCountdownStatusRes> __Marshaller_countdown_ChangeCountdownStatusRes = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::ServiceGrpcProto.ChangeCountdownStatusRes.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::ServiceGrpcProto.UpdateCountdownReq> __Marshaller_countdown_UpdateCountdownReq = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::ServiceGrpcProto.UpdateCountdownReq.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::ServiceGrpcProto.UpdateCountdownRes> __Marshaller_countdown_UpdateCountdownRes = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::ServiceGrpcProto.UpdateCountdownRes.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::ServiceGrpcProto.QueryCountdownByIdReq> __Marshaller_countdown_QueryCountdownByIdReq = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::ServiceGrpcProto.QueryCountdownByIdReq.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::ServiceGrpcProto.QueryCountdownByIdRes> __Marshaller_countdown_QueryCountdownByIdRes = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::ServiceGrpcProto.QueryCountdownByIdRes.Parser));
@@ -93,6 +97,14 @@ namespace ServiceGrpcProto {
         "ChangeCountdownStatus",
         __Marshaller_countdown_ChangeCountdownStatusReq,
         __Marshaller_countdown_ChangeCountdownStatusRes);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::ServiceGrpcProto.UpdateCountdownReq, global::ServiceGrpcProto.UpdateCountdownRes> __Method_UpdateCountdownById = new grpc::Method<global::ServiceGrpcProto.UpdateCountdownReq, global::ServiceGrpcProto.UpdateCountdownRes>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "UpdateCountdownById",
+        __Marshaller_countdown_UpdateCountdownReq,
+        __Marshaller_countdown_UpdateCountdownRes);
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::ServiceGrpcProto.QueryCountdownByIdReq, global::ServiceGrpcProto.QueryCountdownByIdRes> __Method_QueryCountdownById = new grpc::Method<global::ServiceGrpcProto.QueryCountdownByIdReq, global::ServiceGrpcProto.QueryCountdownByIdRes>(
@@ -142,6 +154,12 @@ namespace ServiceGrpcProto {
 
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::System.Threading.Tasks.Task<global::ServiceGrpcProto.ChangeCountdownStatusRes> ChangeCountdownStatus(global::ServiceGrpcProto.ChangeCountdownStatusReq request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task<global::ServiceGrpcProto.UpdateCountdownRes> UpdateCountdownById(global::ServiceGrpcProto.UpdateCountdownReq request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -254,6 +272,26 @@ namespace ServiceGrpcProto {
         return CallInvoker.AsyncUnaryCall(__Method_ChangeCountdownStatus, null, options, request);
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::ServiceGrpcProto.UpdateCountdownRes UpdateCountdownById(global::ServiceGrpcProto.UpdateCountdownReq request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return UpdateCountdownById(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::ServiceGrpcProto.UpdateCountdownRes UpdateCountdownById(global::ServiceGrpcProto.UpdateCountdownReq request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_UpdateCountdownById, null, options, request);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::ServiceGrpcProto.UpdateCountdownRes> UpdateCountdownByIdAsync(global::ServiceGrpcProto.UpdateCountdownReq request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return UpdateCountdownByIdAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::ServiceGrpcProto.UpdateCountdownRes> UpdateCountdownByIdAsync(global::ServiceGrpcProto.UpdateCountdownReq request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_UpdateCountdownById, null, options, request);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::ServiceGrpcProto.QueryCountdownByIdRes QueryCountdownById(global::ServiceGrpcProto.QueryCountdownByIdReq request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return QueryCountdownById(request, new grpc::CallOptions(headers, deadline, cancellationToken));
@@ -330,6 +368,7 @@ namespace ServiceGrpcProto {
           .AddMethod(__Method_CreateCountdown, serviceImpl.CreateCountdown)
           .AddMethod(__Method_NextCountdownIntervalById, serviceImpl.NextCountdownIntervalById)
           .AddMethod(__Method_ChangeCountdownStatus, serviceImpl.ChangeCountdownStatus)
+          .AddMethod(__Method_UpdateCountdownById, serviceImpl.UpdateCountdownById)
           .AddMethod(__Method_QueryCountdownById, serviceImpl.QueryCountdownById)
           .AddMethod(__Method_QueryPagedExpringCountdownsByType, serviceImpl.QueryPagedExpringCountdownsByType)
           .AddMethod(__Method_QueryPagedCountdownsByType, serviceImpl.QueryPagedCountdownsByType).Build();
@@ -345,6 +384,7 @@ namespace ServiceGrpcProto {
       serviceBinder.AddMethod(__Method_CreateCountdown, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::ServiceGrpcProto.CreateCountdownReq, global::ServiceGrpcProto.CreateCountdownRes>(serviceImpl.CreateCountdown));
       serviceBinder.AddMethod(__Method_NextCountdownIntervalById, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::ServiceGrpcProto.NextCountdownIntervalByIdReq, global::ServiceGrpcProto.NextCountdownIntervalByIdRes>(serviceImpl.NextCountdownIntervalById));
       serviceBinder.AddMethod(__Method_ChangeCountdownStatus, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::ServiceGrpcProto.ChangeCountdownStatusReq, global::ServiceGrpcProto.ChangeCountdownStatusRes>(serviceImpl.ChangeCountdownStatus));
+      serviceBinder.AddMethod(__Method_UpdateCountdownById, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::ServiceGrpcProto.UpdateCountdownReq, global::ServiceGrpcProto.UpdateCountdownRes>(serviceImpl.UpdateCountdownById));
       serviceBinder.AddMethod(__Method_QueryCountdownById, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::ServiceGrpcProto.QueryCountdownByIdReq, global::ServiceGrpcProto.QueryCountdownByIdRes>(serviceImpl.QueryCountdownById));
       serviceBinder.AddMethod(__Method_QueryPagedExpringCountdownsByType, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::ServiceGrpcProto.QueryPagedExpringCountdownsByTypeReq, global::ServiceGrpcProto.QueryPagedExpringCountdownsByTypeRes>(serviceImpl.QueryPagedExpringCountdownsByType));
       serviceBinder.AddMethod(__Method_QueryPagedCountdownsByType, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::ServiceGrpcProto.QueryPagedCountdownsByTypeReq, global::ServiceGrpcProto.QueryPagedCountdownsByTypeRes>(serviceImpl.QueryPagedCountdownsByType));

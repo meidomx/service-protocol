@@ -108,6 +108,37 @@ public final class CountdownServiceGrpc {
     return getChangeCountdownStatusMethod;
   }
 
+  private static volatile io.grpc.MethodDescriptor<info.moetang.serviceprotocol.protobuf.countdown.UpdateCountdownReq,
+      info.moetang.serviceprotocol.protobuf.countdown.UpdateCountdownRes> getUpdateCountdownByIdMethod;
+
+  @io.grpc.stub.annotations.RpcMethod(
+      fullMethodName = SERVICE_NAME + '/' + "UpdateCountdownById",
+      requestType = info.moetang.serviceprotocol.protobuf.countdown.UpdateCountdownReq.class,
+      responseType = info.moetang.serviceprotocol.protobuf.countdown.UpdateCountdownRes.class,
+      methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
+  public static io.grpc.MethodDescriptor<info.moetang.serviceprotocol.protobuf.countdown.UpdateCountdownReq,
+      info.moetang.serviceprotocol.protobuf.countdown.UpdateCountdownRes> getUpdateCountdownByIdMethod() {
+    io.grpc.MethodDescriptor<info.moetang.serviceprotocol.protobuf.countdown.UpdateCountdownReq, info.moetang.serviceprotocol.protobuf.countdown.UpdateCountdownRes> getUpdateCountdownByIdMethod;
+    if ((getUpdateCountdownByIdMethod = CountdownServiceGrpc.getUpdateCountdownByIdMethod) == null) {
+      synchronized (CountdownServiceGrpc.class) {
+        if ((getUpdateCountdownByIdMethod = CountdownServiceGrpc.getUpdateCountdownByIdMethod) == null) {
+          CountdownServiceGrpc.getUpdateCountdownByIdMethod = getUpdateCountdownByIdMethod =
+              io.grpc.MethodDescriptor.<info.moetang.serviceprotocol.protobuf.countdown.UpdateCountdownReq, info.moetang.serviceprotocol.protobuf.countdown.UpdateCountdownRes>newBuilder()
+              .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
+              .setFullMethodName(generateFullMethodName(SERVICE_NAME, "UpdateCountdownById"))
+              .setSampledToLocalTracing(true)
+              .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  info.moetang.serviceprotocol.protobuf.countdown.UpdateCountdownReq.getDefaultInstance()))
+              .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  info.moetang.serviceprotocol.protobuf.countdown.UpdateCountdownRes.getDefaultInstance()))
+              .setSchemaDescriptor(new CountdownServiceMethodDescriptorSupplier("UpdateCountdownById"))
+              .build();
+        }
+      }
+    }
+    return getUpdateCountdownByIdMethod;
+  }
+
   private static volatile io.grpc.MethodDescriptor<info.moetang.serviceprotocol.protobuf.countdown.QueryCountdownByIdReq,
       info.moetang.serviceprotocol.protobuf.countdown.QueryCountdownByIdRes> getQueryCountdownByIdMethod;
 
@@ -272,6 +303,13 @@ public final class CountdownServiceGrpc {
 
     /**
      */
+    public void updateCountdownById(info.moetang.serviceprotocol.protobuf.countdown.UpdateCountdownReq request,
+        io.grpc.stub.StreamObserver<info.moetang.serviceprotocol.protobuf.countdown.UpdateCountdownRes> responseObserver) {
+      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getUpdateCountdownByIdMethod(), responseObserver);
+    }
+
+    /**
+     */
     public void queryCountdownById(info.moetang.serviceprotocol.protobuf.countdown.QueryCountdownByIdReq request,
         io.grpc.stub.StreamObserver<info.moetang.serviceprotocol.protobuf.countdown.QueryCountdownByIdRes> responseObserver) {
       io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getQueryCountdownByIdMethod(), responseObserver);
@@ -314,6 +352,13 @@ public final class CountdownServiceGrpc {
                 info.moetang.serviceprotocol.protobuf.countdown.ChangeCountdownStatusReq,
                 info.moetang.serviceprotocol.protobuf.countdown.ChangeCountdownStatusRes>(
                   this, METHODID_CHANGE_COUNTDOWN_STATUS)))
+          .addMethod(
+            getUpdateCountdownByIdMethod(),
+            io.grpc.stub.ServerCalls.asyncUnaryCall(
+              new MethodHandlers<
+                info.moetang.serviceprotocol.protobuf.countdown.UpdateCountdownReq,
+                info.moetang.serviceprotocol.protobuf.countdown.UpdateCountdownRes>(
+                  this, METHODID_UPDATE_COUNTDOWN_BY_ID)))
           .addMethod(
             getQueryCountdownByIdMethod(),
             io.grpc.stub.ServerCalls.asyncUnaryCall(
@@ -379,6 +424,14 @@ public final class CountdownServiceGrpc {
 
     /**
      */
+    public void updateCountdownById(info.moetang.serviceprotocol.protobuf.countdown.UpdateCountdownReq request,
+        io.grpc.stub.StreamObserver<info.moetang.serviceprotocol.protobuf.countdown.UpdateCountdownRes> responseObserver) {
+      io.grpc.stub.ClientCalls.asyncUnaryCall(
+          getChannel().newCall(getUpdateCountdownByIdMethod(), getCallOptions()), request, responseObserver);
+    }
+
+    /**
+     */
     public void queryCountdownById(info.moetang.serviceprotocol.protobuf.countdown.QueryCountdownByIdReq request,
         io.grpc.stub.StreamObserver<info.moetang.serviceprotocol.protobuf.countdown.QueryCountdownByIdRes> responseObserver) {
       io.grpc.stub.ClientCalls.asyncUnaryCall(
@@ -435,6 +488,13 @@ public final class CountdownServiceGrpc {
     public info.moetang.serviceprotocol.protobuf.countdown.ChangeCountdownStatusRes changeCountdownStatus(info.moetang.serviceprotocol.protobuf.countdown.ChangeCountdownStatusReq request) {
       return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getChangeCountdownStatusMethod(), getCallOptions(), request);
+    }
+
+    /**
+     */
+    public info.moetang.serviceprotocol.protobuf.countdown.UpdateCountdownRes updateCountdownById(info.moetang.serviceprotocol.protobuf.countdown.UpdateCountdownReq request) {
+      return io.grpc.stub.ClientCalls.blockingUnaryCall(
+          getChannel(), getUpdateCountdownByIdMethod(), getCallOptions(), request);
     }
 
     /**
@@ -499,6 +559,14 @@ public final class CountdownServiceGrpc {
 
     /**
      */
+    public com.google.common.util.concurrent.ListenableFuture<info.moetang.serviceprotocol.protobuf.countdown.UpdateCountdownRes> updateCountdownById(
+        info.moetang.serviceprotocol.protobuf.countdown.UpdateCountdownReq request) {
+      return io.grpc.stub.ClientCalls.futureUnaryCall(
+          getChannel().newCall(getUpdateCountdownByIdMethod(), getCallOptions()), request);
+    }
+
+    /**
+     */
     public com.google.common.util.concurrent.ListenableFuture<info.moetang.serviceprotocol.protobuf.countdown.QueryCountdownByIdRes> queryCountdownById(
         info.moetang.serviceprotocol.protobuf.countdown.QueryCountdownByIdReq request) {
       return io.grpc.stub.ClientCalls.futureUnaryCall(
@@ -525,9 +593,10 @@ public final class CountdownServiceGrpc {
   private static final int METHODID_CREATE_COUNTDOWN = 0;
   private static final int METHODID_NEXT_COUNTDOWN_INTERVAL_BY_ID = 1;
   private static final int METHODID_CHANGE_COUNTDOWN_STATUS = 2;
-  private static final int METHODID_QUERY_COUNTDOWN_BY_ID = 3;
-  private static final int METHODID_QUERY_PAGED_EXPRING_COUNTDOWNS_BY_TYPE = 4;
-  private static final int METHODID_QUERY_PAGED_COUNTDOWNS_BY_TYPE = 5;
+  private static final int METHODID_UPDATE_COUNTDOWN_BY_ID = 3;
+  private static final int METHODID_QUERY_COUNTDOWN_BY_ID = 4;
+  private static final int METHODID_QUERY_PAGED_EXPRING_COUNTDOWNS_BY_TYPE = 5;
+  private static final int METHODID_QUERY_PAGED_COUNTDOWNS_BY_TYPE = 6;
 
   private static final class MethodHandlers<Req, Resp> implements
       io.grpc.stub.ServerCalls.UnaryMethod<Req, Resp>,
@@ -557,6 +626,10 @@ public final class CountdownServiceGrpc {
         case METHODID_CHANGE_COUNTDOWN_STATUS:
           serviceImpl.changeCountdownStatus((info.moetang.serviceprotocol.protobuf.countdown.ChangeCountdownStatusReq) request,
               (io.grpc.stub.StreamObserver<info.moetang.serviceprotocol.protobuf.countdown.ChangeCountdownStatusRes>) responseObserver);
+          break;
+        case METHODID_UPDATE_COUNTDOWN_BY_ID:
+          serviceImpl.updateCountdownById((info.moetang.serviceprotocol.protobuf.countdown.UpdateCountdownReq) request,
+              (io.grpc.stub.StreamObserver<info.moetang.serviceprotocol.protobuf.countdown.UpdateCountdownRes>) responseObserver);
           break;
         case METHODID_QUERY_COUNTDOWN_BY_ID:
           serviceImpl.queryCountdownById((info.moetang.serviceprotocol.protobuf.countdown.QueryCountdownByIdReq) request,
@@ -634,6 +707,7 @@ public final class CountdownServiceGrpc {
               .addMethod(getCreateCountdownMethod())
               .addMethod(getNextCountdownIntervalByIdMethod())
               .addMethod(getChangeCountdownStatusMethod())
+              .addMethod(getUpdateCountdownByIdMethod())
               .addMethod(getQueryCountdownByIdMethod())
               .addMethod(getQueryPagedExpringCountdownsByTypeMethod())
               .addMethod(getQueryPagedCountdownsByTypeMethod())
