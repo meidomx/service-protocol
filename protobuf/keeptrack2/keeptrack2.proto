@@ -33,6 +33,8 @@ service Keeptrack2Service {
 
   rpc QueryAvailablePartById (QueryPartByIdReq) returns (QueryPartByIdRes) {}
   rpc QueryPagedAvailableParts(QueryPagedAvailablePartsReq) returns (QueryPagedAvailablePartsRes) {}
+  rpc QueryPagedAllProjectsAndItems(QueryAllProjectsAndItemsReq) returns (QueryAllProjectsAndItemsRes) {}
+  rpc QueryPagedAllProjectsAndItemsAndParts(QueryAllProjectsAndItemsAndPartsReq) returns (QueryAllProjectsAndItemsAndPartsRes) {}
 
 }
 
@@ -272,3 +274,37 @@ message UpdatePartStatusByIdRes {
   shared.Result result = 1;
 }
 
+
+message QueryAllProjectsAndItemsReq {
+  int64 page = 1;
+  int64 page_size = 2;
+}
+
+message QueryAllProjectsAndItemsRes {
+  shared.Result result = 1;
+
+  repeated ProjectAndItem project_and_items = 2;
+}
+
+message ProjectAndItem {
+  Project project = 1;
+  Item item = 2;
+}
+
+
+message QueryAllProjectsAndItemsAndPartsReq {
+  int64 page = 1;
+  int64 page_size = 2;
+}
+
+message QueryAllProjectsAndItemsAndPartsRes {
+  shared.Result result = 1;
+
+  repeated ProjectAndItemAndPart project_and_item_and_parts = 2;
+}
+
+message ProjectAndItemAndPart {
+  Project project = 1;
+  Item item = 2;
+  Part part = 3;
+}

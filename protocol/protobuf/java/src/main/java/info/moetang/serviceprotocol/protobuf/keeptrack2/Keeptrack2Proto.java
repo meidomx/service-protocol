@@ -189,6 +189,36 @@ public final class Keeptrack2Proto {
   static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_keeptrack2_UpdatePartStatusByIdRes_fieldAccessorTable;
+  static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_keeptrack2_QueryAllProjectsAndItemsReq_descriptor;
+  static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_keeptrack2_QueryAllProjectsAndItemsReq_fieldAccessorTable;
+  static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_keeptrack2_QueryAllProjectsAndItemsRes_descriptor;
+  static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_keeptrack2_QueryAllProjectsAndItemsRes_fieldAccessorTable;
+  static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_keeptrack2_ProjectAndItem_descriptor;
+  static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_keeptrack2_ProjectAndItem_fieldAccessorTable;
+  static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_keeptrack2_QueryAllProjectsAndItemsAndPartsReq_descriptor;
+  static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_keeptrack2_QueryAllProjectsAndItemsAndPartsReq_fieldAccessorTable;
+  static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_keeptrack2_QueryAllProjectsAndItemsAndPartsRes_descriptor;
+  static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_keeptrack2_QueryAllProjectsAndItemsAndPartsRes_fieldAccessorTable;
+  static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_keeptrack2_ProjectAndItemAndPart_descriptor;
+  static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_keeptrack2_ProjectAndItemAndPart_fieldAccessorTable;
 
   public static com.google.protobuf.Descriptors.FileDescriptor
       getDescriptor() {
@@ -267,50 +297,72 @@ public final class Keeptrack2Proto {
       "\nold_status\030\002 \001(\0162\031.keeptrack2.GeneralSt" +
       "atus\022-\n\nnew_status\030\003 \001(\0162\031.keeptrack2.Ge" +
       "neralStatus\"9\n\027UpdatePartStatusByIdRes\022\036" +
-      "\n\006result\030\001 \001(\0132\016.shared.Result*\235\001\n\rGener" +
-      "alStatus\022\032\n\026GENERAL_STATUS_UNKNOWN\020\000\022\031\n\025" +
-      "GENERAL_STATUS_NORMAL\020\001\022\032\n\026GENERAL_STATU" +
-      "S_DELETED\020\002\022\033\n\027GENERAL_STATUS_COMPLETE\020\003" +
-      "\022\034\n\030GENERAL_STATUS_ABANDONED\020\0042\340\n\n\021Keept" +
-      "rack2Service\022M\n\rCreateProject\022\034.keeptrac" +
-      "k2.CreateProjectReq\032\034.keeptrack2.CreateP" +
-      "rojectRes\"\000\022Q\n\021DeleteProjectById\022\034.keept" +
-      "rack2.DeleteProjectReq\032\034.keeptrack2.Dele" +
-      "teProjectRes\"\000\022Q\n\021UpdateProjectById\022\034.ke" +
-      "eptrack2.UpdateProjectReq\032\034.keeptrack2.U" +
-      "pdateProjectRes\"\000\022V\n\020QueryProjectById\022\037." +
-      "keeptrack2.QueryProjectByIdReq\032\037.keeptra" +
-      "ck2.QueryProjectByIdRes\"\000\022V\n\020QueryAllPro" +
-      "jects\022\037.keeptrack2.QueryAllProjectsReq\032\037" +
-      ".keeptrack2.QueryAllProjectsRes\"\000\022D\n\nCre" +
-      "ateItem\022\031.keeptrack2.CreateItemReq\032\031.kee" +
-      "ptrack2.CreateItemRes\"\000\022H\n\016DeleteItemByI" +
-      "d\022\031.keeptrack2.DeleteItemReq\032\031.keeptrack" +
-      "2.DeleteItemRes\"\000\022H\n\016UpdateItemById\022\031.ke" +
-      "eptrack2.UpdateItemReq\032\031.keeptrack2.Upda" +
-      "teItemRes\"\000\022V\n\026QueryAvailableItemById\022\034." +
-      "keeptrack2.QueryItemByIdReq\032\034.keeptrack2" +
-      ".QueryItemByIdRes\"\000\022n\n\030QueryPagedAvailab" +
-      "leItems\022\'.keeptrack2.QueryPagedAvailable" +
-      "ItemsReq\032\'.keeptrack2.QueryPagedAvailabl" +
-      "eItemsRes\"\000\022D\n\nCreatePart\022\031.keeptrack2.C" +
-      "reatePartReq\032\031.keeptrack2.CreatePartRes\"" +
-      "\000\022H\n\016DeletePartById\022\031.keeptrack2.DeleteP" +
-      "artReq\032\031.keeptrack2.DeletePartRes\"\000\022H\n\016U" +
-      "pdatePartById\022\031.keeptrack2.UpdatePartReq" +
-      "\032\031.keeptrack2.UpdatePartRes\"\000\022b\n\024UpdateP" +
-      "artStatusById\022#.keeptrack2.UpdatePartSta" +
-      "tusByIdReq\032#.keeptrack2.UpdatePartStatus" +
-      "ByIdRes\"\000\022V\n\026QueryAvailablePartById\022\034.ke" +
-      "eptrack2.QueryPartByIdReq\032\034.keeptrack2.Q" +
-      "ueryPartByIdRes\"\000\022n\n\030QueryPagedAvailable" +
-      "Parts\022\'.keeptrack2.QueryPagedAvailablePa" +
-      "rtsReq\032\'.keeptrack2.QueryPagedAvailableP" +
-      "artsRes\"\000B\250\001\n0info.moetang.serviceprotoc" +
-      "ol.protobuf.keeptrack2B\017Keeptrack2ProtoP" +
-      "\001ZCgithub.com/meidomx/service-protocol/p" +
-      "rotocol/protobuf/go/keeptrack2\252\002\033Keeptra" +
-      "ck2.ServiceGrpcProtob\006proto3"
+      "\n\006result\030\001 \001(\0132\016.shared.Result\">\n\033QueryA" +
+      "llProjectsAndItemsReq\022\014\n\004page\030\001 \001(\003\022\021\n\tp" +
+      "age_size\030\002 \001(\003\"t\n\033QueryAllProjectsAndIte" +
+      "msRes\022\036\n\006result\030\001 \001(\0132\016.shared.Result\0225\n" +
+      "\021project_and_items\030\002 \003(\0132\032.keeptrack2.Pr" +
+      "ojectAndItem\"V\n\016ProjectAndItem\022$\n\007projec" +
+      "t\030\001 \001(\0132\023.keeptrack2.Project\022\036\n\004item\030\002 \001" +
+      "(\0132\020.keeptrack2.Item\"F\n#QueryAllProjects" +
+      "AndItemsAndPartsReq\022\014\n\004page\030\001 \001(\003\022\021\n\tpag" +
+      "e_size\030\002 \001(\003\"\214\001\n#QueryAllProjectsAndItem" +
+      "sAndPartsRes\022\036\n\006result\030\001 \001(\0132\016.shared.Re" +
+      "sult\022E\n\032project_and_item_and_parts\030\002 \003(\013" +
+      "2!.keeptrack2.ProjectAndItemAndPart\"}\n\025P" +
+      "rojectAndItemAndPart\022$\n\007project\030\001 \001(\0132\023." +
+      "keeptrack2.Project\022\036\n\004item\030\002 \001(\0132\020.keept" +
+      "rack2.Item\022\036\n\004part\030\003 \001(\0132\020.keeptrack2.Pa" +
+      "rt*\235\001\n\rGeneralStatus\022\032\n\026GENERAL_STATUS_U" +
+      "NKNOWN\020\000\022\031\n\025GENERAL_STATUS_NORMAL\020\001\022\032\n\026G" +
+      "ENERAL_STATUS_DELETED\020\002\022\033\n\027GENERAL_STATU" +
+      "S_COMPLETE\020\003\022\034\n\030GENERAL_STATUS_ABANDONED" +
+      "\020\0042\343\014\n\021Keeptrack2Service\022M\n\rCreateProjec" +
+      "t\022\034.keeptrack2.CreateProjectReq\032\034.keeptr" +
+      "ack2.CreateProjectRes\"\000\022Q\n\021DeleteProject" +
+      "ById\022\034.keeptrack2.DeleteProjectReq\032\034.kee" +
+      "ptrack2.DeleteProjectRes\"\000\022Q\n\021UpdateProj" +
+      "ectById\022\034.keeptrack2.UpdateProjectReq\032\034." +
+      "keeptrack2.UpdateProjectRes\"\000\022V\n\020QueryPr" +
+      "ojectById\022\037.keeptrack2.QueryProjectByIdR" +
+      "eq\032\037.keeptrack2.QueryProjectByIdRes\"\000\022V\n" +
+      "\020QueryAllProjects\022\037.keeptrack2.QueryAllP" +
+      "rojectsReq\032\037.keeptrack2.QueryAllProjects" +
+      "Res\"\000\022D\n\nCreateItem\022\031.keeptrack2.CreateI" +
+      "temReq\032\031.keeptrack2.CreateItemRes\"\000\022H\n\016D" +
+      "eleteItemById\022\031.keeptrack2.DeleteItemReq" +
+      "\032\031.keeptrack2.DeleteItemRes\"\000\022H\n\016UpdateI" +
+      "temById\022\031.keeptrack2.UpdateItemReq\032\031.kee" +
+      "ptrack2.UpdateItemRes\"\000\022V\n\026QueryAvailabl" +
+      "eItemById\022\034.keeptrack2.QueryItemByIdReq\032" +
+      "\034.keeptrack2.QueryItemByIdRes\"\000\022n\n\030Query" +
+      "PagedAvailableItems\022\'.keeptrack2.QueryPa" +
+      "gedAvailableItemsReq\032\'.keeptrack2.QueryP" +
+      "agedAvailableItemsRes\"\000\022D\n\nCreatePart\022\031." +
+      "keeptrack2.CreatePartReq\032\031.keeptrack2.Cr" +
+      "eatePartRes\"\000\022H\n\016DeletePartById\022\031.keeptr" +
+      "ack2.DeletePartReq\032\031.keeptrack2.DeletePa" +
+      "rtRes\"\000\022H\n\016UpdatePartById\022\031.keeptrack2.U" +
+      "pdatePartReq\032\031.keeptrack2.UpdatePartRes\"" +
+      "\000\022b\n\024UpdatePartStatusById\022#.keeptrack2.U" +
+      "pdatePartStatusByIdReq\032#.keeptrack2.Upda" +
+      "tePartStatusByIdRes\"\000\022V\n\026QueryAvailableP" +
+      "artById\022\034.keeptrack2.QueryPartByIdReq\032\034." +
+      "keeptrack2.QueryPartByIdRes\"\000\022n\n\030QueryPa" +
+      "gedAvailableParts\022\'.keeptrack2.QueryPage" +
+      "dAvailablePartsReq\032\'.keeptrack2.QueryPag" +
+      "edAvailablePartsRes\"\000\022s\n\035QueryPagedAllPr" +
+      "ojectsAndItems\022\'.keeptrack2.QueryAllProj" +
+      "ectsAndItemsReq\032\'.keeptrack2.QueryAllPro" +
+      "jectsAndItemsRes\"\000\022\213\001\n%QueryPagedAllProj" +
+      "ectsAndItemsAndParts\022/.keeptrack2.QueryA" +
+      "llProjectsAndItemsAndPartsReq\032/.keeptrac" +
+      "k2.QueryAllProjectsAndItemsAndPartsRes\"\000" +
+      "B\250\001\n0info.moetang.serviceprotocol.protob" +
+      "uf.keeptrack2B\017Keeptrack2ProtoP\001ZCgithub" +
+      ".com/meidomx/service-protocol/protocol/p" +
+      "rotobuf/go/keeptrack2\252\002\033Keeptrack2.Servi" +
+      "ceGrpcProtob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -527,6 +579,42 @@ public final class Keeptrack2Proto {
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_keeptrack2_UpdatePartStatusByIdRes_descriptor,
         new java.lang.String[] { "Result", });
+    internal_static_keeptrack2_QueryAllProjectsAndItemsReq_descriptor =
+      getDescriptor().getMessageTypes().get(35);
+    internal_static_keeptrack2_QueryAllProjectsAndItemsReq_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_keeptrack2_QueryAllProjectsAndItemsReq_descriptor,
+        new java.lang.String[] { "Page", "PageSize", });
+    internal_static_keeptrack2_QueryAllProjectsAndItemsRes_descriptor =
+      getDescriptor().getMessageTypes().get(36);
+    internal_static_keeptrack2_QueryAllProjectsAndItemsRes_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_keeptrack2_QueryAllProjectsAndItemsRes_descriptor,
+        new java.lang.String[] { "Result", "ProjectAndItems", });
+    internal_static_keeptrack2_ProjectAndItem_descriptor =
+      getDescriptor().getMessageTypes().get(37);
+    internal_static_keeptrack2_ProjectAndItem_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_keeptrack2_ProjectAndItem_descriptor,
+        new java.lang.String[] { "Project", "Item", });
+    internal_static_keeptrack2_QueryAllProjectsAndItemsAndPartsReq_descriptor =
+      getDescriptor().getMessageTypes().get(38);
+    internal_static_keeptrack2_QueryAllProjectsAndItemsAndPartsReq_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_keeptrack2_QueryAllProjectsAndItemsAndPartsReq_descriptor,
+        new java.lang.String[] { "Page", "PageSize", });
+    internal_static_keeptrack2_QueryAllProjectsAndItemsAndPartsRes_descriptor =
+      getDescriptor().getMessageTypes().get(39);
+    internal_static_keeptrack2_QueryAllProjectsAndItemsAndPartsRes_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_keeptrack2_QueryAllProjectsAndItemsAndPartsRes_descriptor,
+        new java.lang.String[] { "Result", "ProjectAndItemAndParts", });
+    internal_static_keeptrack2_ProjectAndItemAndPart_descriptor =
+      getDescriptor().getMessageTypes().get(40);
+    internal_static_keeptrack2_ProjectAndItemAndPart_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_keeptrack2_ProjectAndItemAndPart_descriptor,
+        new java.lang.String[] { "Project", "Item", "Part", });
     info.moetang.serviceprotocol.protobuf.shared.SharedProto.getDescriptor();
   }
 

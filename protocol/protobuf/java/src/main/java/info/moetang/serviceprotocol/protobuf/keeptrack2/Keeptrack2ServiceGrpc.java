@@ -511,6 +511,68 @@ public final class Keeptrack2ServiceGrpc {
     return getQueryPagedAvailablePartsMethod;
   }
 
+  private static volatile io.grpc.MethodDescriptor<info.moetang.serviceprotocol.protobuf.keeptrack2.QueryAllProjectsAndItemsReq,
+      info.moetang.serviceprotocol.protobuf.keeptrack2.QueryAllProjectsAndItemsRes> getQueryPagedAllProjectsAndItemsMethod;
+
+  @io.grpc.stub.annotations.RpcMethod(
+      fullMethodName = SERVICE_NAME + '/' + "QueryPagedAllProjectsAndItems",
+      requestType = info.moetang.serviceprotocol.protobuf.keeptrack2.QueryAllProjectsAndItemsReq.class,
+      responseType = info.moetang.serviceprotocol.protobuf.keeptrack2.QueryAllProjectsAndItemsRes.class,
+      methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
+  public static io.grpc.MethodDescriptor<info.moetang.serviceprotocol.protobuf.keeptrack2.QueryAllProjectsAndItemsReq,
+      info.moetang.serviceprotocol.protobuf.keeptrack2.QueryAllProjectsAndItemsRes> getQueryPagedAllProjectsAndItemsMethod() {
+    io.grpc.MethodDescriptor<info.moetang.serviceprotocol.protobuf.keeptrack2.QueryAllProjectsAndItemsReq, info.moetang.serviceprotocol.protobuf.keeptrack2.QueryAllProjectsAndItemsRes> getQueryPagedAllProjectsAndItemsMethod;
+    if ((getQueryPagedAllProjectsAndItemsMethod = Keeptrack2ServiceGrpc.getQueryPagedAllProjectsAndItemsMethod) == null) {
+      synchronized (Keeptrack2ServiceGrpc.class) {
+        if ((getQueryPagedAllProjectsAndItemsMethod = Keeptrack2ServiceGrpc.getQueryPagedAllProjectsAndItemsMethod) == null) {
+          Keeptrack2ServiceGrpc.getQueryPagedAllProjectsAndItemsMethod = getQueryPagedAllProjectsAndItemsMethod =
+              io.grpc.MethodDescriptor.<info.moetang.serviceprotocol.protobuf.keeptrack2.QueryAllProjectsAndItemsReq, info.moetang.serviceprotocol.protobuf.keeptrack2.QueryAllProjectsAndItemsRes>newBuilder()
+              .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
+              .setFullMethodName(generateFullMethodName(SERVICE_NAME, "QueryPagedAllProjectsAndItems"))
+              .setSampledToLocalTracing(true)
+              .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  info.moetang.serviceprotocol.protobuf.keeptrack2.QueryAllProjectsAndItemsReq.getDefaultInstance()))
+              .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  info.moetang.serviceprotocol.protobuf.keeptrack2.QueryAllProjectsAndItemsRes.getDefaultInstance()))
+              .setSchemaDescriptor(new Keeptrack2ServiceMethodDescriptorSupplier("QueryPagedAllProjectsAndItems"))
+              .build();
+        }
+      }
+    }
+    return getQueryPagedAllProjectsAndItemsMethod;
+  }
+
+  private static volatile io.grpc.MethodDescriptor<info.moetang.serviceprotocol.protobuf.keeptrack2.QueryAllProjectsAndItemsAndPartsReq,
+      info.moetang.serviceprotocol.protobuf.keeptrack2.QueryAllProjectsAndItemsAndPartsRes> getQueryPagedAllProjectsAndItemsAndPartsMethod;
+
+  @io.grpc.stub.annotations.RpcMethod(
+      fullMethodName = SERVICE_NAME + '/' + "QueryPagedAllProjectsAndItemsAndParts",
+      requestType = info.moetang.serviceprotocol.protobuf.keeptrack2.QueryAllProjectsAndItemsAndPartsReq.class,
+      responseType = info.moetang.serviceprotocol.protobuf.keeptrack2.QueryAllProjectsAndItemsAndPartsRes.class,
+      methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
+  public static io.grpc.MethodDescriptor<info.moetang.serviceprotocol.protobuf.keeptrack2.QueryAllProjectsAndItemsAndPartsReq,
+      info.moetang.serviceprotocol.protobuf.keeptrack2.QueryAllProjectsAndItemsAndPartsRes> getQueryPagedAllProjectsAndItemsAndPartsMethod() {
+    io.grpc.MethodDescriptor<info.moetang.serviceprotocol.protobuf.keeptrack2.QueryAllProjectsAndItemsAndPartsReq, info.moetang.serviceprotocol.protobuf.keeptrack2.QueryAllProjectsAndItemsAndPartsRes> getQueryPagedAllProjectsAndItemsAndPartsMethod;
+    if ((getQueryPagedAllProjectsAndItemsAndPartsMethod = Keeptrack2ServiceGrpc.getQueryPagedAllProjectsAndItemsAndPartsMethod) == null) {
+      synchronized (Keeptrack2ServiceGrpc.class) {
+        if ((getQueryPagedAllProjectsAndItemsAndPartsMethod = Keeptrack2ServiceGrpc.getQueryPagedAllProjectsAndItemsAndPartsMethod) == null) {
+          Keeptrack2ServiceGrpc.getQueryPagedAllProjectsAndItemsAndPartsMethod = getQueryPagedAllProjectsAndItemsAndPartsMethod =
+              io.grpc.MethodDescriptor.<info.moetang.serviceprotocol.protobuf.keeptrack2.QueryAllProjectsAndItemsAndPartsReq, info.moetang.serviceprotocol.protobuf.keeptrack2.QueryAllProjectsAndItemsAndPartsRes>newBuilder()
+              .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
+              .setFullMethodName(generateFullMethodName(SERVICE_NAME, "QueryPagedAllProjectsAndItemsAndParts"))
+              .setSampledToLocalTracing(true)
+              .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  info.moetang.serviceprotocol.protobuf.keeptrack2.QueryAllProjectsAndItemsAndPartsReq.getDefaultInstance()))
+              .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  info.moetang.serviceprotocol.protobuf.keeptrack2.QueryAllProjectsAndItemsAndPartsRes.getDefaultInstance()))
+              .setSchemaDescriptor(new Keeptrack2ServiceMethodDescriptorSupplier("QueryPagedAllProjectsAndItemsAndParts"))
+              .build();
+        }
+      }
+    }
+    return getQueryPagedAllProjectsAndItemsAndPartsMethod;
+  }
+
   /**
    * Creates a new async stub that supports all call types for the service
    */
@@ -671,6 +733,20 @@ public final class Keeptrack2ServiceGrpc {
       io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getQueryPagedAvailablePartsMethod(), responseObserver);
     }
 
+    /**
+     */
+    public void queryPagedAllProjectsAndItems(info.moetang.serviceprotocol.protobuf.keeptrack2.QueryAllProjectsAndItemsReq request,
+        io.grpc.stub.StreamObserver<info.moetang.serviceprotocol.protobuf.keeptrack2.QueryAllProjectsAndItemsRes> responseObserver) {
+      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getQueryPagedAllProjectsAndItemsMethod(), responseObserver);
+    }
+
+    /**
+     */
+    public void queryPagedAllProjectsAndItemsAndParts(info.moetang.serviceprotocol.protobuf.keeptrack2.QueryAllProjectsAndItemsAndPartsReq request,
+        io.grpc.stub.StreamObserver<info.moetang.serviceprotocol.protobuf.keeptrack2.QueryAllProjectsAndItemsAndPartsRes> responseObserver) {
+      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getQueryPagedAllProjectsAndItemsAndPartsMethod(), responseObserver);
+    }
+
     @java.lang.Override public final io.grpc.ServerServiceDefinition bindService() {
       return io.grpc.ServerServiceDefinition.builder(getServiceDescriptor())
           .addMethod(
@@ -785,6 +861,20 @@ public final class Keeptrack2ServiceGrpc {
                 info.moetang.serviceprotocol.protobuf.keeptrack2.QueryPagedAvailablePartsReq,
                 info.moetang.serviceprotocol.protobuf.keeptrack2.QueryPagedAvailablePartsRes>(
                   this, METHODID_QUERY_PAGED_AVAILABLE_PARTS)))
+          .addMethod(
+            getQueryPagedAllProjectsAndItemsMethod(),
+            io.grpc.stub.ServerCalls.asyncUnaryCall(
+              new MethodHandlers<
+                info.moetang.serviceprotocol.protobuf.keeptrack2.QueryAllProjectsAndItemsReq,
+                info.moetang.serviceprotocol.protobuf.keeptrack2.QueryAllProjectsAndItemsRes>(
+                  this, METHODID_QUERY_PAGED_ALL_PROJECTS_AND_ITEMS)))
+          .addMethod(
+            getQueryPagedAllProjectsAndItemsAndPartsMethod(),
+            io.grpc.stub.ServerCalls.asyncUnaryCall(
+              new MethodHandlers<
+                info.moetang.serviceprotocol.protobuf.keeptrack2.QueryAllProjectsAndItemsAndPartsReq,
+                info.moetang.serviceprotocol.protobuf.keeptrack2.QueryAllProjectsAndItemsAndPartsRes>(
+                  this, METHODID_QUERY_PAGED_ALL_PROJECTS_AND_ITEMS_AND_PARTS)))
           .build();
     }
   }
@@ -930,6 +1020,22 @@ public final class Keeptrack2ServiceGrpc {
       io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getQueryPagedAvailablePartsMethod(), getCallOptions()), request, responseObserver);
     }
+
+    /**
+     */
+    public void queryPagedAllProjectsAndItems(info.moetang.serviceprotocol.protobuf.keeptrack2.QueryAllProjectsAndItemsReq request,
+        io.grpc.stub.StreamObserver<info.moetang.serviceprotocol.protobuf.keeptrack2.QueryAllProjectsAndItemsRes> responseObserver) {
+      io.grpc.stub.ClientCalls.asyncUnaryCall(
+          getChannel().newCall(getQueryPagedAllProjectsAndItemsMethod(), getCallOptions()), request, responseObserver);
+    }
+
+    /**
+     */
+    public void queryPagedAllProjectsAndItemsAndParts(info.moetang.serviceprotocol.protobuf.keeptrack2.QueryAllProjectsAndItemsAndPartsReq request,
+        io.grpc.stub.StreamObserver<info.moetang.serviceprotocol.protobuf.keeptrack2.QueryAllProjectsAndItemsAndPartsRes> responseObserver) {
+      io.grpc.stub.ClientCalls.asyncUnaryCall(
+          getChannel().newCall(getQueryPagedAllProjectsAndItemsAndPartsMethod(), getCallOptions()), request, responseObserver);
+    }
   }
 
   /**
@@ -1056,6 +1162,20 @@ public final class Keeptrack2ServiceGrpc {
     public info.moetang.serviceprotocol.protobuf.keeptrack2.QueryPagedAvailablePartsRes queryPagedAvailableParts(info.moetang.serviceprotocol.protobuf.keeptrack2.QueryPagedAvailablePartsReq request) {
       return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getQueryPagedAvailablePartsMethod(), getCallOptions(), request);
+    }
+
+    /**
+     */
+    public info.moetang.serviceprotocol.protobuf.keeptrack2.QueryAllProjectsAndItemsRes queryPagedAllProjectsAndItems(info.moetang.serviceprotocol.protobuf.keeptrack2.QueryAllProjectsAndItemsReq request) {
+      return io.grpc.stub.ClientCalls.blockingUnaryCall(
+          getChannel(), getQueryPagedAllProjectsAndItemsMethod(), getCallOptions(), request);
+    }
+
+    /**
+     */
+    public info.moetang.serviceprotocol.protobuf.keeptrack2.QueryAllProjectsAndItemsAndPartsRes queryPagedAllProjectsAndItemsAndParts(info.moetang.serviceprotocol.protobuf.keeptrack2.QueryAllProjectsAndItemsAndPartsReq request) {
+      return io.grpc.stub.ClientCalls.blockingUnaryCall(
+          getChannel(), getQueryPagedAllProjectsAndItemsAndPartsMethod(), getCallOptions(), request);
     }
   }
 
@@ -1200,6 +1320,22 @@ public final class Keeptrack2ServiceGrpc {
       return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getQueryPagedAvailablePartsMethod(), getCallOptions()), request);
     }
+
+    /**
+     */
+    public com.google.common.util.concurrent.ListenableFuture<info.moetang.serviceprotocol.protobuf.keeptrack2.QueryAllProjectsAndItemsRes> queryPagedAllProjectsAndItems(
+        info.moetang.serviceprotocol.protobuf.keeptrack2.QueryAllProjectsAndItemsReq request) {
+      return io.grpc.stub.ClientCalls.futureUnaryCall(
+          getChannel().newCall(getQueryPagedAllProjectsAndItemsMethod(), getCallOptions()), request);
+    }
+
+    /**
+     */
+    public com.google.common.util.concurrent.ListenableFuture<info.moetang.serviceprotocol.protobuf.keeptrack2.QueryAllProjectsAndItemsAndPartsRes> queryPagedAllProjectsAndItemsAndParts(
+        info.moetang.serviceprotocol.protobuf.keeptrack2.QueryAllProjectsAndItemsAndPartsReq request) {
+      return io.grpc.stub.ClientCalls.futureUnaryCall(
+          getChannel().newCall(getQueryPagedAllProjectsAndItemsAndPartsMethod(), getCallOptions()), request);
+    }
   }
 
   private static final int METHODID_CREATE_PROJECT = 0;
@@ -1218,6 +1354,8 @@ public final class Keeptrack2ServiceGrpc {
   private static final int METHODID_UPDATE_PART_STATUS_BY_ID = 13;
   private static final int METHODID_QUERY_AVAILABLE_PART_BY_ID = 14;
   private static final int METHODID_QUERY_PAGED_AVAILABLE_PARTS = 15;
+  private static final int METHODID_QUERY_PAGED_ALL_PROJECTS_AND_ITEMS = 16;
+  private static final int METHODID_QUERY_PAGED_ALL_PROJECTS_AND_ITEMS_AND_PARTS = 17;
 
   private static final class MethodHandlers<Req, Resp> implements
       io.grpc.stub.ServerCalls.UnaryMethod<Req, Resp>,
@@ -1300,6 +1438,14 @@ public final class Keeptrack2ServiceGrpc {
           serviceImpl.queryPagedAvailableParts((info.moetang.serviceprotocol.protobuf.keeptrack2.QueryPagedAvailablePartsReq) request,
               (io.grpc.stub.StreamObserver<info.moetang.serviceprotocol.protobuf.keeptrack2.QueryPagedAvailablePartsRes>) responseObserver);
           break;
+        case METHODID_QUERY_PAGED_ALL_PROJECTS_AND_ITEMS:
+          serviceImpl.queryPagedAllProjectsAndItems((info.moetang.serviceprotocol.protobuf.keeptrack2.QueryAllProjectsAndItemsReq) request,
+              (io.grpc.stub.StreamObserver<info.moetang.serviceprotocol.protobuf.keeptrack2.QueryAllProjectsAndItemsRes>) responseObserver);
+          break;
+        case METHODID_QUERY_PAGED_ALL_PROJECTS_AND_ITEMS_AND_PARTS:
+          serviceImpl.queryPagedAllProjectsAndItemsAndParts((info.moetang.serviceprotocol.protobuf.keeptrack2.QueryAllProjectsAndItemsAndPartsReq) request,
+              (io.grpc.stub.StreamObserver<info.moetang.serviceprotocol.protobuf.keeptrack2.QueryAllProjectsAndItemsAndPartsRes>) responseObserver);
+          break;
         default:
           throw new AssertionError();
       }
@@ -1377,6 +1523,8 @@ public final class Keeptrack2ServiceGrpc {
               .addMethod(getUpdatePartStatusByIdMethod())
               .addMethod(getQueryAvailablePartByIdMethod())
               .addMethod(getQueryPagedAvailablePartsMethod())
+              .addMethod(getQueryPagedAllProjectsAndItemsMethod())
+              .addMethod(getQueryPagedAllProjectsAndItemsAndPartsMethod())
               .build();
         }
       }

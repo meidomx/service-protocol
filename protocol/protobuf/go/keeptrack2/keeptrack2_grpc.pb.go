@@ -34,6 +34,8 @@ type Keeptrack2ServiceClient interface {
 	UpdatePartStatusById(ctx context.Context, in *UpdatePartStatusByIdReq, opts ...grpc.CallOption) (*UpdatePartStatusByIdRes, error)
 	QueryAvailablePartById(ctx context.Context, in *QueryPartByIdReq, opts ...grpc.CallOption) (*QueryPartByIdRes, error)
 	QueryPagedAvailableParts(ctx context.Context, in *QueryPagedAvailablePartsReq, opts ...grpc.CallOption) (*QueryPagedAvailablePartsRes, error)
+	QueryPagedAllProjectsAndItems(ctx context.Context, in *QueryAllProjectsAndItemsReq, opts ...grpc.CallOption) (*QueryAllProjectsAndItemsRes, error)
+	QueryPagedAllProjectsAndItemsAndParts(ctx context.Context, in *QueryAllProjectsAndItemsAndPartsReq, opts ...grpc.CallOption) (*QueryAllProjectsAndItemsAndPartsRes, error)
 }
 
 type keeptrack2ServiceClient struct {
@@ -188,6 +190,24 @@ func (c *keeptrack2ServiceClient) QueryPagedAvailableParts(ctx context.Context, 
 	return out, nil
 }
 
+func (c *keeptrack2ServiceClient) QueryPagedAllProjectsAndItems(ctx context.Context, in *QueryAllProjectsAndItemsReq, opts ...grpc.CallOption) (*QueryAllProjectsAndItemsRes, error) {
+	out := new(QueryAllProjectsAndItemsRes)
+	err := c.cc.Invoke(ctx, "/keeptrack2.Keeptrack2Service/QueryPagedAllProjectsAndItems", in, out, opts...)
+	if err != nil {
+		return nil, err
+	}
+	return out, nil
+}
+
+func (c *keeptrack2ServiceClient) QueryPagedAllProjectsAndItemsAndParts(ctx context.Context, in *QueryAllProjectsAndItemsAndPartsReq, opts ...grpc.CallOption) (*QueryAllProjectsAndItemsAndPartsRes, error) {
+	out := new(QueryAllProjectsAndItemsAndPartsRes)
+	err := c.cc.Invoke(ctx, "/keeptrack2.Keeptrack2Service/QueryPagedAllProjectsAndItemsAndParts", in, out, opts...)
+	if err != nil {
+		return nil, err
+	}
+	return out, nil
+}
+
 // Keeptrack2ServiceServer is the server API for Keeptrack2Service service.
 // All implementations must embed UnimplementedKeeptrack2ServiceServer
 // for forward compatibility
@@ -208,6 +228,8 @@ type Keeptrack2ServiceServer interface {
 	UpdatePartStatusById(context.Context, *UpdatePartStatusByIdReq) (*UpdatePartStatusByIdRes, error)
 	QueryAvailablePartById(context.Context, *QueryPartByIdReq) (*QueryPartByIdRes, error)
 	QueryPagedAvailableParts(context.Context, *QueryPagedAvailablePartsReq) (*QueryPagedAvailablePartsRes, error)
+	QueryPagedAllProjectsAndItems(context.Context, *QueryAllProjectsAndItemsReq) (*QueryAllProjectsAndItemsRes, error)
+	QueryPagedAllProjectsAndItemsAndParts(context.Context, *QueryAllProjectsAndItemsAndPartsReq) (*QueryAllProjectsAndItemsAndPartsRes, error)
 	mustEmbedUnimplementedKeeptrack2ServiceServer()
 }
 
@@ -262,6 +284,12 @@ func (UnimplementedKeeptrack2ServiceServer) QueryAvailablePartById(context.Conte
 }
 func (UnimplementedKeeptrack2ServiceServer) QueryPagedAvailableParts(context.Context, *QueryPagedAvailablePartsReq) (*QueryPagedAvailablePartsRes, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method QueryPagedAvailableParts not implemented")
+}
+func (UnimplementedKeeptrack2ServiceServer) QueryPagedAllProjectsAndItems(context.Context, *QueryAllProjectsAndItemsReq) (*QueryAllProjectsAndItemsRes, error) {
+	return nil, status.Errorf(codes.Unimplemented, "method QueryPagedAllProjectsAndItems not implemented")
+}
+func (UnimplementedKeeptrack2ServiceServer) QueryPagedAllProjectsAndItemsAndParts(context.Context, *QueryAllProjectsAndItemsAndPartsReq) (*QueryAllProjectsAndItemsAndPartsRes, error) {
+	return nil, status.Errorf(codes.Unimplemented, "method QueryPagedAllProjectsAndItemsAndParts not implemented")
 }
 func (UnimplementedKeeptrack2ServiceServer) mustEmbedUnimplementedKeeptrack2ServiceServer() {}
 
@@ -564,6 +592,42 @@ func _Keeptrack2Service_QueryPagedAvailableParts_Handler(srv interface{}, ctx co
 	return interceptor(ctx, in, info, handler)
 }
 
+func _Keeptrack2Service_QueryPagedAllProjectsAndItems_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
+	in := new(QueryAllProjectsAndItemsReq)
+	if err := dec(in); err != nil {
+		return nil, err
+	}
+	if interceptor == nil {
+		return srv.(Keeptrack2ServiceServer).QueryPagedAllProjectsAndItems(ctx, in)
+	}
+	info := &grpc.UnaryServerInfo{
+		Server:     srv,
+		FullMethod: "/keeptrack2.Keeptrack2Service/QueryPagedAllProjectsAndItems",
+	}
+	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
+		return srv.(Keeptrack2ServiceServer).QueryPagedAllProjectsAndItems(ctx, req.(*QueryAllProjectsAndItemsReq))
+	}
+	return interceptor(ctx, in, info, handler)
+}
+
+func _Keeptrack2Service_QueryPagedAllProjectsAndItemsAndParts_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
+	in := new(QueryAllProjectsAndItemsAndPartsReq)
+	if err := dec(in); err != nil {
+		return nil, err
+	}
+	if interceptor == nil {
+		return srv.(Keeptrack2ServiceServer).QueryPagedAllProjectsAndItemsAndParts(ctx, in)
+	}
+	info := &grpc.UnaryServerInfo{
+		Server:     srv,
+		FullMethod: "/keeptrack2.Keeptrack2Service/QueryPagedAllProjectsAndItemsAndParts",
+	}
+	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
+		return srv.(Keeptrack2ServiceServer).QueryPagedAllProjectsAndItemsAndParts(ctx, req.(*QueryAllProjectsAndItemsAndPartsReq))
+	}
+	return interceptor(ctx, in, info, handler)
+}
+
 // Keeptrack2Service_ServiceDesc is the grpc.ServiceDesc for Keeptrack2Service service.
 // It's only intended for direct use with grpc.RegisterService,
 // and not to be introspected or modified (even as a copy)
@@ -634,6 +698,14 @@ var Keeptrack2Service_ServiceDesc = grpc.ServiceDesc{
 		{
 			MethodName: "QueryPagedAvailableParts",
 			Handler:    _Keeptrack2Service_QueryPagedAvailableParts_Handler,
+		},
+		{
+			MethodName: "QueryPagedAllProjectsAndItems",
+			Handler:    _Keeptrack2Service_QueryPagedAllProjectsAndItems_Handler,
+		},
+		{
+			MethodName: "QueryPagedAllProjectsAndItemsAndParts",
+			Handler:    _Keeptrack2Service_QueryPagedAllProjectsAndItemsAndParts_Handler,
 		},
 	},
 	Streams:  []grpc.StreamDesc{},
